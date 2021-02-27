@@ -1,0 +1,7 @@
+D:\Unity Projects Github\FuckingWords\FuckingWords\Assets\Dlls\Serializer.dll
+D:\Unity Projects Github\FuckingWords\FuckingWords\Assets\Dlls\Serializer.pdb
+D:\Unity Projects Github\FuckingWords\FuckingWords\Serializer\obj\Debug\Serializer.csprojAssemblyReference.cache
+D:\Unity Projects Github\FuckingWords\FuckingWords\Serializer\obj\Debug\Serializer.csproj.CoreCompileInputs.cache
+D:\Unity Projects Github\FuckingWords\FuckingWords\Serializer\obj\Debug\Serializer.csproj.CopyComplete
+D:\Unity Projects Github\FuckingWords\FuckingWords\Serializer\obj\Debug\Serializer.dll
+D:\Unity Projects Github\FuckingWords\FuckingWords\Serializer\obj\Debug\Serializer.pdb
