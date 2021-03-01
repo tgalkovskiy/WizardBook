@@ -95,14 +95,14 @@ public class WordButtom : MonoBehaviour
         for(int i=0; i<WordButtomMas.Length; i++)
         {
             WordButtomMas[i].GetComponentInChildren<Text>().text = WordLoad.WordAll[ChoiesLanguege.Languge2][i];
-            if (WordLoad.WordAll[ChoiesLanguege.Languge2][i].Length > 8)
-            {
-                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 50;
-            }
-            else
-            {
-                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 70;
-            }
+            //if (WordLoad.WordAll[ChoiesLanguege.Languge2][i].Length > 8)
+            //{
+            //    WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 50;
+            //}
+            //else
+            //{
+            //    WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 60;
+            //}
         }
     }
     public void Delete_Word()
