@@ -167,4 +167,9 @@ public class MenuLVLGIU : MonoBehaviour
         }
         
     }
+
+    public void Open_window(GameObject gameObject)
+    {
+        gameObject.SetActive(true);
+    }
 }
