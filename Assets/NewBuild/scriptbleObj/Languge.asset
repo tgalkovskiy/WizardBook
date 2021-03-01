@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7c433b040e3f0d4b8dafc4bd2d1c547, type: 3}
   m_Name: Languge
   m_EditorClassIdentifier: 
-  Languge1: 2
-  Languge2: 1
+  Languge1: 1
+  Languge2: 0

@@ -29,17 +29,22 @@ public class WordButtom : MonoBehaviour
     }
     private void OnEnable()
     {
-        EventMeneger.GerlAttack1 += Word;
-        EventMeneger.EnemyAttack1 += Word;
         EventMeneger.GerlAttack1 += MovesCount;
         EventMeneger.EnemyAttack1 += MovesCount;
+        EventMeneger.GerlAttack1 += WordLoad.LoadText;
+        EventMeneger.EnemyAttack1 += WordLoad.LoadText;
+        EventMeneger.GerlAttack1 += Word;
+        EventMeneger.EnemyAttack1 += Word;
     }
     private void OnDisable()
     {
-        EventMeneger.GerlAttack1 -= Word;
-        EventMeneger.EnemyAttack1 -= Word;
+        
         EventMeneger.GerlAttack1 += MovesCount;
         EventMeneger.EnemyAttack1 += MovesCount;
+        EventMeneger.GerlAttack1 -= WordLoad.LoadText;
+        EventMeneger.EnemyAttack1 -= WordLoad.LoadText;
+        EventMeneger.GerlAttack1 -= Word;
+        EventMeneger.EnemyAttack1 -= Word;
     }
     private void Update()
     {
@@ -91,6 +96,8 @@ public class WordButtom : MonoBehaviour
     /// </summary>
     public void Word()
     {
+        var A = EventMeneger.GerlAttack1.GetInvocationList();
+        Debug.Log(A[1].Method);
         NowWord.text = WordLoad.WordAll[ChoiesLanguege.Languge1][WordLoad.CorrectWord];
         for(int i=0; i<WordButtomMas.Length; i++)
         {

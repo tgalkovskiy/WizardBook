@@ -17,6 +17,8 @@ public class PageManeger : MonoBehaviour
     [SerializeField] private GameObject Equip_GameObj = default;
     [SerializeField] private GameObject NO_money = default;
     [SerializeField] private GameObject[] Weapon = default;
+    [SerializeField] private GameObject NextLVLMainPage = default;
+    [SerializeField] private GameObject NextLVlBG = default;
     [SerializeField] private Text AttackPers = default;
     [SerializeField] private Text DeffencePers = default;
     [SerializeField] private Text Discription_Item = default;
@@ -148,6 +150,16 @@ public class PageManeger : MonoBehaviour
         Gold.text = StatPers.Gold.ToString();
         Rubin.text = StatPers.Rubin.ToString();
         Energy.text = StatPers.Now_Energy.ToString() + "/" + StatPers.Max_Energy.ToString();
+        if(StatPers.Now_BOOK_XP >= StatPers.NextLVL_BOOK_XP)
+        {
+            NextLVLMainPage.SetActive(true);
+            NextLVlBG.SetActive(true);
+        }
+        else
+        {
+            NextLVLMainPage.SetActive(false);
+            NextLVlBG.SetActive(false);
+        }
     }
 
 

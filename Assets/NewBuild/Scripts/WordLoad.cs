@@ -41,17 +41,18 @@ public class WordLoad : MonoBehaviour
             AllJson = Person_HP.Word;
         }
         LoadText();
+
     }
-    private void OnEnable()
-    {
-        EventMeneger.GerlAttack1 += LoadText;
-        EventMeneger.EnemyAttack1 += LoadText; 
-    }
-    private void OnDisable()
-    {
-        EventMeneger.GerlAttack1 -= LoadText;
-        EventMeneger.EnemyAttack1 -= LoadText;
-    }
+    //private void OnEnable()
+    //{
+    //    EventMeneger.GerlAttack1 += LoadText;
+    //    EventMeneger.EnemyAttack1 += LoadText; 
+    //}
+    //private void OnDisable()
+    //{
+    //    EventMeneger.GerlAttack1 -= LoadText;
+    //    EventMeneger.EnemyAttack1 -= LoadText;
+    //}
     /// <summary>
     /// случайная сортировка слов для кнопок
     /// </summary>
@@ -68,7 +69,7 @@ public class WordLoad : MonoBehaviour
     //        Mas[i] = temp;
     //    }
     //}
-    private void LoadText()
+    public void LoadText()
     {
         JSONNode OpenJson = JSON.Parse(AllJson);
         string LVLBOOKSTRING = LVLBOOK.ToString();

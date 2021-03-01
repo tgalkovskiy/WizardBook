@@ -45,7 +45,7 @@ public class MenuLVLGIU : MonoBehaviour
         }
         if (HP_PERS.Now_BOOK_XP >= HP_PERS.NextLVL_BOOK_XP)
         {
-            NextLVL_Book.text = "Можно улучшить книгу слов, и получить эфир!";
+            NextLVL_Book.text = "НОВЫЙ УРОВЕНЬ!";
         }
         else
         {
@@ -144,7 +144,6 @@ public class MenuLVLGIU : MonoBehaviour
         }
         if (money <= HP_PERS.Gold)
         {
-            Debug.Log(3);
             if(HP_PERS.Now_BOOK_XP >= HP_PERS.NextLVL_BOOK_XP)
             {
                 HP_PERS.LVLBooK += 1;

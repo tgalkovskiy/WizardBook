@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: HP
   m_EditorClassIdentifier: 
   HP_Gerl: 200
-  NumberEnemy: 2
+  NumberEnemy: 0
   HP_Spawn_Start: 125
   HP_Pig_Start: 200
   HP_Usakula_Start: 300
@@ -25,7 +25,7 @@ MonoBehaviour:
   LVLBooK: 0
   NextLVL_BOOK_XP: 1
   Now_BOOK_XP: 0
-  PointBook: 15
+  PointBook: 27
   NumberSworld: 0
   By_Sword: 0100000000
   Damage_Sword:
@@ -361,10 +361,10 @@ MonoBehaviour:
   - "\u041F\u0440\u0435\u0434\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439
     \u0434\u0443\u0445: +25% \u043A \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u043E\u043C\u0443
     \u0437\u043E\u043B\u043E\u0442\u0443"
-  Skills: 000000000000000000000000
+  Skills: 010101010101010101010101
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 5000
+  Gold: 1000
   Rubin: 5
-  Max_Energy: 15
-  Now_Energy: 90
+  Max_Energy: 17
+  Now_Energy: 95
