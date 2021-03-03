@@ -95,6 +95,7 @@ public class PageManeger : MonoBehaviour
         if (StatPers.By_Sword[NumberKnife])
         {
             Discription_Item.text = "Aтака " + StatPers.Damage_Sword[NumberKnife] + "\n" + "Уровень предмета " + StatPers.LVl_Sword[NumberKnife] + "\n" + "Цена " + Cost_now_Item/10;
+            StatPers.LVl_Sword[NumberKnife] += 1;
             Cost_now_Item /= 10;
             Type_Item.text = "Улучшить?";
             Equip_GameObj.SetActive(true);

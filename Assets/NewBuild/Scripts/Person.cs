@@ -87,9 +87,9 @@ public class Person : MonoBehaviour
     private void Update()
     {
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = HP_G.ToString() + "/" + HP_Person.HP_Gerl.ToString();
+        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + ((int)HP_Person.HP_Gerl).ToString();
         HP_Enemy.value = HP_E;
-        HP_Enemy_Text.text = HP_E.ToString() + "/" + HP_Enemy.maxValue.ToString();
+        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + ((int)HP_Enemy.maxValue).ToString();
         if (GameState)
         {
           EndRound();
@@ -101,7 +101,7 @@ public class Person : MonoBehaviour
         GerlAnimator[0].SetTrigger("Attack");
         EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Damage");
         HP_E -= DamagePers;
-        Bamd_text_Eny.GetComponent<TextMesh>().text = DamagePers.ToString();
+        Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
         Band.SetTrigger("Eny");
     }
     public void AttackEny()
@@ -109,7 +109,7 @@ public class Person : MonoBehaviour
         EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
         DamgeEnemy = HP_Person.LVLPers * Random.Range(20, 50);
-        HP_G -=(int)(DamgeEnemy -(DamgeEnemy / 100.0f)*Deffence);
+        HP_G -=(DamgeEnemy -(DamgeEnemy / 100.0f)*Deffence);
         Band_Text_Pers.GetComponent<TextMesh>().text = ((int)(DamgeEnemy - (DamgeEnemy / 100.0f) * Deffence)).ToString();
         Band.SetTrigger("Pers");
     }

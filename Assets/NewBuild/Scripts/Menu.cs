@@ -23,12 +23,12 @@ public class Menu : MonoBehaviour
     {
         if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && HP.Now_Energy>=5)
         {
-            HP.Now_Energy -= 5;
+            HP.Now_Energy -= 3;
             HP.SaveData();
             //StartCoroutine(StartGameCor(2));
             SceneManager.LoadScene(2);
         }
-        if(HP.Now_Energy < 5)
+        if(HP.Now_Energy < 3)
         {
             Debug.Log(1);
             Window2.SetActive(true);

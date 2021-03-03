@@ -887,6 +887,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7367001191732717589, guid: 7402f4b8c18c9344ba6a7f2b9f19fe13,
+        type: 3}
+      propertyPath: Speed
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 7367001192147528562, guid: 7402f4b8c18c9344ba6a7f2b9f19fe13,
         type: 3}
       propertyPath: m_AnchoredPosition.y

@@ -99,6 +99,8 @@ public class HP : ScriptableObject
             LVLPers += 1;
             NowXP = 0;
             HP_Gerl += (HP_Gerl / 100) * 15;
+            Deffens += 2;
+            Max_Energy += 5;
         }
         //if (Now_BOOK_XP >= NextLVL_BOOK_XP)
         //{
