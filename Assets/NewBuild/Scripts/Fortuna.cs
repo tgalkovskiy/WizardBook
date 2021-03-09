@@ -46,7 +46,7 @@ public class Fortuna : MonoBehaviour
             FinalAngle = new Vector3(0, 0, 45);
             StatPers.NumberEnemy = 1;
             NumberScene = 3;
-            Discription_Window = "Вас ожидает битва с Свином!";
+            Discription_Window = "Вас ожидает битва со Свиноделом!";
             Debug.Log("Pig");
         } 
         else if(angle >62.5f && angle <= 112.5f)
