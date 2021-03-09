@@ -12,7 +12,6 @@ using System.Linq;
 [Serializable]
 public class WordLoad : MonoBehaviour
 {
-    public Text Test;
     //глобальный массив для всех слов
     [SerializeField] private HP Person_HP;
     private string Path = Application.streamingAssetsPath + "/TestJsnon.Jsnon";
@@ -28,7 +27,7 @@ public class WordLoad : MonoBehaviour
         WordAll[0] = WordRus;
         WordAll[1] = WordEng;
         WordAll[2] = WordBel;
-        LVLBOOK = Person_HP.LVLBooK+1;
+        LVLBOOK = Person_HP.LVLBooK;
         WWW reader = new WWW(Path);
         AllJson = reader.text;
         if(reader.text.Length > 0)

@@ -39,16 +39,9 @@ public class Fortuna : MonoBehaviour
         Vector3 FinalAngle = Vector3.zero;
         string Discription_Window = "";
         int Gold =0, Rubin =0, Energy =0;
-        if(angle<=22.5f && angle <=0 || angle<=360 && angle > 337.5f)
-        {
-            FinalAngle = new Vector3(0, 0, 0);
-            NumberScene = 1;
-            Energy = 10;
-            Gold = StatPers.LVLPers * Random.Range(100, 200);
-            Rubin = Random.Range(1, 2);
-            Discription_Window = "Поздравляю, большая удача, вы находите много ресурсов!!!" + " Энергия: +"+Energy+ " Золото: +"+Gold+" Кристаллы: +"+ Rubin;
-        }
-        else if(angle>22.5f && angle<= 62.5f)
+        //angle <= 22.5f && angle <= 0 || angle <= 360 && angle > 337.5f
+        
+        if (angle>22.5f && angle<= 62.5f)
         {
             FinalAngle = new Vector3(0, 0, 45);
             StatPers.NumberEnemy = 1;
@@ -102,6 +95,15 @@ public class Fortuna : MonoBehaviour
             NumberScene = 3;
             Discription_Window = "Вас ожидает битва с Омоникулом!";
             Debug.Log("Spawn");
+        }
+        else
+        {
+            FinalAngle = new Vector3(0, 0, 0);
+            NumberScene = 1;
+            Energy = 10;
+            Gold = StatPers.LVLPers * Random.Range(100, 200);
+            Rubin = Random.Range(1, 2);
+            Discription_Window = "Поздравляю, большая удача, вы находите много ресурсов!!!" + " Энергия: +" + Energy + " Золото: +" + Gold + " Кристаллы: +" + Rubin;
         }
         Whele.transform.DORotate(FinalAngle,1f);
         StatPers.Gold += Gold;

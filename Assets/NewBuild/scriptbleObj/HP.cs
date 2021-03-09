@@ -49,7 +49,7 @@ public class HP : ScriptableObject
     public int NextLVLXP = 150;
     public int NowXP = 0;
     //лвл книга
-    public int LVLBooK = 0;
+    public int LVLBooK = 1;
     public float NextLVL_BOOK_XP = 1;
     public float Now_BOOK_XP = 0;
     public float PointBook = 0;
@@ -195,7 +195,7 @@ public class HP : ScriptableObject
             By_Sword = new bool[5] {true, false, false,false,false};
             Damage_Sword = new float[5] { 20, 30, 40, 50, 60 };
             LVl_Sword = new int[5] { 1, 1, 1, 1, 1 };
-            LVLBooK = 0;
+            LVLBooK = 1;
             PointBook = 0;
             NextLVL_BOOK_XP = 1;
             Now_BOOK_XP = 0;

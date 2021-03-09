@@ -104,11 +104,11 @@ public class WordButtom : MonoBehaviour
             WordButtomMas[i].GetComponentInChildren<Text>().text = WordLoad.WordAll[ChoiesLanguege.Languge2][i];
             if (WordLoad.WordAll[ChoiesLanguege.Languge2][i].Length > 8)
             {
-                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 50;
+                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 40;
             }
             else
             {
-                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 60;
+                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 55;
             }
         }
     }

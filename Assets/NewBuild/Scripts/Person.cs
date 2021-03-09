@@ -132,21 +132,21 @@ public class Person : MonoBehaviour
             int Rubin_Lose = 0;
             HP_Person.Rubin += Rubin_Lose;
             Rubin.text = Rubin_Lose.ToString();
-            HP_Person.PointBook += WordButtom.Point_now_Battel;
-            Point.text = WordButtom.Point_now_Battel.ToString();
+            //HP_Person.PointBook += WordButtom.Point_now_Battel;
+            //Point.text = WordButtom.Point_now_Battel.ToString();
             int EXP_lose = HP_Person.LVLPers*Random.Range(10,20);
             HP_Person.NowXP += EXP_lose;
             Exp.text = EXP_lose.ToString();
             //HP_Person.NowXP += 50;
             RoundPanel.SetActive(true);
             GameState = false;
-            EndRaund.text = "В этот раз Усакула победил!" + "\n" + "Попробуйте улучшить оружие или запомнить больше волшебных слов ;)";
+            EndRaund.text = "В этот раз враг победил!" + "\n" + "Попробуйте улучшить оружие или запомнить больше волшебных слов!)";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.text = "НОВЫЙ УРОВЕНЬ!";
+                HP_Person.NextLVL();
             }
             RoundPanel.transform.DOMove(Lasttransform.position, 1f);
-            HP_Person.NextLVL();
             HP_Person.SaveData();
 
         }
@@ -173,8 +173,8 @@ public class Person : MonoBehaviour
             }
             HP_Person.Rubin += Rubin_W;
             Rubin.text = Rubin_W.ToString();
-            HP_Person.PointBook += WordButtom.Point_now_Battel;
-            Point.text = WordButtom.Point_now_Battel.ToString();
+            //HP_Person.PointBook += WordButtom.Point_now_Battel;
+            //Point.text = WordButtom.Point_now_Battel.ToString();
             int EXP_W = HP_Person.LVLPers*Random.Range(80,110);
             HP_Person.NowXP += EXP_W;
             Exp.text = EXP_W.ToString();
@@ -185,9 +185,9 @@ public class Person : MonoBehaviour
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.text = "НОВЫЙ УРОВЕНЬ!";
+                HP_Person.NextLVL();
             }
             RoundPanel.transform.DOMove(Lasttransform.position, 1f);
-            HP_Person.NextLVL();
             HP_Person.SaveData();
 
         }
