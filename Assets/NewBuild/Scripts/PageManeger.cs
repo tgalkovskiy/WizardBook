@@ -161,6 +161,7 @@ public class PageManeger : MonoBehaviour
             NextLVLMainPage.SetActive(false);
             NextLVlBG.SetActive(false);
         }
+
     }
 
 

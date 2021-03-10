@@ -10,4 +10,12 @@ public class MenuBut : MonoBehaviour
     {
         LoadPanel.SetActive(true);
     }
+    public void ActivWindow(GameObject gameObject)
+    {
+        gameObject.SetActive(true);
+    }
+    public void DeactivWindow(GameObject gameObject)
+    {
+        gameObject.SetActive(false);
+    }
 }
