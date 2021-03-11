@@ -12,10 +12,6 @@ public class Setting : ScriptableObject
         public float Volume;
     }
     public float _Volume;
-    private void Awake()
-    {
-        LoadSetting();
-    }
     public void SaveSetting()
     {
         string Path = System.IO.Path.Combine(Application.persistentDataPath, "SaveSetting.Json");
