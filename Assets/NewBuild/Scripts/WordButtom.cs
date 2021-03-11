@@ -97,7 +97,6 @@ public class WordButtom : MonoBehaviour
     public void Word()
     {
         var A = EventMeneger.GerlAttack1.GetInvocationList();
-        Debug.Log(A[1].Method);
         NowWord.text = WordLoad.WordAll[ChoiesLanguege.Languge1][WordLoad.CorrectWord];
         for(int i=0; i<WordButtomMas.Length; i++)
         {
