@@ -21,6 +21,7 @@ public class PageManeger : MonoBehaviour
     [SerializeField] private GameObject NextLVlBG = default;
     [SerializeField] private Text AttackPers = default;
     [SerializeField] private Text DeffencePers = default;
+    [SerializeField] private Text HP_pers = default;
     [SerializeField] private Text Discription_Item = default;
     [SerializeField] private Text Type_Item = default;
     [SerializeField] private Text Gold = default;
@@ -55,6 +56,7 @@ public class PageManeger : MonoBehaviour
         Page3.SetActive(true);
         AttackPers.text = "Атака: " + StatPers.Damage_Sword[(int)StatPers.NumberSworld].ToString();
         DeffencePers.text = "Защита: " + StatPers.Deffens.ToString();
+        HP_pers.text = "Здоровье: " + StatPers.HP_Gerl.ToString();
         Weapon[(int)StatPers.NumberSworld].SetActive(true);
 
     }
