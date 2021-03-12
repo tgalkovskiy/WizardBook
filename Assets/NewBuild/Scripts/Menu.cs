@@ -6,14 +6,20 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private HP HP;
-    [SerializeField] private GameObject Window1;
-    [SerializeField] private GameObject Window2;
-    [SerializeField] private ChoiesLanguege ChoiesLanguege;
-    [SerializeField] private MenuBut MenuBut;
+    [SerializeField] private HP HP =default;
+    [SerializeField] private GameObject Window1 =default;
+    [SerializeField] private GameObject Window2 = default;
+    [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
+    [SerializeField] private MenuBut MenuBut = default;
+    [SerializeField] private GameObject TutorialButtom = default;
     private void Start()
     {
-        
+        if (HP._Tutorial)
+        {
+            Tutorial();
+            HP._Tutorial = false;
+            HP.SaveData();
+        }
     }
     public void LoadMenu()
     {
@@ -67,5 +73,10 @@ public class Menu : MonoBehaviour
     public void Close_Window(GameObject gameObject)
     {
         gameObject.SetActive(false);
+    }
+
+    public void Tutorial()
+    {
+        TutorialButtom.SetActive(true);
     }
 }

@@ -32,6 +32,7 @@ public class HP : ScriptableObject
        public int Energy_Max;
        public int Energy_Now;
        public string DateTime;
+       public bool Tutorial;
 
     }
     //хп георя
@@ -87,7 +88,7 @@ public class HP : ScriptableObject
     //Энергия 
     public int Max_Energy;
     public int Now_Energy;
-
+    public bool _Tutorial;
     //time
     public DateTime DateTime;
 
@@ -180,6 +181,7 @@ public class HP : ScriptableObject
             Max_Energy = data.Energy_Max;
             Now_Energy = data.Energy_Now;
             DateTime = DateTime.Parse(data.DateTime);
+            _Tutorial = data.Tutorial;
             Time_Time();
         }
         else
@@ -207,6 +209,7 @@ public class HP : ScriptableObject
             Max_Energy = 15;
             Now_Energy = 100;
             DateTime = DateTime.Now;
+            _Tutorial = true;
         } 
         
 
