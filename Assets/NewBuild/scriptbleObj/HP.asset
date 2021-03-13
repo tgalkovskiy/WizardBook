@@ -12,29 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc907b59ad00ca243baabe7a15d8716c, type: 3}
   m_Name: HP
   m_EditorClassIdentifier: 
-  HP_Gerl: 264.5
+  HP_Gerl: 200
   NumberEnemy: 0
   HP_Spawn_Start: 125
   HP_Pig_Start: 200
   HP_Usakula_Start: 300
-  Deffens: 19
+  Deffens: 15
   Damage: 20
-  LVLPers: 3
-  NextLVLXP: 1350
+  LVLPers: 1
+  NextLVLXP: 150
   NowXP: 0
-  LVLBooK: 2
-  NextLVL_BOOK_XP: 3
-  Now_BOOK_XP: 1
-  PointBook: 0
-  NumberSworld: 1
-  By_Sword: 0101000000
+  LVLBooK: 1
+  NextLVL_BOOK_XP: 1
+  Now_BOOK_XP: 0
+  PointBook: 14
+  NumberSworld: 0
+  By_Sword: 0100000000
   Damage_Sword:
   - 20
-  - 60
+  - 30
   - 40
   - 50
   - 60
-  LVl_Sword: 0100000005000000010000000100000001000000
+  LVl_Sword: 0100000001000000010000000100000001000000
   Word: "\uFEFF{\n  \"Word\": {\n    \"Rus\": {\n      \"1\": [\n        \"\u0413\u043B\u0430\u0437\",\n       
     \"\u041A\u0438\u0441\u0442\u044C \u0440\u0443\u043A\u0438\",\n        \"\u041D\u043E\u0433\u0430\",\n       
     \"\u0413\u043E\u043B\u043E\u0432\u0430\",\n        \"\u0420\u0443\u043A\u0430\",\n       
@@ -361,10 +361,11 @@ MonoBehaviour:
   - "\u041F\u0440\u0435\u0434\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439
     \u0434\u0443\u0445: +25% \u043A \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u043E\u043C\u0443
     \u0437\u043E\u043B\u043E\u0442\u0443"
-  Skills: 010001000100000001000100
+  Skills: 010101000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 6282
-  Rubin: 11
-  Max_Energy: 28
-  Now_Energy: 26
+  Gold: 1000
+  Rubin: 5
+  Max_Energy: 15
+  Now_Energy: 12
+  _Tutorial: 0
