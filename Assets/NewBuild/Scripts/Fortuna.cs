@@ -7,12 +7,13 @@ using UnityEngine.UI;
 
 public class Fortuna : MonoBehaviour
 {
-   [SerializeField] private GameObject Whele;
-   [SerializeField] private GameObject WindowGOBJ;
-   
-   [SerializeField] private Text Discription_text;
-   [SerializeField] private float Speed;
-   [SerializeField] private HP StatPers;
+   [SerializeField] private GameObject Whele = default;
+   [SerializeField] private GameObject WindowGOBJ = default;
+   [SerializeField] private LoadPanel Load = default;
+   [SerializeField] private GameObject LoadGameObj = default;
+   [SerializeField] private Text Discription_text = default;
+   [SerializeField] private float Speed = default;
+   [SerializeField] private HP StatPers = default;
    private int NumberScene = 1;
     private void Awake()
     {
@@ -120,6 +121,7 @@ public class Fortuna : MonoBehaviour
     }
     public void OK()
     {
-        SceneManager.LoadScene(NumberScene);
+        Load.NumberScene = NumberScene;
+        LoadGameObj.SetActive(true);
     }
 }

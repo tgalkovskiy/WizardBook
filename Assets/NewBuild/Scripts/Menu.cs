@@ -26,18 +26,14 @@ public class Menu : MonoBehaviour
         SceneManager.LoadScene(1);
         //StartCoroutine(StartGameCor(1));
     }
-    public void Fortuna()
-    {
-        SceneManager.LoadScene(2);
-    }
     public void StartGame()
     {
         if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && HP.Now_Energy>=5)
         {
             HP.Now_Energy -= 3;
             HP.SaveData();
-            SceneManager.LoadScene(2);
-            //MenuBut.ActivPanel();
+            //SceneManager.LoadScene(2);
+            MenuBut.ActivPanel();
             //StartCoroutine(StartGameCor(2));
         }
         if(HP.Now_Energy < 3)
