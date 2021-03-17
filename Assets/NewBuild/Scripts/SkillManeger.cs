@@ -55,7 +55,7 @@ public class SkillManeger : MonoBehaviour
             //компоненты и кнопка для данного скила
             Buttom_Arson_Image = Skill_buton[0].GetComponent<Image>();
             Buttom_Skil_2.SetActive(true);
-            ArsonDamege = (Person.HP_E / 100.0f) * (5.0f+HP_SKills.LVL_Skill[1]);
+            ArsonDamege = (Person.HP_E / 100.0f) * (5.0f+3*HP_SKills.LVL_Skill[1]);
         }
         //если активне 3 скил
         if (HP_SKills.Skills[2])
@@ -63,7 +63,7 @@ public class SkillManeger : MonoBehaviour
             //увелчиение общего урона
             Person.DamagePers += (Person.DamagePers / 100.0f) * (25.0f+ HP_SKills.LVL_Skill[2]);
             //увеличение силы поджога
-            ArsonDamege += (ArsonDamege / 100.0f) * (25.0f+ HP_SKills.LVL_Skill[2]);
+            ArsonDamege += (ArsonDamege / 100.0f) * (25.0f+10*HP_SKills.LVL_Skill[2]);
         }
         //если активне 7 скилл
         if (HP_SKills.Skills[6])

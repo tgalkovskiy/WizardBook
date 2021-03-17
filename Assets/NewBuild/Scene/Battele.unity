@@ -8840,12 +8840,12 @@ Terrain:
   serializedVersion: 6
   m_TerrainData: {fileID: 15600000, guid: 9fd0999bcdb5b874882e73d08ff0d45d, type: 2}
   m_TreeDistance: 5000
-  m_TreeBillboardDistance: 5
-  m_TreeCrossFadeLength: 5
-  m_TreeMaximumFullLODCount: 50
-  m_DetailObjectDistance: 22
+  m_TreeBillboardDistance: 100
+  m_TreeCrossFadeLength: 100
+  m_TreeMaximumFullLODCount: 100
+  m_DetailObjectDistance: 100
   m_DetailObjectDensity: 1
-  m_HeightmapPixelError: 32
+  m_HeightmapPixelError: 30
   m_SplatMapDistance: 1000
   m_HeightmapMaximumLOD: 0
   m_ShadowCastingMode: 0

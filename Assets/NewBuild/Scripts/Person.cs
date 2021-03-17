@@ -79,7 +79,7 @@ public class Person : MonoBehaviour
         if (HP_Person.Skills[0])
         {
             ActivElement[0].SetActive(true);
-            DamagePers +=(int)((DamagePers/100.0f)*5.0f);
+            DamagePers +=(int)((DamagePers/100.0f)*5.0f+5*HP_Person.LVL_Skill[0]);
         }
         Weapon[(int)HP_Person.NumberSworld].SetActive(true);
     }

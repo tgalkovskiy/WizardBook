@@ -56,6 +56,7 @@ public class MenuLVLGIU : MonoBehaviour
     public void SliilButtom(int NumberButtom)
     {
         Discription_Skill_Text.text = HP_PERS.Description_Skill[NumberButtom] + "\n" + "Уровень " + HP_PERS.LVL_Skill[NumberButtom]+"\n"+"Цена "+Cost_Now_Skill;
+        Debug.Log(HP_PERS.Description_Skill[NumberButtom]);
         NumberSkill = NumberButtom;
         Skill = true;
         Window_Discription.SetActive(true);
@@ -85,7 +86,7 @@ public class MenuLVLGIU : MonoBehaviour
                 Button_Skill[NumberSkill].GetComponent<Image>().sprite = Activ_Button[NumberSkill];
                 if (NumberSkill == 4)
                 {
-                    HP_PERS.Max_Energy += (int)(((float)HP_PERS.Max_Energy / 100.00) * 15.00 * HP_PERS.LVL_Skill[4]);
+                    HP_PERS.Max_Energy += (int)(((float)HP_PERS.Max_Energy / 100.00) * 15.00 + 5* HP_PERS.LVL_Skill[4]);
                 }
                 HP_PERS.SaveData();
                 Window_Discription.SetActive(false);
@@ -97,7 +98,7 @@ public class MenuLVLGIU : MonoBehaviour
                 PointBook.text = HP_PERS.PointBook.ToString();
                 if (NumberSkill == 4)
                 {
-                    HP_PERS.Max_Energy += (int)(((float)HP_PERS.Max_Energy / 100.00) * 15.00 * HP_PERS.LVL_Skill[4]);
+                    HP_PERS.Max_Energy += (int)(((float)HP_PERS.Max_Energy / 100.00) * 15.00 + 5 * HP_PERS.LVL_Skill[4]);
                 }
                 HP_PERS.SaveData();
                 Window_Discription.SetActive(false);

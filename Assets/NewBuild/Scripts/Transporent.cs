@@ -22,7 +22,7 @@ public class Transporent : MonoBehaviour
         
     }
 
-    void Start()
+    private void Start()
     {
         if (Text)
         {
