@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Unity\project\Wizard\WizardNew\WizardBook" t="IncludeRecursive">
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Casual Tiny Environment - Jungle Set" t="Include">
+          <e p="Readme.txt" t="Include" />
+        </e>
+        <e p="Dlls" t="Include">
+          <e p="Newtonsoft.Json.xml" t="Include" />
+        </e>
+        <e p="Hovl Studio" t="Include">
+          <e p="Procedural fire" t="Include">
+            <e p="Demo scene" t="Include">
+              <e p="Readme.txt" t="Include" />
+            </e>
+            <e p="Shaders" t="Include">
+              <e p="FireSphere.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Modern_GUI_Skin" t="Include">
+          <e p="Demo_Assets" t="Include">
+            <e p="scripts" t="Include">
+              <e p="GUI_Demo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="NewBuild" t="Include">
+          <e p="scriptbleObj" t="Include">
+            <e p="ChoiesLanguege.cs" t="Include" />
+            <e p="HP.cs" t="Include" />
+            <e p="Setting.cs" t="Include" />
+          </e>
+          <e p="scripts" t="Include">
+            <e p="CameraEffect.cs" t="Include" />
+            <e p="DeleteJson.cs" t="Include" />
+            <e p="EventMeneger.cs" t="Include" />
+            <e p="Fortuna.cs" t="Include" />
+            <e p="Languge.cs" t="Include" />
+            <e p="LoadPanel.cs" t="Include" />
+            <e p="Menu.cs" t="Include" />
+            <e p="MenuBut.cs" t="Include" />
+            <e p="MenuLVLGIU.cs" t="Include" />
+            <e p="NullText.cs" t="Include" />
+            <e p="PageManeger.cs" t="Include" />
+            <e p="Person.cs" t="Include" />
+            <e p="PointCount.cs" t="Include" />
+            <e p="SettingManeger.cs" t="Include" />
+            <e p="SkillManeger.cs" t="Include" />
+            <e p="Transporent.cs" t="Include" />
+            <e p="Tutorial.cs" t="Include" />
+            <e p="Weapon" t="Include">
+              <e p="Weapon.cs" t="Include" />
+              <e p="WeaponManeger.cs" t="Include" />
+            </e>
+            <e p="WordButtom.cs" t="Include" />
+            <e p="WordLoad.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="Demigiant" t="Include">
+            <e p="DOTween" t="Include">
+              <e p="Modules" t="Include">
+                <e p="DOTweenModuleAudio.cs" t="Include" />
+                <e p="DOTweenModulePhysics.cs" t="Include" />
+                <e p="DOTweenModulePhysics2D.cs" t="Include" />
+                <e p="DOTweenModuleSprite.cs" t="Include" />
+                <e p="DOTweenModuleUI.cs" t="Include" />
+                <e p="DOTweenModuleUnityVersion.cs" t="Include" />
+                <e p="DOTweenModuleUtils.cs" t="Include" />
+              </e>
+              <e p="Readme.txt" t="Include" />
+            </e>
+          </e>
+          <e p="SimpleJSON-master" t="Include">
+            <e p="Changelog.txt" t="Include" />
+            <e p="SimpleJSON.cs" t="Include" />
+            <e p="SimpleJSONBinary.cs" t="Include" />
+            <e p="SimpleJSONDotNetTypes.cs" t="Include" />
+            <e p="SimpleJSONUnity.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Supercyan Free Forest Sample" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Legacy" t="Include">
+              <e p="CelShader.shader" t="Include" />
+            </e>
+            <e p="SupercyanShader.shader" t="Include" />
+            <e p="SupercyanShaderLighting.cginc" t="Include" />
+          </e>
+        </e>
+        <e p="TGU Skybox Pack" t="Include">
+          <e p="Readme.txt" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="WizardBook.sln" t="IncludeFlat" />
+    </e>
+    <e p="C:\Users\Timur\AppData\Local\JetBrains\Rider2020.3\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Timur\AppData\Local\JetBrains\Rider2020.3\resharper-host\Local\Transient\Rider\v203\SolutionCaches\_WizardBook.-1284783385.00" t="ExcludeRecursive" />
+  </component>
+</project>

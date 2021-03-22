@@ -56,7 +56,7 @@ public class PageManeger : MonoBehaviour
         Page3.SetActive(true);
         AttackPers.text = "Атака: " + StatPers.Damage_Sword[(int)StatPers.NumberSworld].ToString();
         DeffencePers.text = "Защита: " + StatPers.Deffens.ToString();
-        HP_pers.text = "Здоровье: " + StatPers.HP_Gerl.ToString();
+        HP_pers.text = "Здоровье: " + StatPers.HP_Gerl.ToString(); 
         Weapon[(int)StatPers.NumberSworld].SetActive(true);
 
     }
@@ -73,7 +73,6 @@ public class PageManeger : MonoBehaviour
 
     public void Shop()
     {
-        
         Page1.SetActive(false);
         Page2.SetActive(false);
         Page3.SetActive(false);
@@ -83,7 +82,7 @@ public class PageManeger : MonoBehaviour
         BG_image.color = A_BG;
 
     }
-    public void Cost_Now_Item(int Cost)
+    /*public void Cost_Now_Item(int Cost)
     {
         Cost_now_Item = Cost;
     }
@@ -147,7 +146,7 @@ public class PageManeger : MonoBehaviour
         StatPers.SaveData();
         Window_Quip.SetActive(false);
 
-    }
+    }*/
     private void Update()
     {
         Gold.text = StatPers.Gold.ToString();
@@ -165,8 +164,6 @@ public class PageManeger : MonoBehaviour
         }
 
     }
-
-
     public void Enrgy_Plus()
     {
         StatPers.Now_Energy += 5;
