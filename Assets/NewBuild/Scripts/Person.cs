@@ -73,7 +73,7 @@ public class Person : MonoBehaviour
         }
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
-        DamagePers = HP_Person.Damage_Sword[(int)HP_Person.NumberSworld];   
+        DamagePers = HP_Person.Damage;   
         Deffence = HP_Person.Deffens;
         Deffence_Standart_Lvl = Deffence;
         if (HP_Person.Skills[0])
@@ -158,7 +158,6 @@ public class Person : MonoBehaviour
             {
                 Gold_W += ((Gold_W / 100) * (24 + HP_Person.LVL_Skill[11]));
                 HP_Person.Gold += Gold_W;
-                
             }
             else
             {
@@ -188,6 +187,18 @@ public class Person : MonoBehaviour
                 HP_Person.NextLVL();
             }
             RoundPanel.transform.DOMove(Lasttransform.position, 1f);
+            int chanse = Random.Range(0, 100);
+            if (chanse < 70)
+            {
+                for(int i =0; i< HP_Person.Ches.Length; i++)
+                {
+                    if (!HP_Person.Ches[i])
+                    {
+                        HP_Person.Ches[i] = true;
+                        break;
+                    }
+                }
+            }
             HP_Person.SaveData();
 
         }

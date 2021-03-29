@@ -18,8 +18,8 @@ MonoBehaviour:
   HP_Pig_Start: 200
   HP_Usakula_Start: 300
   Deffens: 15
-  Damage: 20
-  LVLPers: 1
+  Damage: 30
+  LVLPers: 5
   NextLVLXP: 150
   NowXP: 0
   LVLBooK: 1
@@ -27,14 +27,6 @@ MonoBehaviour:
   Now_BOOK_XP: 0
   PointBook: 0
   NumberSworld: 0
-  By_Sword: 0100000000
-  Damage_Sword:
-  - 20
-  - 30
-  - 40
-  - 50
-  - 60
-  LVl_Sword: 0100000001000000010000000100000001000000
   Word: "\uFEFF{\n  \"Word\": {\n    \"Rus\": {\n      \"1\": [\n        \"\u0413\u043B\u0430\u0437\",\n       
     \"\u041A\u0438\u0441\u0442\u044C \u0440\u0443\u043A\u0438\",\n        \"\u041D\u043E\u0433\u0430\",\n       
     \"\u0413\u043E\u043B\u043E\u0432\u0430\",\n        \"\u0420\u0443\u043A\u0430\",\n       
@@ -372,8 +364,9 @@ MonoBehaviour:
   Skills: 000000000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 1000
-  Rubin: 5
+  Gold: 23650
+  Rubin: 820
   Max_Energy: 15
   Now_Energy: 100
   _Tutorial: 0
+  Ches: 00000000

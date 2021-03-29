@@ -149,7 +149,7 @@ public class MenuLVLGIU : MonoBehaviour
             {
                 HP_PERS.LVLBooK += 1;
                 HP_PERS.PointBook += 1;
-                HP_PERS.NextLVL_BOOK_XP += 4;
+                HP_PERS.NextLVL_BOOK_XP += 20;
                 HP_PERS.Now_BOOK_XP = 0;
                 HP_PERS.Gold -= money;
                 LvlBook.text = HP_PERS.LVLBooK.ToString();

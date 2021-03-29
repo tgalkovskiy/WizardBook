@@ -9,21 +9,18 @@ public class HP : ScriptableObject
 {
     public class Data
     {
-       public float HP;
-       public float Attack;
-       public float Deff;
+       public int HP;
+       public int Attack;
+       public int Deff;
        public int LVL;
        public int NextLVL;
        public int XpNow;
-       public float Number_Sworld;
-       public int[] LVL_Sword;
-       public float[] Damage_Sword;
-       public bool[] By_Sword;
+       public int Number_Sworld;
        public int Lvl_Book;
        public float Next_LVL_BOOK;
        public float NowBOOK_XP;
        public float NextBOOk_Xp;
-       public float Point_Book;
+       public int Point_Book;
        public bool[] Skills_Deflated;
        public int[] LVL_Slills;
        public float Time;
@@ -33,32 +30,30 @@ public class HP : ScriptableObject
        public int Energy_Now;
        public string DateTime;
        public bool Tutorial;
+       public bool[] Ches;
 
     }
     //хп георя
-    public float HP_Gerl;
+    public int HP_Gerl;
     //хп врага
     public int NumberEnemy = 0;
     public float HP_Spawn_Start = 125f;
-    public float HP_Pig_Start = 200f;
-    public float HP_Usakula_Start = 300f;
+    public float HP_Pig_Start = 250f;
+    public float HP_Usakula_Start = 400f;
     //параметры игрока
-    public float Deffens = 15;
-    public float Damage = 50;
+    public int Deffens = 15;
+    public int Damage = 30;
     //лвл боевой
     public int LVLPers = 0;
     public int NextLVLXP = 150;
     public int NowXP = 0;
     //лвл книга
     public int LVLBooK = 1;
-    public float NextLVL_BOOK_XP = 1;
+    public float NextLVL_BOOK_XP = 20;
     public float Now_BOOK_XP = 0;
-    public float PointBook = 0;
+    public int PointBook = 0;
     //шмот игрока
-    public float NumberSworld;
-    public bool[] By_Sword = new bool[5] { true, false, false, false, false };
-    public float[] Damage_Sword = new float[5] { 20, 30, 40, 50, 60 };
-    public int[] LVl_Sword = new int[5] { 1, 1, 1, 1, 1 };
+    public int NumberSworld;
     //словарь
     public string Word;
     //описание скилов
@@ -91,6 +86,7 @@ public class HP : ScriptableObject
     public bool _Tutorial;
     //time
     public DateTime DateTime;
+    public bool[] Ches = new bool[4] {false,false,false,false};
 
     public void NextLVL()
     {
@@ -123,9 +119,6 @@ public class HP : ScriptableObject
         data.NextLVL = NextLVLXP;
         data.XpNow = NowXP;
         data.Number_Sworld = NumberSworld;
-        data.Damage_Sword = Damage_Sword;
-        data.LVL_Sword = LVl_Sword;
-        data.By_Sword = By_Sword;
         data.Lvl_Book = LVLBooK;
         data.Point_Book = PointBook;
         data.Next_LVL_BOOK = NextLVL_BOOK_XP;
@@ -138,6 +131,7 @@ public class HP : ScriptableObject
         data.Energy_Max = Max_Energy; 
         data.Energy_Now = Now_Energy;
         data.DateTime = DateTime.Now.ToString();
+        data.Ches = Ches;
         try
         {
             File.WriteAllText(Path, JsonUtility.ToJson(data));
@@ -166,9 +160,6 @@ public class HP : ScriptableObject
             NextLVLXP = data.NextLVL;
             NowXP = data.XpNow;
             NumberSworld = data.Number_Sworld;
-            Damage_Sword = data.Damage_Sword;
-            By_Sword = data.By_Sword;
-            LVl_Sword = data.LVL_Sword;
             LVLBooK = data.Lvl_Book;
             PointBook = data.Point_Book;
             NextLVL_BOOK_XP = data.Next_LVL_BOOK;
@@ -182,6 +173,7 @@ public class HP : ScriptableObject
             Now_Energy = data.Energy_Now;
             DateTime = DateTime.Parse(data.DateTime);
             _Tutorial = data.Tutorial;
+            Ches = data.Ches;
             Time_Time();
         }
         else
@@ -194,22 +186,20 @@ public class HP : ScriptableObject
             NextLVLXP = 150;
             NowXP = 0;
             NumberSworld = 0;
-            By_Sword = new bool[5] {true, false, false,false,false};
-            Damage_Sword = new float[5] { 20, 30, 40, 50, 60 };
-            LVl_Sword = new int[5] { 1, 1, 1, 1, 1 };
             LVLBooK = 1;
             PointBook = 0;
-            NextLVL_BOOK_XP = 1;
+            NextLVL_BOOK_XP = 20;
             Now_BOOK_XP = 0;
             Skills = new bool[12] { false, false, false, false, false, false, false, false, false, false, false, false };
             LVL_Skill = new int[12] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
             Time_Game = 15;
             Gold = 1000;
-            Rubin = 5;
+            Rubin = 100;
             Max_Energy = 15;
             Now_Energy = 100;
             DateTime = DateTime.Now;
             _Tutorial = true;
+            Ches = new bool[4]{ false, false, false, false };
         } 
         
 
@@ -226,4 +216,5 @@ public class HP : ScriptableObject
             Now_Energy += Time;
         }
     }
+
 }

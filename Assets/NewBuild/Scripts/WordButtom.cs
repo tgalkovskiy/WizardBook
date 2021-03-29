@@ -70,8 +70,8 @@ public class WordButtom : MonoBehaviour
                 StartCoroutine(ChangeWordCorrect(Buttoms));
                 //EventMeneger.GerlAttack1.Invoke();
                 //Timer = 15f;
-                CountCorrectWord += 1;
-                
+                //CountCorrectWord += 1;
+                 HP_PERS.Now_BOOK_XP += 1;
             }
             else
             {
@@ -80,15 +80,15 @@ public class WordButtom : MonoBehaviour
                 StartCoroutine(ChangeWordWrong(Buttoms));
                 //EventMeneger.EnemyAttack1.Invoke();
                 //Timer = 15f;
-                CountCorrectWord = 0;
+                //CountCorrectWord = 0;
             }
-            if(CountCorrectWord == 5)
-            {
-                HP_PERS.Now_BOOK_XP += 1;
-                //HP_PERS.PointBook += 1;
-                //Point_now_Battel += 1;
-                CountCorrectWord = 0;
-            }
+            //if(CountCorrectWord == 5)
+            //{
+               
+            //    //HP_PERS.PointBook += 1;
+            //    //Point_now_Battel += 1;
+            //    CountCorrectWord = 0;
+            //}
         }
     }
     /// <summary>

@@ -8,6 +8,7 @@ public class Transporent : MonoBehaviour
     private Text This_Text;
     private Image This_Image;
     private bool Text = false;
+    private bool Start = true;
     private void Awake()
     {
         if (this.GetComponent<Text>())
@@ -21,19 +22,23 @@ public class Transporent : MonoBehaviour
         }
         
     }
-
-    private void Start()
+    private void OnEnable()
     {
         if (Text)
         {
-            StartCoroutine(c_Blinking_Text(This_Text));
+                StartCoroutine(c_Blinking_Text(This_Text));
         }
         else
         {
-            StartCoroutine(c_Blinking_Image(This_Image));
+                StartCoroutine(c_Blinking_Image(This_Image));
         }
-        
     }
+    //private void Update()
+    //{
+        
+    //    Debug.Log(Start);
+    //}
+
     IEnumerator c_Blinking_Text(Text image)
     {
         Color c = image.color;
@@ -55,9 +60,9 @@ public class Transporent : MonoBehaviour
                 else
                     alpha = 1.0f;
             }
-
             yield return null;
         }
+        
     }
     IEnumerator c_Blinking_Image(Image image)
     {
@@ -80,9 +85,9 @@ public class Transporent : MonoBehaviour
                 else
                     alpha = 1.0f;
             }
-
             yield return null;
         }
+        
     }
 }
 

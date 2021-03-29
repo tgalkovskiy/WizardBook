@@ -54,10 +54,7 @@ public class PageManeger : MonoBehaviour
         A_BG.a = 0;
         BG_image.color = A_BG;
         Page3.SetActive(true);
-        AttackPers.text = "Атака: " + StatPers.Damage_Sword[(int)StatPers.NumberSworld].ToString();
-        DeffencePers.text = "Защита: " + StatPers.Deffens.ToString();
-        HP_pers.text = "Здоровье: " + StatPers.HP_Gerl.ToString(); 
-        Weapon[(int)StatPers.NumberSworld].SetActive(true);
+       
 
     }
     public void MainPage()
