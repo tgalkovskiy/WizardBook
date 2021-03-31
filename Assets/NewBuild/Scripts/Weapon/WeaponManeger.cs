@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class WeaponManeger : MonoBehaviour
 {
     [SerializeField] private GameObject Discription = default;
+    [SerializeField] private GameObject MAx_Lvl_Item = default;
+    [SerializeField] private GameObject No_money = default;
     [SerializeField] private Text Type_Item = default;
     [SerializeField] private Text Lvl_Item = default;
     [SerializeField] private Text Properti_Item = default;
@@ -72,7 +74,6 @@ public class WeaponManeger : MonoBehaviour
         //Cost
         Cost_NextLVL_Item.text = "Cost: " + Now_Item.Property_Item[6].ToString();
 
-
     }
     public void Equip_Item()
     {
@@ -80,6 +81,45 @@ public class WeaponManeger : MonoBehaviour
         HP.Damage = Now_Item.Property_Item[4];
         HP.SaveData();
         Discription.SetActive(false);
+    }
+
+    public void LVL_UP_Item()
+    {
+        if(Now_Item.Property_Item[6] <= HP.Gold)
+        {
+            if(Now_Item.Property_Item[3] < Now_Item.Property_Item[7])
+            {
+                Now_Item.Property_Item[3] += 1;
+                HP.Gold -= Now_Item.Property_Item[6];
+                if (Now_Item.Property_Item[2] ==0)
+                {
+                    Now_Item.Property_Item[4] += 2;
+                }
+                else if(Now_Item.Property_Item[2] == 1)
+                {
+                    Now_Item.Property_Item[4] += 3;
+                }
+                else if (Now_Item.Property_Item[2] == 2)
+                {
+                    Now_Item.Property_Item[4] += 4;
+                }
+                else if (Now_Item.Property_Item[2] == 3)
+                {
+                    Now_Item.Property_Item[4] += 5;
+                }
+                HP.SaveData();
+                Save_Item();
+                Discription.SetActive(false);
+            }
+            else
+            {
+                MAx_Lvl_Item.SetActive(true);
+            }
+        }
+        else
+        {
+            No_money.SetActive(true);
+        }
     }
 
     public void Save_Item()
@@ -136,6 +176,7 @@ public class WeaponManeger : MonoBehaviour
             Item_Data[0].Property_Item[4] = 30;
             Item_Data[0].Property_Item[5] = 0;
             Item_Data[0].Property_Item[6] = 100;
+            Item_Data[0].Property_Item[7] = 7;
             Refresh_Item();
             HP.NumberSworld = 0;
             HP.Damage = Item_Data[0].Property_Item[4];
@@ -199,7 +240,7 @@ public class WeaponManeger : MonoBehaviour
 
     public class Json_SerializeObject
     {
-        public int[] Property_Item = new int[7];
+        public int[] Property_Item = new int[8];
     }
     public class Save_Item_Class
     {

@@ -194,9 +194,9 @@ public class HP : ScriptableObject
             LVL_Skill = new int[12] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
             Time_Game = 15;
             Gold = 1000;
-            Rubin = 100;
+            Rubin = 5;
             Max_Energy = 15;
-            Now_Energy = 100;
+            Now_Energy = 50;
             DateTime = DateTime.Now;
             _Tutorial = true;
             Ches = new bool[4]{ false, false, false, false };

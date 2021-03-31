@@ -9,7 +9,7 @@ public class Add_Item : MonoBehaviour
     [SerializeField] private GameObject NoRubin = default;
     [SerializeField] private WeaponManeger WeaponManeger = default;
     [SerializeField] private HP HP;
-    private int[] Property = new int[7];
+    private int[] Property = new int[8];
     private int Chois;
     private void Awake()
     {
@@ -45,6 +45,7 @@ public class Add_Item : MonoBehaviour
                 Property[4] = Property_Item(Property[3], Property[2]);
             }
             Property[6] = Cost_item(Property[3], Property[2]);
+            Property[7] = Max_Lvl_Item(Property[3], Property[2]);
             WeaponManeger.Add_Item(Property);
             HP.Ches[Chois] = false;
             Chess[Chois].SetActive(false);
@@ -147,6 +148,27 @@ public class Add_Item : MonoBehaviour
         return Lvl_Item*50*Grad;
     }
 
+    private int Max_Lvl_Item(int Lvl_Item, int Grad)
+    {
+        int Max_lvl = 0;
+        if(Grad == 0)
+        {
+            Max_lvl = Lvl_Item + 5;
+        }
+        else if(Grad == 1)
+        {
+            Max_lvl = Lvl_Item + 7;
+        }
+        else if (Grad == 2)
+        {
+            Max_lvl = Lvl_Item + 9;
+        }
+        else if (Grad == 3)
+        {
+            Max_lvl = Lvl_Item + 11;
+        }
+        return Max_lvl;
+    }
     
     
 }

@@ -59,18 +59,22 @@ public class Person : MonoBehaviour
         GameState = true;
         HP_G = HP_Person.HP_Gerl;
         EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
+        Debug.Log(HP_Person.HP_Usakula_Start);
         if(HP_Person.NumberEnemy == 0)
         {
             HP_E = HP_Person.HP_Spawn_Start*HP_Person.LVLPers;
+            
         }
         else if(HP_Person.NumberEnemy == 1)
         {
             HP_E = HP_Person.HP_Pig_Start * HP_Person.LVLPers;
+
         }
         else if(HP_Person.NumberEnemy == 2)
         {
             HP_E = HP_Person.HP_Usakula_Start * HP_Person.LVLPers;
         }
+       
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
         DamagePers = HP_Person.Damage;   

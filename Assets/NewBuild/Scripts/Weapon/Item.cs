@@ -13,7 +13,8 @@ public class Item : MonoBehaviour, IPointerDownHandler
         "3 - Lvl_Item" + "\n" +
         "4 - Damage" + "\n" +
         "5 - Defence" + "\n" +
-        "6 - Start_Cost")] public int[] Property_Item;
+        "6 - Start_Cost" + "\n" +
+        "7 - maxLVL")] public int[] Property_Item;
     [SerializeField] private Image Icon_Item;
     [SerializeField] private Image Crad_Item;
     [SerializeField] private Sprite[] Sprite_Weapon;
