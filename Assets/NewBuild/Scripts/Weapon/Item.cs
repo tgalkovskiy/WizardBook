@@ -14,7 +14,8 @@ public class Item : MonoBehaviour, IPointerDownHandler
         "4 - Damage" + "\n" +
         "5 - Defence" + "\n" +
         "6 - Start_Cost" + "\n" +
-        "7 - maxLVL")] public int[] Property_Item;
+        "7 - maxLVL" + "\n" +
+        "8 - HP")] public int[] Property_Item;
     [SerializeField] private Image Icon_Item;
     [SerializeField] private Image Crad_Item;
     [SerializeField] private Sprite[] Sprite_Weapon;
@@ -38,8 +39,21 @@ public class Item : MonoBehaviour, IPointerDownHandler
         
         if (Property_Item[0] != 0)
         {
-            Crad_Item.sprite = Grad_Sprite[Property_Item[2]];
-            Icon_Item.sprite = Sprite_Weapon[Property_Item[1]];
+            if(Property_Item[0] == 1)
+            {
+                Crad_Item.sprite = Grad_Sprite[Property_Item[2]];
+                Icon_Item.sprite = Sprite_Weapon[Property_Item[1]];
+            }
+            if(Property_Item[0] == 2)
+            {
+                Crad_Item.sprite = Grad_Sprite[Property_Item[2]];
+                Icon_Item.sprite = Sprite_Armor[Property_Item[1]];
+            }
+            if(Property_Item[0] == 3)
+            {
+                Crad_Item.sprite = Grad_Sprite[Property_Item[2]];
+                Icon_Item.sprite = Sprite_Other[Property_Item[1]];
+            }
             this.gameObject.SetActive(true);
         }
         else

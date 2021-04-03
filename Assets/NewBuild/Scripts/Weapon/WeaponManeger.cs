@@ -59,26 +59,47 @@ public class WeaponManeger : MonoBehaviour
         //Lvl Item
         Lvl_Item.text = "Lvl: " + Now_Item.Property_Item[3].ToString();
         //Property Item
-        if(Now_Item.Property_Item[0] == 1)
+        string Property_W = "Attack: " + Now_Item.Property_Item[4];
+        string Property_A = "Deffence: +" + Now_Item.Property_Item[5];
+        string Property_O = "HP : +" + Now_Item.Property_Item[8];
+        string AllProperty = "";
+        if (Now_Item.Property_Item[4] != 0)
         {
-            Properti_Item.text = "Attack: " + Now_Item.Property_Item[4];
+            AllProperty += Property_W; 
         }
-        else if(Now_Item.Property_Item[0] == 2)
+        if (Now_Item.Property_Item[5] != 0)
         {
-            Properti_Item.text = "Deffence: " + Now_Item.Property_Item[5];
+            AllProperty += "\n" + Property_A;
         }
-        else
+        if (Now_Item.Property_Item[8] != 0)
         {
-            Properti_Item.text = "Other";
+            AllProperty += "\n" + Property_O;
         }
-        //Cost
+        Properti_Item.text = AllProperty;
         Cost_NextLVL_Item.text = "Cost: " + Now_Item.Property_Item[6].ToString();
 
     }
     public void Equip_Item()
     {
-        HP.NumberSworld = Now_Item.Property_Item[1];
-        HP.Damage = Now_Item.Property_Item[4];
+        if (Now_Item.Property_Item[0] == 1)
+        {
+           HP.NumberSworld = Now_Item.Property_Item[1];
+           HP.Property_W[0] = Now_Item.Property_Item[4];
+           HP.Property_W[1] = Now_Item.Property_Item[8];
+        }
+        if(Now_Item.Property_Item[0] == 2)
+        {
+            HP.Property_A[0] = Now_Item.Property_Item[5];
+            HP.Property_A[1] = Now_Item.Property_Item[8];
+        }
+        if(Now_Item.Property_Item[0] == 3)
+        {
+            HP.Property_O[0] = Now_Item.Property_Item[8];
+            HP.Property_O[1] = Now_Item.Property_Item[4];
+            HP.Property_O[2] = Now_Item.Property_Item[5];
+            
+        }
+       
         HP.SaveData();
         Discription.SetActive(false);
     }
@@ -91,21 +112,66 @@ public class WeaponManeger : MonoBehaviour
             {
                 Now_Item.Property_Item[3] += 1;
                 HP.Gold -= Now_Item.Property_Item[6];
+                Now_Item.Property_Item[6] = (int)((float)Now_Item.Property_Item[6]*1.3f);
                 if (Now_Item.Property_Item[2] ==0)
                 {
-                    Now_Item.Property_Item[4] += 2;
+                    if(Now_Item.Property_Item[4] != 0)
+                    {
+                        Now_Item.Property_Item[4] += 2;
+                    }
+                    if(Now_Item.Property_Item[5] != 0)
+                    {
+                        Now_Item.Property_Item[5] += 1;
+                    }
+                    if(Now_Item.Property_Item[8] != 0)
+                    {
+                        Now_Item.Property_Item[8] += 4;
+                    }
                 }
                 else if(Now_Item.Property_Item[2] == 1)
                 {
-                    Now_Item.Property_Item[4] += 3;
+                    if (Now_Item.Property_Item[4] != 0)
+                    {
+                        Now_Item.Property_Item[4] += 3;
+                    }
+                    if (Now_Item.Property_Item[5] != 0)
+                    {
+                        Now_Item.Property_Item[5] += 2;
+                    }
+                    if (Now_Item.Property_Item[8] != 0)
+                    {
+                        Now_Item.Property_Item[8] += 6;
+                    }
                 }
                 else if (Now_Item.Property_Item[2] == 2)
                 {
-                    Now_Item.Property_Item[4] += 4;
+                    if (Now_Item.Property_Item[4] != 0)
+                    {
+                        Now_Item.Property_Item[4] += 4;
+                    }
+                    if (Now_Item.Property_Item[5] != 0)
+                    {
+                        Now_Item.Property_Item[5] += 3;
+                    }
+                    if (Now_Item.Property_Item[8] != 0)
+                    {
+                        Now_Item.Property_Item[8] += 8;
+                    }
                 }
                 else if (Now_Item.Property_Item[2] == 3)
                 {
-                    Now_Item.Property_Item[4] += 5;
+                    if (Now_Item.Property_Item[4] != 0)
+                    {
+                        Now_Item.Property_Item[4] += 5;
+                    }
+                    if (Now_Item.Property_Item[5] != 0)
+                    {
+                        Now_Item.Property_Item[5] += 4;
+                    }
+                    if (Now_Item.Property_Item[8] != 0)
+                    {
+                        Now_Item.Property_Item[8] += 10;
+                    }
                 }
                 HP.SaveData();
                 Save_Item();
@@ -177,9 +243,10 @@ public class WeaponManeger : MonoBehaviour
             Item_Data[0].Property_Item[5] = 0;
             Item_Data[0].Property_Item[6] = 100;
             Item_Data[0].Property_Item[7] = 7;
+            Item_Data[0].Property_Item[8] = 0;
             Refresh_Item();
             HP.NumberSworld = 0;
-            HP.Damage = Item_Data[0].Property_Item[4];
+            HP.Property_W[0] = Item_Data[0].Property_Item[4];
             Save_Item();
             HP.SaveData();
 
@@ -240,7 +307,7 @@ public class WeaponManeger : MonoBehaviour
 
     public class Json_SerializeObject
     {
-        public int[] Property_Item = new int[8];
+        public int[] Property_Item = new int[9];
     }
     public class Save_Item_Class
     {

@@ -75,6 +75,11 @@ public class Fortuna : MonoBehaviour
         }
         else if(angle > 202.5f && angle <= 247.5f)
         {
+            FinalAngle = new Vector3(0, 0, 180);
+            //StatPers.NumberEnemy = 2;
+            //NumberScene = 3;
+            //Discription_Window = "Вас ожидает битва с Усакулой!";
+            //Debug.Log("Usakula");
             FinalAngle = new Vector3(0, 0, 225);
             NumberScene = 1;
             Energy = 5;

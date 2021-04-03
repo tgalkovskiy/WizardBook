@@ -1177,7 +1177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 827942422}
   Crad_Item: {fileID: 104080619}
   Sprite_Weapon:
@@ -1187,8 +1187,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -3417,8 +3429,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.2, y: 74.5}
-  m_SizeDelta: {x: 609.6614, y: 106.759094}
+  m_AnchoredPosition: {x: -3.4297, y: 10.2}
+  m_SizeDelta: {x: 828.82153, y: 235.4393}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &339927389
 MonoBehaviour:
@@ -5171,7 +5183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 954917517}
   Crad_Item: {fileID: 470593952}
   Sprite_Weapon:
@@ -5181,8 +5193,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -5331,7 +5355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1993645621}
   Crad_Item: {fileID: 472470255}
   Sprite_Weapon:
@@ -5341,8 +5365,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -5836,7 +5872,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 414789641}
   Crad_Item: {fileID: 504091706}
   Sprite_Weapon:
@@ -5846,8 +5882,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -5996,7 +6044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 921660958}
   Crad_Item: {fileID: 504661108}
   Sprite_Weapon:
@@ -6006,8 +6054,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -6886,13 +6946,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Lvl
 --- !u!222 &620218103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6917,7 +6977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.2, y: 174.4}
+  m_AnchoredPosition: {x: -87, y: 174.4}
   m_SizeDelta: {x: 609.6614, y: 93.1147}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &620218105
@@ -6982,7 +7042,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 42350739}
   Crad_Item: {fileID: 636486524}
   Sprite_Weapon:
@@ -6992,8 +7052,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -7463,7 +7535,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1344716145}
   Crad_Item: {fileID: 685033692}
   Sprite_Weapon:
@@ -7473,8 +7545,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -7966,7 +8050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 834465417}
   Crad_Item: {fileID: 747019233}
   Sprite_Weapon:
@@ -7976,8 +8060,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -8524,7 +8620,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1463132924}
   Crad_Item: {fileID: 792069291}
   Sprite_Weapon:
@@ -8534,8 +8630,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -9969,7 +10077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 127641434}
   Crad_Item: {fileID: 924440089}
   Sprite_Weapon:
@@ -9979,8 +10087,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -11053,7 +11173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1157298897}
   Crad_Item: {fileID: 1021414654}
   Sprite_Weapon:
@@ -11063,8 +11183,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -14187,7 +14319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 747697000}
   Crad_Item: {fileID: 1398096407}
   Sprite_Weapon:
@@ -14197,8 +14329,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -14659,7 +14803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1205886707}
   Crad_Item: {fileID: 1413886334}
   Sprite_Weapon:
@@ -14669,8 +14813,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -15003,7 +15159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 866999021}
   Crad_Item: {fileID: 1422975692}
   Sprite_Weapon:
@@ -15013,8 +15169,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -15435,7 +15603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 98269047}
   Crad_Item: {fileID: 1459369538}
   Sprite_Weapon:
@@ -15445,8 +15613,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -15962,7 +16142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 641508218}
   Crad_Item: {fileID: 1488168243}
   Sprite_Weapon:
@@ -15972,8 +16152,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -16213,7 +16405,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1705083447}
   Crad_Item: {fileID: 1501008218}
   Sprite_Weapon:
@@ -16223,8 +16415,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -17716,7 +17920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 14.2, y: -38.701}
+  m_AnchoredPosition: {x: 205, y: 173}
   m_SizeDelta: {x: 609.6614, y: 119.6418}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1622548747
@@ -17745,13 +17949,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 60
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Cost
 --- !u!222 &1622548748
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19293,7 +19497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 1914518539}
   Crad_Item: {fileID: 1809166589}
   Sprite_Weapon:
@@ -19303,8 +19507,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -20300,7 +20516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 2059152139}
   Crad_Item: {fileID: 1911859895}
   Sprite_Weapon:
@@ -20310,8 +20526,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -21766,7 +21994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Property_Item: 0000000000000000000000000000000000000000000000000000000000000000
+  Property_Item: 000000000000000000000000000000000000000000000000000000000000000000000000
   Icon_Item: {fileID: 247354443}
   Crad_Item: {fileID: 2033893986}
   Sprite_Weapon:
@@ -21776,8 +22004,20 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d481ec2bf5dcc3e419d0d2119569d56f, type: 3}
   - {fileID: 21300000, guid: 1ecae526206494f478ff52685eb951bc, type: 3}
   - {fileID: 21300000, guid: 853d3ae5082e4284ab79931f4f4098b3, type: 3}
-  Sprite_Armor: []
-  Sprite_Other: []
+  Sprite_Armor:
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  - {fileID: 21300000, guid: d141bdf40f2b0e445bc089feb7394ff4, type: 3}
+  Sprite_Other:
+  - {fileID: 21300000, guid: 4aff679c5efa06243aaf204f4b7813ac, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: d9c08979565eca94d9293d78abe2c1d3, type: 3}
+  - {fileID: 21300000, guid: efeee5571dc2c1d409a168549eab1b61, type: 3}
+  - {fileID: 21300000, guid: b490aad58b3d89e4ebbc46c273060e55, type: 3}
+  - {fileID: 21300000, guid: e97f1b71cd35962408cd06c0a5234593, type: 3}
   Grad_Sprite:
   - {fileID: 21300000, guid: bf7f06b59c6f8e343ae9f461632f28a5, type: 3}
   - {fileID: 21300000, guid: 41f357d20bf8a95459d8b076c7aa149b, type: 3}
@@ -40524,6 +40764,7 @@ MonoBehaviour:
   NoRubin: {fileID: 2080812985}
   WeaponManeger: {fileID: 4372588593681009105}
   HP: {fileID: 11400000, guid: 78a55203b31e72a4cabf5d39ec96ca3f, type: 2}
+  Property_War: 0
 --- !u!1 &4372588594546354053
 GameObject:
   m_ObjectHideFlags: 0

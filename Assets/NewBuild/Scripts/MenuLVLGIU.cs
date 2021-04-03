@@ -124,11 +124,11 @@ public class MenuLVLGIU : MonoBehaviour
         gameObject.SetActive(true);
         if (HP_PERS.LVLBooK == 1)
         {
-            Cost_Book.text = "Цена: "+ 600 + " монет";
+            Cost_Book.text = "Цена: "+ 1000 + " монет";
         }
         else
         {
-            Cost_Book.text = "Цена: " + ((HP_PERS.LVLBooK * 1000) + 500).ToString() +" монет";
+            Cost_Book.text = "Цена: " + ((HP_PERS.LVLBooK * 1000) + 1000).ToString() +" монет";
         }
         
     }
@@ -137,18 +137,18 @@ public class MenuLVLGIU : MonoBehaviour
         int money;
         if (HP_PERS.LVLBooK == 1)
         {
-            money = 600;
+            money = 1000;
         }
         else
         {
-            money = (HP_PERS.LVLBooK * 1000) + 500;
+            money = (HP_PERS.LVLBooK * 1000) + 1000;
         }
         if (money <= HP_PERS.Gold)
         {
             if(HP_PERS.Now_BOOK_XP >= HP_PERS.NextLVL_BOOK_XP)
             {
                 HP_PERS.LVLBooK += 1;
-                HP_PERS.PointBook += 1;
+                HP_PERS.PointBook += (int)HP_PERS.LVLBooK-1;
                 HP_PERS.NextLVL_BOOK_XP *=1.8f;
                 HP_PERS.Now_BOOK_XP = 0;
                 HP_PERS.Gold -= money;

@@ -10,8 +10,9 @@ public class HP : ScriptableObject
     public class Data
     {
        public int HP;
-       public int Attack;
-       public int Deff;
+       public int[] Property_W;
+       public int[] Property_A;
+       public int[] Property_O;
        public int LVL;
        public int NextLVL;
        public int XpNow;
@@ -41,15 +42,17 @@ public class HP : ScriptableObject
     public float HP_Pig_Start = 250f;
     public float HP_Usakula_Start = 400f;
     //параметры игрока
-    public int Deffens = 15;
-    public int Damage = 30;
+    public int[] Property_W = new int[3] { 0, 0, 0 };
+    public int[] Property_A = new int[3] { 0, 0, 0 };
+    public int[] Property_O = new int[3] { 0, 0, 0 };
+    
     //лвл боевой
     public int LVLPers = 0;
     public int NextLVLXP = 150;
     public int NowXP = 0;
     //лвл книга
     public int LVLBooK = 1;
-    public float NextLVL_BOOK_XP = 20;
+    public float NextLVL_BOOK_XP = 40;
     public float Now_BOOK_XP = 0;
     public int PointBook = 0;
     //шмот игрока
@@ -96,7 +99,6 @@ public class HP : ScriptableObject
             LVLPers += 1;
             NowXP = 0;
             HP_Gerl += (HP_Gerl / 100) * 15;
-            Deffens += 2;
             Max_Energy += 5;
         }
         //if (Now_BOOK_XP >= NextLVL_BOOK_XP)
@@ -113,8 +115,9 @@ public class HP : ScriptableObject
         string Path = System.IO.Path.Combine(Application.persistentDataPath, "SaveBOOK.Json");
         Data data = new Data();
         data.HP = HP_Gerl;
-        data.Attack = Damage;
-        data.Deff = Deffens;
+        data.Property_W = Property_W;
+        data.Property_A = Property_A;
+        data.Property_O = Property_O;
         data.LVL = LVLPers;
         data.NextLVL = NextLVLXP;
         data.XpNow = NowXP;
@@ -154,8 +157,9 @@ public class HP : ScriptableObject
             Data data = new Data();
             data = JsonUtility.FromJson<Data>(File.ReadAllText(Path));
             HP_Gerl = data.HP;
-            Damage = data.Attack;
-            Deffens = data.Deff;
+            Property_W = data.Property_W;
+            Property_A = data.Property_A;
+            Property_O = data.Property_O;
             LVLPers = data.LVL;
             NextLVLXP = data.NextLVL;
             NowXP = data.XpNow;
@@ -180,15 +184,16 @@ public class HP : ScriptableObject
         {
             Debug.Log("No Save");
             HP_Gerl = 200;
-            Damage = 20;
-            Deffens = 15;
+            Property_W = new int[3] { 30, 0, 0 };
+            Property_A = new int[3] { 0, 0, 0 };
+            Property_O = new int[3] { 0, 0, 0 };
             LVLPers = 1;
             NextLVLXP = 150;
             NowXP = 0;
             NumberSworld = 0;
             LVLBooK = 1;
             PointBook = 0;
-            NextLVL_BOOK_XP = 20;
+            NextLVL_BOOK_XP = 40;
             Now_BOOK_XP = 0;
             Skills = new bool[12] { false, false, false, false, false, false, false, false, false, false, false, false };
             LVL_Skill = new int[12] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };

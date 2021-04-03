@@ -27,7 +27,7 @@ public class Person : MonoBehaviour
     [SerializeField] public float HP_G = 1;
     [HideInInspector]public float HP_E;
     [HideInInspector]public float DamagePers;
-    [HideInInspector] public float DamgeEnemy;
+    [HideInInspector]public float DamgeEnemy;
     [HideInInspector]static public bool GameState = true;
     [HideInInspector] public float Deffence;
     [HideInInspector] public float Deffence_Standart_Lvl;
@@ -57,28 +57,28 @@ public class Person : MonoBehaviour
     {
         HP_Person.LoadData();
         GameState = true;
-        HP_G = HP_Person.HP_Gerl;
+        HP_G = HP_Person.HP_Gerl + HP_Person.Property_W[1]+ HP_Person.Property_A[1]+HP_Person.Property_O[0];
         EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
-        Debug.Log(HP_Person.HP_Usakula_Start);
         if(HP_Person.NumberEnemy == 0)
         {
             HP_E = HP_Person.HP_Spawn_Start*HP_Person.LVLPers;
-            
+            DamgeEnemy =  HP_Person.LVLPers* Random.Range(30, 50);
         }
         else if(HP_Person.NumberEnemy == 1)
         {
             HP_E = HP_Person.HP_Pig_Start * HP_Person.LVLPers;
-
+            DamgeEnemy = HP_Person.LVLPers * Random.Range(60, 90);
         }
         else if(HP_Person.NumberEnemy == 2)
         {
             HP_E = HP_Person.HP_Usakula_Start * HP_Person.LVLPers;
+            DamgeEnemy = HP_Person.LVLPers * Random.Range(100, 130);
         }
        
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
-        DamagePers = HP_Person.Damage;   
-        Deffence = HP_Person.Deffens;
+        DamagePers = HP_Person.Property_W[0] + HP_Person.Property_O[1];   
+        Deffence = HP_Person.Property_A[0] + HP_Person.Property_O[2];
         Deffence_Standart_Lvl = Deffence;
         if (HP_Person.Skills[0])
         {
@@ -91,9 +91,9 @@ public class Person : MonoBehaviour
     private void Update()
     {
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + ((int)HP_Person.HP_Gerl).ToString();
+        HP_Gerl_Text.text = (HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
         HP_Enemy.value = HP_E;
-        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + ((int)HP_Enemy.maxValue).ToString();
+        HP_Enemy_Text.text = (HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
         if (GameState)
         {
           EndRound();
@@ -105,16 +105,16 @@ public class Person : MonoBehaviour
         GerlAnimator[0].SetTrigger("Attack");
         EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Damage");
         HP_E -= DamagePers;
-        Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
+        Bamd_text_Eny.GetComponent<TextMesh>().text = (DamagePers).ToString();
         Band.SetTrigger("Eny");
     }
     public void AttackEny()
     {
         EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
-        DamgeEnemy = HP_Person.LVLPers * Random.Range(20, 50);
-        HP_G -=(DamgeEnemy -(DamgeEnemy / 100.0f)*Deffence);
-        Band_Text_Pers.GetComponent<TextMesh>().text = ((int)(DamgeEnemy - (DamgeEnemy / 100.0f) * Deffence)).ToString();
+        Debug.Log(DamgeEnemy);
+        HP_G -=DamgeEnemy-Deffence;
+        Band_Text_Pers.GetComponent<TextMesh>().text = (DamgeEnemy - Deffence).ToString();
         Band.SetTrigger("Pers");
     }
     public void EndRound()
