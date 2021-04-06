@@ -58,23 +58,9 @@ public class Person : MonoBehaviour
         HP_Person.LoadData();
         GameState = true;
         HP_G = HP_Person.HP_Gerl + HP_Person.Property_W[1]+ HP_Person.Property_A[1]+HP_Person.Property_O[0];
+        HP_E = HP_Person.HP_Enemy;
+        DamgeEnemy = HP_Person.Damage;
         EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
-        if(HP_Person.NumberEnemy == 0)
-        {
-            HP_E = HP_Person.HP_Spawn_Start*HP_Person.LVLPers;
-            DamgeEnemy =  HP_Person.LVLPers* Random.Range(30, 50);
-        }
-        else if(HP_Person.NumberEnemy == 1)
-        {
-            HP_E = HP_Person.HP_Pig_Start * HP_Person.LVLPers;
-            DamgeEnemy = HP_Person.LVLPers * Random.Range(60, 90);
-        }
-        else if(HP_Person.NumberEnemy == 2)
-        {
-            HP_E = HP_Person.HP_Usakula_Start * HP_Person.LVLPers;
-            DamgeEnemy = HP_Person.LVLPers * Random.Range(100, 130);
-        }
-       
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
         DamagePers = HP_Person.Property_W[0] + HP_Person.Property_O[1];   
@@ -122,7 +108,7 @@ public class Person : MonoBehaviour
         if (HP_G <= 0)
         {
             GerlAnimator[0].SetTrigger("Die");
-            int Gold_Lose = HP_Person.LVLPers*Random.Range(10,30);
+            int Gold_Lose = HP_Person.Gold_enemy/10;
             if (HP_Person.Skills[11])
             {
                 Gold_Lose += ((Gold_Lose / 100) * (24 + HP_Person.LVL_Skill[11]));
@@ -138,7 +124,7 @@ public class Person : MonoBehaviour
             Rubin.text = Rubin_Lose.ToString();
             //HP_Person.PointBook += WordButtom.Point_now_Battel;
             //Point.text = WordButtom.Point_now_Battel.ToString();
-            int EXP_lose = HP_Person.LVLPers*Random.Range(10,20);
+            int EXP_lose = HP_Person.Exp_enemy/10;
             HP_Person.NowXP += EXP_lose;
             Exp.text = EXP_lose.ToString();
             //HP_Person.NowXP += 50;
@@ -157,7 +143,7 @@ public class Person : MonoBehaviour
         if (HP_E <= 0)
         {
             EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Die");
-            int Gold_W = HP_Person.LVLPers*Random.Range(80,100);
+            int Gold_W = HP_Person.Gold_enemy;
             if (HP_Person.Skills[11])
             {
                 Gold_W += ((Gold_W / 100) * (24 + HP_Person.LVL_Skill[11]));
@@ -168,17 +154,12 @@ public class Person : MonoBehaviour
                 HP_Person.Gold += Gold_W;
             }
             Gold.text = Gold_W.ToString();
-            int Rubin_W = 0;
-            int Shois = Random.Range(0, 100);
-            if (Shois <= 20)
-            {
-                Rubin_W = 1;
-            }
+            int Rubin_W = HP_Person.Rubin_Enemy;
             HP_Person.Rubin += Rubin_W;
             Rubin.text = Rubin_W.ToString();
             //HP_Person.PointBook += WordButtom.Point_now_Battel;
             //Point.text = WordButtom.Point_now_Battel.ToString();
-            int EXP_W = HP_Person.LVLPers*Random.Range(80,110);
+            int EXP_W = HP_Person.Exp_enemy;
             HP_Person.NowXP += EXP_W;
             Exp.text = EXP_W.ToString();
             //HP_Person.NowXP += 250;
@@ -191,8 +172,7 @@ public class Person : MonoBehaviour
                 HP_Person.NextLVL();
             }
             RoundPanel.transform.DOMove(Lasttransform.position, 1f);
-            int chanse = Random.Range(0, 100);
-            if (chanse < 70)
+            if (HP_Person.Chess_Drop)
             {
                 for(int i =0; i< HP_Person.Ches.Length; i++)
                 {

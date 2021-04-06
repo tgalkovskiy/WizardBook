@@ -50,9 +50,9 @@ public class PageManeger : MonoBehaviour
         Page2.SetActive(false);
         Page1.SetActive(false);
         Page4.SetActive(false);
-        var A_BG = BG_image.color;
-        A_BG.a = 0;
-        BG_image.color = A_BG;
+        //var A_BG = BG_image.color;
+        //A_BG.a = 0;
+        //BG_image.color = A_BG;
         Page3.SetActive(true);
        
 

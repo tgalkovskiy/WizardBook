@@ -13,14 +13,20 @@ MonoBehaviour:
   m_Name: HP
   m_EditorClassIdentifier: 
   HP_Gerl: 200
-  NumberEnemy: 2
+  NumberEnemy: 0
   HP_Spawn_Start: 150
   HP_Pig_Start: 250
   HP_Usakula_Start: 400
   Property_W: 1e0000000000000000000000
+  Weapon_Grad: 0
+  Weapon_Icon: 0
   Property_A: 000000000000000000000000
-  Property_O: 000000000000000000000000
-  LVLPers: 15
+  Armor_Grad: -1
+  Armor_Icon: -1
+  Property_O: 020000000000000000000000
+  Other_Grad: 1
+  Other_Icon: 4
+  LVLPers: 1
   NextLVLXP: 150
   NowXP: 0
   LVLBooK: 1
@@ -1732,8 +1738,8 @@ MonoBehaviour:
   Skills: 000000000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 69826
-  Rubin: 4965
+  Gold: 1000
+  Rubin: 5000
   Max_Energy: 15
   Now_Energy: 50
   _Tutorial: 0

@@ -16,12 +16,12 @@ public class Item : MonoBehaviour, IPointerDownHandler
         "6 - Start_Cost" + "\n" +
         "7 - maxLVL" + "\n" +
         "8 - HP")] public int[] Property_Item;
-    [SerializeField] private Image Icon_Item;
-    [SerializeField] private Image Crad_Item;
-    [SerializeField] private Sprite[] Sprite_Weapon;
-    [SerializeField] private Sprite[] Sprite_Armor;
-    [SerializeField] private Sprite[] Sprite_Other;
-    [SerializeField] private Sprite[] Grad_Sprite;
+    [SerializeField] public Image Icon_Item;
+    [SerializeField] public Image Crad_Item;
+    [SerializeField] public Sprite[] Sprite_Weapon;
+    [SerializeField] public Sprite[] Sprite_Armor;
+    [SerializeField] public Sprite[] Sprite_Other;
+    [SerializeField] public Sprite[] Grad_Sprite;
 
     
     private void Start()

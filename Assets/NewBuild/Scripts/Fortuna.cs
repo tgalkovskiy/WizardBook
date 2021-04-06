@@ -53,9 +53,11 @@ public class Fortuna : MonoBehaviour
         else if(angle >62.5f && angle <= 112.5f)
         {
             FinalAngle = new Vector3(0, 0, 90);
-            Gold -= StatPers.LVLPers* Random.Range(50, 100);
-            Discription_Window = "К сожалению неудача, вы торопились и потеряли золото :("+ " Золото: " +Gold; 
-            NumberScene = 1;
+            //Gold -= StatPers.LVLPers* Random.Range(50, 100);
+            //Discription_Window = "К сожалению неудача, вы торопились и потеряли золото :("+ " Золото: " +Gold; 
+            Discription_Window = "Вас ожидает битва с Элементалем!";
+            NumberScene = 3;
+            StatPers.NumberEnemy = 3;
         }
         else if(angle > 112.5f && angle <= 157.5f)
         {
@@ -89,9 +91,9 @@ public class Fortuna : MonoBehaviour
         else if(angle > 247.5f && angle <= 292.5f)
         {
             FinalAngle = new Vector3(0, 0, 270);
-            StatPers.NumberEnemy = 0;
+            StatPers.NumberEnemy = 4;
             NumberScene = 3;
-            Discription_Window = "Вас ожидает битва с Омоникулом!";
+            Discription_Window = "Вас ожидает битва с Древом!";
             Debug.Log("Spawn");
         }
         else if(angle > 292.5f && angle <= 337.5f)
