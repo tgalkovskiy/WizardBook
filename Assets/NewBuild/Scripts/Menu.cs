@@ -28,7 +28,7 @@ public class Menu : MonoBehaviour
     }
     public void StartGame()
     {
-        if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && HP.Now_Energy>=5)
+        if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && HP.Now_Energy>=3)
         {
             HP.Now_Energy -= 3;
             HP.SaveData();

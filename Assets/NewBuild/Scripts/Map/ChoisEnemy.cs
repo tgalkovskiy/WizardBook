@@ -3,17 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.SceneManagement;
 
 public class ChoisEnemy : MonoBehaviour
 {
-    [SerializeField]private Camera camera = default;
+    [SerializeField] private Camera camera = default;
     [SerializeField] private Transform posCam = default;
-    [SerializeField]private GameObject Player = default;
-    [SerializeField]private LoadPanel Load = default;
+    [SerializeField] private GameObject Player = default;
+    [SerializeField] private LoadPanel Load = default;
     [SerializeField] private GameObject LoadGameObj = default;
-    [SerializeField]private GameObject Discription = default;
-    [SerializeField]private Text Text_Name = default;
-    [SerializeField] private HP HP = default; 
+    [SerializeField] private GameObject Discription = default;
+    [SerializeField] private Text Text_Name = default;
+    [SerializeField] private HP HP = default;
     RaycastHit hit;
     Vector3 StartPosCa;
     Quaternion StartQuatCam;
@@ -97,7 +98,7 @@ public class ChoisEnemy : MonoBehaviour
         this.transform.DORotateQuaternion(StartQuatCam, 2);
         yield return new WaitForSeconds(2);
         Touch = false;
-    } 
+    }
     public void Loadgame()
     {
         Load.NumberScene = 3;
@@ -107,6 +108,12 @@ public class ChoisEnemy : MonoBehaviour
     {
 
         StartCoroutine(Sleep(gameObject));
-        
+
     }
+
+    public void Menu()
+    {
+        SceneManager.LoadScene(1);
+    }
+    
 }
