@@ -11,7 +11,7 @@ public class WordButtom : MonoBehaviour
     [SerializeField] private Button[] WordButtomMas = default;
     [SerializeField] private Text NowWord = default;
     [SerializeField] private Text TimerText = default;
-    private int CountCorrectWord = 0;
+    private bool Touch = false;
     public int Moves = 0;
     //[HideInInspector] static public string CorrectWord;
     private float Timer = 15f;
@@ -62,33 +62,38 @@ public class WordButtom : MonoBehaviour
         //получение стринги в кнопке
         //string Word = WordButtomMas[Buttoms].GetComponentInChildren<Text>().text;
         //запуск ивентов
-        if (Person.GameState)
+        if (!Touch)
         {
-            if (Buttoms == WordLoad.CorrectWord)
+            Touch = true;
+            if (Person.GameState)
             {
-                WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
-                StartCoroutine(ChangeWordCorrect(Buttoms));
-                //EventMeneger.GerlAttack1.Invoke();
-                //Timer = 15f;
-                //CountCorrectWord += 1;
-                 HP_PERS.Now_BOOK_XP += 1;
+                if (Buttoms == WordLoad.CorrectWord)
+                {
+                    WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
+                    StartCoroutine(ChangeWordCorrect(Buttoms));
+                    //EventMeneger.GerlAttack1.Invoke();
+                    //Timer = 15f;
+                    //CountCorrectWord += 1;
+                    HP_PERS.Now_BOOK_XP += 1;
+                }
+                else
+                {
+                    WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
+                    WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
+                    StartCoroutine(ChangeWordWrong(Buttoms));
+                    //EventMeneger.EnemyAttack1.Invoke();
+                    //Timer = 15f;
+                    //CountCorrectWord = 0;
+                }
+                //if(CountCorrectWord == 5)
+                //{
+
+                //    //HP_PERS.PointBook += 1;
+                //    //Point_now_Battel += 1;
+                //    CountCorrectWord = 0;
+                //}
+                
             }
-            else
-            {
-                WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
-                WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
-                StartCoroutine(ChangeWordWrong(Buttoms));
-                //EventMeneger.EnemyAttack1.Invoke();
-                //Timer = 15f;
-                //CountCorrectWord = 0;
-            }
-            //if(CountCorrectWord == 5)
-            //{
-               
-            //    //HP_PERS.PointBook += 1;
-            //    //Point_now_Battel += 1;
-            //    CountCorrectWord = 0;
-            //}
         }
     }
     /// <summary>
@@ -133,6 +138,7 @@ public class WordButtom : MonoBehaviour
         WordButtomMas[Number].GetComponent<Image>().color = Color.white;
         EventMeneger.GerlAttack1.Invoke();
         Timer = Deff_Timer;
+        Touch = false;
     }
     public IEnumerator ChangeWordWrong(int Number)
     {
@@ -142,6 +148,7 @@ public class WordButtom : MonoBehaviour
         WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.white;
         EventMeneger.EnemyAttack1.Invoke();
         Timer = Deff_Timer;
+        Touch = false;
     }
     public void MovesCount()
     {

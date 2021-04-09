@@ -15,16 +15,18 @@ public class ChoisEnemy : MonoBehaviour
     [SerializeField] private GameObject Discription = default;
     [SerializeField] private Text Text_Name = default;
     [SerializeField] private HP HP = default;
+    [SerializeField] private Map MapSetting = default;
+    [SerializeField] private GameObject Battle = default;
     RaycastHit hit;
     Vector3 StartPosCa;
     Quaternion StartQuatCam;
-    private bool Touch = false;
+    [HideInInspector]public bool Touch = false;
     private void Start()
     {
         StartPosCa = this.transform.position;
         StartQuatCam = this.transform.rotation;
+        MapSetting.LoadData();
     }
-
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !Touch)
@@ -32,24 +34,31 @@ public class ChoisEnemy : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(Input.mousePosition);
             if (Physics.Raycast(ray, out hit))
             {
-                Touch = true;
-                //Debug.Log(hit.collider.name);
                 if (hit.collider.gameObject.GetComponent<StatEnemy>() != null)
                 {
                     StatEnemy statEnemy = hit.collider.gameObject.GetComponent<StatEnemy>();
-                    Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
-                    HP.NumberEnemy = statEnemy.NumberEnemy;
-                    HP.HP_Enemy = statEnemy.HP;
-                    HP.Damage = statEnemy.Damage;
-                    HP.Gold_enemy = statEnemy.Gold;
-                    HP.Exp_enemy = statEnemy.Exp;
-                    HP.Rubin_Enemy = statEnemy.Rubin;
-                    HP.Chess_Drop = statEnemy.Chess;
+                    if (statEnemy.PosGame <= MapSetting.Number_Max)
+                    {
+                      Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
+                      Battle.SetActive(true);
+                      HP.NumberEnemy = statEnemy.NumberEnemy;
+                      HP.HP_Enemy = statEnemy.HP;
+                      HP.Damage = statEnemy.Damage;
+                      HP.Gold_enemy = statEnemy.Gold;
+                      HP.Exp_enemy = statEnemy.Exp;
+                      HP.Rubin_Enemy = statEnemy.Rubin;
+                      HP.Chess_Drop = statEnemy.Chess;
+                      MapSetting.Number_now = statEnemy.PosGame;
+                      //MapSetting.Number += 1;
+                    }
+                    else
+                    {
+                        Text_Name.text = "Вы должны прежде победить других врагов!";
+                        Battle.SetActive(false);
+                    }
                     Player.transform.position = statEnemy.PosPlayer.position;
                     Player.transform.LookAt(hit.collider.gameObject.transform.position);
                     StartCoroutine(DiscriptionE());
-                    //this.transform.DOMove(hit.collider.transform.position,2);
-
                 }
             }
         }
@@ -59,28 +68,36 @@ public class ChoisEnemy : MonoBehaviour
             Ray ray = camera.ScreenPointToRay(touch.position);
             if (Physics.Raycast(ray, out hit))
             {
-                Touch = true;
-                //Debug.Log(hit.collider.name);
                 if (hit.collider.gameObject.GetComponent<StatEnemy>() != null)
                 {
                     StatEnemy statEnemy = hit.collider.gameObject.GetComponent<StatEnemy>();
-                    Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
-                    Discription.SetActive(true);
-                    HP.NumberEnemy = statEnemy.NumberEnemy;
-                    HP.HP_Enemy = statEnemy.HP;
-                    HP.Damage = statEnemy.Damage;
-                    HP.Gold_enemy = statEnemy.Gold;
-                    HP.Exp_enemy = statEnemy.Exp;
-                    HP.Rubin_Enemy = statEnemy.Rubin;
-                    HP.Chess_Drop = statEnemy.Chess;
+                    if (statEnemy.PosGame <= MapSetting.Number_Max)
+                    {
+                        Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
+                        Battle.SetActive(true);
+                        HP.NumberEnemy = statEnemy.NumberEnemy;
+                        HP.HP_Enemy = statEnemy.HP;
+                        HP.Damage = statEnemy.Damage;
+                        HP.Gold_enemy = statEnemy.Gold;
+                        HP.Exp_enemy = statEnemy.Exp;
+                        HP.Rubin_Enemy = statEnemy.Rubin;
+                        HP.Chess_Drop = statEnemy.Chess;
+                        MapSetting.Number_now = statEnemy.PosGame;
+                      
+                        //MapSetting.Number += 1;
+                    }
+                    else
+                    {
+                        Text_Name.text = "Вы должны прежде победить других врагов!";
+                        Battle.SetActive(false);
+                    }
                     Player.transform.position = statEnemy.PosPlayer.position;
                     Player.transform.LookAt(hit.collider.gameObject.transform.position);
                     StartCoroutine(DiscriptionE());
-                    //this.transform.DOMove(hit.collider.transform.position, 2);
-
                 }
             }
         }
+        Debug.Log(Touch);
     }
 
 
@@ -90,6 +107,7 @@ public class ChoisEnemy : MonoBehaviour
         this.transform.DORotateQuaternion(Player.transform.rotation, 2);
         yield return new WaitForSeconds(2.5f);
         Discription.SetActive(true);
+        Touch = true;
     }
     IEnumerator Sleep(GameObject gameObject)
     {
@@ -106,9 +124,7 @@ public class ChoisEnemy : MonoBehaviour
     }
     public void Back(GameObject gameObject)
     {
-
         StartCoroutine(Sleep(gameObject));
-
     }
 
     public void Menu()

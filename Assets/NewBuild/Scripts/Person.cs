@@ -16,10 +16,12 @@ public class Person : MonoBehaviour
     [SerializeField] private Transform Lasttransform = default;
     //подтягимваються от сюда сейвы и туда же пишутся
     [SerializeField] private HP HP_Person = default;
+
+    [SerializeField] private Map Map_Setting = default;
     //Массивы аниматоров для выбора боссса и игрока
     public Animator[] GerlAnimator;
-    public Animator[] EnyAnimator;
-
+    //public Animator[] EnyAnimator;
+    
     [SerializeField] private Slider HP_Gerl = default;
     [SerializeField] private Text HP_Gerl_Text = default;
     [SerializeField] private Slider HP_Enemy = default;
@@ -43,6 +45,9 @@ public class Person : MonoBehaviour
     [SerializeField] private Text Exp;
     [SerializeField] private Text EndRaund;
     [SerializeField] private Text NextLevel;
+    
+    private GameObject Enemy;
+    private Animator Animator_Animy;
     private void OnEnable()
     {
         EventMeneger.GerlAttack1 += AttackGerl;
@@ -60,7 +65,9 @@ public class Person : MonoBehaviour
         HP_G = HP_Person.HP_Gerl + HP_Person.Property_W[1]+ HP_Person.Property_A[1]+HP_Person.Property_O[0];
         HP_E = HP_Person.HP_Enemy;
         DamgeEnemy = HP_Person.Damage;
-        EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
+        Enemy= Instantiate(EnemyGameObj[HP_Person.NumberEnemy]);
+        Animator_Animy = Enemy.GetComponent<Animator>();
+        //EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
         DamagePers = HP_Person.Property_W[0] + HP_Person.Property_O[1];   
@@ -89,16 +96,15 @@ public class Person : MonoBehaviour
     public void AttackGerl()
     {
         GerlAnimator[0].SetTrigger("Attack");
-        EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Damage");
+        Animator_Animy.SetTrigger("Damage");
         HP_E -= DamagePers;
         Bamd_text_Eny.GetComponent<TextMesh>().text = (DamagePers).ToString();
         Band.SetTrigger("Eny");
     }
     public void AttackEny()
     {
-        EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Attack");
+        Animator_Animy.SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
-        Debug.Log(DamgeEnemy);
         HP_G -=DamgeEnemy-Deffence;
         Band_Text_Pers.GetComponent<TextMesh>().text = (DamgeEnemy - Deffence).ToString();
         Band.SetTrigger("Pers");
@@ -142,7 +148,12 @@ public class Person : MonoBehaviour
         }
         if (HP_E <= 0)
         {
-            EnyAnimator[HP_Person.NumberEnemy].SetTrigger("Die");
+            Animator_Animy.SetTrigger("Die");
+            if (Map_Setting.Number_Max == Map_Setting.Number_now)
+            {
+                Map_Setting.Number_Max += 1;
+                Map_Setting.SaveData();
+            }
             int Gold_W = HP_Person.Gold_enemy;
             if (HP_Person.Skills[11])
             {

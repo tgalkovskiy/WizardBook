@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class StatEnemy : MonoBehaviour
 {
+   public int PosGame;
    public string Name;
    public int NumberEnemy;
    public int HP;

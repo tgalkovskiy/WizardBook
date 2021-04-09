@@ -8,8 +8,63 @@
         <e p="Casual Tiny Environment - Jungle Set" t="Include">
           <e p="Readme.txt" t="Include" />
         </e>
+        <e p="Cave pack" t="Include">
+          <e p="Rocky Hills Environment - Light Pack" t="Include">
+            <e p="Legacy Project" t="Include">
+              <e p="Legacy Project_Read Me!.txt" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Dlls" t="Include">
           <e p="Newtonsoft.Json.xml" t="Include" />
+        </e>
+        <e p="FantasyPack1" t="Include">
+          <e p="Ent" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="scripts" t="Include">
+              <e p="Ent_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Frogman_Beast" t="Include">
+            <e p="scripts" t="Include">
+              <e p="Frogman_b_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Goblins_pack" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="scripts" t="Include">
+              <e p="goblin_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Golems" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="scripts" t="Include">
+              <e p="Golem_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="iguana" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="script" t="Include">
+              <e p="iguana_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Monster-Rabbit" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="scripts" t="Include">
+              <e p="MR_ctrl.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Ogre_asset" t="Include">
+            <e p="Readme.txt" t="Include" />
+            <e p="script" t="Include">
+              <e p="Ogre_control.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Succubus" t="Include">
+            <e p="scripts" t="Include">
+              <e p="suc_ctrl.cs" t="Include" />
+            </e>
+          </e>
         </e>
         <e p="Hovl Studio" t="Include">
           <e p="Procedural fire" t="Include">
@@ -28,10 +83,18 @@
             </e>
           </e>
         </e>
+        <e p="Mushrooms Pack" t="Include">
+          <e p="Glowing_Forest" t="Include">
+            <e p="scripts" t="Include">
+              <e p="WaterGroup.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="NewBuild" t="Include">
           <e p="scriptbleObj" t="Include">
             <e p="ChoiesLanguege.cs" t="Include" />
             <e p="HP.cs" t="Include" />
+            <e p="Map.cs" t="Include" />
             <e p="Setting.cs" t="Include" />
           </e>
           <e p="scripts" t="Include">
@@ -41,6 +104,11 @@
             <e p="Fortuna.cs" t="Include" />
             <e p="Languge.cs" t="Include" />
             <e p="LoadPanel.cs" t="Include" />
+            <e p="Map" t="Include">
+              <e p="Bion_Shois.cs" t="Include" />
+              <e p="ChoisEnemy.cs" t="Include" />
+              <e p="StatEnemy.cs" t="Include" />
+            </e>
             <e p="Menu.cs" t="Include" />
             <e p="MenuBut.cs" t="Include" />
             <e p="MenuLVLGIU.cs" t="Include" />
@@ -61,6 +129,9 @@
             <e p="WordButtom.cs" t="Include" />
             <e p="WordLoad.cs" t="Include" />
           </e>
+        </e>
+        <e p="Paper Environment Pack vol. 1" t="Include">
+          <e p="Readme.txt" t="Include" />
         </e>
         <e p="Plugins" t="Include">
           <e p="Demigiant" t="Include">
