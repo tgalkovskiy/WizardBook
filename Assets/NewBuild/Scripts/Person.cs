@@ -149,11 +149,28 @@ public class Person : MonoBehaviour
         if (HP_E <= 0)
         {
             Animator_Animy.SetTrigger("Die");
-            if (Map_Setting.Number_Max == Map_Setting.Number_now)
+            if (Map_Setting.Now_map == 0)
             {
-                Map_Setting.Number_Max += 1;
-                Map_Setting.SaveData();
+                if (Map_Setting.Number_Max1 == Map_Setting.Number_now) 
+                {
+                    Map_Setting.Number_Max1 += 1;
+                }
             }
+            if (Map_Setting.Now_map == 1)
+            {
+                if (Map_Setting.Number_Max2 == Map_Setting.Number_now) 
+                {
+                    Map_Setting.Number_Max2 += 1;
+                }
+            }
+            if (Map_Setting.Now_map == 2)
+            {
+                if (Map_Setting.Number_Max3 == Map_Setting.Number_now) 
+                {
+                    Map_Setting.Number_Max3 += 1;
+                }
+            }
+            Map_Setting.SaveData();
             int Gold_W = HP_Person.Gold_enemy;
             if (HP_Person.Skills[11])
             {

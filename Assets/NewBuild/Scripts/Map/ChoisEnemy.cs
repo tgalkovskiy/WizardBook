@@ -21,11 +21,12 @@ public class ChoisEnemy : MonoBehaviour
     Vector3 StartPosCa;
     Quaternion StartQuatCam;
     [HideInInspector]public bool Touch = false;
+    [HideInInspector] public int maxEntmy = 0;
     private void Start()
     {
         StartPosCa = this.transform.position;
         StartQuatCam = this.transform.rotation;
-        MapSetting.LoadData();
+        //MapSetting.LoadData();
     }
     private void Update()
     {
@@ -37,7 +38,7 @@ public class ChoisEnemy : MonoBehaviour
                 if (hit.collider.gameObject.GetComponent<StatEnemy>() != null)
                 {
                     StatEnemy statEnemy = hit.collider.gameObject.GetComponent<StatEnemy>();
-                    if (statEnemy.PosGame <= MapSetting.Number_Max)
+                    if (statEnemy.PosGame <= maxEntmy)
                     {
                       Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
                       Battle.SetActive(true);
@@ -71,7 +72,7 @@ public class ChoisEnemy : MonoBehaviour
                 if (hit.collider.gameObject.GetComponent<StatEnemy>() != null)
                 {
                     StatEnemy statEnemy = hit.collider.gameObject.GetComponent<StatEnemy>();
-                    if (statEnemy.PosGame <= MapSetting.Number_Max)
+                    if (statEnemy.PosGame <= maxEntmy)
                     {
                         Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
                         Battle.SetActive(true);

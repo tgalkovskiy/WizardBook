@@ -20,6 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.4.7/Runtime/Monetization/AndroidPlacementContentOperations.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -28,9 +29,11 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Person.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Energy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -77,7 +80,8 @@
       <updated>1616169607728</updated>
       <workItem from="1616169611835" duration="1103000" />
       <workItem from="1617371791844" duration="19000" />
-      <workItem from="1617966789837" duration="4843000" />
+      <workItem from="1617966789837" duration="8154000" />
+      <workItem from="1618070734880" duration="538000" />
     </task>
     <servers />
   </component>
