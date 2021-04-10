@@ -76,7 +76,6 @@
             </e>
           </e>
         </e>
-        <e p="LICENSE.txt" t="Include" />
         <e p="Modern_GUI_Skin" t="Include">
           <e p="Demo_Assets" t="Include">
             <e p="scripts" t="Include">
@@ -171,9 +170,6 @@
         </e>
         <e p="TGU Skybox Pack" t="Include">
           <e p="Readme.txt" t="Include" />
-        </e>
-        <e p="UnityAds" t="Include">
-          <e p="link.xml" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
