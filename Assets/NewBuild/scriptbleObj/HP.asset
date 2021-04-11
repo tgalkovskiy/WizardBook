@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc907b59ad00ca243baabe7a15d8716c, type: 3}
   m_Name: HP
   m_EditorClassIdentifier: 
-  HP_Gerl: 230
+  HP_Gerl: 200
   NumberEnemy: 3
   HP_Enemy: 500
   Damage: 250
@@ -20,7 +20,7 @@ MonoBehaviour:
   Exp_enemy: 450
   Rubin_Enemy: 0
   Chess_Drop: 0
-  Property_W: c80000000000000000000000
+  Property_W: 1e0000000000000000000000
   Weapon_Grad: 0
   Weapon_Icon: 0
   Property_A: 000000000000000000000000
@@ -29,12 +29,12 @@ MonoBehaviour:
   Property_O: 000000000000000000000000
   Other_Grad: -1
   Other_Icon: -1
-  LVLPers: 2
-  NextLVLXP: 450
+  LVLPers: 1
+  NextLVLXP: 150
   NowXP: 0
   LVLBooK: 1
   NextLVL_BOOK_XP: 40
-  Now_BOOK_XP: 17
+  Now_BOOK_XP: 0
   PointBook: 0
   NumberSworld: 0
   Word: "\uFEFF{\n  \"Word\": {\n    \"Rus\": {\n      \"1\": [\n        \"\u0413\u043B\u0430\u0437\",\n       
@@ -1741,9 +1741,9 @@ MonoBehaviour:
   Skills: 000000000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 1450
+  Gold: 1000
   Rubin: 5
-  Max_Energy: 20
-  Now_Energy: 44
+  Max_Energy: 15
+  Now_Energy: 50
   _Tutorial: 0
   Ches: 00000000

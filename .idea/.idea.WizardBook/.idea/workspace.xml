@@ -20,7 +20,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ads@3.4.7/Runtime/Monetization/AndroidPlacementContentOperations.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -34,6 +34,8 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Energy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />

@@ -168,19 +168,19 @@ public class Add_Item : MonoBehaviour
         int chance = Random.Range(0, 100);
         if (chance >= 90)
         {
-            Property += 7 *Lvl*Grad;
+            Property +=30+ 7 *Lvl*Grad;
         }
         else if (chance < 90 && chance > 70)
         {
-            Property += 5 * Lvl * Grad;
+            Property +=25+ 5 * Lvl * Grad;
         }
         else if (chance < 70 && chance > 40)
         {
-            Property += 3 * Lvl * Grad;
+            Property +=20+ 3 * Lvl * Grad;
         }
         else if (chance < 40 && chance > 0)
         {
-            Property += 1 * Lvl * Grad;
+            Property +=15+ 1 * Lvl * Grad;
         }
         return Property;
     }

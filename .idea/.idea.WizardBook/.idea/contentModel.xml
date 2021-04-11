@@ -76,6 +76,7 @@
             </e>
           </e>
         </e>
+        <e p="LICENSE.txt" t="Include" />
         <e p="Modern_GUI_Skin" t="Include">
           <e p="Demo_Assets" t="Include">
             <e p="scripts" t="Include">
@@ -98,39 +99,49 @@
             <e p="Setting.cs" t="Include" />
           </e>
           <e p="scripts" t="Include">
-            <e p="CameraEffect.cs" t="Include" />
-            <e p="DeleteJson.cs" t="Include" />
-            <e p="EventMeneger.cs" t="Include" />
-            <e p="Fortuna.cs" t="Include" />
-            <e p="Languge.cs" t="Include" />
-            <e p="LoadPanel.cs" t="Include" />
             <e p="Map" t="Include">
               <e p="Bion_Shois.cs" t="Include" />
               <e p="ChoisEnemy.cs" t="Include" />
               <e p="StatEnemy.cs" t="Include" />
             </e>
-            <e p="Menu.cs" t="Include" />
-            <e p="MenuBut.cs" t="Include" />
-            <e p="MenuLVLGIU.cs" t="Include" />
-            <e p="NullText.cs" t="Include" />
-            <e p="PageManeger.cs" t="Include" />
-            <e p="Person.cs" t="Include" />
-            <e p="PointCount.cs" t="Include" />
-            <e p="SettingManeger.cs" t="Include" />
+            <e p="Other" t="Include">
+              <e p="CameraEffect.cs" t="Include" />
+              <e p="DeleteJson.cs" t="Include" />
+              <e p="EventMeneger.cs" t="Include" />
+              <e p="Fortuna.cs" t="Include" />
+              <e p="Languge.cs" t="Include" />
+              <e p="LoadPanel.cs" t="Include" />
+              <e p="Menu.cs" t="Include" />
+              <e p="MenuBut.cs" t="Include" />
+              <e p="MenuLVLGIU.cs" t="Include" />
+              <e p="NullText.cs" t="Include" />
+              <e p="PageManeger.cs" t="Include" />
+              <e p="Person.cs" t="Include" />
+              <e p="PointCount.cs" t="Include" />
+              <e p="SettingManeger.cs" t="Include" />
+              <e p="SkillManeger.cs" t="Include" />
+              <e p="Transporent.cs" t="Include" />
+              <e p="Tutorial.cs" t="Include" />
+              <e p="WordButtom.cs" t="Include" />
+              <e p="WordLoad.cs" t="Include" />
+            </e>
             <e p="Shop" t="Include">
               <e p="Energy.cs" t="Include" />
+              <e p="Gold.cs" t="Include" />
             </e>
-            <e p="SkillManeger.cs" t="Include" />
-            <e p="Transporent.cs" t="Include" />
-            <e p="Tutorial.cs" t="Include" />
             <e p="Weapon" t="Include">
               <e p="Add_Item.cs" t="Include" />
               <e p="EnumManager.cs" t="Include" />
               <e p="Item.cs" t="Include" />
               <e p="WeaponManeger.cs" t="Include" />
             </e>
-            <e p="WordButtom.cs" t="Include" />
-            <e p="WordLoad.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="Armor" t="Include">
+              <e p="Telegram Desktop" t="Include">
+                <e p="assets_size.txt" t="Include" />
+              </e>
+            </e>
           </e>
         </e>
         <e p="Paper Environment Pack vol. 1" t="Include">
