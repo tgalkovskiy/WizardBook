@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,12 @@ public class Bion_Shois : MonoBehaviour
     [SerializeField] private GameObject PanelOf = default;
     [SerializeField] private ChoisEnemy ChoisEnemy;
     [SerializeField] private Map map_Setting;
+
+    private void Start()
+    {
+        ChoisEnemy.enabled = false;
+    }
+
     public void Chois(int NumberTerrain)
     {
         if (NumberTerrain < Terrain.Length)
@@ -35,6 +42,6 @@ public class Bion_Shois : MonoBehaviour
         {
             PanelOf.SetActive(true);
         }
-        ChoisEnemy.Touch = false;
+        ChoisEnemy.enabled = true;
     }
 }

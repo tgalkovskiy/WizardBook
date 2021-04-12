@@ -29,13 +29,15 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Weapon.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Energy.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PointCount.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />

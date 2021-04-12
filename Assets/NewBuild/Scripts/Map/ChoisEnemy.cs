@@ -26,6 +26,7 @@ public class ChoisEnemy : MonoBehaviour
     {
         StartPosCa = this.transform.position;
         StartQuatCam = this.transform.rotation;
+        PosPers();
         //MapSetting.LoadData();
     }
     private void Update()
@@ -98,9 +99,45 @@ public class ChoisEnemy : MonoBehaviour
                 }
             }
         }
-        Debug.Log(Touch);
     }
 
+    private void PosEnemy()
+    {
+        if (MapSetting.Now_map == 0)
+        {
+            MapSetting.X1 = Player.transform.position.x;
+            MapSetting.Y1 = Player.transform.position.y;
+            MapSetting.Z1 = Player.transform.position.z;
+        }
+        else if(MapSetting.Now_map == 1)
+        {
+            MapSetting.X2 = Player.transform.position.x;
+            MapSetting.Y2 = Player.transform.position.y;
+            MapSetting.Z2 = Player.transform.position.z;
+        }
+        else
+        {
+            MapSetting.X3 = Player.transform.position.x;
+            MapSetting.Y3 = Player.transform.position.y;
+            MapSetting.Z3 = Player.transform.position.z;
+        }
+    }
+
+    private void PosPers()
+    {
+        if (MapSetting.Now_map == 0)
+        {
+            Player.transform.position = new Vector3(MapSetting.X1, MapSetting.Y1, MapSetting.Z1);
+        }
+        else if(MapSetting.Now_map == 1)
+        {
+            Player.transform.position = new Vector3(MapSetting.X2, MapSetting.Y2, MapSetting.Z2);
+        }
+        else
+        {
+            Player.transform.position = new Vector3(MapSetting.X3, MapSetting.Y3, MapSetting.Z3);
+        }
+    }
 
     IEnumerator DiscriptionE()
     {
@@ -120,6 +157,7 @@ public class ChoisEnemy : MonoBehaviour
     }
     public void Loadgame()
     {
+        PosEnemy();
         Load.NumberScene = 3;
         LoadGameObj.SetActive(true);
     }
@@ -127,10 +165,10 @@ public class ChoisEnemy : MonoBehaviour
     {
         StartCoroutine(Sleep(gameObject));
     }
-
     public void Menu()
     {
         SceneManager.LoadScene(1);
     }
+    
     
 }

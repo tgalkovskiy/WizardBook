@@ -2176,8 +2176,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 344859393}
-  - component: {fileID: 344859395}
-  - component: {fileID: 344859394}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -2199,35 +2197,6 @@ Transform:
   m_Father: {fileID: 1359324118}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &344859394
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344859392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 0}
-  isGlobal: 0
-  blendDistance: 0
-  weight: 1
-  priority: 0
---- !u!114 &344859395
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 344859392}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a79441f348de89743a2939f4d699eac1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &367117797 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5169219250066756985, guid: 10385f791d349874595df2edbeb70e3b,
@@ -8973,8 +8942,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2, y: 533.27}
-  m_SizeDelta: {x: 1029.707, y: 726.4901}
+  m_AnchoredPosition: {x: 0.2, y: 545.3}
+  m_SizeDelta: {x: 987.63196, y: 750.64795}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719151325
 MonoBehaviour:
@@ -8997,7 +8966,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 2f2a3049551ec3542953e31b85ec5e21, type: 3}
-    m_FontSize: 70
+    m_FontSize: 60
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0

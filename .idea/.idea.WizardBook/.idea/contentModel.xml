@@ -136,13 +136,6 @@
               <e p="WeaponManeger.cs" t="Include" />
             </e>
           </e>
-          <e p="UI" t="Include">
-            <e p="Armor" t="Include">
-              <e p="Telegram Desktop" t="Include">
-                <e p="assets_size.txt" t="Include" />
-              </e>
-            </e>
-          </e>
         </e>
         <e p="Paper Environment Pack vol. 1" t="Include">
           <e p="Readme.txt" t="Include" />

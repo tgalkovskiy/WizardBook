@@ -15,7 +15,6 @@ public class PointCount : MonoBehaviour
 
     private void ActiveLine(float Count)
     {
-        Debug.Log(1);
         bool state = false;
         for(int i = 0; i<LinePoint.Length; i++)
         {
