@@ -147,8 +147,8 @@ public class MenuLVLGIU : MonoBehaviour
         {
             if(HP_PERS.Now_BOOK_XP >= HP_PERS.NextLVL_BOOK_XP)
             {
+                HP_PERS.PointBook += HP_PERS.LVLBooK;
                 HP_PERS.LVLBooK += 1;
-                HP_PERS.PointBook += (int)HP_PERS.LVLBooK-1;
                 HP_PERS.NextLVL_BOOK_XP *=1.8f;
                 HP_PERS.Now_BOOK_XP = 0;
                 HP_PERS.Gold -= money;

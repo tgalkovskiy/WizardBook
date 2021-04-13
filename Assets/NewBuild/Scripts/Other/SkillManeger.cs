@@ -55,7 +55,7 @@ public class SkillManeger : MonoBehaviour
             //компоненты и кнопка для данного скила
             Buttom_Arson_Image = Skill_buton[0].GetComponent<Image>();
             Buttom_Skil_2.SetActive(true);
-            ArsonDamege = (Person.HP_E / 100.0f) * (5.0f+3*HP_SKills.LVL_Skill[1]);
+            ArsonDamege = (Person.HP_E / 100.0f) * (2f+1*HP_SKills.LVL_Skill[1]);
         }
         //если активне 3 скил
         if (HP_SKills.Skills[2])
@@ -162,7 +162,7 @@ public class SkillManeger : MonoBehaviour
             EventMeneger.GerlAttack1 += Arson;
             EventMeneger.EnemyAttack1 += Arson;
             EndArson = WordButtom.Moves + 3;
-            CooldownArson = WordButtom.Moves + 4;
+            CooldownArson = WordButtom.Moves + 6;
             Buttom_Arson_Image.sprite = Arson_Sprite[1];
         }
        

@@ -84,9 +84,9 @@ public class Person : MonoBehaviour
     private void Update()
     {
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = (HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
+        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
         HP_Enemy.value = HP_E;
-        HP_Enemy_Text.text = (HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
+        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
         if (GameState)
         {
           EndRound();
