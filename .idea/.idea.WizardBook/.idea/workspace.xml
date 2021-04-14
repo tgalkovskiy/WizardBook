@@ -36,12 +36,12 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PointCount.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -56,8 +56,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -94,6 +97,7 @@
       <workItem from="1617966789837" duration="8154000" />
       <workItem from="1618070734880" duration="538000" />
       <workItem from="1618250648394" duration="2619000" />
+      <workItem from="1618332577115" duration="406000" />
     </task>
     <servers />
   </component>

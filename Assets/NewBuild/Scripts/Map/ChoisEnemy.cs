@@ -41,7 +41,7 @@ public class ChoisEnemy : MonoBehaviour
                     StatEnemy statEnemy = hit.collider.gameObject.GetComponent<StatEnemy>();
                     if (statEnemy.PosGame <= maxEntmy)
                     {
-                      Text_Name.text = "Что бы пройти дальше нужно сразиться с:" + "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
+                      Text_Name.text = "\n" + hit.collider.gameObject.GetComponent<StatEnemy>().Name;
                       Battle.SetActive(true);
                       HP.NumberEnemy = statEnemy.NumberEnemy;
                       HP.HP_Enemy = statEnemy.HP;
@@ -55,7 +55,7 @@ public class ChoisEnemy : MonoBehaviour
                     }
                     else
                     {
-                        Text_Name.text = "Вы должны прежде победить других врагов!";
+                        Text_Name.text = "\n" + "Вы должны прежде победить других врагов!";
                         Battle.SetActive(false);
                     }
                     Player.transform.position = statEnemy.PosPlayer.position;
