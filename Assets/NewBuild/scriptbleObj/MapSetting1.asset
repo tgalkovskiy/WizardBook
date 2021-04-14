@@ -12,8 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedb8c17dbc87f244ab11da190d0d498, type: 3}
   m_Name: MapSetting1
   m_EditorClassIdentifier: 
-  Number_Max1: 0
-  Number_Max2: 0
-  Number_Max3: 0
-  Number_now: 0
+  Number_Max1: 15
+  X1: 0
+  Y1: 0
+  Z1: 0
+  Number_Max2: 15
+  X2: 0
+  Y2: 0
+  Z2: 0
+  Number_Max3: 15
+  X3: 0
+  Y3: 0
+  Z3: 0
+  Number_now: 4
   Now_map: 0
