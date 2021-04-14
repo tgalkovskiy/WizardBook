@@ -37,11 +37,11 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -98,6 +98,7 @@
       <workItem from="1618070734880" duration="538000" />
       <workItem from="1618250648394" duration="2619000" />
       <workItem from="1618332577115" duration="406000" />
+      <workItem from="1618409285119" duration="319000" />
     </task>
     <servers />
   </component>

@@ -244,7 +244,7 @@ public class HP : ScriptableObject
             LVL_Skill = new int[12] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
             Time_Game = 15;
             Gold = 1000;
-            Rubin = 5;
+            Rubin = 20;
             Max_Energy = 15;
             Now_Energy = 50;
             DateTime = DateTime.Now;

@@ -44,7 +44,9 @@ public class Person : MonoBehaviour
     [SerializeField] private Text Point;
     [SerializeField] private Text Exp;
     [SerializeField] private Text EndRaund;
-    [SerializeField] private Text NextLevel;
+    
+    [SerializeField] private GameObject NextLevel;
+    [SerializeField] private GameObject Chees;
     
     private GameObject Enemy;
     private Animator Animator_Animy;
@@ -139,7 +141,7 @@ public class Person : MonoBehaviour
             EndRaund.text = "В этот раз враг победил!" + "\n" + "Попробуйте улучшить оружие или запомнить больше волшебных слов!)";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
-                NextLevel.text = "НОВЫЙ УРОВЕНЬ!";
+                NextLevel.SetActive(true);
                 HP_Person.NextLVL();
             }
             RoundPanel.transform.DOMove(Lasttransform.position, 1f);
@@ -196,12 +198,13 @@ public class Person : MonoBehaviour
             EndRaund.text = "Вы победили! Так держать!";
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
-                NextLevel.text = "НОВЫЙ УРОВЕНЬ!";
+                NextLevel.SetActive(true);
                 HP_Person.NextLVL();
             }
             RoundPanel.transform.DOMove(Lasttransform.position, 1f);
             if (HP_Person.Chess_Drop)
             {
+                Chees.SetActive(true);
                 for(int i =0; i< HP_Person.Ches.Length; i++)
                 {
                     if (!HP_Person.Ches[i])
