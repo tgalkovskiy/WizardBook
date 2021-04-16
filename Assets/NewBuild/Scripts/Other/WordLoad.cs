@@ -99,7 +99,7 @@ public class WordLoad : MonoBehaviour
             WordRus[i] = OpenJson["Word"]["Rus"][LVLBOOKSTRING][Numbers[i]].Value;
             WordEng[i] = OpenJson["Word"]["ENG"][LVLBOOKSTRING][Numbers[i]].Value;
             WordBel[i] = OpenJson["Word"]["BEL"][LVLBOOKSTRING][Numbers[i]].Value;
-            Debug.Log(WordRus[i] + " " + WordEng[i] + " " + WordBel[i]);
+            //Debug.Log(WordRus[i] + " " + WordEng[i] + " " + WordBel[i]);
         }
         CorrectWord = UnityEngine.Random.Range(0, WordRus.Length);
     }

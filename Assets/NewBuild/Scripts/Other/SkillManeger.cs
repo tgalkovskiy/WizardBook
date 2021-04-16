@@ -13,6 +13,17 @@ public class SkillManeger : MonoBehaviour
 
     //геймобджекты и кнопки
     [SerializeField] private GameObject Fire_Enimy = default;
+    [SerializeField] private GameObject FireErln = default;
+
+    [SerializeField] private GameObject Shild =default;
+
+    [SerializeField] private GameObject Time_shift = default;
+
+    [SerializeField] private GameObject _Watter_skill = default;
+
+    [SerializeField] private AudioSource Magic = default;
+    [SerializeField] private AudioClip[] Magic_Clip = default;
+    
     [SerializeField] private GameObject Buttom_Skil_2 = default;
     [SerializeField] private GameObject Buttom_Skill_7 = default;
     [SerializeField] private GameObject Buttom_Skill_10 = default;
@@ -119,6 +130,7 @@ public class SkillManeger : MonoBehaviour
             if(WordButtom.Moves == End_Deff)
             {
                 Person.Deffence = Person.Deffence_Standart_Lvl;
+                Shild.SetActive(false);
             }
             if(WordButtom.Moves == Cooldown_Deff)
             {
@@ -132,6 +144,7 @@ public class SkillManeger : MonoBehaviour
             if (WordButtom.Moves == EndTime)
             {
                 Time.timeScale = 1;
+                Time_shift.SetActive(false);
             }
             if(WordButtom.Moves == CoolDown_Time)
             {
@@ -142,10 +155,11 @@ public class SkillManeger : MonoBehaviour
         //если 4 скилл
         if (HP_SKills.Skills[3])
         {
-            //if(WordButtom.Moves == End_Watter)
-            //{
-            //    Cooldown_Watter = 0;
-            //}
+            if(WordButtom.Moves == End_Watter)
+            {
+                //Cooldown_Watter = 0;
+                _Watter_skill.SetActive(false);
+            }
             if(WordButtom.Moves == Cooldown_Watter)
             {
                 Cooldown_Watter = 0;
@@ -158,6 +172,8 @@ public class SkillManeger : MonoBehaviour
         if(CooldownArson == 0)
         {
             PersAnimator.SetTrigger("Arson");
+            StartCoroutine(_FireErln());
+            Magic.PlayOneShot(Magic_Clip[0]);
             Fire_Enimy.SetActive(true);
             EventMeneger.GerlAttack1 += Arson;
             EventMeneger.EnemyAttack1 += Arson;
@@ -172,6 +188,8 @@ public class SkillManeger : MonoBehaviour
         if(Cooldown_Deff == 0)
         {
             PersAnimator.SetTrigger("Shild");
+            Magic.PlayOneShot(Magic_Clip[1]);
+            Shild.SetActive(true);
             Buttom_Deffence.sprite = Deffence_Sprite[1];
             Person.Deffence = 100;
             Cooldown_Deff = WordButtom.Moves + 6- HP_SKills.LVL_Skill[7];
@@ -182,6 +200,8 @@ public class SkillManeger : MonoBehaviour
     {
         if(CoolDown_Time == 0)
         {
+            Time_shift.SetActive(true);
+            Magic.PlayOneShot(Magic_Clip[2]);
             Buttom_Time_Stop.sprite = Time_stop[1];
             Time.timeScale = 0.5f;
             CoolDown_Time = WordButtom.Moves + 6 - HP_SKills.LVL_Skill[10];
@@ -193,6 +213,8 @@ public class SkillManeger : MonoBehaviour
         if(Cooldown_Watter == 0)
         {
             Buttom_Watter.sprite = Watter_skill[1];
+            Magic.PlayOneShot(Magic_Clip[3]);
+            _Watter_skill.SetActive(true);
             WordButtom.Delete_Word();
             Cooldown_Watter = WordButtom.Moves + 6 - HP_SKills.LVL_Skill[3];
             End_Watter = WordButtom.Moves + 1;
@@ -201,5 +223,13 @@ public class SkillManeger : MonoBehaviour
     public void Arson()
     {
         Person.HP_E -= ArsonDamege;
+    }
+
+    IEnumerator _FireErln()
+    {
+        yield return new WaitForSeconds(0.4f);
+        FireErln.SetActive(true);
+        yield return new WaitForSeconds(1f);
+        FireErln.SetActive(false);
     }
 }

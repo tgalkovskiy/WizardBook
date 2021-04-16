@@ -17,10 +17,7 @@ public class WordButtom : MonoBehaviour
     private float Timer = 15f;
     [HideInInspector]public float Deff_Timer;
     [HideInInspector] public int Point_now_Battel = 0;
-    private void Awake()
-    {
-       
-    }
+   
     private void Start()
     {
         Word();
@@ -65,9 +62,7 @@ public class WordButtom : MonoBehaviour
         if (!Touch)
         {
             Touch = true;
-            if (Person.GameState)
-            {
-                if (Buttoms == WordLoad.CorrectWord)
+            if (Buttoms == WordLoad.CorrectWord)
                 {
                     WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
                     StartCoroutine(ChangeWordCorrect(Buttoms));
@@ -91,9 +86,6 @@ public class WordButtom : MonoBehaviour
                 //    //HP_PERS.PointBook += 1;
                 //    //Point_now_Battel += 1;
                 //    CountCorrectWord = 0;
-                //}
-                
-            }
         }
     }
     /// <summary>
@@ -108,7 +100,7 @@ public class WordButtom : MonoBehaviour
             WordButtomMas[i].GetComponentInChildren<Text>().text = WordLoad.WordAll[ChoiesLanguege.Languge2][i];
             if (WordLoad.WordAll[ChoiesLanguege.Languge2][i].Length > 8)
             {
-                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 35;
+                WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 40;
             }
             else
             {

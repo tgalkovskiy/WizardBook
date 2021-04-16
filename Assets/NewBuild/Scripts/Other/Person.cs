@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,12 +8,17 @@ using DG.Tweening;
 public class Person : MonoBehaviour
 {
     [SerializeField] private WordButtom WordButtom;
-
+    [SerializeField] private CameraEffect CameraEffect;
+    
     [SerializeField] private GameObject[] ActivElement = default;
     [SerializeField] private GameObject RoundPanel = default;
     [SerializeField] private GameObject[] Weapon = default;
     [SerializeField] private GameObject[] EnemyGameObj = default;
 
+    [SerializeField] private GameObject Death_Partical_enemy = default;
+    [SerializeField] private GameObject Death_Partical_Pers = default;
+    [SerializeField] private GameObject[] Hit;
+    
     [SerializeField] private Transform Lasttransform = default;
     //подтягимваються от сюда сейвы и туда же пишутся
     [SerializeField] private HP HP_Person = default;
@@ -30,7 +36,7 @@ public class Person : MonoBehaviour
     [HideInInspector]public float HP_E;
     [HideInInspector]public float DamagePers;
     [HideInInspector]public float DamgeEnemy;
-    [HideInInspector]static public bool GameState = true;
+    //[HideInInspector]static public bool GameState = true;
     [HideInInspector] public float Deffence;
     [HideInInspector] public float Deffence_Standart_Lvl;
     
@@ -63,7 +69,7 @@ public class Person : MonoBehaviour
     private void Awake()
     {
         HP_Person.LoadData();
-        GameState = true;
+        //GameState = true;
         HP_G = HP_Person.HP_Gerl + HP_Person.Property_W[1]+ HP_Person.Property_A[1]+HP_Person.Property_O[0];
         HP_E = HP_Person.HP_Enemy;
         DamgeEnemy = HP_Person.Damage;
@@ -83,35 +89,54 @@ public class Person : MonoBehaviour
         Weapon[(int)HP_Person.NumberSworld].SetActive(true);
     }
 
-    private void Update()
+    private void Start()
     {
         HP_Gerl.value = HP_G;
         HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
         HP_Enemy.value = HP_E;
         HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
-        if (GameState)
+    }
+
+    private void Update()
+    {
+        /*HP_Gerl.value = HP_G;
+        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
+        HP_Enemy.value = HP_E;
+        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();*/
+        /*if (GameState)
         {
           EndRound();
-        }
+        }*/
        
     }
-    public void AttackGerl()
+
+    private void AttackGerl()
     {
+        StartCoroutine(Hit_pers(1));
         GerlAnimator[0].SetTrigger("Attack");
         Animator_Animy.SetTrigger("Damage");
         HP_E -= DamagePers;
         Bamd_text_Eny.GetComponent<TextMesh>().text = (DamagePers).ToString();
         Band.SetTrigger("Eny");
+        if (HP_G <= 0 || HP_E <= 0)
+        {
+            EndRound();
+        }
     }
-    public void AttackEny()
+    private void AttackEny()
     {
+        StartCoroutine(Hit_pers(0));
         Animator_Animy.SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
         HP_G -=DamgeEnemy-Deffence;
         Band_Text_Pers.GetComponent<TextMesh>().text = (DamgeEnemy - Deffence).ToString();
         Band.SetTrigger("Pers");
+        if (HP_G <= 0 || HP_E <= 0)
+        {
+            EndRound();
+        }
     }
-    public void EndRound()
+    private void EndRound()
     {
         if (HP_G <= 0)
         {
@@ -136,15 +161,15 @@ public class Person : MonoBehaviour
             HP_Person.NowXP += EXP_lose;
             Exp.text = EXP_lose.ToString();
             //HP_Person.NowXP += 50;
-            RoundPanel.SetActive(true);
-            GameState = false;
+            //RoundPanel.SetActive(true);
+            StartCoroutine(Death_Pers());
+            //GameState = false;
             EndRaund.text = "В этот раз враг победил!" + "\n" + "Попробуйте улучшить оружие или запомнить больше волшебных слов!)";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
                 HP_Person.NextLVL();
             }
-            RoundPanel.transform.DOMove(Lasttransform.position, 1f);
             HP_Person.SaveData();
 
         }
@@ -193,15 +218,14 @@ public class Person : MonoBehaviour
             HP_Person.NowXP += EXP_W;
             Exp.text = EXP_W.ToString();
             //HP_Person.NowXP += 250;
-            RoundPanel.SetActive(true);
-            GameState = false;
+            StartCoroutine(Death_Enimy());
+            //GameState = false;
             EndRaund.text = "Вы победили! Так держать!";
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
                 HP_Person.NextLVL();
             }
-            RoundPanel.transform.DOMove(Lasttransform.position, 1f);
             if (HP_Person.Chess_Drop)
             {
                 Chees.SetActive(true);
@@ -217,11 +241,38 @@ public class Person : MonoBehaviour
             HP_Person.SaveData();
 
         }
-         //RoundPanel.SetActive(true);
-         //GameState = false;
-         //RoundPanel.transform.DOMove(Lasttransform.position, 1f);
-         //HP_Person.NextLVL();
-         //HP_Person.SaveData();
+         
+    }
+    
+    IEnumerator Death_Enimy()
+    {
+        CameraEffect.Final();
+        yield return new WaitForSeconds(1.5f);
+        Death_Partical_enemy.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+        RoundPanel.SetActive(true); 
+        RoundPanel.transform.DOMove(Lasttransform.position, 1f);
+    }
+    IEnumerator Death_Pers()
+    {
+        CameraEffect.Final();
+        yield return new WaitForSeconds(2.5f);
+        Death_Partical_Pers.SetActive(true);
+        yield return new WaitForSeconds(2.5f);
+        RoundPanel.SetActive(true); 
+        RoundPanel.transform.DOMove(Lasttransform.position, 1f);
+    }
+
+    IEnumerator Hit_pers(int Number)
+    {
+        yield return new WaitForSeconds(0.3f);
+        Hit[Number].SetActive(true);
+        yield return new WaitForSeconds(0.5f);
+        Hit[Number].SetActive(false);
+        HP_Gerl.value = HP_G;
+        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
+        HP_Enemy.value = HP_E;
+        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
     }
     
 }

@@ -22,6 +22,9 @@ public class WeaponManeger : MonoBehaviour
     [SerializeField] private Text Lvl_Item = default;
     [SerializeField] private Text Properti_Item = default;
     [SerializeField] private Text Cost_NextLVL_Item = default;
+    [SerializeField] private Text HP_Stat = default;
+    [SerializeField] private Text Attack_stat = default;
+    [SerializeField] private Text Deffence_stat = default;
     [SerializeField] private HP HP = default;
     public static Item Now_Item = default;
     public List<Item> Item_Data = new List<Item>();
@@ -33,20 +36,7 @@ public class WeaponManeger : MonoBehaviour
     private void Start()
     {
         Refresh_Item();
-        //Item_Data = Item_Data.OrderBy(x => x.Property_Item[2]).ToList<Item>();
-        //var A = Item_Data.OrderByDescending(x => x.Property_Item[2]).ToList();
-        //for (int i = 0; i < Item_Data.Count; i++)
-        //{
-        //    Debug.Log(A[i].Property_Item[2]);
-        //}
-        ////var orderedNumbers = from i in Grad_Index
-        ////                     orderby i descending
-        ////                     select i;
-        ////foreach (int i in orderedNumbers)
-        ////{
-        ////    Debug.Log(i);
-        ////}
-
+        Refresh_stat();
     }
     public void Select_Item()
     {
@@ -66,8 +56,8 @@ public class WeaponManeger : MonoBehaviour
         //Lvl Item
         Lvl_Item.text = "Lvl: " + Now_Item.Property_Item[3].ToString();
         //Property Item
-        string Property_W = "Attack: " + Now_Item.Property_Item[4];
-        string Property_A = "Deffence: +" + Now_Item.Property_Item[5];
+        string Property_W = "Атака: " + Now_Item.Property_Item[4];
+        string Property_A = "Защита: +" + Now_Item.Property_Item[5];
         string Property_O = "HP : +" + Now_Item.Property_Item[8];
         string AllProperty = "";
         if (Now_Item.Property_Item[4] != 0)
@@ -83,12 +73,12 @@ public class WeaponManeger : MonoBehaviour
             AllProperty += "\n" + Property_O;
         }
         Properti_Item.text = AllProperty;
-        Cost_NextLVL_Item.text = "Cost: " + Now_Item.Property_Item[6].ToString();
+        Cost_NextLVL_Item.text = "Цена: " + Now_Item.Property_Item[6].ToString();
 
     }
     public void Equip_Item()
     {
-        if (Now_Item.Property_Item[0] == 1)
+        if(Now_Item.Property_Item[0] == 1)
         {
            HP.NumberSworld = Now_Item.Property_Item[1];
            HP.Property_W[0] = Now_Item.Property_Item[4];
@@ -117,6 +107,7 @@ public class WeaponManeger : MonoBehaviour
             HP.Other_Grad = Now_Item.Property_Item[2];
             HP.Other_Icon = Now_Item.Property_Item[1];
         }
+        Refresh_stat();
         HP.SaveData();
         Discription.SetActive(false);
     }
@@ -345,6 +336,13 @@ public class WeaponManeger : MonoBehaviour
     public void Bakc(GameObject gameObject)
     {
         gameObject.SetActive(false);
+    }
+
+    private void Refresh_stat()
+    {
+        HP_Stat.text ="HP: " + (HP.HP_Gerl + HP.Property_W[1] + HP.Property_A[1] + HP.Property_O[0]).ToString();
+        Attack_stat.text ="Атака: " + (HP.Property_W[0] + HP.Property_O[1]).ToString();
+        Deffence_stat.text = "Защита: " + (HP.Property_A[0] + HP.Property_O[2]).ToString();
     }
 }
 

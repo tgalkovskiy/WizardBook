@@ -50,9 +50,6 @@ public class PageManeger : MonoBehaviour
         Page2.SetActive(false);
         Page1.SetActive(false);
         Page4.SetActive(false);
-        //var A_BG = BG_image.color;
-        //A_BG.a = 0;
-        //BG_image.color = A_BG;
         Page3.SetActive(true);
        
 
@@ -60,9 +57,9 @@ public class PageManeger : MonoBehaviour
     public void MainPage()
     {
         Page1.SetActive(true);
-        var A_BG = BG_image.color;
+        /*var A_BG = BG_image.color;
         A_BG.a = 1;
-        BG_image.color = A_BG;
+        BG_image.color = A_BG;*/
         Page2.SetActive(false);
         Page3.SetActive(false);
         Page4.SetActive(false);
@@ -74,76 +71,12 @@ public class PageManeger : MonoBehaviour
         Page2.SetActive(false);
         Page3.SetActive(false);
         Page4.SetActive(true);
-        var A_BG = BG_image.color;
+        /*var A_BG = BG_image.color;
         A_BG.a = 1;
-        BG_image.color = A_BG;
+        BG_image.color = A_BG;*/
 
     }
-    /*public void Cost_Now_Item(int Cost)
-    {
-        Cost_now_Item = Cost;
-    }
-    public void Attack(int Attack)
-    {
-        Attack_Chois = Attack;
-    }
-    public void Choisknife(int NumberKnife)
-    {
-        ChoisKnife = NumberKnife;
-        if (StatPers.By_Sword[NumberKnife])
-        {
-            Discription_Item.text = "Aтака " + StatPers.Damage_Sword[NumberKnife] + "\n" + "Уровень предмета " + StatPers.LVl_Sword[NumberKnife] + "\n" + "Цена " + Cost_now_Item/10;
-            StatPers.LVl_Sword[NumberKnife] += 1;
-            Cost_now_Item /= 10;
-            Type_Item.text = "Улучшить?";
-            Equip_GameObj.SetActive(true);
-        }
-        else
-        {
-            Discription_Item.text = "Aтака "+ StatPers.Damage_Sword[NumberKnife] + "\n" + "Уровень предмета " + StatPers.LVl_Sword[NumberKnife] + "\n" + "Цена " + Cost_now_Item;
-            Type_Item.text = "Купить?";
-            Equip_GameObj.SetActive(false);
-        }
-        Window_Quip.SetActive(true);
-    }
-    public void Equip()
-    {
-        if(StatPers.Gold>= Cost_now_Item)
-        {
-            if (!StatPers.By_Sword[ChoisKnife])
-            {
-                StatPers.By_Sword[ChoisKnife] = true;
-                StatPers.Gold -= Cost_now_Item;
-                Discription_Item.text = "Aтака " + StatPers.Damage_Sword[ChoisKnife] + "\n" + "Уровень предмета " + StatPers.LVl_Sword[ChoisKnife] + "\n" + "Цена " + Cost_now_Item;
-                Equip_GameObj.SetActive(true);
-            }
-            else
-            {
-                StatPers.Damage_Sword[ChoisKnife] += 2;
-                StatPers.Gold -= Cost_now_Item;
-                Discription_Item.text = "Aтака " + StatPers.Damage_Sword[ChoisKnife] + "\n" + "Уровень предмета " + StatPers.LVl_Sword[ChoisKnife] + "\n" + "Цена " + Cost_now_Item;
-            }
-        StatPers.SaveData();
-        }
-        else
-        {
-            NO_money.SetActive(true);
-        }
-    }
-    public void Select()
-    {
-        StatPers.NumberSworld = ChoisKnife;
-        AttackPers.text = "Атака: " + StatPers.Damage_Sword[ChoisKnife];
-        DeffencePers.text = "Защита: " + StatPers.Deffens.ToString();
-        for(int i =0; i< Weapon.Length; i++)
-        {
-            Weapon[i].SetActive(false);
-        }
-        Weapon[(int)StatPers.NumberSworld].SetActive(true);
-        StatPers.SaveData();
-        Window_Quip.SetActive(false);
-
-    }*/
+    
     private void Update()
     {
         Gold.text = StatPers.Gold.ToString();

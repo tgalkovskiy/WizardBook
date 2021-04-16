@@ -5,9 +5,10 @@ using DG.Tweening;
 
 public class CameraEffect : MonoBehaviour
 {
-    [SerializeField]private Vector3 StarTransform;
-    [SerializeField] private Vector3 StartAngle;
-    [SerializeField] private GameObject Canvas;
+    [SerializeField]private Vector3 StarTransform = default;
+    [SerializeField] private Vector3 FinalTransform = default;
+    [SerializeField] private Vector3 StartAngle= default;
+    [SerializeField] private GameObject Canvas = default;
     private Camera Camera;
     private bool trate = false;
     bool comleted; 
@@ -46,6 +47,10 @@ public class CameraEffect : MonoBehaviour
 
     }
 
+    public void Final()
+    {
+        transform.DOMove(FinalTransform, 1f);
+    }
 
 
 }
