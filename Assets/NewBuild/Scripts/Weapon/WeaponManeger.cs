@@ -1,4 +1,4 @@
-п»їusing Newtonsoft.Json;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -43,22 +43,22 @@ public class WeaponManeger : MonoBehaviour
         Discription.SetActive(true);
         if (Now_Item.Property_Item[0] == 1)
         {
-            Type_Item.text = "Weapon";
+            Type_Item.text = "Оружие";
         }
         else if(Now_Item.Property_Item[0] == 2)
         {
-            Type_Item.text = "Armor";
+            Type_Item.text = "Броня";
         }
         else if(Now_Item.Property_Item[0] == 3)
         {
-            Type_Item.text = "Other";
+            Type_Item.text = "Украшение";
         }
         //Lvl Item
-        Lvl_Item.text = "Lvl: " + Now_Item.Property_Item[3].ToString();
+        Lvl_Item.text = "Уровень: " + Now_Item.Property_Item[3].ToString();
         //Property Item
-        string Property_W = "РђС‚Р°РєР°: " + Now_Item.Property_Item[4];
-        string Property_A = "Р—Р°С‰РёС‚Р°: +" + Now_Item.Property_Item[5];
-        string Property_O = "HP : +" + Now_Item.Property_Item[8];
+        string Property_W = "Атака: " + Now_Item.Property_Item[4];
+        string Property_A = "Защита: +" + Now_Item.Property_Item[5];
+        string Property_O = "Здоровье : +" + Now_Item.Property_Item[8];
         string AllProperty = "";
         if (Now_Item.Property_Item[4] != 0)
         {
@@ -73,7 +73,7 @@ public class WeaponManeger : MonoBehaviour
             AllProperty += "\n" + Property_O;
         }
         Properti_Item.text = AllProperty;
-        Cost_NextLVL_Item.text = "Р¦РµРЅР°: " + Now_Item.Property_Item[6].ToString();
+        Cost_NextLVL_Item.text = "Цена: " + Now_Item.Property_Item[6].ToString();
 
     }
     public void Equip_Item()
@@ -341,8 +341,8 @@ public class WeaponManeger : MonoBehaviour
     private void Refresh_stat()
     {
         HP_Stat.text ="HP: " + (HP.HP_Gerl + HP.Property_W[1] + HP.Property_A[1] + HP.Property_O[0]).ToString();
-        Attack_stat.text ="РђС‚Р°РєР°: " + (HP.Property_W[0] + HP.Property_O[1]).ToString();
-        Deffence_stat.text = "Р—Р°С‰РёС‚Р°: " + (HP.Property_A[0] + HP.Property_O[2]).ToString();
+        Attack_stat.text ="Атака: " + (HP.Property_W[0] + HP.Property_O[1]).ToString();
+        Deffence_stat.text = "Защита: " + (HP.Property_A[0] + HP.Property_O[2]).ToString();
     }
 }
 

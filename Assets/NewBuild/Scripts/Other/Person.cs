@@ -1,4 +1,4 @@
-ï»¿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,11 +20,11 @@ public class Person : MonoBehaviour
     [SerializeField] private GameObject[] Hit;
     
     [SerializeField] private Transform Lasttransform = default;
-    //Ð¿Ð¾Ð´Ñ‚ÑÐ³Ð¸Ð¼Ð²Ð°ÑŽÑ‚ÑŒÑÑ Ð¾Ñ‚ ÑÑŽÐ´Ð° ÑÐµÐ¹Ð²Ñ‹ Ð¸ Ñ‚ÑƒÐ´Ð° Ð¶Ðµ Ð¿Ð¸ÑˆÑƒÑ‚ÑÑ
+    //ïîäòÿãèìâàþòüñÿ îò ñþäà ñåéâû è òóäà æå ïèøóòñÿ
     [SerializeField] private HP HP_Person = default;
 
     [SerializeField] private Map Map_Setting = default;
-    //ÐœÐ°ÑÑÐ¸Ð²Ñ‹ Ð°Ð½Ð¸Ð¼Ð°Ñ‚Ð¾Ñ€Ð¾Ð² Ð´Ð»Ñ Ð²Ñ‹Ð±Ð¾Ñ€Ð° Ð±Ð¾ÑÑÑÐ° Ð¸ Ð¸Ð³Ñ€Ð¾ÐºÐ°
+    //Ìàññèâû àíèìàòîðîâ äëÿ âûáîðà áîñññà è èãðîêà
     public Animator[] GerlAnimator;
     //public Animator[] EnyAnimator;
     
@@ -40,11 +40,11 @@ public class Person : MonoBehaviour
     [HideInInspector] public float Deffence;
     [HideInInspector] public float Deffence_Standart_Lvl;
     
-    //Ð‘Ð°Ð¼Ð±Ð»Ñ‹
+    //Áàìáëû
     [SerializeField] private GameObject Band_Text_Pers;
     [SerializeField] private Animator Band;
     [SerializeField] private GameObject Bamd_text_Eny;
-    //Ñ‚ÐµÐºÑÑ‚ Ð´Ð»Ñ ÐºÐ¾Ð½Ñ†Ð° Ñ€Ð°ÑƒÐ½Ð´Ð°
+    //òåêñò äëÿ êîíöà ðàóíäà
     [SerializeField] private Text Gold;
     [SerializeField] private Text Rubin;
     [SerializeField] private Text Point;
@@ -164,7 +164,7 @@ public class Person : MonoBehaviour
             //RoundPanel.SetActive(true);
             StartCoroutine(Death_Pers());
             //GameState = false;
-            EndRaund.text = "Ð’ ÑÑ‚Ð¾Ñ‚ Ñ€Ð°Ð· Ð²Ñ€Ð°Ð³ Ð¿Ð¾Ð±ÐµÐ´Ð¸Ð»!" + "\n" + "ÐŸÐ¾Ð¿Ñ€Ð¾Ð±ÑƒÐ¹Ñ‚Ðµ ÑƒÐ»ÑƒÑ‡ÑˆÐ¸Ñ‚ÑŒ Ð¾Ñ€ÑƒÐ¶Ð¸Ðµ Ð¸Ð»Ð¸ Ð·Ð°Ð¿Ð¾Ð¼Ð½Ð¸Ñ‚ÑŒ Ð±Ð¾Ð»ÑŒÑˆÐµ Ð²Ð¾Ð»ÑˆÐµÐ±Ð½Ñ‹Ñ… ÑÐ»Ð¾Ð²!)";
+            EndRaund.text = "Â ýòîò ðàç âðàã ïîáåäèë! :(" + "\n" + "Ïîïðîáóéòå óëó÷øèòü ýêèïèðîâêó èëè çàïîìíèòü áîëüøå âîëøåáíûõ ñëîâ!";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
@@ -220,7 +220,7 @@ public class Person : MonoBehaviour
             //HP_Person.NowXP += 250;
             StartCoroutine(Death_Enimy());
             //GameState = false;
-            EndRaund.text = "Ð’Ñ‹ Ð¿Ð¾Ð±ÐµÐ´Ð¸Ð»Ð¸! Ð¢Ð°Ðº Ð´ÐµÑ€Ð¶Ð°Ñ‚ÑŒ!";
+            EndRaund.text = "Ïîáåäà! Òàê äåðæàòü! :)";
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
