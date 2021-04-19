@@ -9,10 +9,20 @@ public class Bion_Shois : MonoBehaviour
     [SerializeField] private GameObject PanelOf = default;
     [SerializeField] private ChoisEnemy ChoisEnemy;
     [SerializeField] private Map map_Setting;
+    
+    [SerializeField] private SaveTutorial _saveTutorial = default;
+    [SerializeField] private GameObject Map_tutorial = default;
 
     private void Start()
     {
         ChoisEnemy.enabled = false;
+        _saveTutorial.LoadData();
+        if(!_saveTutorial.first_map)
+        {
+            Map_tutorial.SetActive(true);
+            _saveTutorial.first_map = true;
+            _saveTutorial.SaveData();
+        }
     }
 
     public void Chois(int NumberTerrain)

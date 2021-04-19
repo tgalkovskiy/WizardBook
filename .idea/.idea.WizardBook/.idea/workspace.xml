@@ -21,6 +21,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -34,18 +36,22 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PointCount.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Menu.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Tutorial.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -107,6 +113,9 @@
       <workItem from="1618576260862" duration="88000" />
       <workItem from="1618605249988" duration="1614000" />
       <workItem from="1618607204173" duration="1926000" />
+      <workItem from="1618643044268" duration="4130000" />
+      <workItem from="1618651605542" duration="11342000" />
+      <workItem from="1618756508273" duration="34000" />
     </task>
     <servers />
   </component>

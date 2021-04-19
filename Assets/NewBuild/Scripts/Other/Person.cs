@@ -116,7 +116,7 @@ public class Person : MonoBehaviour
         GerlAnimator[0].SetTrigger("Attack");
         Animator_Animy.SetTrigger("Damage");
         HP_E -= DamagePers;
-        Bamd_text_Eny.GetComponent<TextMesh>().text = (DamagePers).ToString();
+        Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
         Band.SetTrigger("Eny");
         if (HP_G <= 0 || HP_E <= 0)
         {
@@ -129,7 +129,7 @@ public class Person : MonoBehaviour
         Animator_Animy.SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
         HP_G -=DamgeEnemy-Deffence;
-        Band_Text_Pers.GetComponent<TextMesh>().text = (DamgeEnemy - Deffence).ToString();
+        Band_Text_Pers.GetComponent<TextMesh>().text = ((int)DamgeEnemy - Deffence).ToString();
         Band.SetTrigger("Pers");
         if (HP_G <= 0 || HP_E <= 0)
         {
@@ -258,7 +258,7 @@ public class Person : MonoBehaviour
         CameraEffect.Final();
         yield return new WaitForSeconds(2.5f);
         Death_Partical_Pers.SetActive(true);
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(2f);
         RoundPanel.SetActive(true); 
         RoundPanel.transform.DOMove(Lasttransform.position, 1f);
     }

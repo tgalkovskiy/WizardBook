@@ -15,6 +15,7 @@ public class ChoisEnemy : MonoBehaviour
     [SerializeField] private GameObject Discription = default;
     [SerializeField] private Text Text_Name = default;
     [SerializeField] private HP HP = default;
+    
     [SerializeField] private Map MapSetting = default;
     [SerializeField] private GameObject Battle = default;
     RaycastHit hit;

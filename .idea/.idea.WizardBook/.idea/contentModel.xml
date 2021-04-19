@@ -130,7 +130,9 @@
             <e p="ChoiesLanguege.cs" t="Include" />
             <e p="HP.cs" t="Include" />
             <e p="Map.cs" t="Include" />
+            <e p="SaveTutorial.cs" t="Include" />
             <e p="Setting.cs" t="Include" />
+            <e p="WrongWord.cs" t="Include" />
           </e>
           <e p="scripts" t="Include">
             <e p="Map" t="Include">

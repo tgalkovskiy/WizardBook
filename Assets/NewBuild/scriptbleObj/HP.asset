@@ -31,11 +31,11 @@ MonoBehaviour:
   Other_Icon: -1
   LVLPers: 1
   NextLVLXP: 150
-  NowXP: 0
+  NowXP: 80
   LVLBooK: 1
   NextLVL_BOOK_XP: 30
-  Now_BOOK_XP: 2
-  PointBook: 30
+  Now_BOOK_XP: 5
+  PointBook: 15
   NumberSworld: 0
   Word: "\uFEFF{\n  \"Word\": {\n    \"Rus\": {\n      \"1\": [\n        \"\u0413\u043B\u0430\u0437\",\n       
     \"\u041A\u0438\u0441\u0442\u044C \u0440\u0443\u043A\u0438\",\n        \"\u041D\u043E\u0433\u0430\",\n       
@@ -1738,12 +1738,12 @@ MonoBehaviour:
   - "\u041F\u0440\u0435\u0434\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439
     \u0434\u0443\u0445: +25% \u043A \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u043E\u043C\u0443
     \u0437\u043E\u043B\u043E\u0442\u0443"
-  Skills: 010101010101010101010101
+  Skills: 010100000000000100000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 2000
+  Gold: 2120
   Rubin: 20
   Max_Energy: 15
-  Now_Energy: 94
+  Now_Energy: 97
   _Tutorial: 0
-  Ches: 00000000
+  Ches: 01000000

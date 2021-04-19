@@ -7,23 +7,19 @@ using UnityEngine.UI;
 public class PageManeger : MonoBehaviour
 {
     [SerializeField] private HP StatPers;
-    //[SerializeField] private GameObject BG = default;
-    [SerializeField] private Image BG_image;
+
+    [SerializeField] private SaveTutorial _tutorial = default;
+    [SerializeField] private GameObject First_tutorial = default;
+    
+    
     [SerializeField] private GameObject Page1 =default;
     [SerializeField] private GameObject Page2 = default;
     [SerializeField] private GameObject Page3 = default;
     [SerializeField] private GameObject Page4 = default;
-    [SerializeField] private GameObject Window_Quip = default;
-    [SerializeField] private GameObject Equip_GameObj = default;
-    [SerializeField] private GameObject NO_money = default;
-    [SerializeField] private GameObject[] Weapon = default;
+    
     [SerializeField] private GameObject NextLVLMainPage = default;
     [SerializeField] private GameObject NextLVlBG = default;
-    [SerializeField] private Text AttackPers = default;
-    [SerializeField] private Text DeffencePers = default;
-    [SerializeField] private Text HP_pers = default;
-    [SerializeField] private Text Discription_Item = default;
-    [SerializeField] private Text Type_Item = default;
+    
     [SerializeField] private Text Gold = default;
     [SerializeField] private Text Rubin = default;
     [SerializeField] private Text Energy = default;
@@ -33,15 +29,19 @@ public class PageManeger : MonoBehaviour
     private void Awake()
     {
         StatPers.LoadData();
+        _tutorial.LoadData();
+        if (!_tutorial.first_tutorial)
+        {
+            First_tutorial.SetActive(true);
+            _tutorial.first_tutorial = true;
+            _tutorial.SaveData();
+        }
     }
     public void BOOK()
     {
         Page1.SetActive(false);
         Page3.SetActive(false);
         Page2.SetActive(true);
-        var A_BG = BG_image.color;
-        A_BG.a = 1;
-        BG_image.color = A_BG;
         Page4.SetActive(false);
         
     }

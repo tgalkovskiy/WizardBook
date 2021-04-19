@@ -8,12 +8,13 @@ using System.Text;
 using UnityEngine.UI;
 using UnityEngine.Networking;
 using System.Linq;
+using Random = System.Random;
 
 [Serializable]
 public class WordLoad : MonoBehaviour
 {
     //глобальный массив для всех слов
-    [SerializeField] private HP Person_HP;
+    [SerializeField] private HP Person_HP = default;
     private string Path = Application.streamingAssetsPath + "/TestJsnon.Jsnon";
     private string AllJson;
     [HideInInspector]public string[][] WordAll = new string[3][];
@@ -102,5 +103,9 @@ public class WordLoad : MonoBehaviour
             //Debug.Log(WordRus[i] + " " + WordEng[i] + " " + WordBel[i]);
         }
         CorrectWord = UnityEngine.Random.Range(0, WordRus.Length);
+        
     }
+
+    
+    
 }

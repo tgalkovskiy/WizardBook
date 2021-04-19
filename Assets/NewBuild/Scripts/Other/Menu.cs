@@ -14,12 +14,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private GameObject TutorialButtom = default;
     private void Start()
     {
-        if (HP._Tutorial)
-        {
-            Tutorial();
-            HP._Tutorial = false;
-            HP.SaveData();
-        }
+        
     }
     public void LoadMenu()
     {

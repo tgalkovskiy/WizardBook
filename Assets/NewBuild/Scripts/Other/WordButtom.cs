@@ -6,17 +6,21 @@ using UnityEngine.UI;
 public class WordButtom : MonoBehaviour
 {
     [SerializeField] private HP HP_PERS;
+    [SerializeField] private WrongWord _wrongWord = default;
     [SerializeField] WordLoad WordLoad;
     [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
     [SerializeField] private Button[] WordButtomMas = default;
     [SerializeField] private Text NowWord = default;
     [SerializeField] private Text TimerText = default;
     private bool Touch = false;
+    private bool Wrong_Word_bool = false;
+    private int Wrong_word_int = 0;
     public int Moves = 0;
     //[HideInInspector] static public string CorrectWord;
     private float Timer = 15f;
     [HideInInspector]public float Deff_Timer;
     [HideInInspector] public int Point_now_Battel = 0;
+    
    
     private void Start()
     {
@@ -70,12 +74,28 @@ public class WordButtom : MonoBehaviour
                     //Timer = 15f;
                     //CountCorrectWord += 1;
                     HP_PERS.Now_BOOK_XP += 1;
+                    if (Wrong_Word_bool)
+                    {
+                        _wrongWord.Wrong_Word_Ru.RemoveAt(Wrong_word_int);
+                        _wrongWord.Wrong_Word_Eng.RemoveAt(Wrong_word_int);
+                        _wrongWord.Wrong_Word_BEL.RemoveAt(Wrong_word_int);
+                        _wrongWord.Save_wrong_Word();
+                        Wrong_Word_bool = false;
+                    }
                 }
                 else
                 {
                     WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
                     WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
                     StartCoroutine(ChangeWordWrong(Buttoms));
+                    
+                    //запись ошибок
+                    _wrongWord.Wrong_Word_Ru.Add(WordLoad.WordAll[0][WordLoad.CorrectWord]);
+                    _wrongWord.Wrong_Word_Eng.Add(WordLoad.WordAll[1][WordLoad.CorrectWord]);
+                    _wrongWord.Wrong_Word_BEL.Add(WordLoad.WordAll[2][WordLoad.CorrectWord]);
+                    _wrongWord.Save_wrong_Word();
+                    Wrong_Word_bool = false;
+                    
                     //EventMeneger.EnemyAttack1.Invoke();
                     //Timer = 15f;
                     //CountCorrectWord = 0;
@@ -94,6 +114,11 @@ public class WordButtom : MonoBehaviour
     public void Word()
     {
         var A = EventMeneger.GerlAttack1.GetInvocationList();
+        int prop = Random.Range(0, 100);
+        if (prop > 50)
+        {
+            It_wrong_word();
+        }
         NowWord.text = WordLoad.WordAll[ChoiesLanguege.Languge1][WordLoad.CorrectWord];
         for(int i=0; i<WordButtomMas.Length; i++)
         {
@@ -107,6 +132,7 @@ public class WordButtom : MonoBehaviour
                 WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 55;
             }
         }
+        
     }
     public void Delete_Word()
     {
@@ -145,5 +171,19 @@ public class WordButtom : MonoBehaviour
     public void MovesCount()
     {
         Moves += 1;
+    }
+
+    private void It_wrong_word()
+    {
+        _wrongWord.Load_wrong_word();
+        if (_wrongWord.Wrong_Word_Ru.Count > 0)
+        {
+            int number_rwong_word = Random.Range(0, _wrongWord.Wrong_Word_Ru.Count);
+            Wrong_Word_bool = true;
+            Wrong_word_int = number_rwong_word;
+            WordLoad.WordAll[0][WordLoad.CorrectWord] = _wrongWord.Wrong_Word_Ru[number_rwong_word];
+            WordLoad.WordAll[1][WordLoad.CorrectWord] = _wrongWord.Wrong_Word_Eng[number_rwong_word];
+            WordLoad.WordAll[2][WordLoad.CorrectWord] = _wrongWord.Wrong_Word_BEL[number_rwong_word];
+        }
     }
 }

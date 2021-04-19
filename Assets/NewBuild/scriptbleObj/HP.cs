@@ -36,7 +36,6 @@ public class HP : ScriptableObject
        public int Energy_Max;
        public int Energy_Now;
        public string DateTime;
-       public bool Tutorial;
        public bool[] Ches;
 
     }
@@ -101,7 +100,7 @@ public class HP : ScriptableObject
     //Энергия 
     public int Max_Energy;
     public int Now_Energy;
-    public bool _Tutorial;
+    
     //time
     public DateTime DateTime;
     public bool[] Ches = new bool[4] {false,false,false,false};
@@ -211,7 +210,6 @@ public class HP : ScriptableObject
             Max_Energy = data.Energy_Max;
             Now_Energy = data.Energy_Now;
             DateTime = DateTime.Parse(data.DateTime);
-            _Tutorial = data.Tutorial;
             Ches = data.Ches;
             Time_Time();
         }
@@ -237,7 +235,7 @@ public class HP : ScriptableObject
             NowXP = 0;
             NumberSworld = 0;
             LVLBooK = 1;
-            PointBook = 30;
+            PointBook = 0;
             NextLVL_BOOK_XP = 30;
             Now_BOOK_XP = 0;
             Skills = new bool[12] { false, false, false, false, false, false, false, false, false, false, false, false };
@@ -248,7 +246,6 @@ public class HP : ScriptableObject
             Max_Energy = 15;
             Now_Energy = 100;
             DateTime = DateTime.Now;
-            _Tutorial = true;
             Ches = new bool[4]{ false, false, false, false };
         } 
         
