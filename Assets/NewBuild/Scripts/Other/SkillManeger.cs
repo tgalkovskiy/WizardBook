@@ -32,7 +32,7 @@ public class SkillManeger : MonoBehaviour
     
     //поджог
     [SerializeField] private Sprite[] Arson_Sprite = default;
-    private Image Buttom_Arson_Image;
+    public static Image Buttom_Arson_Image;
 
     private int EndArson =0;
     private int CooldownArson = 0;
@@ -40,24 +40,24 @@ public class SkillManeger : MonoBehaviour
 
     //защита скил
     [SerializeField] private Sprite[] Deffence_Sprite = default;
-    private Image Buttom_Deffence;
+    public  static Image Buttom_Deffence;
 
     private int End_Deff = 0;
-    private int Cooldown_Deff = 0;
+    public static int Cooldown_Deff = 0;
 
     //замедление скилл
     [SerializeField] private Sprite[] Time_stop = default;
-    private Image Buttom_Time_Stop;
+    public static Image Buttom_Time_Stop;
 
     private int EndTime =0;
-    private int CoolDown_Time = 0;
+    public static int CoolDown_Time = 0;
 
 
     [SerializeField] private Sprite[] Watter_skill = default;
-    private Image Buttom_Watter;
+    public static Image Buttom_Watter;
 
     private int End_Watter =0;
-    private int Cooldown_Watter = 0;
+    public static int Cooldown_Watter = 0;
     private void Awake()
     {
         //если активен второй сиклл
@@ -121,7 +121,7 @@ public class SkillManeger : MonoBehaviour
             if(WordButtom.Moves == CooldownArson)
             {
                 CooldownArson = 0;
-                Buttom_Arson_Image.sprite = Arson_Sprite[0];
+                //Buttom_Arson_Image.sprite = Arson_Sprite[0];
             }
         }
         //если активне 8 скилл
@@ -135,7 +135,7 @@ public class SkillManeger : MonoBehaviour
             if(WordButtom.Moves == Cooldown_Deff)
             {
                 Cooldown_Deff = 0;
-                Buttom_Deffence.sprite = Deffence_Sprite[0];
+                //Buttom_Deffence.sprite = Deffence_Sprite[0];
             }
         }
         //если 9 скилл
@@ -149,7 +149,7 @@ public class SkillManeger : MonoBehaviour
             if(WordButtom.Moves == CoolDown_Time)
             {
                 CoolDown_Time = 0;
-                Buttom_Time_Stop.sprite = Time_stop[0];
+                //Buttom_Time_Stop.sprite = Time_stop[0];
             }
         }
         //если 4 скилл
@@ -163,7 +163,7 @@ public class SkillManeger : MonoBehaviour
             if(WordButtom.Moves == Cooldown_Watter)
             {
                 Cooldown_Watter = 0;
-                Buttom_Watter.sprite = Watter_skill[0];
+                //Buttom_Watter.sprite = Watter_skill[0];
             }
         }
     }
@@ -179,7 +179,8 @@ public class SkillManeger : MonoBehaviour
             EventMeneger.EnemyAttack1 += Arson;
             EndArson = WordButtom.Moves + 3;
             CooldownArson = WordButtom.Moves + 6;
-            Buttom_Arson_Image.sprite = Arson_Sprite[1];
+            Buttom_Arson_Image.fillAmount = 0;
+            //Buttom_Arson_Image.sprite = Arson_Sprite[1];
         }
        
     }
@@ -190,9 +191,10 @@ public class SkillManeger : MonoBehaviour
             PersAnimator.SetTrigger("Shild");
             Magic.PlayOneShot(Magic_Clip[1]);
             Shild.SetActive(true);
-            Buttom_Deffence.sprite = Deffence_Sprite[1];
+            //Buttom_Deffence.sprite = Deffence_Sprite[1];
             Person.Deffence = 100;
-            Cooldown_Deff = WordButtom.Moves + 6- HP_SKills.LVL_Skill[7];
+            Buttom_Deffence.fillAmount = 0;
+            Cooldown_Deff = WordButtom.Moves + 6-HP_SKills.LVL_Skill[7];
             End_Deff = WordButtom.Moves + 1;
         }
     }
@@ -202,9 +204,10 @@ public class SkillManeger : MonoBehaviour
         {
             Time_shift.SetActive(true);
             Magic.PlayOneShot(Magic_Clip[2]);
-            Buttom_Time_Stop.sprite = Time_stop[1];
+            //Buttom_Time_Stop.sprite = Time_stop[1];
             Time.timeScale = 0.5f;
             CoolDown_Time = WordButtom.Moves + 6 - HP_SKills.LVL_Skill[10];
+            Buttom_Time_Stop.fillAmount = 0;
             EndTime = WordButtom.Moves + 1;
         }
     }
@@ -212,10 +215,11 @@ public class SkillManeger : MonoBehaviour
     {
         if(Cooldown_Watter == 0)
         {
-            Buttom_Watter.sprite = Watter_skill[1];
+            //Buttom_Watter.sprite = Watter_skill[1];
             Magic.PlayOneShot(Magic_Clip[3]);
             _Watter_skill.SetActive(true);
             WordButtom.Delete_Word();
+            Buttom_Watter.fillAmount = 0;
             Cooldown_Watter = WordButtom.Moves + 6 - HP_SKills.LVL_Skill[3];
             End_Watter = WordButtom.Moves + 1;
         }

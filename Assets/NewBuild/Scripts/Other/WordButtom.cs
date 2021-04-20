@@ -115,7 +115,7 @@ public class WordButtom : MonoBehaviour
     {
         var A = EventMeneger.GerlAttack1.GetInvocationList();
         int prop = Random.Range(0, 100);
-        if (prop > 50)
+        if (prop > 90)
         {
             It_wrong_word();
         }
@@ -160,7 +160,7 @@ public class WordButtom : MonoBehaviour
     }
     public IEnumerator ChangeWordWrong(int Number)
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(2);
         Time.timeScale = 1;
         WordButtomMas[Number].GetComponent<Image>().color = Color.white;
         WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.white;
@@ -171,6 +171,24 @@ public class WordButtom : MonoBehaviour
     public void MovesCount()
     {
         Moves += 1;
+        if(SkillManeger.Buttom_Arson_Image != null)
+        {
+           SkillManeger.Buttom_Arson_Image.fillAmount += 0.166f; 
+        }
+        if(SkillManeger.Buttom_Deffence != null)
+        {
+            SkillManeger.Buttom_Deffence.fillAmount +=1/(0.01f+SkillManeger.Cooldown_Deff);
+        }
+        if(SkillManeger.Buttom_Time_Stop != null)
+        {
+            SkillManeger.Buttom_Time_Stop.fillAmount +=1/(0.01f+SkillManeger.CoolDown_Time);
+        }
+
+        if (SkillManeger.Buttom_Watter != null)
+        {
+            SkillManeger.Buttom_Watter.fillAmount +=1/(0.01f+SkillManeger.Cooldown_Watter);
+        }
+        
     }
 
     private void It_wrong_word()

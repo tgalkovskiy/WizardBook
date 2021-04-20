@@ -42,6 +42,7 @@ public class Map : ScriptableObject
     
     public int Number_now;
     public int Now_map;
+    public string Text_now;
     public void SaveData()
     {
         string Path = System.IO.Path.Combine(Application.persistentDataPath, "Save_Map.Json");

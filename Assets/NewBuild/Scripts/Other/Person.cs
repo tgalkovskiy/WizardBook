@@ -9,6 +9,9 @@ public class Person : MonoBehaviour
 {
     [SerializeField] private WordButtom WordButtom;
     [SerializeField] private CameraEffect CameraEffect;
+    [SerializeField] private GameObject text_final = default;
+    [SerializeField] private GameObject Last_Pos_text = default;
+    [SerializeField] private Text Final_text = default;
     
     [SerializeField] private GameObject[] ActivElement = default;
     [SerializeField] private GameObject RoundPanel = default;
@@ -20,11 +23,11 @@ public class Person : MonoBehaviour
     [SerializeField] private GameObject[] Hit;
     
     [SerializeField] private Transform Lasttransform = default;
-    //подтягимваються от сюда сейвы и туда же пишутся
+    
     [SerializeField] private HP HP_Person = default;
 
     [SerializeField] private Map Map_Setting = default;
-    //Массивы аниматоров для выбора боссса и игрока
+
     public Animator[] GerlAnimator;
     //public Animator[] EnyAnimator;
     
@@ -40,11 +43,11 @@ public class Person : MonoBehaviour
     [HideInInspector] public float Deffence;
     [HideInInspector] public float Deffence_Standart_Lvl;
     
-    //Бамблы
+
     [SerializeField] private GameObject Band_Text_Pers;
     [SerializeField] private Animator Band;
     [SerializeField] private GameObject Bamd_text_Eny;
-    //текст для конца раунда
+
     [SerializeField] private Text Gold;
     [SerializeField] private Text Rubin;
     [SerializeField] private Text Point;
@@ -141,6 +144,7 @@ public class Person : MonoBehaviour
         if (HP_G <= 0)
         {
             GerlAnimator[0].SetTrigger("Die");
+            text_final.SetActive(false);
             int Gold_Lose = HP_Person.Gold_enemy/10;
             if (HP_Person.Skills[11])
             {
@@ -164,7 +168,7 @@ public class Person : MonoBehaviour
             //RoundPanel.SetActive(true);
             StartCoroutine(Death_Pers());
             //GameState = false;
-            EndRaund.text = "В этот раз враг победил! :(" + "\n" + "Попробуйте улучшить экипировку или запомнить больше волшебных слов!";
+            EndRaund.text = "Р’ СЌС‚РѕС‚ СЂР°Р· РїСЂР°С‚РёРІРЅРёРє РїРѕР±РµРґРёР» :(" + "\n" + "РџРѕРїСЂРѕР±СѓР№С‚Рµ СѓР»СѓС‡С€РёС‚СЊ СЃРЅР°СЂСЏР¶РµРЅРёРµ Рё РІС‹СѓС‡РёС‚СЊ Р±РѕР»СЊС€Рµ РІРѕР»С€РµР±РЅС‹С… СЃР»РѕРІ!";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
@@ -198,6 +202,7 @@ public class Person : MonoBehaviour
                 }
             }
             Map_Setting.SaveData();
+            Final_text.text = Map_Setting.Text_now;
             int Gold_W = HP_Person.Gold_enemy;
             if (HP_Person.Skills[11])
             {
@@ -220,7 +225,7 @@ public class Person : MonoBehaviour
             //HP_Person.NowXP += 250;
             StartCoroutine(Death_Enimy());
             //GameState = false;
-            EndRaund.text = "Победа! Так держать! :)";
+            EndRaund.text = "РџРѕР±РµРґР°, С‚Р°Рє РґРµСЂР¶Р°С‚СЊ :)";
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
@@ -256,7 +261,7 @@ public class Person : MonoBehaviour
     IEnumerator Death_Pers()
     {
         CameraEffect.Final();
-        yield return new WaitForSeconds(2.5f);
+        yield return new WaitForSeconds(1.5f);
         Death_Partical_Pers.SetActive(true);
         yield return new WaitForSeconds(2f);
         RoundPanel.SetActive(true); 
@@ -274,5 +279,11 @@ public class Person : MonoBehaviour
         HP_Enemy.value = HP_E;
         HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
     }
+
+    public void Close_text()
+    {
+        text_final.transform.DOMove(Last_Pos_text.transform.position, 1f);
+    }
+    
     
 }

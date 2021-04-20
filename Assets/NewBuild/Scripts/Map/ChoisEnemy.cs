@@ -52,6 +52,7 @@ public class ChoisEnemy : MonoBehaviour
                       HP.Rubin_Enemy = statEnemy.Rubin;
                       HP.Chess_Drop = statEnemy.Chess;
                       MapSetting.Number_now = statEnemy.PosGame;
+                      MapSetting.Text_now = statEnemy.Last_text;
                       //MapSetting.Number += 1;
                     }
                     else
@@ -86,7 +87,8 @@ public class ChoisEnemy : MonoBehaviour
                         HP.Rubin_Enemy = statEnemy.Rubin;
                         HP.Chess_Drop = statEnemy.Chess;
                         MapSetting.Number_now = statEnemy.PosGame;
-                      
+                        MapSetting.Text_now = statEnemy.Last_text;
+
                         //MapSetting.Number += 1;
                     }
                     else
