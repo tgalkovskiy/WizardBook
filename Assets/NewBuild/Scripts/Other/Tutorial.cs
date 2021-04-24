@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -7,7 +8,12 @@ public class Tutorial : MonoBehaviour
 {
     public List<GameObject> Page_tutorial;
     private int Number = 0;
-    
+
+    private void OnEnable()
+    {
+        Time.timeScale = 0;
+    }
+
     public void Next_page()
     {
         if (Number == Page_tutorial.Count-1)

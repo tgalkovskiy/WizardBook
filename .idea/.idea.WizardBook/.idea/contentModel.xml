@@ -143,6 +143,7 @@
             <e p="Other" t="Include">
               <e p="CameraEffect.cs" t="Include" />
               <e p="DeleteJson.cs" t="Include" />
+              <e p="Effect.cs" t="Include" />
               <e p="EventMeneger.cs" t="Include" />
               <e p="Fortuna.cs" t="Include" />
               <e p="Languge.cs" t="Include" />

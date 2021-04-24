@@ -21,6 +21,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -34,24 +35,25 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PointCount.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Tutorial.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Tutorial.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -117,6 +119,8 @@
       <workItem from="1618651605542" duration="11342000" />
       <workItem from="1618756508273" duration="34000" />
       <workItem from="1618940458379" duration="4271000" />
+      <workItem from="1619166003395" duration="1402000" />
+      <workItem from="1619187010318" duration="18755000" />
     </task>
     <servers />
   </component>

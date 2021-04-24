@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Rendering.PostProcessing;
 
 public class CameraEffect : MonoBehaviour
 {
@@ -10,7 +11,7 @@ public class CameraEffect : MonoBehaviour
     [SerializeField] private Vector3 StartAngle= default;
     [SerializeField] private GameObject Canvas = default;
     [SerializeField] private SaveTutorial _tutorial;
-    [SerializeField] private GameObject First_figth = default; 
+    [SerializeField] private GameObject First_figth = default;
     private Camera Camera;
     private bool trate = false;
     bool comleted; 
@@ -43,15 +44,15 @@ public class CameraEffect : MonoBehaviour
     {
         if(fieldOfView>85 && !trate)
         {
-            fieldOfView -= Time.deltaTime;
+            fieldOfView -= Time.deltaTime*2;
             if (fieldOfView <= 85)
             {
                 trate = true;
             }
         }
-        if(fieldOfView<120 && trate)
+        if(fieldOfView<100 && trate)
         {
-            fieldOfView += Time.deltaTime;
+            fieldOfView += Time.deltaTime*2;
             if (fieldOfView >= 100)
             {
                 trate = false;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.Rendering.PostProcessing;
 
 public class Person : MonoBehaviour
 {
@@ -24,9 +25,16 @@ public class Person : MonoBehaviour
     
     [SerializeField] private Transform Lasttransform = default;
     
+    [SerializeField] private PostProcessVolume _process =default;
+    private Vignette _vignette = default;
+    
     [SerializeField] private HP HP_Person = default;
 
     [SerializeField] private Map Map_Setting = default;
+
+    [SerializeField] private SaveTutorial _tutorial = default;
+    [SerializeField] private GameObject VinTutorial = default;
+    [SerializeField] private GameObject LosTutorial = default;
 
     public Animator[] GerlAnimator;
     //public Animator[] EnyAnimator;
@@ -98,20 +106,23 @@ public class Person : MonoBehaviour
         HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
         HP_Enemy.value = HP_E;
         HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
+        _process.profile.TryGetSettings(out _vignette);
     }
 
-    private void Update()
+    
+    /*private void FixedUpdate()
     {
-        /*HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
-        HP_Enemy.value = HP_E;
-        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();*/
-        /*if (GameState)
+        float vin = _vignette.intensity.value;
+        if (vin < vin * 10 / 100)
         {
-          EndRound();
-        }*/
-       
-    }
+             _vignette.intensity.value += Time.deltaTime;
+        }
+        else
+        {
+            _vignette.intensity.value -= Time.deltaTime;
+        }
+        
+    }*/
 
     private void AttackGerl()
     {
@@ -122,7 +133,7 @@ public class Person : MonoBehaviour
         Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
         Band.SetTrigger("Eny");
         if (HP_G <= 0 || HP_E <= 0)
-        {
+        { 
             EndRound();
         }
     }
@@ -132,6 +143,10 @@ public class Person : MonoBehaviour
         Animator_Animy.SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
         HP_G -=DamgeEnemy-Deffence;
+        if (_vignette.intensity.value < 0.7f)
+        {
+           _vignette.intensity.value += 0.25f; 
+        }
         Band_Text_Pers.GetComponent<TextMesh>().text = ((int)DamgeEnemy - Deffence).ToString();
         Band.SetTrigger("Pers");
         if (HP_G <= 0 || HP_E <= 0)
@@ -257,6 +272,12 @@ public class Person : MonoBehaviour
         yield return new WaitForSeconds(2.5f);
         RoundPanel.SetActive(true); 
         RoundPanel.transform.DOMove(Lasttransform.position, 1f);
+        if (!_tutorial.first_victory)
+        {
+            VinTutorial.SetActive(true);
+            _tutorial.first_victory = true;
+            _tutorial.SaveData();
+        } 
     }
     IEnumerator Death_Pers()
     {
@@ -266,6 +287,12 @@ public class Person : MonoBehaviour
         yield return new WaitForSeconds(2f);
         RoundPanel.SetActive(true); 
         RoundPanel.transform.DOMove(Lasttransform.position, 1f);
+        if (!_tutorial.first_lose)
+        {
+            LosTutorial.SetActive(true);
+            _tutorial.first_lose = true;
+            _tutorial.SaveData();
+        } 
     }
 
     IEnumerator Hit_pers(int Number)

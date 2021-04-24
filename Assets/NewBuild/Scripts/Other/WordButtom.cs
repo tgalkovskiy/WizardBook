@@ -12,12 +12,14 @@ public class WordButtom : MonoBehaviour
     [SerializeField] private Button[] WordButtomMas = default;
     [SerializeField] private Text NowWord = default;
     [SerializeField] private Text TimerText = default;
-    private bool Touch = false;
+    public static bool Touch = false;
+    private bool Shake_bool = false;
     private bool Wrong_Word_bool = false;
     private int Wrong_word_int = 0;
     public int Moves = 0;
     //[HideInInspector] static public string CorrectWord;
     private float Timer = 15f;
+    
     [HideInInspector]public float Deff_Timer;
     [HideInInspector] public int Point_now_Battel = 0;
     
@@ -40,8 +42,8 @@ public class WordButtom : MonoBehaviour
     private void OnDisable()
     {
         
-        EventMeneger.GerlAttack1 += MovesCount;
-        EventMeneger.EnemyAttack1 += MovesCount;
+        EventMeneger.GerlAttack1 -= MovesCount;
+        EventMeneger.EnemyAttack1 -= MovesCount;
         EventMeneger.GerlAttack1 -= WordLoad.LoadText;
         EventMeneger.EnemyAttack1 -= WordLoad.LoadText;
         EventMeneger.GerlAttack1 -= Word;
@@ -55,6 +57,11 @@ public class WordButtom : MonoBehaviour
         {
             Timer = Deff_Timer;
             EventMeneger.EnemyAttack1.Invoke();
+        }
+        if (Shake_bool)
+        {
+            Vector3 Shake = new Vector3(Random.Range(-0.1f, 0.1f), Random.Range(-0.1f, 0.1f), 0);
+            Camera.main.transform.localPosition += Shake;
         }
         
     }
@@ -70,6 +77,8 @@ public class WordButtom : MonoBehaviour
                 {
                     WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
                     StartCoroutine(ChangeWordCorrect(Buttoms));
+                    StartCoroutine(Shake(1.4f));
+                    
                     //EventMeneger.GerlAttack1.Invoke();
                     //Timer = 15f;
                     //CountCorrectWord += 1;
@@ -83,12 +92,12 @@ public class WordButtom : MonoBehaviour
                         Wrong_Word_bool = false;
                     }
                 }
-                else
+            else
                 {
                     WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
                     WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
                     StartCoroutine(ChangeWordWrong(Buttoms));
-                    
+                    StartCoroutine(Shake(2.4f));
                     //запись ошибок
                     _wrongWord.Wrong_Word_Ru.Add(WordLoad.WordAll[0][WordLoad.CorrectWord]);
                     _wrongWord.Wrong_Word_Eng.Add(WordLoad.WordAll[1][WordLoad.CorrectWord]);
@@ -106,6 +115,7 @@ public class WordButtom : MonoBehaviour
                 //    //HP_PERS.PointBook += 1;
                 //    //Point_now_Battel += 1;
                 //    CountCorrectWord = 0;
+                
         }
     }
     /// <summary>
@@ -160,6 +170,7 @@ public class WordButtom : MonoBehaviour
     }
     public IEnumerator ChangeWordWrong(int Number)
     {
+        
         yield return new WaitForSeconds(2);
         Time.timeScale = 1;
         WordButtomMas[Number].GetComponent<Image>().color = Color.white;
@@ -167,6 +178,17 @@ public class WordButtom : MonoBehaviour
         EventMeneger.EnemyAttack1.Invoke();
         Timer = Deff_Timer;
         Touch = false;
+    }
+
+
+    IEnumerator Shake(float time)
+    {
+        Vector3 Origin_trnasform = Camera.main.transform.localPosition;
+        yield return new WaitForSeconds(time);
+        Shake_bool = true;
+        yield return new WaitForSeconds(0.4f);
+        Shake_bool = false;
+        Camera.main.transform.localPosition = Origin_trnasform;
     }
     public void MovesCount()
     {
@@ -204,4 +226,7 @@ public class WordButtom : MonoBehaviour
             WordLoad.WordAll[2][WordLoad.CorrectWord] = _wrongWord.Wrong_Word_BEL[number_rwong_word];
         }
     }
+    
+    
+    
 }

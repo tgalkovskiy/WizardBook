@@ -16,16 +16,17 @@ public class PageManeger : MonoBehaviour
     [SerializeField] private GameObject Page2 = default;
     [SerializeField] private GameObject Page3 = default;
     [SerializeField] private GameObject Page4 = default;
+    [SerializeField] private GameObject[] Buttoms = default;
     
     [SerializeField] private GameObject NextLVLMainPage = default;
     [SerializeField] private GameObject NextLVlBG = default;
+    [SerializeField] private GameObject Chess = default;
+    
     
     [SerializeField] private Text Gold = default;
     [SerializeField] private Text Rubin = default;
     [SerializeField] private Text Energy = default;
-    private int ChoisKnife;
-    private int Cost_now_Item;
-    private int Attack_Chois;
+   
     private void Awake()
     {
         StatPers.LoadData();
@@ -36,6 +37,11 @@ public class PageManeger : MonoBehaviour
             _tutorial.first_tutorial = true;
             _tutorial.SaveData();
         }
+
+        Buttoms[0].transform.DOScale(1.3f, 0.4f);
+        Buttoms[1].transform.DOScale(1.0f, 0.4f);
+        Buttoms[2].transform.DOScale(1.0f, 0.4f);
+        Buttoms[3].transform.DOScale(1.0f, 0.4f);
     }
     public void BOOK()
     {
@@ -43,6 +49,10 @@ public class PageManeger : MonoBehaviour
         Page3.SetActive(false);
         Page2.SetActive(true);
         Page4.SetActive(false);
+        Buttoms[0].transform.DOScale(1.0f, 0.4f);
+        Buttoms[1].transform.DOScale(1.3f, 0.4f);
+        Buttoms[2].transform.DOScale(1.0f, 0.4f);
+        Buttoms[3].transform.DOScale(1.0f, 0.4f);
         
     }
     public void EQUIP()
@@ -51,18 +61,23 @@ public class PageManeger : MonoBehaviour
         Page1.SetActive(false);
         Page4.SetActive(false);
         Page3.SetActive(true);
+        Buttoms[0].transform.DOScale(1.0f, 0.4f);
+        Buttoms[1].transform.DOScale(1.0f, 0.4f);
+        Buttoms[2].transform.DOScale(1.3f, 0.4f);
+        Buttoms[3].transform.DOScale(1.0f, 0.4f);
        
 
     }
     public void MainPage()
     {
         Page1.SetActive(true);
-        /*var A_BG = BG_image.color;
-        A_BG.a = 1;
-        BG_image.color = A_BG;*/
         Page2.SetActive(false);
         Page3.SetActive(false);
         Page4.SetActive(false);
+        Buttoms[0].transform.DOScale(1.3f, 0.4f);
+        Buttoms[1].transform.DOScale(1.0f, 0.4f);
+        Buttoms[2].transform.DOScale(1.0f, 0.4f);
+        Buttoms[3].transform.DOScale(1.0f, 0.4f);
     }
 
     public void Shop()
@@ -71,13 +86,13 @@ public class PageManeger : MonoBehaviour
         Page2.SetActive(false);
         Page3.SetActive(false);
         Page4.SetActive(true);
-        /*var A_BG = BG_image.color;
-        A_BG.a = 1;
-        BG_image.color = A_BG;*/
-
+        Buttoms[0].transform.DOScale(1.0f, 0.4f);
+        Buttoms[1].transform.DOScale(1.0f, 0.4f);
+        Buttoms[2].transform.DOScale(1.0f, 0.4f);
+        Buttoms[3].transform.DOScale(1.3f, 0.4f);
     }
     
-    private void Update()
+    private void FixedUpdate()
     {
         Gold.text = StatPers.Gold.ToString();
         Rubin.text = StatPers.Rubin.ToString();
@@ -92,6 +107,19 @@ public class PageManeger : MonoBehaviour
             NextLVLMainPage.SetActive(false);
             NextLVlBG.SetActive(false);
         }
+        for(int i = 0; i < StatPers.Ches.Length; i++)
+        {
+            if (StatPers.Ches[i]==true)
+            {
+                Chess.SetActive(true);
+                break;
+            }
+            else
+            {
+                Chess.SetActive(false);
+            }
+        }
+        
 
     }
     public void Enrgy_Plus()

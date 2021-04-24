@@ -55,7 +55,7 @@ public class Transporent : MonoBehaviour
             {
                 if (alpha == 1.0f)
                 {
-                    alpha = 0.2f;
+                    alpha = 0.3f;
                 }
                 else
                     alpha = 1.0f;
@@ -80,7 +80,7 @@ public class Transporent : MonoBehaviour
             {
                 if (alpha == 1.0f)
                 {
-                    alpha = 0.2f;
+                    alpha = 0.3f;
                 }
                 else
                     alpha = 1.0f;
