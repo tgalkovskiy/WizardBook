@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP_Gerl: 200
   NumberEnemy: 4
-  HP_Enemy: 150
-  Damage: 50
-  Gold_enemy: 120
-  Exp_enemy: 80
-  Rubin_Enemy: 0
+  HP_Enemy: 1500
+  Damage: 500
+  Gold_enemy: 1000
+  Exp_enemy: 500
+  Rubin_Enemy: 1
   Chess_Drop: 1
   Property_W: 1e0000000000000000000000
   Weapon_Grad: 0
@@ -32,7 +32,7 @@ MonoBehaviour:
   LVLPers: 1
   NextLVLXP: 150
   NowXP: 0
-  LVLBooK: 1
+  LVLBooK: 7
   NextLVL_BOOK_XP: 25
   Now_BOOK_XP: 0
   PointBook: 0
@@ -1744,5 +1744,5 @@ MonoBehaviour:
   Gold: 2000
   Rubin: 20
   Max_Energy: 15
-  Now_Energy: 100
-  Ches: 01010100
+  Now_Energy: 64
+  Ches: 00000000
