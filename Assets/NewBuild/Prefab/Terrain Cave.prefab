@@ -38078,6 +38078,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 0
   Name: "\u041E\u043C\u043E\u043D\u0438\u043A\u0443\u043B"
+  Last_text: 
   NumberEnemy: 0
   HP: 150
   Damage: 30
@@ -38136,6 +38137,7 @@ MonoBehaviour:
     \u0447\u0430\u0440\u044B \u0423\u0441\u0430\u043A\u0443\u043B\u044B \u0441\u0434\u0435\u043B\u0430\u043B\u0438
     \u0435\u0433\u043E \u043E\u0437\u043B\u043E\u0431\u043B\u0435\u043D\u043D\u044B\u043C
     \u0438 \u0442\u0440\u0443\u0441\u043B\u0438\u0432\u044B\u043C. "
+  Last_text: 
   NumberEnemy: 1
   HP: 2000
   Damage: 700
@@ -43198,6 +43200,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 1
   Name: "\u0414\u0440\u0435\u0432\u0435\u043D\u044C"
+  Last_text: 
   NumberEnemy: 6
   HP: 700
   Damage: 150
@@ -43263,6 +43266,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 5
   Name: "\u0414\u0440\u0435\u0432\u0435\u043D\u044C"
+  Last_text: 
   NumberEnemy: 6
   HP: 700
   Damage: 160
@@ -43301,6 +43305,7 @@ MonoBehaviour:
     \u043A\u043E\u0442\u043E\u0440\u043E\u043C \u043D\u0435 \u0432\u044B\u043D\u043E\u0441\u044F\u0442
     \u043E\u043F\u0440\u0430\u0432\u0434\u0430\u043D\u0438\u0439 \u0442\u0430\u043A\u0438\u043C
     \u043A\u0430\u043A \u0442\u044B, \u0447\u0435\u043B\u043E\u0432\u0435\u0447\u0438\u0448\u043A\u0430! "
+  Last_text: 
   NumberEnemy: 8
   HP: 1200
   Damage: 350
@@ -43373,6 +43378,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 6
   Name: "\u041E\u0433\u0440"
+  Last_text: 
   NumberEnemy: 7
   HP: 900
   Damage: 250
@@ -43565,6 +43571,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 0
   Name: "\u0414\u0440\u0435\u0432\u0435\u043D\u044C"
+  Last_text: 
   NumberEnemy: 6
   HP: 700
   Damage: 150
@@ -43865,7 +43872,7 @@ Terrain:
   m_DrawInstanced: 0
   m_DrawTreesAndFoliage: 1
   m_ReflectionProbeUsage: 1
-  m_MaterialTemplate: {fileID: 10652, guid: 0000000000000000f000000000000000, type: 0}
+  m_MaterialTemplate: {fileID: 2100000, guid: 8eaa0293d549017489575a1b1ad0537f, type: 2}
   m_BakeLightProbesForTrees: 1
   m_PreserveTreePrototypeLayers: 0
   m_DeringLightProbesForTrees: 1
@@ -43912,6 +43919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 1
   Name: "\u041B\u0435\u0434\u044F\u043D\u043E\u0439 \u0413\u043E\u043B\u0435\u043C"
+  Last_text: 
   NumberEnemy: 3
   HP: 1000
   Damage: 200
@@ -44332,6 +44340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 3
   Name: "\u0414\u0440\u0435\u0432\u0435\u043D\u044C"
+  Last_text: 
   NumberEnemy: 6
   HP: 700
   Damage: 160
@@ -44397,6 +44406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 2
   Name: "\u0417\u0435\u043C\u043B\u044F\u043D\u043E\u0439 \u0413\u043E\u043B\u0435\u043C"
+  Last_text: 
   NumberEnemy: 4
   HP: 650
   Damage: 160
@@ -44573,6 +44583,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 2
   Name: "\u0414\u0440\u0435\u0432\u0435\u043D\u044C"
+  Last_text: 
   NumberEnemy: 6
   HP: 700
   Damage: 150
@@ -44608,6 +44619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 4
   Name: "\u0414\u0440\u0435\u0432\u0435\u043D\u044C"
+  Last_text: 
   NumberEnemy: 6
   HP: 700
   Damage: 160
@@ -44679,6 +44691,7 @@ MonoBehaviour:
     \u0437\u043B\u043E\u0439 \u043C\u0430\u0433\u0438\u0438 \u0432 \u044D\u0442\u043E\u043C
     \u043B\u0435\u0441\u0443 \u043E\u0449\u0443\u0449\u0430\u043B\u043E\u0441\u044C
     \u0441\u0438\u043B\u044C\u043D\u0435\u0435. "
+  Last_text: 
   NumberEnemy: 3
   HP: 650
   Damage: 170
@@ -45047,6 +45060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 5
   Name: "\u041E\u0433\u0440"
+  Last_text: 
   NumberEnemy: 7
   HP: 900
   Damage: 250
@@ -45163,6 +45177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PosGame: 3
   Name: "\u041E\u0433\u0440"
+  Last_text: 
   NumberEnemy: 7
   HP: 600
   Damage: 180
@@ -45423,6 +45438,7 @@ MonoBehaviour:
     \u043C\u0435\u043D\u044F \u0433\u043B\u0430\u0432\u043D\u044B\u043C \u0432 \u043F\u043B\u0435\u043C\u0435\u043D\u0438,
     \u0435\u0441\u043B\u0438 \u043C\u044B \u043D\u0435 \u0432\u043F\u0443\u0441\u0442\u0438\u043C
     \u043B\u044E\u0434\u0438\u0448\u0435\u043A \u043D\u0430 \u0438\u0445 \u0437\u0435\u043C\u043B\u0438! "
+  Last_text: 
   NumberEnemy: 9
   HP: 1400
   Damage: 350
@@ -49503,6 +49519,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000014004616774, guid: 4c9eeb66e4e34be43b04b66ff0e5bb5e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 23000011993578378, guid: 4c9eeb66e4e34be43b04b66ff0e5bb5e,
+        type: 3}
+      propertyPath: m_CastShadows
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

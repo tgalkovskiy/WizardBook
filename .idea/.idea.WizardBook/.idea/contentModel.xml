@@ -52,6 +52,9 @@
             <e p="ETFXRotation.cs" t="Include" />
           </e>
         </e>
+        <e p="Fantasy Skybox FREE" t="Include">
+          <e p="Readme.txt" t="Include" />
+        </e>
         <e p="FantasyPack1" t="Include">
           <e p="Ent" t="Include">
             <e p="Readme.txt" t="Include" />
@@ -138,6 +141,7 @@
             <e p="Map" t="Include">
               <e p="Bion_Shois.cs" t="Include" />
               <e p="ChoisEnemy.cs" t="Include" />
+              <e p="DayNigth.cs" t="Include" />
               <e p="StatEnemy.cs" t="Include" />
             </e>
             <e p="Other" t="Include">

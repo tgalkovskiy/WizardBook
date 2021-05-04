@@ -17,7 +17,7 @@ public class Bion_Shois : MonoBehaviour
 
     [SerializeField] private Sprite[] _iconMap = default;
     [SerializeField] private GameObject[] _text = default;
-    
+
     [SerializeField] private SaveTutorial _saveTutorial = default;
     [SerializeField] private GameObject Map_tutorial = default;
     

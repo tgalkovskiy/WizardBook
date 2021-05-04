@@ -47,7 +47,7 @@ public class Person : MonoBehaviour
     [HideInInspector]public float HP_E;
     [HideInInspector]public float DamagePers;
     [HideInInspector]public float DamgeEnemy;
-    //[HideInInspector]static public bool GameState = true;
+    [HideInInspector]static public bool GameState = true;
     [HideInInspector] public float Deffence;
     [HideInInspector] public float Deffence_Standart_Lvl;
     
@@ -80,7 +80,7 @@ public class Person : MonoBehaviour
     private void Awake()
     {
         HP_Person.LoadData();
-        //GameState = true;
+        GameState = true;
         HP_G = HP_Person.HP_Gerl + HP_Person.Property_W[1]+ HP_Person.Property_A[1]+HP_Person.Property_O[0];
         HP_E = HP_Person.HP_Enemy;
         DamgeEnemy = HP_Person.Damage;
@@ -133,7 +133,8 @@ public class Person : MonoBehaviour
         Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
         Band.SetTrigger("Eny");
         if (HP_G <= 0 || HP_E <= 0)
-        { 
+        {
+            GameState = false;
             EndRound();
         }
     }
@@ -151,6 +152,7 @@ public class Person : MonoBehaviour
         Band.SetTrigger("Pers");
         if (HP_G <= 0 || HP_E <= 0)
         {
+            GameState = false;
             EndRound();
         }
     }

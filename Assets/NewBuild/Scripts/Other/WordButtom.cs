@@ -70,7 +70,7 @@ public class WordButtom : MonoBehaviour
         //получение стринги в кнопке
         //string Word = WordButtomMas[Buttoms].GetComponentInChildren<Text>().text;
         //запуск ивентов
-        if (!Touch)
+        if (!Touch && Person.GameState)
         {
             Touch = true;
             if (Buttoms == WordLoad.CorrectWord)

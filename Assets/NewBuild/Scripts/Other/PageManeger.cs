@@ -22,7 +22,8 @@ public class PageManeger : MonoBehaviour
     [SerializeField] private GameObject NextLVLMainPage = default;
     [SerializeField] private GameObject NextLVlBG = default;
     [SerializeField] private GameObject Chess = default;
-    
+
+    [SerializeField] private Text Text_book = default;
     
     [SerializeField] private Text Gold = default;
     [SerializeField] private Text Rubin = default;
@@ -35,23 +36,26 @@ public class PageManeger : MonoBehaviour
 
     private void OnEnable()
     {
-        if (StatPers.LVLBooK <= 3)
+        if (StatPers.LVLBooK < 3)
         {
             _imagesBook.sprite = _imagesMenu[0];
             _imagesUp.sprite = _imagesMenu[1];
             _imagesDown.sprite = _imagesMenu[1];
+            Text_book.text = "Ученик Мага";
         }
-        if (StatPers.LVLBooK > 3 && StatPers.LVLBooK <= 6)
+        if (StatPers.LVLBooK >= 3 && StatPers.LVLBooK < 6)
         {
             _imagesBook.sprite = _imagesMenu[2];
             _imagesUp.sprite = _imagesMenu[3];
             _imagesDown.sprite = _imagesMenu[3];
+            Text_book.text = "Адепт";
         }
-        if (StatPers.LVLBooK > 6 )
+        if (StatPers.LVLBooK >= 6 )
         {
             _imagesBook.sprite = _imagesMenu[4];
             _imagesUp.sprite = _imagesMenu[5];
             _imagesDown.sprite = _imagesMenu[5];
+            Text_book.text = "Маг";
         }
     }
 
