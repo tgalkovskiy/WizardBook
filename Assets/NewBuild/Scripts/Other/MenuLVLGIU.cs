@@ -55,7 +55,7 @@ public class MenuLVLGIU : MonoBehaviour
 
     public void SliilButtom(int NumberButtom)
     {
-        Discription_Skill_Text.text = HP_PERS.Description_Skill[NumberButtom] + "\n" + "Уровень " + HP_PERS.LVL_Skill[NumberButtom]+"\n"+"Цена "+Cost_Now_Skill;
+        Discription_Skill_Text.text = HP_PERS.Description_Skill[NumberButtom] + "\n"  +"Уровень " + HP_PERS.LVL_Skill[NumberButtom]+"\n"+"Цена "+Cost_Now_Skill;
         Debug.Log(HP_PERS.Description_Skill[NumberButtom]);
         NumberSkill = NumberButtom;
         Skill = true;

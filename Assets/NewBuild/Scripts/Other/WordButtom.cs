@@ -51,12 +51,15 @@ public class WordButtom : MonoBehaviour
     }
     private void Update()
     {
-        Timer -= Time.deltaTime;
-        TimerText.text = ((int)Timer).ToString();
-        if (Timer <= 0 && !Touch)
+        if (Person.GameState)
         {
-            Timer = Deff_Timer;
-            EventMeneger.EnemyAttack1.Invoke();
+            Timer -= Time.deltaTime;
+            TimerText.text = ((int) Timer).ToString();
+            if (Timer <= 0)
+            {
+                Timer = Deff_Timer;
+                EventMeneger.EnemyAttack1.Invoke();
+            }
         }
         if (Shake_bool)
         {
