@@ -53,7 +53,7 @@ public class WordButtom : MonoBehaviour
     {
         Timer -= Time.deltaTime;
         TimerText.text = ((int)Timer).ToString();
-        if (Timer <= 0)
+        if (Timer <= 0 && !Touch)
         {
             Timer = Deff_Timer;
             EventMeneger.EnemyAttack1.Invoke();
@@ -74,36 +74,36 @@ public class WordButtom : MonoBehaviour
         {
             Touch = true;
             if (Buttoms == WordLoad.CorrectWord)
+            {
+                WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
+                StartCoroutine(ChangeWordCorrect(Buttoms));
+                StartCoroutine(Shake(1.4f));
+
+                //EventMeneger.GerlAttack1.Invoke();
+                //Timer = 15f;
+                //CountCorrectWord += 1;
+                HP_PERS.Now_BOOK_XP += 1;
+                if (Wrong_Word_bool)
                 {
-                    WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
-                    StartCoroutine(ChangeWordCorrect(Buttoms));
-                    StartCoroutine(Shake(1.4f));
-                    
-                    //EventMeneger.GerlAttack1.Invoke();
-                    //Timer = 15f;
-                    //CountCorrectWord += 1;
-                    HP_PERS.Now_BOOK_XP += 1;
-                    if (Wrong_Word_bool)
-                    {
-                        _wrongWord.Wrong_Word_Ru.RemoveAt(Wrong_word_int);
-                        _wrongWord.Wrong_Word_Eng.RemoveAt(Wrong_word_int);
-                        _wrongWord.Wrong_Word_BEL.RemoveAt(Wrong_word_int);
-                        _wrongWord.Save_wrong_Word();
-                        Wrong_Word_bool = false;
-                    }
-                }
-            else
-                {
-                    WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
-                    WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
-                    StartCoroutine(ChangeWordWrong(Buttoms));
-                    StartCoroutine(Shake(2.4f));
-                    //запись ошибок
-                    _wrongWord.Wrong_Word_Ru.Add(WordLoad.WordAll[0][WordLoad.CorrectWord]);
-                    _wrongWord.Wrong_Word_Eng.Add(WordLoad.WordAll[1][WordLoad.CorrectWord]);
-                    _wrongWord.Wrong_Word_BEL.Add(WordLoad.WordAll[2][WordLoad.CorrectWord]);
+                    _wrongWord.Wrong_Word_Ru.RemoveAt(Wrong_word_int);
+                    _wrongWord.Wrong_Word_Eng.RemoveAt(Wrong_word_int);
+                    _wrongWord.Wrong_Word_BEL.RemoveAt(Wrong_word_int);
                     _wrongWord.Save_wrong_Word();
                     Wrong_Word_bool = false;
+                }
+            }
+            else
+            {
+                WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
+                WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
+                StartCoroutine(ChangeWordWrong(Buttoms));
+                StartCoroutine(Shake(2.4f));
+                //запись ошибок
+                _wrongWord.Wrong_Word_Ru.Add(WordLoad.WordAll[0][WordLoad.CorrectWord]);
+                _wrongWord.Wrong_Word_Eng.Add(WordLoad.WordAll[1][WordLoad.CorrectWord]);
+                _wrongWord.Wrong_Word_BEL.Add(WordLoad.WordAll[2][WordLoad.CorrectWord]);
+                _wrongWord.Save_wrong_Word();
+                Wrong_Word_bool = false;
                     
                     //EventMeneger.EnemyAttack1.Invoke();
                     //Timer = 15f;
@@ -127,7 +127,7 @@ public class WordButtom : MonoBehaviour
         int prop = Random.Range(0, 100);
         if (prop > 90)
         {
-            It_wrong_word();
+            //It_wrong_word();
         }
         NowWord.text = WordLoad.WordAll[ChoiesLanguege.Languge1][WordLoad.CorrectWord];
         for(int i=0; i<WordButtomMas.Length; i++)
