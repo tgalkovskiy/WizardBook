@@ -22,13 +22,15 @@ public class ChoisEnemy : MonoBehaviour
     Vector3 StartPosCa;
     Quaternion StartQuatCam;
     [HideInInspector]public bool Touch = false;
-    [HideInInspector] public int maxEntmy = 0;
+    public int maxEntmy = 0;
     private void Start()
     {
         StartPosCa = this.transform.position;
         StartQuatCam = this.transform.rotation;
-        PosPers();
         //MapSetting.LoadData();
+        //Debug.Log(maxEntmy+"FSDF");
+        PosPers();
+        
     }
     private void Update()
     {

@@ -105,17 +105,17 @@ public class Map : ScriptableObject
         else
         {
             Debug.Log("No Save mapSetting");
-            Number_Max1 = 0;
+            Number_Max1 = 1;
             X1 = 18.52f;
             Y1 = 0.245f;
             Z1 = 8.24f;
             
-            Number_Max2 = 0;
+            Number_Max2 = 1;
             X2 = 18.52f;
             Y2 = 0.245f;
             Z2 = 8.24f;
             
-            Number_Max3 = 0;
+            Number_Max3 = 1;
             X3 = 18.52f;
             Y3 = 0.245f;
             Z3 = 8.24f;

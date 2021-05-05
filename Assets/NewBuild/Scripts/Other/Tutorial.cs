@@ -19,7 +19,7 @@ public class Tutorial : MonoBehaviour
         if (Number == Page_tutorial.Count-1)
         {
             Skip();
-            Debug.Log(1);
+           
         }
         else
         {

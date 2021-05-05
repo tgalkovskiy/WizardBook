@@ -25,6 +25,7 @@ public class Bion_Shois : MonoBehaviour
 
     private void Start()
     {
+        map_Setting.LoadData();
         ChoisEnemy.enabled = false;
         _saveTutorial.LoadData();
         if(!_saveTutorial.first_map)

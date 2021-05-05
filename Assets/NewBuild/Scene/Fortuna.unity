@@ -2227,7 +2227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.8378057, y: 0}
   m_AnchorMax: {x: 1, y: 0.30968773}
-  m_AnchoredPosition: {x: 23.000061, y: -0.60009766}
+  m_AnchoredPosition: {x: 23.000122, y: -0.60009766}
   m_SizeDelta: {x: 48.172607, y: 1.0994263}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &536632418
@@ -5187,7 +5187,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.29000002}
-  m_AnchoredPosition: {x: -8.600098, y: 0.91311646}
+  m_AnchoredPosition: {x: -8.600098, y: 0.91308594}
   m_SizeDelta: {x: 33.987427, y: -3.973999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &876987216
@@ -5432,7 +5432,7 @@ MonoBehaviour:
   MapSetting: {fileID: 11400000, guid: 438b7735545ab434c8bd1f5c7473a22d, type: 2}
   Battle: {fileID: 1396182484}
   Touch: 0
-  maxEntmy: 0
+  maxEntmy: 12
 --- !u!114 &884587328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9959,7 +9959,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1335371, y: 0}
   m_AnchorMax: {x: 0.8378057, y: 0.29000002}
-  m_AnchoredPosition: {x: 17, y: 5.899933}
+  m_AnchoredPosition: {x: 17, y: 5.8999023}
   m_SizeDelta: {x: 32, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1853308891
