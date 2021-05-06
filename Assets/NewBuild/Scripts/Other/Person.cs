@@ -129,8 +129,27 @@ public class Person : MonoBehaviour
         StartCoroutine(Hit_pers(1));
         GerlAnimator[0].SetTrigger("Attack");
         Animator_Animy.SetTrigger("Damage");
-        HP_E -= DamagePers;
-        Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
+        
+        if (WordButtom.Point_now_Battel >= 3 && WordButtom.Point_now_Battel <6)
+        {
+            HP_E -= DamagePers*1.25f;
+            Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString()+" X1.25";
+        }
+        else if(WordButtom.Point_now_Battel >= 6 && WordButtom.Point_now_Battel<9)
+        {
+            HP_E -= DamagePers*1.5f;
+            Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString()+" X1.5";
+        }
+        else if(WordButtom.Point_now_Battel >= 9)
+        {
+            HP_E -= DamagePers*2f;
+            Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString()+" X2";
+        }
+        else
+        {
+            HP_E -= DamagePers;
+            Bamd_text_Eny.GetComponent<TextMesh>().text = ((int)DamagePers).ToString();
+        }
         Band.SetTrigger("Eny");
         if (HP_G <= 0 || HP_E <= 0)
         {
@@ -143,7 +162,11 @@ public class Person : MonoBehaviour
         StartCoroutine(Hit_pers(0));
         Animator_Animy.SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
-        HP_G -=DamgeEnemy-Deffence;
+        float NowD = DamgeEnemy-Deffence;
+        if (NowD > 0)
+        {
+           HP_G -=DamgeEnemy-Deffence; 
+        }
         if (_vignette.intensity.value < 0.7f)
         {
            _vignette.intensity.value += 0.25f; 

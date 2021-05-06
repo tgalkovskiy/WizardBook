@@ -81,7 +81,7 @@ public class WordButtom : MonoBehaviour
                 WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
                 StartCoroutine(ChangeWordCorrect(Buttoms));
                 StartCoroutine(Shake(1.4f));
-
+                Point_now_Battel += 1;
                 //EventMeneger.GerlAttack1.Invoke();
                 //Timer = 15f;
                 //CountCorrectWord += 1;
@@ -97,6 +97,7 @@ public class WordButtom : MonoBehaviour
             }
             else
             {
+                Point_now_Battel = 0;
                 WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
                 WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
                 StartCoroutine(ChangeWordWrong(Buttoms));

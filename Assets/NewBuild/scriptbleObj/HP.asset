@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: HP
   m_EditorClassIdentifier: 
   HP_Gerl: 250
-  NumberEnemy: 6
-  HP_Enemy: 1000
-  Damage: 200
-  Gold_enemy: 350
-  Exp_enemy: 350
-  Rubin_Enemy: 1
-  Chess_Drop: 1
-  Property_W: 200000000000000000000000
+  NumberEnemy: 7
+  HP_Enemy: 300
+  Damage: 60
+  Gold_enemy: 120
+  Exp_enemy: 100
+  Rubin_Enemy: 0
+  Chess_Drop: 0
+  Property_W: 1e0000000000000000000000
   Weapon_Grad: 0
   Weapon_Icon: 0
   Property_A: 000000000000000000000000
@@ -31,10 +31,10 @@ MonoBehaviour:
   Other_Icon: -1
   LVLPers: 2
   NextLVLXP: 600
-  NowXP: 480
-  LVLBooK: 7
+  NowXP: 500
+  LVLBooK: 1
   NextLVL_BOOK_XP: 25
-  Now_BOOK_XP: 30
+  Now_BOOK_XP: 35
   PointBook: 0
   NumberSworld: 0
   Word: "\uFEFF{\n  \"Word\": {\n    \"Rus\": {\n      \"1\": [\n        \"\u0413\u043B\u0430\u0437\",\n       
@@ -1725,11 +1725,11 @@ MonoBehaviour:
   - "\u041F\u0440\u0435\u0434\u043F\u0440\u0438\u043D\u0438\u043C\u0430\u0442\u0435\u043B\u044C\u0441\u043A\u0438\u0439
     \u0434\u0443\u0445: +25% \u043A \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u043E\u043C\u0443
     \u0437\u043E\u043B\u043E\u0442\u0443"
-  Skills: 000000000000000000000000
+  Skills: 010101010101010101010101
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 2872
+  Gold: 3160
   Rubin: 20
   Max_Energy: 20
-  Now_Energy: 88
-  Ches: 01010101
+  Now_Energy: 73
+  Ches: 01000000
