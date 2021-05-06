@@ -30,11 +30,11 @@ public class WrongWord : ScriptableObject
          }
          catch
          {
-             Debug.Log("not Save_wrong_word");
+             //Debug.Log("not Save_wrong_word");
          }
          finally
          {
-             Debug.Log("Save_wrong_word Done");
+             //Debug.Log("Save_wrong_word Done");
          }
     }
 

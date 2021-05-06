@@ -71,11 +71,11 @@ public class Map : ScriptableObject
         }
         catch
         {
-            Debug.Log("not Save_Map");
+            //Debug.Log("not Save_Map");
         }
         finally
         {
-            Debug.Log("Save Done Map");
+            //Debug.Log("Save Done Map");
         }
     }
 
@@ -104,7 +104,7 @@ public class Map : ScriptableObject
         }
         else
         {
-            Debug.Log("No Save mapSetting");
+            //Debug.Log("No Save mapSetting");
             Number_Max1 = 1;
             X1 = 18.52f;
             Y1 = 0.245f;

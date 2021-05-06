@@ -60,6 +60,9 @@ public class SkillManeger : MonoBehaviour
     public static int Cooldown_Watter = 0;
     private void Awake()
     {
+        Cooldown_Deff = 0;
+        CoolDown_Time = 0;
+        Cooldown_Watter = 0;
         //если активен второй сиклл
         if (HP_SKills.Skills[1])
         {
@@ -192,7 +195,7 @@ public class SkillManeger : MonoBehaviour
             Magic.PlayOneShot(Magic_Clip[1]);
             Shild.SetActive(true);
             //Buttom_Deffence.sprite = Deffence_Sprite[1];
-            Person.Deffence = 100;
+            Person.Deffence = 10000000;
             Buttom_Deffence.fillAmount = 0;
             Cooldown_Deff = WordButtom.Moves + 6-HP_SKills.LVL_Skill[7];
             End_Deff = WordButtom.Moves + 1;
