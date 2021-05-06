@@ -265,7 +265,7 @@ public class Person : MonoBehaviour
             //HP_Person.NowXP += 250;
             StartCoroutine(Death_Enimy());
             //GameState = false;
-            EndRaund.text = "Победа, так держать :)";
+            EndRaund.text = "Победа, так держать!";
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);
