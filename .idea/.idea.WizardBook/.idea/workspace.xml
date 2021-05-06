@@ -24,6 +24,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a8/339f94d5/RenderSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.3.0/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -133,7 +134,7 @@
       <workItem from="1620154166210" duration="1681000" />
       <workItem from="1620201800862" duration="4989000" />
       <workItem from="1620239221521" duration="2514000" />
-      <workItem from="1620300568638" duration="3663000" />
+      <workItem from="1620300568638" duration="4876000" />
     </task>
     <servers />
   </component>
