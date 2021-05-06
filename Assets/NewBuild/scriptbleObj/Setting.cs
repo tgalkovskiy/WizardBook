@@ -23,11 +23,11 @@ public class Setting : ScriptableObject
         }
         catch
         {
-            Debug.Log("not SaveSetting");
+            //Debug.Log("not SaveSetting");
         }
         finally
         {
-            Debug.Log("Save Done Setting");
+            //Debug.Log("Save Done Setting");
         }
     }
     public void LoadSetting()
@@ -41,7 +41,7 @@ public class Setting : ScriptableObject
         }
         else
         {
-            Debug.Log("No SaveSetting");
+            //Debug.Log("No SaveSetting");
             _Volume = 1;
         }
     }

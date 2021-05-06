@@ -56,6 +56,7 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Setting.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -132,7 +133,7 @@
       <workItem from="1620154166210" duration="1681000" />
       <workItem from="1620201800862" duration="4989000" />
       <workItem from="1620239221521" duration="2514000" />
-      <workItem from="1620300568638" duration="2090000" />
+      <workItem from="1620300568638" duration="2698000" />
     </task>
     <servers />
   </component>

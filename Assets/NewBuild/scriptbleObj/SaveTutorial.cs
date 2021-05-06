@@ -42,11 +42,11 @@ public class SaveTutorial : ScriptableObject
         }
         catch
         {
-            Debug.Log("not Save");
+            //Debug.Log("not Save");
         }
         finally
         {
-            Debug.Log("Save Done");
+            //Debug.Log("Save Done");
         }
     }
 
