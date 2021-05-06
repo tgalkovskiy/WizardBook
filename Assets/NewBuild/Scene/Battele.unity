@@ -193,7 +193,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 12747095}
-  - component: {fileID: 12747094}
   - component: {fileID: 12747097}
   - component: {fileID: 12747096}
   - component: {fileID: 12747098}
@@ -204,20 +203,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4
   m_IsActive: 1
---- !u!114 &12747094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12747093}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb8ce98b6e829ae4591bfcb633da8b88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Person_HP: {fileID: 11400000, guid: 78a55203b31e72a4cabf5d39ec96ca3f, type: 2}
-  CorrectWord: 0
 --- !u!4 &12747095
 Transform:
   m_ObjectHideFlags: 0
@@ -26665,6 +26650,7 @@ GameObject:
   - component: {fileID: 974730177}
   - component: {fileID: 974730176}
   - component: {fileID: 974730180}
+  - component: {fileID: 974730181}
   m_Layer: 5
   m_Name: ButtomCanvas
   m_TagString: Untagged
@@ -26780,7 +26766,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP_PERS: {fileID: 11400000, guid: 78a55203b31e72a4cabf5d39ec96ca3f, type: 2}
   _wrongWord: {fileID: 11400000, guid: 7dabf363a581d6144bd04992c0d24e70, type: 2}
-  WordLoad: {fileID: 12747094}
+  WordLoad: {fileID: 974730181}
   ChoiesLanguege: {fileID: 11400000, guid: b36f58e2a6b6e9342ba76a8a9a22a76b, type: 2}
   WordButtomMas:
   - {fileID: 1875785141}
@@ -26794,6 +26780,20 @@ MonoBehaviour:
   Moves: 0
   Deff_Timer: 0
   Point_now_Battel: 0
+--- !u!114 &974730181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 974730175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb8ce98b6e829ae4591bfcb633da8b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Person_HP: {fileID: 11400000, guid: 78a55203b31e72a4cabf5d39ec96ca3f, type: 2}
+  CorrectWord: 0
 --- !u!1 &996180741
 GameObject:
   m_ObjectHideFlags: 0

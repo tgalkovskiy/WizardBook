@@ -213,9 +213,6 @@
             <e p="SupercyanShaderLighting.cginc" t="Include" />
           </e>
         </e>
-        <e p="TGU Skybox Pack" t="Include">
-          <e p="Readme.txt" t="Include" />
-        </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />

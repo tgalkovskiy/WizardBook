@@ -11339,7 +11339,18 @@ MonoBehaviour:
       m_Image: {fileID: 21300000, guid: 21c16a311e3526743bf1360d7410fea5, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6294143818556489338}
+        m_MethodName: secondL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &794173547
 MonoBehaviour:
@@ -28367,7 +28378,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.76100004, y: 0.8042074}
   m_AnchorMax: {x: 0.9233995, y: 0.8787743}
-  m_AnchoredPosition: {x: 15.694275, y: 14.952148}
+  m_AnchoredPosition: {x: 15.694336, y: 14.952148}
   m_SizeDelta: {x: 16.57483, y: 39.1091}
   m_Pivot: {x: 1, y: 1}
 --- !u!222 &848380233591556385
@@ -40070,7 +40081,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 12.299988, y: -183.5}
+  m_AnchoredPosition: {x: 12.300049, y: -183.5}
   m_SizeDelta: {x: 116.84863, y: 1800.2465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4372588593861544235
@@ -44209,7 +44220,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.041, y: 0.03370371}
   m_AnchorMax: {x: 0.9587778, y: 1}
-  m_AnchoredPosition: {x: 18, y: -32.00006}
+  m_AnchoredPosition: {x: 18, y: -32}
   m_SizeDelta: {x: 86.48193, y: 655.95325}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4372588594301461738
@@ -46135,7 +46146,18 @@ MonoBehaviour:
       m_Image: {fileID: 21300000, guid: 21c16a311e3526743bf1360d7410fea5, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6294143818556489338}
+        m_MethodName: ferstL
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &4372588594546354056
 MonoBehaviour:
@@ -48022,7 +48044,6 @@ GameObject:
   - component: {fileID: 4372588594831784164}
   - component: {fileID: 4372588594831784166}
   - component: {fileID: 4372588594831784165}
-  - component: {fileID: 4372588594831784167}
   m_Layer: 5
   m_Name: ' language'
   m_TagString: Untagged
@@ -48088,21 +48109,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4372588594831784163}
   m_CullTransparentMesh: 0
---- !u!114 &4372588594831784167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4372588594831784163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88e5d30f1f7ab414894855603b4201ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChoiesLanguege: {fileID: 11400000, guid: b36f58e2a6b6e9342ba76a8a9a22a76b, type: 2}
-  Lang1: {fileID: 4372588594546354055}
-  Lang2: {fileID: 794173546}
 --- !u!1 &4372588594834323674
 GameObject:
   m_ObjectHideFlags: 0
@@ -49759,6 +49765,7 @@ GameObject:
   - component: {fileID: 7350961487966781318}
   - component: {fileID: 1311129578825722027}
   - component: {fileID: 3528691111986885511}
+  - component: {fileID: 6294143818556489338}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -49766,6 +49773,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6294143818556489338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6294143818556489337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e5d30f1f7ab414894855603b4201ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChoiesLanguege: {fileID: 11400000, guid: b36f58e2a6b6e9342ba76a8a9a22a76b, type: 2}
+  Lang1: {fileID: 4372588594546354055}
+  Lang2: {fileID: 794173546}
 --- !u!222 &7350961487966781318
 CanvasRenderer:
   m_ObjectHideFlags: 0
