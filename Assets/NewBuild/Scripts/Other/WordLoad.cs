@@ -25,6 +25,7 @@ public class WordLoad : MonoBehaviour
     private float LVLBOOK;
     private void Awake()
     {
+        
         WordAll[0] = WordRus;
         WordAll[1] = WordEng;
         WordAll[2] = WordBel;

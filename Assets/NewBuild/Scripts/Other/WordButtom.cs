@@ -26,6 +26,8 @@ public class WordButtom : MonoBehaviour
    
     private void Start()
     {
+        ChoiesLanguege.LoadData();
+        Debug.Log(ChoiesLanguege.Languge1 + " " + ChoiesLanguege.Languge2);
         Word();
         //Timer = HP_PERS.Time_Game;
         Deff_Timer += HP_PERS.Time_Game;    
@@ -41,7 +43,6 @@ public class WordButtom : MonoBehaviour
     }
     private void OnDisable()
     {
-        
         EventMeneger.GerlAttack1 -= MovesCount;
         EventMeneger.EnemyAttack1 -= MovesCount;
         EventMeneger.GerlAttack1 -= WordLoad.LoadText;

@@ -215,7 +215,7 @@ public class HP : ScriptableObject
         }
         else
         {
-            Debug.Log("No Save");
+            //Debug.Log("No Save");
             HP_Gerl = 200;
 
             Property_W = new int[3] { 30, 0, 0 };
@@ -231,7 +231,7 @@ public class HP : ScriptableObject
             Other_Icon = -1;
 
             LVLPers = 1;
-            NextLVLXP = 150;
+            NextLVLXP = 250;
             NowXP = 0;
             NumberSworld = 0;
             LVLBooK = 1;
