@@ -1672,8 +1672,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u0422\u044B \u0436\u0435 \u043F\u043E\u043C\u043E\u0436\u0435\u0448\u044C
-    \u0441\u0442\u0430\u0440\u0438\u043A\u0443 \u0440\u0430\u0437\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F
-    \u0441 \u044D\u0442\u0438\u043C \u0432\u0441\u0435\u043C? "
+    \u0441\u0442\u0430\u0440\u0438\u043A\u0443 \u0441 \u044D\u0442\u0438\u043C \u0432\u0441\u0435\u043C
+    \u0440\u0430\u0437\u043E\u0431\u0440\u0430\u0442\u044C\u0441\u044F? "
 --- !u!222 &460203194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2578,7 +2578,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &637773962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8260,10 +8260,10 @@ RectTransform:
   m_Father: {fileID: 1830296463}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 178.49791, y: -630}
-  m_SizeDelta: {x: 777.9979, y: 862.7187}
+  m_AnchorMin: {x: 0.3236927, y: 0.039220672}
+  m_AnchorMax: {x: 0.96123093, y: 0.4244155}
+  m_AnchoredPosition: {x: 26.5, y: 3.499878}
+  m_SizeDelta: {x: 100.997925, y: 9.718689}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592626557
 MonoBehaviour:
