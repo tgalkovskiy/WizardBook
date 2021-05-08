@@ -236,7 +236,7 @@ public class HP : ScriptableObject
             NumberSworld = 0;
             LVLBooK = 1;
             PointBook = 0;
-            NextLVL_BOOK_XP = 35;
+            NextLVL_BOOK_XP = 50;
             Now_BOOK_XP = 0;
             Skills = new bool[12] { false, false, false, false, false, false, false, false, false, false, false, false };
             LVL_Skill = new int[12] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };

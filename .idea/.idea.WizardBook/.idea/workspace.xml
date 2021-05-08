@@ -20,11 +20,11 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a8/339f94d5/RenderSettings.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.3.0/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -56,10 +56,10 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Languge.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/ChoiesLanguege.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
