@@ -165,13 +165,18 @@ public class Person : MonoBehaviour
         float NowD = DamgeEnemy-Deffence;
         if (NowD > 0)
         {
-           HP_G -=DamgeEnemy-Deffence; 
+           HP_G -=DamgeEnemy-Deffence;
+           Band_Text_Pers.GetComponent<TextMesh>().text = ((int)DamgeEnemy - Deffence).ToString();
+        }
+        else
+        {
+            Band_Text_Pers.GetComponent<TextMesh>().text = 0.ToString();
         }
         if (_vignette.intensity.value < 0.7f)
         {
            _vignette.intensity.value += 0.25f; 
         }
-        Band_Text_Pers.GetComponent<TextMesh>().text = ((int)DamgeEnemy - Deffence).ToString();
+       
         Band.SetTrigger("Pers");
         if (HP_G <= 0 || HP_E <= 0)
         {
@@ -208,7 +213,7 @@ public class Person : MonoBehaviour
             //RoundPanel.SetActive(true);
             StartCoroutine(Death_Pers());
             //GameState = false;
-            EndRaund.text = "В этот раз пративник победил :(" + "\n" + "Попробуйте улучшить снаряжение и выучить больше волшебных слов!";
+            EndRaund.text = "В этот раз противник победил..." + "\n" + "Попробуйте улучшить снаряжение и выучить больше волшебных слов!";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
                 NextLevel.SetActive(true);

@@ -53,13 +53,13 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Languge.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/ChoiesLanguege.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -141,6 +141,7 @@
       <workItem from="1620491313824" duration="603000" />
       <workItem from="1620509391957" duration="22000" />
       <workItem from="1620509452528" duration="617000" />
+      <workItem from="1620565781559" duration="684000" />
     </task>
     <servers />
   </component>

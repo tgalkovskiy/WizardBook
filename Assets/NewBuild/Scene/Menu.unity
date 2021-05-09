@@ -18823,7 +18823,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.20913604, y: 0.51067126}
   m_AnchorMax: {x: 0.77800006, y: 0.906}
-  m_AnchoredPosition: {x: 1.1000061, y: 0}
+  m_AnchoredPosition: {x: 1.1000366, y: 0}
   m_SizeDelta: {x: 160.93896, y: 76.851135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615904316
@@ -20590,7 +20590,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1a720141f5c83f54ca91627d2addd051, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -25793,7 +25793,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 4372588594223464264}
-        m_MethodName: Enrgy_Plus
+        m_MethodName: Shop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
