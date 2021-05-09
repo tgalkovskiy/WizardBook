@@ -5019,35 +5019,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.798785, z: 1}
   m_Center: {x: -0.08000052, y: 0.93939245, z: 0.44999987}
---- !u!114 &2660701997371390854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997046899660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 4
-  Name: "\u041E\u0433\u0440\u043E\u043C\u043D\u043E\u0435 \u0434\u0432\u0443\u043D\u043E\u0433\u043E\u0435
-    \u043F\u043E\u043B\u0435\u043D\u043E \u044F\u0432\u043D\u043E \u043D\u0435 \u0431\u0443\u0434\u0435\u0442
-    \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u0435\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0445."
-  Last_text: "\u041F\u043E\u0431\u0435\u0434\u0438\u0432 \u044D\u0442\u043E\u0433\u043E
-    \u0414\u0440\u0435\u0432\u043D\u044F, \u0432 \u0448\u0435\u043B\u0435\u0441\u0442\u0435
-    \u043B\u0438\u0441\u0442\u044C\u0435\u0432 \u0432\u044B \u0431\u0443\u0434\u0442\u043E
-    \u0431\u044B \u0443\u0441\u043B\u044B\u0448\u0430\u043B\u0438 \u0448\u0451\u043F\u043E\u0442
-    \xAB\u0423\u0441\u0441\u0441\u0430\u043A\u0443\u0443\u0443\u043B\u0430\u0430\u0430...\xBB."
-  NumberEnemy: 6
-  HP: 600
-  Damage: 100
-  Gold: 350
-  Exp: 200
-  Rubin: 1
-  Chess: 1
-  PosPlayer: {fileID: 2660701998701492120}
 --- !u!205 &5169266845674374733
 LODGroup:
   m_ObjectHideFlags: 0
@@ -5072,6 +5043,43 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701997371390854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997046899660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 4
+  Name: "\u041E\u0433\u0440\u043E\u043C\u043D\u043E\u0435 \u0434\u0432\u0443\u043D\u043E\u0433\u043E\u0435
+    \u043F\u043E\u043B\u0435\u043D\u043E \u044F\u0432\u043D\u043E \u043D\u0435 \u0431\u0443\u0434\u0435\u0442
+    \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u0435\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0438\u0445."
+  Last_text: "\u041F\u043E\u0431\u0435\u0434\u0438\u0432 \u044D\u0442\u043E\u0433\u043E
+    \u0414\u0440\u0435\u0432\u043D\u044F, \u0432 \u0448\u0435\u043B\u0435\u0441\u0442\u0435
+    \u043B\u0438\u0441\u0442\u044C\u0435\u0432 \u0432\u044B \u0431\u0443\u0434\u0442\u043E
+    \u0431\u044B \u0443\u0441\u043B\u044B\u0448\u0430\u043B\u0438 \u0437\u043B\u043E\u0432\u0435\u0449\u0438\u0439
+    \u0448\u0451\u043F\u043E\u0442 \xAB\u0423\u0441\u0441\u0441\u0430\u043A\u0443\u0443\u0443\u0443\u043B\u0430\u0430\u0430..\xBB.
+    \u042D\u0442\u043E \u0435\u0449\u0435 \u043A\u0442\u043E!? \u041C\u043E\u0436\u0435\u0442
+    \u0431\u044B\u0442\u044C \u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0430\u044F
+    \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430 \u043A\u043D\u0438\u0433\u0438
+    \u043E\u0441\u0432\u0435\u0436\u0438\u0442 \u0432\u0430\u0448\u0443 \u043F\u0430\u043C\u044F\u0442\u044C?
+    \u0422\u0435\u043C \u0431\u043E\u043B\u0435\u0435, \u0447\u0442\u043E \u0435\u0451
+    \u043F\u0435\u0440\u0432\u0430\u044F \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430
+    \u0443\u0436\u0435 \u043F\u043E\u0447\u0442\u0438 \u0437\u0430\u043F\u043E\u043B\u043D\u0435\u043D\u0430\u2026
+    \u0423\u0445, \u0441\u043A\u043E\u0440\u0435\u0439 \u0431\u044B!  "
+  NumberEnemy: 6
+  HP: 600
+  Damage: 100
+  Gold: 350
+  Exp: 200
+  Rubin: 1
+  Chess: 1
+  PosPlayer: {fileID: 2660701998701492120}
 --- !u!1 &2660701997051420331
 GameObject:
   m_ObjectHideFlags: 0
@@ -5307,6 +5315,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3250929, y: 1.8262556, z: 1.6283696}
   m_Center: {x: -0.06723244, y: 0.9731279, z: -0.1858152}
+--- !u!205 &22876642488003078
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997100811954}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701997816154725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5344,13 +5376,26 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997411166877}
---- !u!205 &22876642488003078
+--- !u!65 &2660701997192143018
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997109013725}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.534543, z: 1}
+  m_Center: {x: 0, y: 0.9072714, z: 0}
+--- !u!205 &8773649895561172004
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997100811954}
+  m_GameObject: {fileID: 2660701997109013725}
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0, y: 0, z: 0}
   m_Size: 1
@@ -5368,19 +5413,6 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
---- !u!65 &2660701997192143018
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997109013725}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1.534543, z: 1}
-  m_Center: {x: 0, y: 0.9072714, z: 0}
 --- !u!114 &2660701997192142996
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5422,30 +5454,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997732242079}
---- !u!205 &8773649895561172004
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997109013725}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701997114993456
 GameObject:
   m_ObjectHideFlags: 0
@@ -10213,6 +10221,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.4009541, z: 0.9999999}
   m_Center: {x: 8.9999463e-10, y: 0.66047925, z: -6.1629835e-10}
+--- !u!205 &2519557868491187716
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997179256617}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701997179302974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10243,30 +10275,6 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998285968935}
---- !u!205 &2519557868491187716
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997179256617}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701997189379786
 GameObject:
   m_ObjectHideFlags: 0
@@ -10441,6 +10449,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.4826689, y: 1.7476131, z: 1.2858438}
   m_Center: {x: 0.25866622, y: 0.9838066, z: -0.35707855}
+--- !u!205 &3267299622307587810
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997241349868}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701998398355360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10472,30 +10504,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997635008871}
---- !u!205 &3267299622307587810
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997241349868}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701997259833721
 GameObject:
   m_ObjectHideFlags: 0
@@ -10620,6 +10628,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6658696, z: 1}
   m_Center: {x: 0, y: 1.1770661, z: 0}
+--- !u!205 &4566244338432695647
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997384050186}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701996995915505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10648,30 +10680,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701996992706672}
---- !u!205 &4566244338432695647
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997384050186}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701997411166876
 GameObject:
   m_ObjectHideFlags: 0
@@ -10715,6 +10723,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.560843, z: 1}
   m_Center: {x: 0, y: 0.7804215, z: 0}
+--- !u!205 &3038989036590778967
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997416117687}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701998271368584
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10742,13 +10774,26 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997204887499}
---- !u!205 &3038989036590778967
+--- !u!65 &2660701997486688608
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997486586090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3510596, y: 1.8238953, z: 1.3329494}
+  m_Center: {x: -0.017676475, y: 0.9719501, z: 0.33352536}
+--- !u!205 &3040235800643067680
 LODGroup:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997416117687}
+  m_GameObject: {fileID: 2660701997486586090}
   serializedVersion: 2
   m_LocalReferencePoint: {x: 0, y: 0, z: 0}
   m_Size: 1
@@ -10766,19 +10811,6 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
---- !u!65 &2660701997486688608
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997486586090}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.3510596, y: 1.8238953, z: 1.3329494}
-  m_Center: {x: -0.017676475, y: 0.9719501, z: 0.33352536}
 --- !u!114 &2660701997486688615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10809,30 +10841,6 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998363286735}
---- !u!205 &3040235800643067680
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997486586090}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701997490285257
 GameObject:
   m_ObjectHideFlags: 0
@@ -15792,33 +15800,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.544733, y: 2, z: 1.5}
   m_Center: {x: -0.019631652, y: 0.7799999, z: 0.26999998}
---- !u!114 &2660701997920468918
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997611116214}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 3
-  Name: "\u0415\u0449\u0451 \u043E\u0434\u0438\u043D \u0434\u0438\u043A\u0438\u0439
-    \u043F\u0435\u043D\u044C! \u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C,
-    \u0447\u0435\u0433\u043E \u043E\u043D \u0441\u0442\u043E\u0438\u0442..."
-  Last_text: "\u041E\u0447\u0435\u0440\u0435\u0434\u043D\u0430\u044F \u043F\u043E\u0431\u0435\u0434\u0430
-    \u0443\u043A\u0440\u0435\u043F\u0438\u043B\u0430 \u0432\u0430\u0448\u0443 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C
-    \u0432 \u0441\u0435\u0431\u0435."
-  NumberEnemy: 6
-  HP: 450
-  Damage: 70
-  Gold: 250
-  Exp: 200
-  Rubin: 1
-  Chess: 0
-  PosPlayer: {fileID: 2660701998188780896}
 --- !u!205 &2926469565752480872
 LODGroup:
   m_ObjectHideFlags: 0
@@ -15843,6 +15824,44 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701997920468918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997611116214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 3
+  Name: "\u0415\u0449\u0451 \u043E\u0434\u0438\u043D \u0434\u0438\u043A\u0438\u0439
+    \u043F\u0435\u043D\u044C! \u041F\u043E\u0441\u043C\u043E\u0442\u0440\u0438\u043C,
+    \u0447\u0435\u0433\u043E \u043E\u043D \u0441\u0442\u043E\u0438\u0442..."
+  Last_text: "\u041E\u0447\u0435\u0440\u0435\u0434\u043D\u0430\u044F \u043F\u043E\u0431\u0435\u0434\u0430
+    \u0443\u043A\u0440\u0435\u043F\u0438\u043B\u0430 \u0432\u0430\u0448\u0443 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u044C
+    \u0432 \u0441\u0435\u0431\u0435! \u0422\u0430\u0430\u043A, \u0447\u0442\u043E
+    \u0442\u0430\u043C \u043D\u043E\u0432\u043E\u0433\u043E \u043D\u0430 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u0445
+    \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u043E\u0433\u043E \u043C\u0430\u043D\u0443\u0441\u0442\u043A\u0440\u0438\u043F\u0442\u0430?
+    \u041E\u0433\u043E! \u0426\u0435\u043B\u0430\u044F \u0441\u0442\u0440\u043E\u0447\u043A\u0430!
+    \u2026\xAB\u041B\u0438\u0448\u044C \u043F\u043E\u043B\u043D\u043E\u0441\u0442\u044C\u044E
+    \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0443 \u043F\u0440\u043E\u0447\u0438\u0442\u0430\u0432
+    \u0438 \u043D\u043E\u0432\u0443\u044E \u0433\u043B\u0430\u0432\u0443 \u043E\u0442\u043A\u0440\u044B\u0432,
+    \u043F\u043E\u0437\u043D\u0430\u0435\u0448\u044C \u0442\u044B \u042D\u0444\u0438\u0440!\xBB
+    ...\u0412\u043E\u0442 \u0442\u0430\u043A \u043D\u0430\u0447\u0430\u043B\u043E\u2026
+    \u0427\u0442\u043E \u0442\u0430\u043A\u043E\u0435 \u201C\u042D\u0444\u0438\u0440\u201D
+    \u0438 \u043A\u0430\u043A \u0432\u0430\u043C \u0435\u0433\u043E \u043F\u043E\u0441\u043A\u043E\u0440\u0435\u0439
+    \u043F\u043E\u0437\u043D\u0430\u0442\u044C?!"
+  NumberEnemy: 6
+  HP: 450
+  Damage: 70
+  Gold: 250
+  Exp: 200
+  Rubin: 1
+  Chess: 0
+  PosPlayer: {fileID: 2660701998188780896}
 --- !u!1 &2660701997635008870
 GameObject:
   m_ObjectHideFlags: 0
@@ -20811,36 +20830,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.6942644, z: 1}
   m_Center: {x: 0, y: 0.98713297, z: 0}
---- !u!114 &2660701998501872283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997799236643}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 3
-  Name: "\u0421\u043D\u043E\u0432\u0430 \u0445\u043E\u0434\u044F\u0447\u0430\u044F
-    \u0433\u0440\u0443\u0434\u0430 \u043A\u0430\u043C\u043D\u0435\u0439..."
-  Last_text: "\u042D\u0442\u043E\u0442 \u0433\u043E\u043B\u0435\u043C \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F
-    \u043A\u0440\u0435\u043F\u0447\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E.
-    \u0425\u043C... \u0421 \u043A\u0430\u0436\u0434\u044B\u043C \u0440\u0430\u0437\u043E\u043C
-    \u0432\u0440\u0430\u0433\u0438 \u0441\u0442\u0430\u043D\u043E\u0432\u044F\u0442\u0441\u044F
-    \u043A\u0440\u0435\u043F\u0447\u0435... \u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E,
-    \u0432\u044B \u0434\u0432\u0438\u0433\u0430\u0435\u0442\u0435\u0441\u044C \u043A
-    \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0443 \u0438\u0445 \u0441\u0438\u043B\u044B."
-  NumberEnemy: 4
-  HP: 425
-  Damage: 80
-  Gold: 250
-  Exp: 200
-  Rubin: 1
-  Chess: 0
-  PosPlayer: {fileID: 2660701997088238371}
 --- !u!205 &986281816790365859
 LODGroup:
   m_ObjectHideFlags: 0
@@ -20865,6 +20854,34 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701998501872283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997799236643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 3
+  Name: "\u0421\u043D\u043E\u0432\u0430 \u0445\u043E\u0434\u044F\u0447\u0430\u044F
+    \u0433\u0440\u0443\u0434\u0430 \u043A\u0430\u043C\u043D\u0435\u0439..."
+  Last_text: "\u042D\u0442\u043E\u0442 \u0433\u043E\u043B\u0435\u043C \u043E\u043A\u0430\u0437\u0430\u043B\u0441\u044F
+    \u043A\u0440\u0435\u043F\u0447\u0435 \u043F\u0440\u0435\u0434\u044B\u0434\u0443\u0449\u0435\u0433\u043E.
+    \u0425\u043C\u2026 \u0412\u043E\u0437\u043C\u043E\u0436\u043D\u043E, \u0432\u044B
+    \u0434\u0432\u0438\u0433\u0430\u0435\u0442\u0435\u0441\u044C \u043A \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A\u0443
+    \u0438\u0445 \u0441\u0438\u043B\u044B."
+  NumberEnemy: 4
+  HP: 425
+  Damage: 80
+  Gold: 250
+  Exp: 200
+  Rubin: 1
+  Chess: 0
+  PosPlayer: {fileID: 2660701997088238371}
 --- !u!1 &2660701997847555641
 GameObject:
   m_ObjectHideFlags: 0
@@ -30548,6 +30565,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.0940381, y: 1.6895155, z: 0.979545}
   m_Center: {x: -0.095149085, y: 0.8347577, z: -0.037914563}
+--- !u!205 &4863473564813407660
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997947480083}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701997947559788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30576,30 +30617,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997490285258}
---- !u!205 &4863473564813407660
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701997947480083}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701998034553427
 GameObject:
   m_ObjectHideFlags: 0
@@ -30694,57 +30711,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 1.14, z: 0}
---- !u!114 &2660701998037019326
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998036934081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 0
-  Name: "\u0414\u0432\u0438\u0433\u0430\u044F\u0441\u044C \u043F\u043E \u043B\u0435\u0441\u043D\u043E\u0439
-    \u0434\u043E\u0440\u043E\u0433\u0435, \u0432\u044B \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u043B\u0438
-    \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E...
-    \u041E\u043D\u043E \u0432\u044B\u0433\u043B\u044F\u0434\u0435\u043B\u043E \u043D\u0435
-    \u043E\u0447\u0435\u043D\u044C \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u043E,
-    \u043D\u043E \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u044F \u043F\u0430\u043B\u043E\u0447\u043A\u0430,
-    \u043D\u0430\u0439\u0434\u0435\u043D\u043D\u0430\u044F \u0432\u0430\u043C\u0438
-    \u043F\u043E\u0441\u043B\u0435 \u041F\u0440\u043E\u0431\u0443\u0436\u0434\u0435\u043D\u0438\u044F,
-    \u043F\u0440\u0438\u0434\u0430\u0432\u0430\u043B\u0430 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u0438.
-    \u0412\u044B \u0440\u0435\u0448\u0438\u043B\u0438 \u043F\u043E\u0434\u043E\u0439\u0442\u0438
-    \u0431\u043B\u0438\u0436\u0435..."
-  Last_text: "\u041A\u0442\u043E \u0432\u044B \u0438 \u0447\u0442\u043E \u0437\u0434\u0435\u0441\u044C
-    \u0434\u0435\u043B\u0430\u0435\u0442\u0435, \u0431\u044B\u043B\u043E \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u043E
-    \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u043E. \u042D\u0442\u043E\u0442
-    \u043B\u0435\u0441, \u0441\u0442\u0440\u0430\u043D\u043D\u0430\u044F \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0430\u044F
-    \u043F\u0430\u043B\u043E\u0447\u043A\u0430, \u043E\u0436\u0438\u0432\u0448\u0438\u0435
-    \u043A\u0430\u043C\u0435\u043D\u043D\u044B\u0435 \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F...
-    \u0412\u044B \u043D\u0435 \u043F\u043E\u043C\u043D\u0438\u043B\u0438, \u0447\u0442\u043E
-    \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E, \u0433\u043E\u043B\u043E\u0432\u0430
-    \u0431\u044B\u043B\u0430 \u0437\u0430\u0442\u0443\u043C\u0430\u043D\u0435\u043D\u0430.
-    \u0421\u043B\u043E\u0432\u0430, \u043A\u0430\u043A \u043F\u0440\u0438\u0437\u0440\u0430\u043A\u0438,
-    \u0443\u0441\u043A\u043E\u043B\u044C\u0437\u0430\u043B\u0438, \u0435\u0434\u0432\u0430
-    \u043D\u0430\u0447\u0438\u043D\u0430\u044F \u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F
-    \u0432 \u043C\u044B\u0441\u043B\u0438.  \u041D\u043E \u0431\u043E\u0439 \u0441
-    \u0433\u043E\u043B\u0435\u043C\u043E\u043C \u043F\u043E\u043C\u043E\u0433 \u0440\u0430\u0441\u0448\u0435\u0432\u0435\u043B\u0438\u0442\u044C
-    \u043F\u0430\u043C\u044F\u0442\u044C, \u0438 \u0432\u0430\u043C \u0443\u0434\u0430\u043B\u043E\u0441\u044C
-    \u0441\u043F\u043B\u0435\u0441\u0442\u0438 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
-    \u043F\u0440\u043E\u0441\u0442\u044B\u0445 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439,
-    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0431\u0435\u0434\u0438\u0442\u044C
-    \u0435\u0433\u043E. "
-  NumberEnemy: 4
-  HP: 150
-  Damage: 50
-  Gold: 120
-  Exp: 80
-  Rubin: 0
-  Chess: 1
-  PosPlayer: {fileID: 2660701998266466477}
 --- !u!205 &3012428767680885165
 LODGroup:
   m_ObjectHideFlags: 0
@@ -30769,6 +30735,61 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701998037019326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998036934081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 0
+  Name: "\u0414\u0432\u0438\u0433\u0430\u044F\u0441\u044C \u043F\u043E \u043B\u0435\u0441\u043D\u043E\u0439
+    \u0434\u043E\u0440\u043E\u0433\u0435, \u0432\u044B \u0432\u0441\u0442\u0440\u0435\u0442\u0438\u043B\u0438
+    \u0441\u0442\u0440\u0430\u043D\u043D\u043E\u0435 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E...
+    \u041E\u043D\u043E \u0432\u044B\u0433\u043B\u044F\u0434\u0435\u043B\u043E \u043D\u0435
+    \u043E\u0447\u0435\u043D\u044C \u0434\u0440\u0443\u0436\u0435\u043B\u044E\u0431\u043D\u043E,
+    \u043D\u043E \u0432\u043E\u043B\u0448\u0435\u0431\u043D\u0430\u044F \u043F\u0430\u043B\u043E\u0447\u043A\u0430
+    \u0438 \u0434\u0440\u0435\u0432\u043D\u044F\u044F \u043A\u043D\u0438\u0433\u0430
+    \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439, \u043D\u0430\u0439\u0434\u0435\u043D\u043D\u044B\u0435
+    \u0432\u0430\u043C\u0438 \u043F\u043E\u0441\u043B\u0435 \u041F\u0440\u043E\u0431\u0443\u0436\u0434\u0435\u043D\u0438\u044F,
+    \u043F\u0440\u0438\u0434\u0430\u0432\u0430\u043B\u0438 \u0443\u0432\u0435\u0440\u0435\u043D\u043D\u043E\u0441\u0442\u0438.
+    \u0412\u044B \u0440\u0435\u0448\u0438\u043B\u0438 \u043F\u043E\u0434\u043E\u0439\u0442\u0438
+    \u0431\u043B\u0438\u0436\u0435..."
+  Last_text: "\u041A\u0442\u043E \u0432\u044B \u0438 \u0447\u0442\u043E \u0437\u0434\u0435\u0441\u044C
+    \u0434\u0435\u043B\u0430\u0435\u0442\u0435, \u0431\u044B\u043B\u043E \u0441\u043E\u0432\u0435\u0440\u0448\u0435\u043D\u043D\u043E
+    \u043D\u0435\u043F\u043E\u043D\u044F\u0442\u043D\u043E. \u042D\u0442\u043E\u0442
+    \u043B\u0435\u0441, \u0441\u0442\u0440\u0430\u043D\u043D\u0430\u044F \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0430\u044F
+    \u043F\u0430\u043B\u043E\u0447\u043A\u0430, \u043A\u043D\u0438\u0433\u0430, \u043D\u0430
+    \u043F\u0443\u0441\u0442\u044B\u0445 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0430\u0445
+    \u043A\u043E\u0442\u043E\u0440\u043E\u0439 \u043D\u0435 \u0431\u044B\u043B\u043E
+    \u043D\u0438 \u0435\u0434\u0438\u043D\u043E\u0433\u043E \u0441\u0438\u043C\u0432\u043E\u043B\u0430,
+    \u043E\u0436\u0438\u0432\u0448\u0438\u0435 \u043A\u0430\u043C\u0435\u043D\u043D\u044B\u0435
+    \u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F... \u0412\u044B \u043D\u0435
+    \u043F\u043E\u043C\u043D\u0438\u043B\u0438, \u0447\u0442\u043E \u043F\u0440\u043E\u0438\u0437\u043E\u0448\u043B\u043E,
+    \u0433\u043E\u043B\u043E\u0432\u0430 \u0431\u044B\u043B\u0430 \u0437\u0430\u0442\u0443\u043C\u0430\u043D\u0435\u043D\u0430.
+    \u0421\u043B\u043E\u0432\u0430, \u043A\u0430\u043A \u043F\u0440\u0438\u0437\u0440\u0430\u043A\u0438,
+    \u0443\u0441\u043A\u043E\u043B\u044C\u0437\u0430\u043B\u0438, \u0435\u0434\u0432\u0430
+    \u043D\u0430\u0447\u0438\u043D\u0430\u044F \u0444\u043E\u0440\u043C\u0438\u0440\u043E\u0432\u0430\u0442\u044C\u0441\u044F
+    \u0432 \u043C\u044B\u0441\u043B\u0438.  \u041D\u043E \u0431\u043E\u0439 \u0441
+    \u0433\u043E\u043B\u0435\u043C\u043E\u043C \u043F\u043E\u043C\u043E\u0433 \u0440\u0430\u0441\u0448\u0435\u0432\u0435\u043B\u0438\u0442\u044C
+    \u043F\u0430\u043C\u044F\u0442\u044C, \u0438 \u0432\u0430\u043C \u0443\u0434\u0430\u043B\u043E\u0441\u044C
+    \u0441\u043F\u043B\u0435\u0441\u0442\u0438 \u043D\u0435\u0441\u043A\u043E\u043B\u044C\u043A\u043E
+    \u043F\u0440\u043E\u0441\u0442\u044B\u0445 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0439,
+    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u0431\u0435\u0434\u0438\u0442\u044C
+    \u0435\u0433\u043E. "
+  NumberEnemy: 4
+  HP: 150
+  Damage: 50
+  Gold: 120
+  Exp: 80
+  Rubin: 0
+  Chess: 1
+  PosPlayer: {fileID: 2660701998266466477}
 --- !u!65 &2660701998048268083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30782,36 +30803,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.90470284, y: 1.368259, z: 0.8532605}
   m_Center: {x: 0.04764859, y: 0.6441318, z: -0.073369704}
---- !u!114 &2660701998048268082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998048281645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 2
-  Name: "\u041E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0439 \u0442\u0443\u0433\u043E\u0434\u0443\u043C
-    \u0441 \u043D\u0435\u043E\u0431\u0440\u0435\u043C\u0435\u043D\u0451\u043D\u043D\u044B\u043C
-    \u0438\u043D\u0442\u0435\u043B\u043B\u0435\u043A\u0442\u043E\u043C \u043B\u0438\u0446\u043E\u043C."
-  Last_text: "\xAB\u041F\u043E\u0432\u0435\u043B\u0438\u0442\u0435\u043B\u044C \u043E\u0442\u043E\u043C\u0441\u0442\u0438\u0442
-    \u0437\u0430 \u043C\u0435\u043D\u044F!\xBB \u041F\u0440\u043E\u0440\u0435\u0432\u0435\u043B
-    \u043E\u0433\u0440 \u0438 \u0443\u043F\u0430\u043B \u0431\u0435\u0437 \u0441\u0438\u043B. 
-    \u041D\u0438\u0447\u0435\u0433\u043E \u0441\u0435\u0431\u0435 \u043E\u043D \u0432\u044B\u0434\u0430\u043B!
-    \u0418\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E, \u043A\u0442\u043E \u044D\u0442\u043E\u0442
-    \u041F\u043E\u0432\u0435\u043B\u0438\u0442\u0435\u043B\u044C?"
-  NumberEnemy: 7
-  HP: 300
-  Damage: 70
-  Gold: 120
-  Exp: 100
-  Rubin: 0
-  Chess: 0
-  PosPlayer: {fileID: 2660701998707128643}
 --- !u!205 &1553108651641523208
 LODGroup:
   m_ObjectHideFlags: 0
@@ -30836,6 +30827,41 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701998048268082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998048281645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 2
+  Name: "\u041E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0439 \u0442\u0443\u0433\u043E\u0434\u0443\u043C
+    \u0441 \u043D\u0435\u043E\u0431\u0440\u0435\u043C\u0435\u043D\u0451\u043D\u043D\u044B\u043C
+    \u0438\u043D\u0442\u0435\u043B\u043B\u0435\u043A\u0442\u043E\u043C \u043B\u0438\u0446\u043E\u043C."
+  Last_text: "\xAB\u041F\u043E\u0432\u0435\u043B\u0438\u0442\u0435\u043B\u044C \u043E\u0442\u043E\u043C\u0441\u0442\u0438\u0442
+    \u0437\u0430 \u043C\u0435\u043D\u044F!\xBB \u041F\u0440\u043E\u0440\u0435\u0432\u0435\u043B
+    \u043E\u0433\u0440 \u0438 \u0443\u043F\u0430\u043B \u0431\u0435\u0437 \u0441\u0438\u043B. 
+    \u041D\u0438\u0447\u0435\u0433\u043E \u0441\u0435\u0431\u0435 \u043E\u043D \u0432\u044B\u0434\u0430\u043B!
+    \u0418\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E, \u043A\u0442\u043E \u044D\u0442\u043E\u0442
+    \u041F\u043E\u0432\u0435\u043B\u0438\u0442\u0435\u043B\u044C? \u0412\u044B \u043E\u0442\u043A\u0440\u044B\u043B\u0438
+    \u043A\u043D\u0438\u0433\u0443 \u0432 \u043D\u0430\u0434\u0435\u0436\u0434\u0435
+    \u043D\u0430\u0439\u0442\u0438 \u043E\u0442\u0432\u0435\u0442\u044B \u0438 \u0443\u0432\u0438\u0434\u0435\u043B\u0438,
+    \u0447\u0442\u043E \u0441\u043B\u043E\u0432\u0430, \u043A\u043E\u0442\u043E\u0440\u044B\u0435
+    \u0432\u044B \u0432\u0441\u043F\u043E\u043C\u043D\u0438\u043B\u0438, \u0441\u043F\u043B\u0435\u043B\u0438\u0441\u044C
+    \u0432 \u0437\u0430\u043A\u043B\u0438\u043D\u0430\u043D\u0438\u0435! "
+  NumberEnemy: 7
+  HP: 300
+  Damage: 70
+  Gold: 120
+  Exp: 100
+  Rubin: 0
+  Chess: 0
+  PosPlayer: {fileID: 2660701998707128643}
 --- !u!1 &2660701998068470306
 GameObject:
   m_ObjectHideFlags: 0
@@ -30930,6 +30956,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.743035, y: 1.2293549, z: 1}
   m_Center: {x: 0.018921912, y: 0.57467747, z: -6.807255e-10}
+--- !u!205 &6885843452980607162
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998096644919}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701998339399988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30963,30 +31013,6 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998524759703}
---- !u!205 &6885843452980607162
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998096644919}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701998100833818
 GameObject:
   m_ObjectHideFlags: 0
@@ -45262,33 +45288,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.4910158, z: 1}
   m_Center: {x: 0, y: 0.56783617, z: 0}
---- !u!114 &2660701998181572518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998181586081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 1
-  Name: "\u0415\u0449\u0451 \u043E\u0434\u0438\u043D \u0437\u0434\u043E\u0440\u043E\u0432\u044F\u043A
-    \u043F\u0440\u0435\u0433\u0440\u0430\u0434\u0438\u043B \u0432\u0430\u043C \u043F\u0443\u0442\u044C."
-  Last_text: "\u042D\u0442\u043E\u0442 \u043E\u0433\u0440 \u0431\u044B\u043B \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
-    \u043D\u0435\u0443\u0432\u0435\u0440\u0435\u043D\u043D\u044B\u0439, \u0431\u0443\u0434\u0442\u043E
-    \u0441\u043E\u043C\u043D\u0435\u0432\u0430\u043B\u0441\u044F \u043D\u0430 \u0441\u0432\u043E\u0451\u043C
-    \u043B\u0438 \u043C\u0435\u0441\u0442\u0435 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F."
-  NumberEnemy: 7
-  HP: 300
-  Damage: 60
-  Gold: 120
-  Exp: 100
-  Rubin: 0
-  Chess: 0
-  PosPlayer: {fileID: 2660701997272646546}
 --- !u!205 &4973052221595225473
 LODGroup:
   m_ObjectHideFlags: 0
@@ -45313,6 +45312,42 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701998181572518
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998181586081}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 1
+  Name: "\u0415\u0449\u0451 \u043E\u0434\u0438\u043D \u0437\u0434\u043E\u0440\u043E\u0432\u044F\u043A
+    \u043F\u0440\u0435\u0433\u0440\u0430\u0434\u0438\u043B \u0432\u0430\u043C \u043F\u0443\u0442\u044C!"
+  Last_text: "\u042D\u0442\u043E\u0442 \u043E\u0433\u0440 \u0431\u044B\u043B \u043A\u0430\u043A\u043E\u0439-\u0442\u043E
+    \u043D\u0435\u0443\u0432\u0435\u0440\u0435\u043D\u043D\u044B\u0439, \u0431\u0443\u0434\u0442\u043E
+    \u0441\u043E\u043C\u043D\u0435\u0432\u0430\u043B\u0441\u044F \u043D\u0430 \u0441\u0432\u043E\u0451\u043C
+    \u043B\u0438 \u043C\u0435\u0441\u0442\u0435 \u043E\u043D \u043D\u0430\u0445\u043E\u0434\u0438\u0442\u0441\u044F\u2026
+    \u041F\u0430\u043B\u043E\u0447\u043A\u0430 \u043F\u0440\u0438\u044F\u0442\u043D\u044B\u043C
+    \u043C\u0430\u0433\u0438\u0447\u0435\u0441\u043A\u0438\u043C \u0442\u0435\u043F\u043B\u043E\u043C
+    \u0433\u0440\u0435\u043B\u0430 \u0432\u0430\u0448\u0443 \u0440\u0443\u043A\u0443,
+    \u0430 \u043E\u0442 \u043A\u043D\u0438\u0433\u0438 \u043D\u0430\u0447\u0430\u043B\u043E
+    \u0438\u0441\u0445\u043E\u0434\u0438\u0442\u044C \u043B\u0451\u0433\u043A\u043E\u0435
+    \u0441\u0432\u0435\u0447\u0435\u043D\u0438\u0435\u2026 \u0421\u043F\u0440\u0430\u0432\u0438\u0432\u0448\u0438\u0441\u044C
+    \u0441 \u0436\u0435\u043B\u0430\u043D\u0438\u0435\u043C \u0432\u043D\u043E\u0432\u044C
+    \u043E\u0442\u043A\u0440\u044B\u0442\u044C \u0435\u0451, \u0432\u044B \u043F\u043E\u0448\u043B\u0438
+    \u0434\u0430\u043B\u044C\u0448\u0435."
+  NumberEnemy: 7
+  HP: 300
+  Damage: 60
+  Gold: 120
+  Exp: 100
+  Rubin: 0
+  Chess: 0
+  PosPlayer: {fileID: 2660701997272646546}
 --- !u!1 &2660701998188780903
 GameObject:
   m_ObjectHideFlags: 0
@@ -45629,39 +45664,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.3426279, y: 1.7703817, z: 1.36}
   m_Center: {x: -0.04585925, y: 0.89519066, z: 0.29999995}
---- !u!114 &2660701998349377687
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998349324570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 2
-  Name: "\u041D\u0430 \u0434\u043E\u0440\u043E\u0433\u0435 \u0441\u0442\u043E\u0438\u0442
-    \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E, \u043F\u043E\u0445\u043E\u0436\u0435\u0435
-    \u043D\u0430 \u0431\u043E\u043B\u044C\u0448\u0443\u044E \u043A\u043E\u0440\u044F\u0433\u0443."
-  Last_text: "\u0414\u0440\u0435\u0432\u043D\u0438 - \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430,
-    \u0432\u043E\u0437\u043D\u0438\u043A\u0448\u0438\u0435 \u043F\u043E\u0441\u043B\u0435
-    \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u043C\u0430\u0433\u0438\u0438
-    \u043D\u0430 \u0441\u0442\u0430\u0440\u044B\u0435 \u0434\u0435\u0440\u0435\u0432\u044C\u044F.
-    \u0421\u043A\u043E\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043E, \u0438\u0445
-    \u0432\u0440\u0430\u0436\u0434\u0435\u0431\u043D\u043E\u0441\u0442\u044C \u0438\u043C\u0435\u0435\u0442
-    \u0442\u043E\u0442 \u0436\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A,
-    \u0447\u0442\u043E \u0438 \u0432\u0440\u0430\u0436\u0434\u0435\u0431\u043D\u043E\u0441\u0442\u044C
-    \u0433\u043E\u043B\u0435\u043C\u043E\u0432..."
-  NumberEnemy: 6
-  HP: 350
-  Damage: 50
-  Gold: 120
-  Exp: 100
-  Rubin: 0
-  Chess: 0
-  PosPlayer: {fileID: 2660701997038519114}
 --- !u!205 &6389213042098171104
 LODGroup:
   m_ObjectHideFlags: 0
@@ -45686,6 +45688,42 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701998349377687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998349324570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 2
+  Name: "\u041D\u0430 \u0434\u043E\u0440\u043E\u0433\u0435 \u0441\u0442\u043E\u0438\u0442
+    \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u043E, \u043F\u043E\u0445\u043E\u0436\u0435\u0435
+    \u043D\u0430 \u0431\u043E\u043B\u044C\u0448\u0443\u044E \u043A\u043E\u0440\u044F\u0433\u0443."
+  Last_text: "\u0414\u0440\u0435\u0432\u043D\u0438 - \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430,
+    \u0432\u043E\u0437\u043D\u0438\u043A\u0448\u0438\u0435 \u043F\u043E\u0441\u043B\u0435
+    \u0432\u043E\u0437\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u044F \u043C\u0430\u0433\u0438\u0438
+    \u043D\u0430 \u0441\u0442\u0430\u0440\u044B\u0435 \u0434\u0435\u0440\u0435\u0432\u044C\u044F.
+    \u0421\u043A\u043E\u0440\u0435\u0435 \u0432\u0441\u0435\u0433\u043E, \u0438\u0445
+    \u0432\u0440\u0430\u0436\u0434\u0435\u0431\u043D\u043E\u0441\u0442\u044C \u0438\u043C\u0435\u0435\u0442
+    \u0442\u043E\u0442 \u0436\u0435 \u0438\u0441\u0442\u043E\u0447\u043D\u0438\u043A,
+    \u0447\u0442\u043E \u0438 \u0432\u0440\u0430\u0436\u0434\u0435\u0431\u043D\u043E\u0441\u0442\u044C
+    \u0433\u043E\u043B\u0435\u043C\u043E\u0432\u2026 \u0421 \u043E\u0433\u0440\u0430\u043C\u0438
+    \u0438\u0442\u0430\u043A \u0432\u0441\u0451 \u043F\u043E\u043D\u044F\u0442\u043D\u043E:
+    \u0447\u0435\u043C \u043C\u0435\u043D\u044C\u0448\u0435 \u0432 \u0433\u043E\u043B\u043E\u0432\u0435,
+    \u0442\u0435\u043C \u0431\u043E\u043B\u044C\u0448\u0435 \u0437\u043B\u043E\u0431\u044B..."
+  NumberEnemy: 6
+  HP: 350
+  Damage: 50
+  Gold: 120
+  Exp: 100
+  Rubin: 0
+  Chess: 0
+  PosPlayer: {fileID: 2660701997038519114}
 --- !u!65 &2660701998356190314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45699,6 +45737,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.3752593, z: 1}
   m_Center: {x: 1.8115222e-10, y: 0.82762945, z: 9.348364e-11}
+--- !u!205 &163355441173608045
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998356341532}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701998356190313
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45731,30 +45793,6 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998228413405}
---- !u!205 &163355441173608045
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998356341532}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701998363286734
 GameObject:
   m_ObjectHideFlags: 0
@@ -50633,6 +50671,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.84364206, y: 1.3106952, z: 0.80251163}
   m_Center: {x: -0.078179866, y: 0.6553476, z: -0.09874454}
+--- !u!205 &3849820913042135574
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998499291327}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701997044329410
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50662,30 +50724,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701996893006961}
---- !u!205 &3849820913042135574
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998499291327}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701998514900568
 GameObject:
   m_ObjectHideFlags: 0
@@ -50891,6 +50929,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.1626965, y: 1.4448334, z: 1.3925064}
   m_Center: {x: 0.06251167, y: 0.7124241, z: -0.057223864}
+--- !u!205 &1072480677288092338
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998540571500}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701997343839274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50920,30 +50982,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997689381736}
---- !u!205 &1072480677288092338
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998540571500}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701998542774487
 GameObject:
   m_ObjectHideFlags: 0
@@ -51422,6 +51460,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.5905299, z: 1}
   m_Center: {x: 0.0000000047972635, y: 0.935265, z: 2.353409e-10}
+--- !u!205 &6355217108318360315
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998778306455}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701998778202336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51451,30 +51513,6 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998223378183}
---- !u!205 &6355217108318360315
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998778306455}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701998795019868
 GameObject:
   m_ObjectHideFlags: 0
@@ -61077,37 +61115,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9999999, y: 1.5051804, z: 0.9999999}
   m_Center: {x: 0, y: 0.7125902, z: 0}
---- !u!114 &2660701998915337177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998915317956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PosGame: 0
-  Name: "\u041E\u0433\u0440\u044B - \u0434\u0440\u0435\u0432\u043D\u0438\u0439 \u0432\u0430\u0440\u0432\u0430\u0440\u0441\u043A\u0438\u0439
-    \u043D\u0430\u0440\u043E\u0434, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043D\u0435
-    \u0441\u043B\u0430\u0432\u0438\u043B\u0441\u044F \u0434\u043E\u0431\u0440\u044B\u043C
-    \u043D\u0440\u0430\u0432\u043E\u043C."
-  Last_text: "\u041E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0435 \u0441\u0442\u043E\u043B\u043A\u043D\u043E\u0432\u0435\u043D\u0438\u0435
-    \u043F\u043E\u043C\u043E\u0433\u043B\u043E \u0443\u0431\u0435\u0434\u0438\u0442\u044C\u0441\u044F,
-    \u0447\u0442\u043E \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435
-    \u0441 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430\u043C\u0438 \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442
-    \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C
-    \u043F\u0430\u043C\u044F\u0442\u044C."
-  NumberEnemy: 7
-  HP: 140
-  Damage: 60
-  Gold: 120
-  Exp: 80
-  Rubin: 0
-  Chess: 0
-  PosPlayer: {fileID: 2660701997718048017}
 --- !u!205 &8267614081522958191
 LODGroup:
   m_ObjectHideFlags: 0
@@ -61132,6 +61139,43 @@ LODGroup:
     fadeTransitionWidth: 0
     renderers: []
   m_Enabled: 1
+--- !u!114 &2660701998915337177
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998915317956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29efe273411537742bc76de574fbb3f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PosGame: 0
+  Name: "\u041E\u0433\u0440\u044B - \u0434\u0440\u0435\u0432\u043D\u0438\u0439 \u0432\u0430\u0440\u0432\u0430\u0440\u0441\u043A\u0438\u0439
+    \u043D\u0430\u0440\u043E\u0434, \u043A\u043E\u0442\u043E\u0440\u044B\u0439 \u043D\u0435
+    \u0441\u043B\u0430\u0432\u0438\u043B\u0441\u044F \u0434\u043E\u0431\u0440\u044B\u043C
+    \u043D\u0440\u0430\u0432\u043E\u043C!"
+  Last_text: "\u041E\u0447\u0435\u0440\u0435\u0434\u043D\u043E\u0435 \u0441\u0442\u043E\u043B\u043A\u043D\u043E\u0432\u0435\u043D\u0438\u0435
+    \u043F\u043E\u043C\u043E\u0433\u043B\u043E \u0443\u0431\u0435\u0434\u0438\u0442\u044C\u0441\u044F,
+    \u0447\u0442\u043E \u0432\u0437\u0430\u0438\u043C\u043E\u0434\u0435\u0439\u0441\u0442\u0432\u0438\u0435
+    \u0441 \u0441\u0443\u0449\u0435\u0441\u0442\u0432\u0430\u043C\u0438 \u043F\u043E\u043C\u043E\u0433\u0430\u0435\u0442
+    \u0432\u043E\u0441\u0441\u0442\u0430\u043D\u0430\u0432\u043B\u0438\u0432\u0430\u0442\u044C
+    \u043F\u0430\u043C\u044F\u0442\u044C! \u0418 \u043A\u043D\u0438\u0433\u0430!
+    \u0412 \u043D\u0435\u0439 \u0441\u0442\u0430\u043B\u0438 \u043F\u0440\u043E\u044F\u0432\u043B\u044F\u0442\u044C\u0441\u044F
+    \u0431\u0443\u043A\u0432\u044B! \u0418\u0445 \u0431\u044B\u043B\u043E \u0441\u043E\u0432\u0441\u0435\u043C
+    \u043D\u0435\u043C\u043D\u043E\u0433\u043E \u0438 \u0442\u043E\u043B\u044C\u043A\u043E
+    \u043D\u0430 \u043F\u0435\u0440\u0432\u043E\u0439 \u0441\u0442\u0440\u0430\u043D\u0438\u0446\u0435,
+    \u043D\u043E \u044D\u0442\u043E \u043E\u043F\u0440\u0435\u0434\u0435\u043B\u0435\u043D\u043D\u043E
+    \u0447\u0442\u043E-\u0442\u043E \u0437\u043D\u0430\u0447\u0438\u043B\u043E!"
+  NumberEnemy: 7
+  HP: 140
+  Damage: 60
+  Gold: 120
+  Exp: 80
+  Rubin: 0
+  Chess: 0
+  PosPlayer: {fileID: 2660701997718048017}
 --- !u!1 &2660701998939151534
 GameObject:
   m_ObjectHideFlags: 0
@@ -61224,6 +61268,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.83479375, y: 1.2639883, z: 1}
   m_Center: {x: -0.08260314, y: 0.59199095, z: -0.0000000011712569}
+--- !u!205 &6490199866266596611
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998976064580}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!114 &2660701998975948633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -61253,30 +61321,6 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701998242998739}
---- !u!205 &6490199866266596611
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2660701998976064580}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1 &2660701999002096765
 GameObject:
   m_ObjectHideFlags: 0
@@ -61371,6 +61415,30 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.917707, y: 2.544695, z: 3}
   m_Center: {x: 0.019773513, y: 0.49234748, z: -9.7470365e-12}
+--- !u!205 &2263713481092640429
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895215941495123243}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!95 &2660701998640578056
 Animator:
   serializedVersion: 3
@@ -61438,30 +61506,6 @@ MonoBehaviour:
   Rubin: 3
   Chess: 1
   PosPlayer: {fileID: 2660701997069137152}
---- !u!205 &2263713481092640429
-LODGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2895215941495123243}
-  serializedVersion: 2
-  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
-  m_Size: 1
-  m_FadeMode: 0
-  m_AnimateCrossFading: 0
-  m_LastLODIsBillboard: 0
-  m_LODs:
-  - screenRelativeHeight: 0.6
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.3
-    fadeTransitionWidth: 0
-    renderers: []
-  - screenRelativeHeight: 0.1
-    fadeTransitionWidth: 0
-    renderers: []
-  m_Enabled: 1
 --- !u!1001 &2660701996869225065
 PrefabInstance:
   m_ObjectHideFlags: 0
