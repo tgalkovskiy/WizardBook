@@ -5048,6 +5048,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701998701492120}
+--- !u!205 &5169266845674374733
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997046899660}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997051420331
 GameObject:
   m_ObjectHideFlags: 0
@@ -5320,6 +5344,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997411166877}
+--- !u!205 &22876642488003078
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997100811954}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!65 &2660701997192143018
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5374,6 +5422,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997732242079}
+--- !u!205 &8773649895561172004
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997109013725}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997114993456
 GameObject:
   m_ObjectHideFlags: 0
@@ -10171,6 +10243,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998285968935}
+--- !u!205 &2519557868491187716
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997179256617}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997189379786
 GameObject:
   m_ObjectHideFlags: 0
@@ -10376,6 +10472,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997635008871}
+--- !u!205 &3267299622307587810
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997241349868}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997259833721
 GameObject:
   m_ObjectHideFlags: 0
@@ -10528,6 +10648,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701996992706672}
+--- !u!205 &4566244338432695647
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997384050186}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997411166876
 GameObject:
   m_ObjectHideFlags: 0
@@ -10598,6 +10742,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997204887499}
+--- !u!205 &3038989036590778967
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997416117687}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!65 &2660701997486688608
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10641,6 +10809,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998363286735}
+--- !u!205 &3040235800643067680
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997486586090}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997490285257
 GameObject:
   m_ObjectHideFlags: 0
@@ -15627,6 +15819,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701998188780896}
+--- !u!205 &2926469565752480872
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997611116214}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997635008870
 GameObject:
   m_ObjectHideFlags: 0
@@ -20625,6 +20841,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997088238371}
+--- !u!205 &986281816790365859
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997799236643}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701997847555641
 GameObject:
   m_ObjectHideFlags: 0
@@ -30336,6 +30576,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997490285258}
+--- !u!205 &4863473564813407660
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701997947480083}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998034553427
 GameObject:
   m_ObjectHideFlags: 0
@@ -30481,6 +30745,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998266466477}
+--- !u!205 &3012428767680885165
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998036934081}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!65 &2660701998048268083
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30524,6 +30812,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998707128643}
+--- !u!205 &1553108651641523208
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998048281645}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998068470306
 GameObject:
   m_ObjectHideFlags: 0
@@ -30651,6 +30963,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998524759703}
+--- !u!205 &6885843452980607162
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998096644919}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998100833818
 GameObject:
   m_ObjectHideFlags: 0
@@ -44953,6 +45289,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997272646546}
+--- !u!205 &4973052221595225473
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998181586081}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998188780903
 GameObject:
   m_ObjectHideFlags: 0
@@ -45302,6 +45662,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997038519114}
+--- !u!205 &6389213042098171104
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998349324570}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!65 &2660701998356190314
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -45347,6 +45731,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998228413405}
+--- !u!205 &163355441173608045
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998356341532}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998363286734
 GameObject:
   m_ObjectHideFlags: 0
@@ -50254,6 +50662,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701996893006961}
+--- !u!205 &3849820913042135574
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998499291327}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998514900568
 GameObject:
   m_ObjectHideFlags: 0
@@ -50488,6 +50920,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997689381736}
+--- !u!205 &1072480677288092338
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998540571500}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998542774487
 GameObject:
   m_ObjectHideFlags: 0
@@ -50995,6 +51451,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998223378183}
+--- !u!205 &6355217108318360315
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998778306455}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998795019868
 GameObject:
   m_ObjectHideFlags: 0
@@ -60628,6 +61108,30 @@ MonoBehaviour:
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997718048017}
+--- !u!205 &8267614081522958191
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998915317956}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701998939151534
 GameObject:
   m_ObjectHideFlags: 0
@@ -60749,6 +61253,30 @@ MonoBehaviour:
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701998242998739}
+--- !u!205 &6490199866266596611
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2660701998976064580}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &2660701999002096765
 GameObject:
   m_ObjectHideFlags: 0
@@ -60910,6 +61438,30 @@ MonoBehaviour:
   Rubin: 3
   Chess: 1
   PosPlayer: {fileID: 2660701997069137152}
+--- !u!205 &2263713481092640429
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2895215941495123243}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1001 &2660701996869225065
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62247,15 +62799,15 @@ PrefabInstance:
     - {fileID: 14381086, guid: 2e12caa4f4cc04549be5d53fe6ceefa7, type: 3}
     - {fileID: 11402562, guid: 2e12caa4f4cc04549be5d53fe6ceefa7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2e12caa4f4cc04549be5d53fe6ceefa7, type: 3}
---- !u!4 &2660701997109307819 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 495892, guid: 2e12caa4f4cc04549be5d53fe6ceefa7,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701997108885695}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2660701997109013725 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 136290, guid: 2e12caa4f4cc04549be5d53fe6ceefa7,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701997108885695}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2660701997109307819 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 495892, guid: 2e12caa4f4cc04549be5d53fe6ceefa7,
     type: 3}
   m_PrefabInstance: {fileID: 2660701997108885695}
   m_PrefabAsset: {fileID: 0}
@@ -62909,15 +63461,15 @@ PrefabInstance:
     - {fileID: 14375998, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
     - {fileID: 11450890, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
---- !u!4 &2660701997179341971 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701997179302963}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2660701997179256617 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701997179302963}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2660701997179341971 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
     type: 3}
   m_PrefabInstance: {fileID: 2660701997179302963}
   m_PrefabAsset: {fileID: 0}
@@ -64437,15 +64989,15 @@ PrefabInstance:
     - {fileID: 14300636, guid: 53a70bec87b2ea14fbd1254334a5aa9c, type: 3}
     - {fileID: 11469970, guid: 53a70bec87b2ea14fbd1254334a5aa9c, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 53a70bec87b2ea14fbd1254334a5aa9c, type: 3}
---- !u!4 &2660701997383689652 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 459702, guid: 53a70bec87b2ea14fbd1254334a5aa9c,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701997383886338}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2660701997384050186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 163848, guid: 53a70bec87b2ea14fbd1254334a5aa9c,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701997383886338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2660701997383689652 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 459702, guid: 53a70bec87b2ea14fbd1254334a5aa9c,
     type: 3}
   m_PrefabInstance: {fileID: 2660701997383886338}
   m_PrefabAsset: {fileID: 0}
@@ -67031,15 +67583,15 @@ PrefabInstance:
     - {fileID: 14366230, guid: 3bc6f9742ad8a584fa110afe9de69af4, type: 3}
     - {fileID: 11434962, guid: 3bc6f9742ad8a584fa110afe9de69af4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bc6f9742ad8a584fa110afe9de69af4, type: 3}
---- !u!4 &2660701998037184217 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 427114, guid: 3bc6f9742ad8a584fa110afe9de69af4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998037019315}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2660701998036934081 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 194418, guid: 3bc6f9742ad8a584fa110afe9de69af4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998037019315}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2660701998037184217 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 427114, guid: 3bc6f9742ad8a584fa110afe9de69af4,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998037019315}
   m_PrefabAsset: {fileID: 0}
@@ -68133,15 +68685,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b618aaf1b4ad7248ad025a4a42ddd07, type: 3}
---- !u!4 &2550742885010847633 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b618aaf1b4ad7248ad025a4a42ddd07,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998081396858}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2895215941495123243 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2b618aaf1b4ad7248ad025a4a42ddd07,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998081396858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2550742885010847633 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2b618aaf1b4ad7248ad025a4a42ddd07,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998081396858}
   m_PrefabAsset: {fileID: 0}
@@ -68564,15 +69116,15 @@ PrefabInstance:
     - {fileID: 14375998, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
     - {fileID: 11450890, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
---- !u!4 &2660701998096992397 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998096658477}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2660701998096644919 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998096658477}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2660701998096992397 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998096658477}
   m_PrefabAsset: {fileID: 0}
@@ -70989,15 +71541,15 @@ PrefabInstance:
     - {fileID: 14375998, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
     - {fileID: 11450890, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
---- !u!1 &2660701998499291327 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998499310501}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2660701998499648261 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998499310501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2660701998499291327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998499310501}
   m_PrefabAsset: {fileID: 0}
@@ -71315,15 +71867,15 @@ PrefabInstance:
     - {fileID: 14366230, guid: 3bc6f9742ad8a584fa110afe9de69af4, type: 3}
     - {fileID: 11434962, guid: 3bc6f9742ad8a584fa110afe9de69af4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 3bc6f9742ad8a584fa110afe9de69af4, type: 3}
---- !u!1 &2660701998540571500 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 194418, guid: 3bc6f9742ad8a584fa110afe9de69af4,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998540403742}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2660701998540304500 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 427114, guid: 3bc6f9742ad8a584fa110afe9de69af4,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998540403742}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2660701998540571500 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 194418, guid: 3bc6f9742ad8a584fa110afe9de69af4,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998540403742}
   m_PrefabAsset: {fileID: 0}
@@ -72491,15 +73043,15 @@ PrefabInstance:
     - {fileID: 14375998, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
     - {fileID: 11450890, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
---- !u!1 &2660701998915317956 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998915337182}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2660701998915142526 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998915337182}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2660701998915317956 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998915337182}
   m_PrefabAsset: {fileID: 0}
@@ -73001,15 +73553,15 @@ PrefabInstance:
     - {fileID: 14375998, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
     - {fileID: 11450890, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 190584f4969fbad488c8f66ab6fafb6e, type: 3}
---- !u!1 &2660701998976064580 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2660701998975948638}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &2660701998976167934 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 489632, guid: 190584f4969fbad488c8f66ab6fafb6e,
+    type: 3}
+  m_PrefabInstance: {fileID: 2660701998975948638}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2660701998976064580 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 117530, guid: 190584f4969fbad488c8f66ab6fafb6e,
     type: 3}
   m_PrefabInstance: {fileID: 2660701998975948638}
   m_PrefabAsset: {fileID: 0}

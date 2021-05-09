@@ -1465,6 +1465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7569643843412771499}
   - component: {fileID: 7964193202335227921}
+  - component: {fileID: 7139936864151965397}
   m_Layer: 0
   m_Name: "\u043F\u0430\u0443\u043A \u0441\u0442\u043E\u0438\u0442"
   m_TagString: Untagged
@@ -1507,6 +1508,30 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!205 &7139936864151965397
+LODGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7081653492592875537}
+  serializedVersion: 2
+  m_LocalReferencePoint: {x: 0, y: 0, z: 0}
+  m_Size: 1
+  m_FadeMode: 0
+  m_AnimateCrossFading: 0
+  m_LastLODIsBillboard: 0
+  m_LODs:
+  - screenRelativeHeight: 0.6
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.3
+    fadeTransitionWidth: 0
+    renderers: []
+  - screenRelativeHeight: 0.1
+    fadeTransitionWidth: 0
+    renderers: []
+  m_Enabled: 1
 --- !u!1 &7199080107838692916
 GameObject:
   m_ObjectHideFlags: 0
