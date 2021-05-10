@@ -55,11 +55,11 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Languge.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/ChoiesLanguege.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -143,7 +143,7 @@
       <workItem from="1620509452528" duration="617000" />
       <workItem from="1620565781559" duration="684000" />
       <workItem from="1620592292032" duration="264000" />
-      <workItem from="1620632984947" duration="853000" />
+      <workItem from="1620632984947" duration="1458000" />
     </task>
     <servers />
   </component>

@@ -244,7 +244,7 @@ public class HP : ScriptableObject
             Gold = 2000;
             Rubin = 20;
             Max_Energy = 15;
-            Now_Energy = 100;
+            Now_Energy = 50;
             DateTime = DateTime.Now;
             Ches = new bool[4]{ false, false, false, false };
         } 
