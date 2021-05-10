@@ -168,19 +168,19 @@ public class Add_Item : MonoBehaviour
         int chance = Random.Range(0, 100);
         if (chance >= 90)
         {
-            Property +=30+ 7 *Lvl*Grad;
+            Property +=22+ 7 *Lvl*Grad;
         }
         else if (chance < 90 && chance > 70)
         {
-            Property +=25+ 5 * Lvl * Grad;
+            Property +=17+ 5 * Lvl * Grad;
         }
         else if (chance < 70 && chance > 40)
         {
-            Property +=20+ 3 * Lvl * Grad;
+            Property +=14+ 3 * Lvl * Grad;
         }
         else if (chance < 40 && chance > 0)
         {
-            Property +=15+ 1 * Lvl * Grad;
+            Property +=7+ 1 * Lvl * Grad;
         }
         return Property;
     }
@@ -198,19 +198,19 @@ public class Add_Item : MonoBehaviour
         int chance = Random.Range(0, 100);
         if (chance >= 90)
         {
-            Property +=  4 * Lvl * Grad;
+            Property +=  10 * Lvl * Grad;
         }
         else if (chance < 90 && chance > 70)
         {
-            Property +=  3 * Lvl * Grad;
+            Property +=  8 * Lvl * Grad;
         }
         else if (chance < 70 && chance > 40)
         {
-            Property +=   2 * Lvl * Grad;
+            Property +=   7 * Lvl * Grad;
         }
         else if (chance < 40 && chance > 0)
         {
-            Property +=   1 * Lvl * Grad;
+            Property +=   5 * Lvl * Grad;
         }
         return Property;
     }

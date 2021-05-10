@@ -36,6 +36,11 @@ public class PageManeger : MonoBehaviour
 
     private void OnEnable()
     {
+        Vizual();
+    }
+
+    public void Vizual()
+    {
         if (StatPers.LVLBooK < 3)
         {
             _imagesBook.sprite = _imagesMenu[0];
@@ -43,6 +48,7 @@ public class PageManeger : MonoBehaviour
             _imagesDown.sprite = _imagesMenu[1];
             Text_book.text = "Ученик Мага";
         }
+
         if (StatPers.LVLBooK >= 3 && StatPers.LVLBooK < 6)
         {
             _imagesBook.sprite = _imagesMenu[2];
@@ -50,7 +56,8 @@ public class PageManeger : MonoBehaviour
             _imagesDown.sprite = _imagesMenu[3];
             Text_book.text = "Адепт";
         }
-        if (StatPers.LVLBooK >= 6 )
+
+        if (StatPers.LVLBooK >= 6)
         {
             _imagesBook.sprite = _imagesMenu[4];
             _imagesUp.sprite = _imagesMenu[5];
@@ -58,7 +65,7 @@ public class PageManeger : MonoBehaviour
             Text_book.text = "Маг";
         }
     }
-
+    
     private void Awake()
     {
         StatPers.LoadData();
@@ -80,6 +87,7 @@ public class PageManeger : MonoBehaviour
         Page3.SetActive(false);
         Page2.SetActive(true);
         Page4.SetActive(false);
+        Vizual();
         Buttoms[0].transform.DOScale(1.0f, 0.4f);
         Buttoms[1].transform.DOScale(1.3f, 0.4f);
         Buttoms[2].transform.DOScale(1.0f, 0.4f);
@@ -92,6 +100,7 @@ public class PageManeger : MonoBehaviour
         Page1.SetActive(false);
         Page4.SetActive(false);
         Page3.SetActive(true);
+        Vizual();
         Buttoms[0].transform.DOScale(1.0f, 0.4f);
         Buttoms[1].transform.DOScale(1.0f, 0.4f);
         Buttoms[2].transform.DOScale(1.3f, 0.4f);
@@ -105,6 +114,7 @@ public class PageManeger : MonoBehaviour
         Page2.SetActive(false);
         Page3.SetActive(false);
         Page4.SetActive(false);
+        Vizual();
         Buttoms[0].transform.DOScale(1.3f, 0.4f);
         Buttoms[1].transform.DOScale(1.0f, 0.4f);
         Buttoms[2].transform.DOScale(1.0f, 0.4f);
@@ -117,6 +127,7 @@ public class PageManeger : MonoBehaviour
         Page2.SetActive(false);
         Page3.SetActive(false);
         Page4.SetActive(true);
+        Vizual();
         Buttoms[0].transform.DOScale(1.0f, 0.4f);
         Buttoms[1].transform.DOScale(1.0f, 0.4f);
         Buttoms[2].transform.DOScale(1.0f, 0.4f);
