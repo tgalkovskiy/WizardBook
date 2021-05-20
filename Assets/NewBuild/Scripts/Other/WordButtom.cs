@@ -27,7 +27,7 @@ public class WordButtom : MonoBehaviour
     private void Start()
     {
         ChoiesLanguege.LoadData();
-        Debug.Log(ChoiesLanguege.Languge1 + " " + ChoiesLanguege.Languge2);
+        //Debug.Log(ChoiesLanguege.Languge1 + " " + ChoiesLanguege.Languge2);
         Word();
         //Timer = HP_PERS.Time_Game;
         Deff_Timer += HP_PERS.Time_Game;    

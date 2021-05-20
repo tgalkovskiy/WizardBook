@@ -70,6 +70,7 @@ public class PageManeger : MonoBehaviour
     {
         StatPers.LoadData();
         _tutorial.LoadData();
+        
         if (!_tutorial.first_tutorial)
         {
             First_tutorial.SetActive(true);

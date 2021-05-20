@@ -1,9 +1,8 @@
-using Newtonsoft.Json;
 using System;
+using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using System.Linq;
 using UnityEngine.UI;
 
 public class WeaponManeger : MonoBehaviour
@@ -30,35 +29,38 @@ public class WeaponManeger : MonoBehaviour
     public List<Item> Item_Data = new List<Item>();
     private void Awake()
     {
+        Refresh_stat();
+        
         Load_Item();
+        
         Refresh_Item();
+        
     }
     private void Start()
     {
-        Refresh_Item();
-        Refresh_stat();
+        //Refresh_Item();
     }
     public void Select_Item()
     {
         Discription.SetActive(true);
         if (Now_Item.Property_Item[0] == 1)
         {
-            Type_Item.text = "Оружие";
+            Type_Item.text = "РћСЂСѓР¶РёРµ";
         }
         else if(Now_Item.Property_Item[0] == 2)
         {
-            Type_Item.text = "Броня";
+            Type_Item.text = "Р‘СЂРѕРЅСЏ";
         }
         else if(Now_Item.Property_Item[0] == 3)
         {
-            Type_Item.text = "Украшение";
+            Type_Item.text = "РЈРєСЂР°С€РµРЅРёРµ";
         }
         //Lvl Item
-        Lvl_Item.text = "Уровень: " + Now_Item.Property_Item[3].ToString();
+        Lvl_Item.text = "РЈСЂРѕРІРµРЅСЊ: " + Now_Item.Property_Item[3].ToString();
         //Property Item
-        string Property_W = "Атака: " + Now_Item.Property_Item[4];
-        string Property_A = "Защита: +" + Now_Item.Property_Item[5];
-        string Property_O = "Здоровье : +" + Now_Item.Property_Item[8];
+        string Property_W = "РђС‚Р°РєР°: " + Now_Item.Property_Item[4];
+        string Property_A = "Р—Р°С‰РёС‚Р°: +" + Now_Item.Property_Item[5];
+        string Property_O = "Р—РґРѕСЂРѕРІСЊРµ : +" + Now_Item.Property_Item[8];
         string AllProperty = "";
         if (Now_Item.Property_Item[4] != 0)
         {
@@ -73,7 +75,7 @@ public class WeaponManeger : MonoBehaviour
             AllProperty += "\n" + Property_O;
         }
         Properti_Item.text = AllProperty;
-        Cost_NextLVL_Item.text = "Цена: " + Now_Item.Property_Item[6].ToString();
+        Cost_NextLVL_Item.text = "Р¦РµРЅР°: " + Now_Item.Property_Item[6].ToString();
 
     }
     public void Equip_Item()
@@ -203,26 +205,26 @@ public class WeaponManeger : MonoBehaviour
         Save_Item_Class save_Item_Class = new Save_Item_Class();
         for (int i = 0; i < Item_Data.Count; i++)
         {
-            Json_SerializeObject json_SerializeObject = new Json_SerializeObject();
-            for (int k = 0; k < json_SerializeObject.Property_Item.Length; k++)
+            //Json_SerializeObject json_SerializeObject = new Json_SerializeObject();
+            string Data ="";
+            for (int k = 0; k < 9; k++)
             {
-                json_SerializeObject.Property_Item[k] = Item_Data[i].Property_Item[k];
+                Data += Item_Data[i].Property_Item[k].ToString()+"|";
+                //json_SerializeObject.Property_Item[k] = Item_Data[i].Property_Item[k];
             }
-            string Item = JsonConvert.SerializeObject(json_SerializeObject);
-            save_Item_Class.Inventory_Item[i] = Item;
+            //string Item = JsonConvert.SerializeObject(json_SerializeObject);
+            save_Item_Class.Inventory_Item[i] = Data;
         }
         try
         {
             File.WriteAllText(Path, JsonUtility.ToJson(save_Item_Class));
+
         }
         catch
         {
-            Debug.Log("not Save Item");
+
         }
-        finally
-        {
-            Debug.Log("Save Done Item");
-        }
+        
     }
     public void Load_Item()
     {
@@ -233,17 +235,19 @@ public class WeaponManeger : MonoBehaviour
             save_Item_Class = JsonUtility.FromJson<Save_Item_Class>(File.ReadAllText(Path));
             for (int i = 0; i < Item_Data.Count; i++)
             {
-                Json_SerializeObject json_SerializeObject = new Json_SerializeObject();
-                json_SerializeObject = JsonConvert.DeserializeObject<Json_SerializeObject>(save_Item_Class.Inventory_Item[i]);
-                for (int k = 0; k < json_SerializeObject.Property_Item.Length; k++)
+                //Json_SerializeObject json_SerializeObject = new Json_SerializeObject();
+                //json_SerializeObject = JsonConvert.DeserializeObject<Json_SerializeObject>(save_Item_Class.Inventory_Item[i]);
+                string Data_cell =  save_Item_Class.Inventory_Item[i];
+                string[] Data = (Data_cell.Split('|')) ;
+                for (int k = 0; k < 9; k++)
                 {
-                    Item_Data[i].Property_Item[k] = json_SerializeObject.Property_Item[k];
+                    Item_Data[i].Property_Item[k] = int.Parse(Data[k]);
                 }
             }
         }
         else
         {
-            Debug.Log("No Save Item");
+            //Debug.Log("No Save Item");
             Item_Data[0].Property_Item[0] = 1;
             Item_Data[0].Property_Item[1] = 0;
             Item_Data[0].Property_Item[2] = 0;
@@ -256,8 +260,8 @@ public class WeaponManeger : MonoBehaviour
             Refresh_Item();
             HP.NumberSworld = 0;
             HP.Property_W[0] = Item_Data[0].Property_Item[4];
-            Save_Item();
-            HP.SaveData();
+            //Sprite_W_G.sprite = Item_Data[0].Grad_Sprite[HP.Weapon_Grad];
+            //Sprite_W_I.sprite = Item_Data[0].Sprite_Weapon[HP.Weapon_Icon];
         }
         Sprite_W_G.sprite = Item_Data[0].Grad_Sprite[HP.Weapon_Grad];
         Sprite_W_I.sprite = Item_Data[0].Sprite_Weapon[HP.Weapon_Icon];
@@ -271,6 +275,8 @@ public class WeaponManeger : MonoBehaviour
             Sprite_O_G.sprite = Item_Data[0].Grad_Sprite[HP.Other_Grad];
             Sprite_O_i.sprite = Item_Data[0].Sprite_Other[HP.Other_Icon];
         }
+        Save_Item();
+        HP.SaveData();
     }
 
     private void Refresh_Item()
@@ -323,11 +329,12 @@ public class WeaponManeger : MonoBehaviour
         }
         
     }
-
+    [Serializable]
     public class Json_SerializeObject
     {
         public int[] Property_Item = new int[9];
     }
+    [Serializable]
     public class Save_Item_Class
     {
         public string[] Inventory_Item = new string[20];
@@ -341,8 +348,8 @@ public class WeaponManeger : MonoBehaviour
     private void Refresh_stat()
     {
         HP_Stat.text ="HP: " + (HP.HP_Gerl + HP.Property_W[1] + HP.Property_A[1] + HP.Property_O[0]).ToString();
-        Attack_stat.text ="Атака: " + (HP.Property_W[0] + HP.Property_O[1]).ToString();
-        Deffence_stat.text = "Защита: " + (HP.Property_A[0] + HP.Property_O[2]).ToString();
+        Attack_stat.text ="РђС‚Р°РєР°: " + (HP.Property_W[0] + HP.Property_O[1]).ToString();
+        Deffence_stat.text = "Р—Р°С‰РёС‚Р°: " + (HP.Property_A[0] + HP.Property_O[2]).ToString();
     }
 }
 

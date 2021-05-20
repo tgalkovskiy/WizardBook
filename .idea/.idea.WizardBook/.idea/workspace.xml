@@ -22,6 +22,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a8/339f94d5/RenderSettings.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Asterman/Crouching_in_the_shadows/Assets/Assets/Scripts/Managers/ManagerVizable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.3.0/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
@@ -36,7 +37,6 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Energy.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PointCount.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Menu.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" />
@@ -54,12 +54,13 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Languge.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/ChoiesLanguege.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -144,6 +145,9 @@
       <workItem from="1620565781559" duration="684000" />
       <workItem from="1620592292032" duration="264000" />
       <workItem from="1620632984947" duration="1458000" />
+      <workItem from="1621494597146" duration="1659000" />
+      <workItem from="1621503831264" duration="675000" />
+      <workItem from="1621515233684" duration="9224000" />
     </task>
     <servers />
   </component>
