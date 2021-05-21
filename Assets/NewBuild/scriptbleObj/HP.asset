@@ -13,30 +13,30 @@ MonoBehaviour:
   m_Name: HP
   m_EditorClassIdentifier: 
   HP_Gerl: 200
-  NumberEnemy: 3
-  HP_Enemy: 650
-  Damage: 170
-  Gold_enemy: 360
-  Exp_enemy: 610
+  NumberEnemy: 6
+  HP_Enemy: 1000
+  Damage: 200
+  Gold_enemy: 350
+  Exp_enemy: 350
   Rubin_Enemy: 1
   Chess_Drop: 1
-  Property_W: 700000007400000000000000
+  Property_W: 3a0000000000000000000000
   Weapon_Grad: 3
-  Weapon_Icon: 2
-  Property_A: 4b0000004900000000000000
-  Armor_Grad: 2
-  Armor_Icon: 2
-  Property_O: 030000000000000030000000
-  Other_Grad: 1
-  Other_Icon: 2
+  Weapon_Icon: 3
+  Property_A: 070000000100000000000000
+  Armor_Grad: 1
+  Armor_Icon: 0
+  Property_O: 04000000000000002a000000
+  Other_Grad: 2
+  Other_Icon: 3
   LVLPers: 1
   NextLVLXP: 150
-  NowXP: 0
-  LVLBooK: 3
-  NextLVL_BOOK_XP: 162
-  Now_BOOK_XP: 0
-  PointBook: 3
-  NumberSworld: 2
+  NowXP: 115
+  LVLBooK: 7
+  NextLVL_BOOK_XP: 50
+  Now_BOOK_XP: 1
+  PointBook: 0
+  NumberSworld: 3
   Word: "\uFEFF{\r\n  \"Word\": {\r\n    \"Rus\": {\r\n      \"1\": [\r\n       
     \"\u0413\u043B\u0430\u0437\",\r\n        \"\u0420\u0443\u043A\u0430 (\u043A\u0438\u0441\u0442\u044C)\",\r\n       
     \"\u041D\u043E\u0433\u0430\",\r\n        \"\u0413\u043E\u043B\u043E\u0432\u0430\",\r\n       
@@ -1777,8 +1777,8 @@ MonoBehaviour:
   Skills: 000000000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 68207
-  Rubin: 320
+  Gold: 1559
+  Rubin: 4995
   Max_Energy: 15
-  Now_Energy: 100
+  Now_Energy: 29
   Ches: 00000000
