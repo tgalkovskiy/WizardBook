@@ -199,10 +199,11 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e496732db1d0bc4d8578f47df940920, type: 2}
+  - {fileID: 2100000, guid: fd4c5d89dab082a40a8b9846e55728ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -860,7 +861,7 @@ GameObject:
   - component: {fileID: 622839004347697979}
   - component: {fileID: 622839004352610365}
   m_Layer: 0
-  m_Name: Golem
+  m_Name: Ent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -895,10 +896,11 @@ SkinnedMeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e496732db1d0bc4d8578f47df940920, type: 2}
+  - {fileID: 2100000, guid: fd4c5d89dab082a40a8b9846e55728ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

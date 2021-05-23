@@ -40,6 +40,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Cube:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -56,11 +60,23 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmmisTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainBump:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: bdb7efbaebcdfd843891923d3ac1830b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NormalTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -80,35 +96,75 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _tex3coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - _AlphaClip: 0
+    - _Amplitude: 1
     - _Blend: 0
     - _BumpScale: 1
+    - _ColorMask: 15
     - _Cull: 2
     - _Cutoff: 1
+    - _Depthpower: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
+    - _Emission: 2
     - _EnvironmentReflections: 1
+    - _Frequency: 10
+    - _FresnelBrightness: 0.24
+    - _FresnelPower: 0.22
+    - _FresnelShadowDropoff: 0.28
     - _GlossMapScale: 0.122
     - _Glossiness: 0.077
     - _GlossyReflections: 1
+    - _HighIntensity: 3
+    - _LightScalar: 4.9
+    - _LowIntensity: 1.7
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
+    - _Opacity: 1
+    - _OutlineSize: 10
     - _Parallax: 0.02
     - _QueueOffset: 0
+    - _RampLevels: 16
     - _ReceiveShadows: 1
-    - _Shininess: 0.082
+    - _RimAlpha: 0.56
+    - _RimDropOff: 0.16
+    - _RimPower: 0.29
+    - _Shininess: 0.09
     - _Smoothness: 0.425
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
+    - _StartFrequency: 4
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
     - _Surface: 0
     - _UVSec: 0
+    - _UseUIAlphaClip: 0
+    - _Useblack: 0
+    - _Usedepth: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - __dirty: 1
     m_Colors:
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.990566, g: 0.9726944, b: 0.8924439, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Emission: {r: 0.3962264, g: 0.35857287, b: 0.106532566, a: 0}
     - _EmissionColor: {r: 0.125, g: 0.125, b: 0.125, a: 1}
-    - _SpecColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
+    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ReflectColor: {r: 1, g: 1, b: 1, a: 0.5}
+    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecColor: {r: 0.3679245, g: 0.17875579, b: 0.17875579, a: 1}
+    - _Specular: {r: 0, g: 0, b: 0, a: 0}
+  m_BuildTextureStacks: []
