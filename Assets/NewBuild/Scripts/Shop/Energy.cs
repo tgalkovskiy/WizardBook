@@ -10,13 +10,14 @@ public class Energy : MonoBehaviour
     [SerializeField] private GameObject NoRubin = default;
     private void Start()
     {
-        Advertisement.Initialize("4084815",true);
+        Advertisement.Initialize("4084755", true);
     }
 
     public void AddАFree()
     {
         Advertisement.Show();
         _Stats.Now_Energy += 5;
+        
     }
 
     public void LitleEnrgy()
