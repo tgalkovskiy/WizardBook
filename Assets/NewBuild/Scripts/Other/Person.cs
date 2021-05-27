@@ -203,16 +203,12 @@ public class Person : MonoBehaviour
             Gold.text = Gold_Lose.ToString();
             int Rubin_Lose = 0;
             HP_Person.Rubin += Rubin_Lose;
+            HP_Person.Now_BOOK_XP += HP_Person.Exp_enmy_book/3;
             Rubin.text = Rubin_Lose.ToString();
-            //HP_Person.PointBook += WordButtom.Point_now_Battel;
-            //Point.text = WordButtom.Point_now_Battel.ToString();
             int EXP_lose = HP_Person.Exp_enemy/10;
             HP_Person.NowXP += EXP_lose;
             Exp.text = EXP_lose.ToString();
-            //HP_Person.NowXP += 50;
-            //RoundPanel.SetActive(true);
             StartCoroutine(Death_Pers());
-            //GameState = false;
             EndRaund.text = "В этот раз противник победил..." + "\n" + "Попробуйте улучшить снаряжение и выучить больше волшебных слов!";
             if(HP_Person.NowXP >= HP_Person.NextLVLXP)
             {
@@ -262,14 +258,11 @@ public class Person : MonoBehaviour
             int Rubin_W = HP_Person.Rubin_Enemy;
             HP_Person.Rubin += Rubin_W;
             Rubin.text = Rubin_W.ToString();
-            //HP_Person.PointBook += WordButtom.Point_now_Battel;
-            //Point.text = WordButtom.Point_now_Battel.ToString();
+            HP_Person.Now_BOOK_XP += HP_Person.Exp_enmy_book;
             int EXP_W = HP_Person.Exp_enemy;
             HP_Person.NowXP += EXP_W;
             Exp.text = EXP_W.ToString();
-            //HP_Person.NowXP += 250;
             StartCoroutine(Death_Enimy());
-            //GameState = false;
             EndRaund.text = "Победа, так держать!";
             if (HP_Person.NowXP >= HP_Person.NextLVLXP)
             {

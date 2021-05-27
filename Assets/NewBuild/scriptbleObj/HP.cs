@@ -47,6 +47,7 @@ public class HP : ScriptableObject
     public int Damage;
     public int Gold_enemy;
     public int Exp_enemy;
+    public int Exp_enmy_book;
     public int Rubin_Enemy;
     public bool Chess_Drop;
     //параметры игрока

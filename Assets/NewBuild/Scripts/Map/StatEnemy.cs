@@ -12,6 +12,7 @@ public class StatEnemy : MonoBehaviour
    public int Damage;
    public int Gold;
    public int Exp;
+   public int ExpBook;
    public int Rubin;
    public bool Chess;
    public Transform PosPlayer;

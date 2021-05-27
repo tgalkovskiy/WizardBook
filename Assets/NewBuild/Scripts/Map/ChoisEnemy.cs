@@ -50,6 +50,7 @@ public class ChoisEnemy : MonoBehaviour
                       HP.HP_Enemy = statEnemy.HP;
                       HP.Damage = statEnemy.Damage;
                       HP.Gold_enemy = statEnemy.Gold;
+                      HP.Exp_enmy_book = statEnemy.ExpBook;
                       HP.Exp_enemy = statEnemy.Exp;
                       HP.Rubin_Enemy = statEnemy.Rubin;
                       HP.Chess_Drop = statEnemy.Chess;
@@ -86,6 +87,7 @@ public class ChoisEnemy : MonoBehaviour
                         HP.Damage = statEnemy.Damage;
                         HP.Gold_enemy = statEnemy.Gold;
                         HP.Exp_enemy = statEnemy.Exp;
+                        HP.Exp_enmy_book = statEnemy.ExpBook;
                         HP.Rubin_Enemy = statEnemy.Rubin;
                         HP.Chess_Drop = statEnemy.Chess;
                         MapSetting.Number_now = statEnemy.PosGame;
