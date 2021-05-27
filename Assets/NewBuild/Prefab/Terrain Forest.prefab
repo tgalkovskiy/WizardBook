@@ -5142,7 +5142,7 @@ MonoBehaviour:
   Damage: 100
   Gold: 350
   Exp: 200
-  ExpBook: 0
+  ExpBook: 15
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701998701492120}
@@ -5441,7 +5441,7 @@ MonoBehaviour:
   Damage: 75
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997411166877}
@@ -5520,7 +5520,7 @@ MonoBehaviour:
   Damage: 170
   Gold: 350
   Exp: 200
-  ExpBook: 0
+  ExpBook: 15
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997732242079}
@@ -10405,7 +10405,7 @@ MonoBehaviour:
   Damage: 70
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998285968935}
@@ -10635,7 +10635,7 @@ MonoBehaviour:
   Damage: 110
   Gold: 250
   Exp: 150
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997635008871}
@@ -10813,7 +10813,7 @@ MonoBehaviour:
   Damage: 250
   Gold: 450
   Exp: 300
-  ExpBook: 0
+  ExpBook: 20
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701996992706672}
@@ -10908,7 +10908,7 @@ MonoBehaviour:
   Damage: 150
   Gold: 350
   Exp: 200
-  ExpBook: 0
+  ExpBook: 15
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997204887499}
@@ -10976,7 +10976,7 @@ MonoBehaviour:
   Damage: 70
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998363286735}
@@ -16063,7 +16063,7 @@ MonoBehaviour:
   Damage: 70
   Gold: 250
   Exp: 200
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701998188780896}
@@ -21148,7 +21148,7 @@ MonoBehaviour:
   Damage: 80
   Gold: 250
   Exp: 200
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997088238371}
@@ -31012,7 +31012,7 @@ MonoBehaviour:
   Damage: 100
   Gold: 250
   Exp: 150
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 2660701997490285258}
@@ -31187,7 +31187,7 @@ MonoBehaviour:
   Damage: 50
   Gold: 120
   Exp: 80
-  ExpBook: 10
+  ExpBook: 5
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998266466477}
@@ -31260,7 +31260,7 @@ MonoBehaviour:
   Damage: 70
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701998707128643}
@@ -31413,7 +31413,7 @@ MonoBehaviour:
   Damage: 120
   Gold: 200
   Exp: 200
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998524759703}
@@ -45938,7 +45938,7 @@ MonoBehaviour:
   Damage: 60
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997272646546}
@@ -46316,7 +46316,7 @@ MonoBehaviour:
   Damage: 50
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997038519114}
@@ -46386,7 +46386,7 @@ MonoBehaviour:
   Damage: 70
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998228413405}
@@ -51382,7 +51382,7 @@ MonoBehaviour:
   Damage: 120
   Gold: 300
   Exp: 150
-  ExpBook: 0
+  ExpBook: 15
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701996893006961}
@@ -51643,7 +51643,7 @@ MonoBehaviour:
   Damage: 100
   Gold: 250
   Exp: 150
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701997689381736}
@@ -52180,7 +52180,7 @@ MonoBehaviour:
   Damage: 60
   Gold: 120
   Exp: 100
-  ExpBook: 0
+  ExpBook: 5
   Rubin: 0
   Chess: 1
   PosPlayer: {fileID: 2660701998223378183}
@@ -61971,7 +61971,7 @@ MonoBehaviour:
   Damage: 60
   Gold: 120
   Exp: 80
-  ExpBook: 10
+  ExpBook: 5
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 2660701997718048017}
@@ -62117,7 +62117,7 @@ MonoBehaviour:
   Damage: 120
   Gold: 200
   Exp: 200
-  ExpBook: 0
+  ExpBook: 10
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 2660701998242998739}
@@ -62310,7 +62310,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PosGame: 12
-  Name: "\u0421\u043B\u0430\u0431\u043E\u0432\u0438\u043A\u0443\u043C: \xAB\u0422\u0435\u043F\u0435\u0440\u044C
+  Name: "\u0420\u0435\u043F\u0442\u0438\u043B\u043E\u0438\u0434: \xAB\u0422\u0435\u043F\u0435\u0440\u044C
     \u044D\u0442\u043E \u043D\u0430\u0448\u0430 \u0437\u0435\u043C\u043B\u044F, \u0447\u0435\u043B\u043E\u0432\u0435\u043A!
     \u0423\u0441\u0441\u0441\u0430\u043A\u0443\u043B\u0443 \u043D\u0438\u043A\u0442\u043E
     \u043D\u0435 \u043E\u0441\u0441\u0441\u0442\u0430\u043D\u043E\u0432\u0438\u0442!\xBB 
@@ -62342,7 +62342,7 @@ MonoBehaviour:
   Damage: 500
   Gold: 1000
   Exp: 500
-  ExpBook: 0
+  ExpBook: 35
   Rubin: 3
   Chess: 1
   PosPlayer: {fileID: 2660701997069137152}

@@ -38667,7 +38667,7 @@ MonoBehaviour:
   Damage: 700
   Gold: 2000
   Exp: 1500
-  ExpBook: 0
+  ExpBook: 100
   Rubin: 4
   Chess: 1
   PosPlayer: {fileID: 9108601417987758384}
@@ -43834,7 +43834,7 @@ MonoBehaviour:
   Damage: 150
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 9108601416281692240}
@@ -43939,7 +43939,7 @@ MonoBehaviour:
   Damage: 160
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 9108601417161740399}
@@ -44009,7 +44009,7 @@ MonoBehaviour:
   Damage: 350
   Gold: 750
   Exp: 1200
-  ExpBook: 0
+  ExpBook: 60
   Rubin: 2
   Chess: 1
   PosPlayer: {fileID: 9108601416676988163}
@@ -44119,7 +44119,7 @@ MonoBehaviour:
   Damage: 250
   Gold: 550
   Exp: 800
-  ExpBook: 0
+  ExpBook: 40
   Rubin: 2
   Chess: 1
   PosPlayer: {fileID: 9108601418236987657}
@@ -44345,7 +44345,7 @@ MonoBehaviour:
   Damage: 150
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 9108601416733407167}
@@ -44646,7 +44646,7 @@ MonoBehaviour:
   Damage: 200
   Gold: 550
   Exp: 800
-  ExpBook: 0
+  ExpBook: 40
   Rubin: 2
   Chess: 1
   PosPlayer: {fileID: 9108601416331430797}
@@ -45108,7 +45108,7 @@ MonoBehaviour:
   Damage: 160
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 9108601417099928243}
@@ -45214,7 +45214,7 @@ MonoBehaviour:
   Damage: 160
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 0
   Chess: 0
   PosPlayer: {fileID: 9108601417876315843}
@@ -45393,7 +45393,7 @@ MonoBehaviour:
   Damage: 150
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 9108601416657520138}
@@ -45467,7 +45467,7 @@ MonoBehaviour:
   Damage: 160
   Gold: 350
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 0
   PosPlayer: {fileID: 9108601417760127591}
@@ -45566,7 +45566,7 @@ MonoBehaviour:
   Damage: 170
   Gold: 360
   Exp: 610
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 9108601416978857565}
@@ -45969,7 +45969,7 @@ MonoBehaviour:
   Damage: 250
   Gold: 550
   Exp: 800
-  ExpBook: 0
+  ExpBook: 40
   Rubin: 2
   Chess: 1
   PosPlayer: {fileID: 9108601417948045605}
@@ -46123,7 +46123,7 @@ MonoBehaviour:
   Damage: 180
   Gold: 370
   Exp: 600
-  ExpBook: 0
+  ExpBook: 30
   Rubin: 1
   Chess: 1
   PosPlayer: {fileID: 9108601418235505086}
@@ -46417,7 +46417,7 @@ MonoBehaviour:
   Damage: 350
   Gold: 750
   Exp: 1200
-  ExpBook: 0
+  ExpBook: 60
   Rubin: 2
   Chess: 1
   PosPlayer: {fileID: 9108601417463222406}
