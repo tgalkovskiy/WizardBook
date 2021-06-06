@@ -7,6 +7,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "HP", menuName = "HP")]
 public class HP : ScriptableObject
 {
+    public static HP Instance;
     public class Data
     {
        public int HP;
@@ -105,7 +106,7 @@ public class HP : ScriptableObject
     //time
     public DateTime DateTime;
     public bool[] Ches = new bool[4] {false,false,false,false};
-
+    
     public void NextLVL()
     {
         if(NowXP>= NextLVLXP)

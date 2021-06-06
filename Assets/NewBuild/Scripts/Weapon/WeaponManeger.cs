@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class WeaponManeger : MonoBehaviour
@@ -21,25 +22,28 @@ public class WeaponManeger : MonoBehaviour
     [SerializeField] private Text Lvl_Item = default;
     [SerializeField] private Text Properti_Item = default;
     [SerializeField] private Text Cost_NextLVL_Item = default;
-    [SerializeField] private Text HP_Stat = default;
-    [SerializeField] private Text Attack_stat = default;
-    [SerializeField] private Text Deffence_stat = default;
-    [SerializeField] private HP HP = default;
+
+    private Text hpstat;
+    private Text attackstat;
+    private Text deffencestat;
+    [SerializeField] private HP hp = default;
+    
     public static Item Now_Item = default;
     public List<Item> Item_Data = new List<Item>();
     private void Awake()
     {
-        Refresh_stat();
-        
         Load_Item();
-        
         Refresh_Item();
-        
     }
+
     private void Start()
     {
-        //Refresh_Item();
+        hpstat = StatPers.Instance.hppers;
+        attackstat = StatPers.Instance.attackpers;
+        deffencestat = StatPers.Instance.armorpers;
+        Refresh_stat();
     }
+
     public void Select_Item()
     {
         Discription.SetActive(true);
@@ -82,46 +86,46 @@ public class WeaponManeger : MonoBehaviour
     {
         if(Now_Item.Property_Item[0] == 1)
         {
-           HP.NumberSworld = Now_Item.Property_Item[1];
-           HP.Property_W[0] = Now_Item.Property_Item[4];
-           HP.Property_W[1] = Now_Item.Property_Item[8];
+           hp.NumberSworld = Now_Item.Property_Item[1];
+           hp.Property_W[0] = Now_Item.Property_Item[4];
+           hp.Property_W[1] = Now_Item.Property_Item[8];
            Sprite_W_G.sprite = Now_Item.Grad_Sprite[Now_Item.Property_Item[2]];
            Sprite_W_I.sprite = Now_Item.Sprite_Weapon[Now_Item.Property_Item[1]];
-           HP.Weapon_Grad = Now_Item.Property_Item[2];
-           HP.Weapon_Icon = Now_Item.Property_Item[1];
+           hp.Weapon_Grad = Now_Item.Property_Item[2];
+           hp.Weapon_Icon = Now_Item.Property_Item[1];
         }
         if(Now_Item.Property_Item[0] == 2)
         {
-            HP.Property_A[0] = Now_Item.Property_Item[5];
-            HP.Property_A[1] = Now_Item.Property_Item[8];
+            hp.Property_A[0] = Now_Item.Property_Item[5];
+            hp.Property_A[1] = Now_Item.Property_Item[8];
             Sprite_A_G.sprite = Now_Item.Grad_Sprite[Now_Item.Property_Item[2]];
             Sprite_A_I.sprite = Now_Item.Sprite_Armor[Now_Item.Property_Item[1]];
-            HP.Armor_Grad = Now_Item.Property_Item[2];
-            HP.Armor_Icon = Now_Item.Property_Item[1];
+            hp.Armor_Grad = Now_Item.Property_Item[2];
+            hp.Armor_Icon = Now_Item.Property_Item[1];
         }
         if(Now_Item.Property_Item[0] == 3)
         {
-            HP.Property_O[0] = Now_Item.Property_Item[8];
-            HP.Property_O[1] = Now_Item.Property_Item[4];
-            HP.Property_O[2] = Now_Item.Property_Item[5];
+            hp.Property_O[0] = Now_Item.Property_Item[8];
+            hp.Property_O[1] = Now_Item.Property_Item[4];
+            hp.Property_O[2] = Now_Item.Property_Item[5];
             Sprite_O_G.sprite = Now_Item.Grad_Sprite[Now_Item.Property_Item[2]];
             Sprite_O_i.sprite = Now_Item.Sprite_Other[Now_Item.Property_Item[1]];
-            HP.Other_Grad = Now_Item.Property_Item[2];
-            HP.Other_Icon = Now_Item.Property_Item[1];
+            hp.Other_Grad = Now_Item.Property_Item[2];
+            hp.Other_Icon = Now_Item.Property_Item[1];
         }
         Refresh_stat();
-        HP.SaveData();
+        hp.SaveData();
         Discription.SetActive(false);
     }
 
     public void LVL_UP_Item()
     {
-        if(Now_Item.Property_Item[6] <= HP.Gold)
+        if(Now_Item.Property_Item[6] <= hp.Gold)
         {
             if(Now_Item.Property_Item[3] < Now_Item.Property_Item[7])
             {
                 Now_Item.Property_Item[3] += 1;
-                HP.Gold -= Now_Item.Property_Item[6];
+                hp.Gold -= Now_Item.Property_Item[6];
                 Now_Item.Property_Item[6] = (int)((float)Now_Item.Property_Item[6]*1.3f);
                 if (Now_Item.Property_Item[2] ==0)
                 {
@@ -183,7 +187,8 @@ public class WeaponManeger : MonoBehaviour
                         Now_Item.Property_Item[8] += 10;
                     }
                 }
-                HP.SaveData();
+                Uimanager.ChangeMainResurses(hp, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
+                hp.SaveData();
                 Save_Item();
                 Discription.SetActive(false);
                 Equip_Item();
@@ -258,25 +263,25 @@ public class WeaponManeger : MonoBehaviour
             Item_Data[0].Property_Item[7] = 7;
             Item_Data[0].Property_Item[8] = 0;
             Refresh_Item();
-            HP.NumberSworld = 0;
-            HP.Property_W[0] = Item_Data[0].Property_Item[4];
+            hp.NumberSworld = 0;
+            hp.Property_W[0] = Item_Data[0].Property_Item[4];
             //Sprite_W_G.sprite = Item_Data[0].Grad_Sprite[HP.Weapon_Grad];
             //Sprite_W_I.sprite = Item_Data[0].Sprite_Weapon[HP.Weapon_Icon];
         }
-        Sprite_W_G.sprite = Item_Data[0].Grad_Sprite[HP.Weapon_Grad];
-        Sprite_W_I.sprite = Item_Data[0].Sprite_Weapon[HP.Weapon_Icon];
-        if(HP.Armor_Grad != -1)
+        Sprite_W_G.sprite = Item_Data[0].Grad_Sprite[hp.Weapon_Grad];
+        Sprite_W_I.sprite = Item_Data[0].Sprite_Weapon[hp.Weapon_Icon];
+        if(hp.Armor_Grad != -1)
         {
-            Sprite_A_G.sprite = Item_Data[0].Grad_Sprite[HP.Armor_Grad];
-            Sprite_A_I.sprite = Item_Data[0].Sprite_Armor[HP.Armor_Icon];
+            Sprite_A_G.sprite = Item_Data[0].Grad_Sprite[hp.Armor_Grad];
+            Sprite_A_I.sprite = Item_Data[0].Sprite_Armor[hp.Armor_Icon];
         }
-        if (HP.Other_Grad != -1)
+        if (hp.Other_Grad != -1)
         {
-            Sprite_O_G.sprite = Item_Data[0].Grad_Sprite[HP.Other_Grad];
-            Sprite_O_i.sprite = Item_Data[0].Sprite_Other[HP.Other_Icon];
+            Sprite_O_G.sprite = Item_Data[0].Grad_Sprite[hp.Other_Grad];
+            Sprite_O_i.sprite = Item_Data[0].Sprite_Other[hp.Other_Icon];
         }
         Save_Item();
-        HP.SaveData();
+        hp.SaveData();
     }
 
     private void Refresh_Item()
@@ -300,7 +305,7 @@ public class WeaponManeger : MonoBehaviour
 
     public void Cleer_Item()
     {
-        HP.Gold += Now_Item.Property_Item[6];
+        hp.Gold += Now_Item.Property_Item[6];
         for (int i =0; i< Now_Item.Property_Item.Length; i++)
         {
             Now_Item.Property_Item[i] = 0;
@@ -323,7 +328,7 @@ public class WeaponManeger : MonoBehaviour
                 //Item_Data[i] = item;
                 Refresh_Item();
                 Save_Item();
-                HP.SaveData();
+                hp.SaveData();
                 break;
             }
         }
@@ -339,17 +344,12 @@ public class WeaponManeger : MonoBehaviour
     {
         public string[] Inventory_Item = new string[20];
     }
-
-    public void Bakc(GameObject gameObject)
-    {
-        gameObject.SetActive(false);
-    }
-
+    
     private void Refresh_stat()
     {
-        HP_Stat.text ="HP: " + (HP.HP_Gerl + HP.Property_W[1] + HP.Property_A[1] + HP.Property_O[0]).ToString();
-        Attack_stat.text ="Атака: " + (HP.Property_W[0] + HP.Property_O[1]).ToString();
-        Deffence_stat.text = "Защита: " + (HP.Property_A[0] + HP.Property_O[2]).ToString();
+        hpstat.text ="HP: " + (hp.HP_Gerl + hp.Property_W[1] + hp.Property_A[1] + hp.Property_O[0]).ToString();
+        attackstat.text ="Атака: " + (hp.Property_W[0] + hp.Property_O[1]).ToString();
+        deffencestat.text = "Защита: " + (hp.Property_A[0] + hp.Property_O[2]).ToString();
     }
 }
 

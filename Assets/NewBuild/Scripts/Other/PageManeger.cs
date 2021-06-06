@@ -3,21 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-public class PageManeger : MonoBehaviour
+
+public class PageManeger : MonoBehaviour, IPage
 {
-    [SerializeField] private HP StatPers;
+    public HP stat;
 
     [SerializeField] private SaveTutorial _tutorial = default;
     [SerializeField] private GameObject First_tutorial = default;
     
-    
-    [SerializeField] private GameObject Page1 =default;
-    [SerializeField] private GameObject Page2 = default;
-    [SerializeField] private GameObject Page3 = default;
-    [SerializeField] private GameObject Page4 = default;
-    [SerializeField] private GameObject[] Buttoms = default;
+    [SerializeField] private GameObject[] page =default;
+    [SerializeField] private GameObject[] buttoms = default;
     
     [SerializeField] private GameObject NextLVLMainPage = default;
     [SerializeField] private GameObject NextLVlBG = default;
@@ -25,23 +24,15 @@ public class PageManeger : MonoBehaviour
 
     [SerializeField] private Text Text_book = default;
     
-    [SerializeField] private Text Gold = default;
-    [SerializeField] private Text Rubin = default;
-    [SerializeField] private Text Energy = default;
-
     [SerializeField] private Sprite[] _imagesMenu = default;
     [SerializeField] private Image _imagesBook = default;
     [SerializeField] private Image _imagesUp = default;
     [SerializeField] private Image _imagesDown = default;
 
-    private void OnEnable()
-    {
-        Vizual();
-    }
-
+    
     public void Vizual()
     {
-        if (StatPers.LVLBooK < 3)
+        if (stat.LVLBooK < 3)
         {
             _imagesBook.sprite = _imagesMenu[0];
             _imagesUp.sprite = _imagesMenu[1];
@@ -49,7 +40,7 @@ public class PageManeger : MonoBehaviour
             Text_book.text = "Ученик Мага";
         }
 
-        if (StatPers.LVLBooK >= 3 && StatPers.LVLBooK < 6)
+        if (stat.LVLBooK >= 3 && stat.LVLBooK < 6)
         {
             _imagesBook.sprite = _imagesMenu[2];
             _imagesUp.sprite = _imagesMenu[3];
@@ -57,7 +48,7 @@ public class PageManeger : MonoBehaviour
             Text_book.text = "Адепт";
         }
 
-        if (StatPers.LVLBooK >= 6)
+        if (stat.LVLBooK >= 6)
         {
             _imagesBook.sprite = _imagesMenu[4];
             _imagesUp.sprite = _imagesMenu[5];
@@ -65,82 +56,20 @@ public class PageManeger : MonoBehaviour
             Text_book.text = "Маг";
         }
     }
-    
-    private void Awake()
+
+    private void Start()
     {
-        StatPers.LoadData();
+        stat.LoadData();
         _tutorial.LoadData();
-        
+        Uimanager.ChangeMainResurses(stat, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
         if (!_tutorial.first_tutorial)
         {
             First_tutorial.SetActive(true);
             _tutorial.first_tutorial = true;
             _tutorial.SaveData();
         }
-        Buttoms[0].transform.DOScale(1.3f, 0.4f);
-        Buttoms[1].transform.DOScale(1.0f, 0.4f);
-        Buttoms[2].transform.DOScale(1.0f, 0.4f);
-        Buttoms[3].transform.DOScale(1.0f, 0.4f);
-    }
-    public void BOOK()
-    {
-        Page1.SetActive(false);
-        Page3.SetActive(false);
-        Page2.SetActive(true);
-        Page4.SetActive(false);
-        Vizual();
-        Buttoms[0].transform.DOScale(1.0f, 0.4f);
-        Buttoms[1].transform.DOScale(1.3f, 0.4f);
-        Buttoms[2].transform.DOScale(1.0f, 0.4f);
-        Buttoms[3].transform.DOScale(1.0f, 0.4f);
-        
-    }
-    public void EQUIP()
-    {
-        Page2.SetActive(false);
-        Page1.SetActive(false);
-        Page4.SetActive(false);
-        Page3.SetActive(true);
-        Vizual();
-        Buttoms[0].transform.DOScale(1.0f, 0.4f);
-        Buttoms[1].transform.DOScale(1.0f, 0.4f);
-        Buttoms[2].transform.DOScale(1.3f, 0.4f);
-        Buttoms[3].transform.DOScale(1.0f, 0.4f);
-       
-
-    }
-    public void MainPage()
-    {
-        Page1.SetActive(true);
-        Page2.SetActive(false);
-        Page3.SetActive(false);
-        Page4.SetActive(false);
-        Vizual();
-        Buttoms[0].transform.DOScale(1.3f, 0.4f);
-        Buttoms[1].transform.DOScale(1.0f, 0.4f);
-        Buttoms[2].transform.DOScale(1.0f, 0.4f);
-        Buttoms[3].transform.DOScale(1.0f, 0.4f);
-    }
-
-    public void Shop()
-    {
-        Page1.SetActive(false);
-        Page2.SetActive(false);
-        Page3.SetActive(false);
-        Page4.SetActive(true);
-        Vizual();
-        Buttoms[0].transform.DOScale(1.0f, 0.4f);
-        Buttoms[1].transform.DOScale(1.0f, 0.4f);
-        Buttoms[2].transform.DOScale(1.0f, 0.4f);
-        Buttoms[3].transform.DOScale(1.3f, 0.4f);
-    }
-    
-    private void FixedUpdate()
-    {
-        Gold.text = StatPers.Gold.ToString();
-        Rubin.text = StatPers.Rubin.ToString();
-        Energy.text = StatPers.Now_Energy.ToString() + "/" + StatPers.Max_Energy.ToString();
-        if(StatPers.Now_BOOK_XP >= StatPers.NextLVL_BOOK_XP)
+        MainPage(0);
+        if (stat.Now_BOOK_XP >= stat.NextLVL_BOOK_XP)
         {
             NextLVLMainPage.SetActive(true);
             NextLVlBG.SetActive(true);
@@ -150,9 +79,14 @@ public class PageManeger : MonoBehaviour
             NextLVLMainPage.SetActive(false);
             NextLVlBG.SetActive(false);
         }
-        for(int i = 0; i < StatPers.Ches.Length; i++)
+        
+    }
+    
+    private void FixedUpdate()
+    {
+        for(int i = 0; i < stat.Ches.Length; i++)
         {
-            if (StatPers.Ches[i]==true)
+            if (stat.Ches[i]==true)
             {
                 Chess.SetActive(true);
                 break;
@@ -162,11 +96,47 @@ public class PageManeger : MonoBehaviour
                 Chess.SetActive(false);
             }
         }
-        
-
     }
     public void Enrgy_Plus()
     {
-        StatPers.Now_Energy += 5;
+        stat.Now_Energy += 5;
+    }
+
+    private void ShowReclama()
+    {
+        int varity = Random.Range(0, 9);
+        if (varity == 7)
+        {
+            Energy.Instanse.addRevard();
+        }
+        else if(varity == 8)
+        {
+            Energy.Instanse.AddАVideo();
+        }
+        else if (varity == 9)
+        {
+           Energy.Instanse.Baner(); 
+        }
+    }
+
+    public void MainPage(int indexpage)
+    {
+
+        Uimanager.SwitchPage(indexpage, page, buttoms);
+    }
+
+    public void BookPage(int indexpage)
+    {
+        Uimanager.SwitchPage(indexpage, page, buttoms);
+    }
+
+    public void ShopPage(int indexpage)
+    {
+        Uimanager.SwitchPage(indexpage, page, buttoms);
+    }
+
+    public void Equipment(int indexpage)
+    {
+        Uimanager.SwitchPage(indexpage, page, buttoms);
     }
 }

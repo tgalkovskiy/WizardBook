@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc907b59ad00ca243baabe7a15d8716c, type: 3}
   m_Name: HP
   m_EditorClassIdentifier: 
-  HP_Gerl: 250
+  HP_Gerl: 200
   NumberEnemy: 1
   HP_Enemy: 2000
   Damage: 700
@@ -30,12 +30,12 @@ MonoBehaviour:
   Property_O: 000000000000000000000000
   Other_Grad: -1
   Other_Icon: -1
-  LVLPers: 2
-  NextLVLXP: 600
-  NowXP: 300
-  LVLBooK: 6
-  NextLVL_BOOK_XP: 50
-  Now_BOOK_XP: 10
+  LVLPers: 1
+  NextLVLXP: 150
+  NowXP: 0
+  LVLBooK: 2
+  NextLVL_BOOK_XP: 90
+  Now_BOOK_XP: 0
   PointBook: 0
   NumberSworld: 0
   Word: "\uFEFF{\r\n  \"Word\": {\r\n    \"Rus\": {\r\n      \"1\": [\r\n       
@@ -1775,11 +1775,11 @@ MonoBehaviour:
     +25% \u043A \u043F\u043E\u043B\u0443\u0447\u0430\u0435\u043C\u043E\u043C\u0443
     \u0437\u043E\u043B\u043E\u0442\u0443 (+3% \u0437\u0430 \u043A\u0430\u0436\u0434\u044B\u0439
     \u0443\u0440\u043E\u0432\u0435\u043D\u044C \u043D\u0430\u0432\u044B\u043A\u0430)."
-  Skills: 000000000000000000000000
+  Skills: 010000000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 2840
-  Rubin: 10
-  Max_Energy: 20
-  Now_Energy: 55
-  Ches: 00010000
+  Gold: 1000
+  Rubin: 20
+  Max_Energy: 15
+  Now_Energy: 50
+  Ches: 00000000

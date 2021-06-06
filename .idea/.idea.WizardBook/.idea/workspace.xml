@@ -19,15 +19,19 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/MainResurses.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/EE47BE73-F7EF-409C-A5E5-CE4B121745B7/a8/339f94d5/RenderSettings.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Asterman/Crouching_in_the_shadows/Assets/Assets/Scripts/Managers/ManagerVizable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Interface/IPage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.postprocessing@2.3.0/PostProcessing/Runtime/PostProcessLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Editor/Models/Providers/Collab.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/StatPers.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -47,21 +51,27 @@
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Setting.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Map.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Languge.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/ChoiesLanguege.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Transporent.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs" />
-      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/AbsractClass.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/StaticMenu.cs" />
       <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Energy.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Interface/IPage.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/MainResurses.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/StatPers.cs" />
+      <option value="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1pyyQBUN56YZmPzdNpaTTEN646i" />
@@ -150,7 +160,14 @@
       <workItem from="1621503831264" duration="675000" />
       <workItem from="1621515233684" duration="9224000" />
       <workItem from="1621778100733" duration="1433000" />
-      <workItem from="1622145863956" duration="2608000" />
+      <workItem from="1622145863956" duration="11466000" />
+      <workItem from="1622484642823" duration="417000" />
+      <workItem from="1622487538701" duration="906000" />
+      <workItem from="1622704884852" duration="305000" />
+      <workItem from="1622708161380" duration="43000" />
+      <workItem from="1622728514639" duration="202000" />
+      <workItem from="1622809318584" duration="772000" />
+      <workItem from="1622910065725" duration="11981000" />
     </task>
     <servers />
   </component>
