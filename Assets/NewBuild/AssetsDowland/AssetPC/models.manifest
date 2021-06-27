@@ -1,0 +1,43 @@
+ManifestFileVersion: 0
+CRC: 3435168708
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 0ef7b76854a5ff1b2677ac0af24c1c1b
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHE_SpruceTerrainC.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/MRL_RockMediumA.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_SpruceB.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_RockDetailsB.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/MRL_RockMediumB.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_SpruceA.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_GenericCliffA.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHE_SpruceTerrainA.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_RockDetailsA.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHE_SpruceTerrainB.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_SpruceC.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_Cave.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_RockMediumC.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_LowRockMedium.fbx
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Models/RHEF_GenericCliffB.fbx
+Dependencies: []

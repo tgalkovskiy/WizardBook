@@ -1,0 +1,61 @@
+ManifestFileVersion: 0
+CRC: 2972123590
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c899d3241dfe9689f8ded0a9d795f701
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: b0363f7088f9761414f730641bf9a24b
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFRockDetails_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_AlbedoB.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffA_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFRockMediumC_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumB_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffB_DiffuseMobile.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumB_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCave_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumA_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumB_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/SpruceTrunk_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCave_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFLowRockMedium_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/SpruceTrunk_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFRockMediumC_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFLowRockMedium_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFRockDetails_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffB_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumA_DiffuseMobile.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCave_Albedo.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumB_DiffueMobile.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCaveTop_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumAO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCaveTop_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/SpruceTrunk_Albedo.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLGenericGrass_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFLowRockMedium_DiffuseMobile.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLRockMediumA_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCave_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffA_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffB_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFLowRockMedium_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFRockMediumC_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLGenericGrass_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFRockDetails_AO.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffA_Specular.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/SpruceLeaves_Diffuse.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffB_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFGenericCliffA_DiffuseMobile.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/RHEFCaveTop_Diffuse.png
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Hight.tif
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Textures/MRLFGenericRockGrass_Albedo.png
+Dependencies: []

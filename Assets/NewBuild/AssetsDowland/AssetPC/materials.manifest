@@ -1,0 +1,41 @@
+ManifestFileVersion: 0
+CRC: 4029821049
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 41f7bb819d46ed2f13678767a5418b56
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 939e20ecac0e95a3f7c5cfb3e57acb1d
+HashAppended: 0
+ClassTypes:
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumA
+  _Mobile.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffB.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_LowRockMedium.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffA.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffA_DiffuseMobile.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceTrunk.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumA.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceTrunk_Nature.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumB.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_RockDetails.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_GenericCliffB_Mobile.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_CaveTop.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_LowRockMedium_Mobile.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumB_Mobile.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_RockMediumC.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_Cave.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceLeaves.mat
+- Assets/Cave pack/Rocky Hills Environment - Light Pack/Materials/RHEF_SpruceLeaves_Nature.mat
+Dependencies:
+- C:/Unity/project/Wizard/WizardBook/Assets/NewBuild/AssetsDowland/AssetPC/normals
+- C:/Unity/project/Wizard/WizardBook/Assets/NewBuild/AssetsDowland/AssetPC/textures

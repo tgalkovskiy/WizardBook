@@ -1,8 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Net;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class ChoisEnemy : MonoBehaviour
@@ -25,14 +27,40 @@ public class ChoisEnemy : MonoBehaviour
     public int maxEntmy = 0;
     private void Start()
     {
-        StartPosCa = this.transform.position;
-        StartQuatCam = this.transform.rotation;
+        //StartPosCa = this.transform.position;
+        //StartQuatCam = this.transform.rotation;
         //MapSetting.LoadData();
         //Debug.Log(maxEntmy+"FSDF");
-        PosPers();
+        //PosPers();
         
     }
-    private void Update()
+
+    public void OnclicEnemy(StatEnemy statEnemy)
+    {
+        HP.NumberEnemy = statEnemy.NumberEnemy;
+        HP.HP_Enemy = statEnemy.HP;
+        HP.Damage = statEnemy.Damage;
+        HP.Gold_enemy = statEnemy.Gold;
+        HP.Exp_enmy_book = statEnemy.ExpBook;
+        HP.Exp_enemy = statEnemy.Exp;
+        HP.Rubin_Enemy = statEnemy.Rubin;
+        HP.Chess_Drop = statEnemy.Chess;
+        Text_Name.text = statEnemy.Name;
+        Discription.SetActive(true);
+        
+    }
+
+    public void PlayGame()
+    {
+        //SceneManager.LoadScene(3);
+        LoadGameObj.SetActive(true);
+    }
+
+    public void Back()
+    {
+        Discription.SetActive(false);
+    }
+    /*private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0) && !Touch)
         {
@@ -171,11 +199,9 @@ public class ChoisEnemy : MonoBehaviour
     public void Back(GameObject gameObject)
     {
         StartCoroutine(Sleep(gameObject));
-    }
+    }*/
     public void Menu()
     {
         SceneManager.LoadScene(1);
     }
-    
-    
 }
