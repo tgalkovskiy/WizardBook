@@ -1,40 +1,7 @@
 ManifestFileVersion: 0
-CRC: 318766678
+CRC: 4000959722
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: textures
-      Dependencies: {}
-    Info_1:
-      Name: models
-      Dependencies: {}
-    Info_2:
-      Name: materials
-      Dependencies:
-        Dependency_0: textures
-        Dependency_1: normals
-    Info_3:
-      Name: prefabs
-      Dependencies:
-        Dependency_0: models
-        Dependency_1: materials
-    Info_4:
-      Name: normals
-      Dependencies: {}
-    Info_5:
-      Name: prefabsmobile
-      Dependencies:
-        Dependency_0: models
-        Dependency_1: materials
-    Info_6:
-      Name: scenes
-      Dependencies:
-        Dependency_0: textures
-        Dependency_1: prefabs
-        Dependency_2: normals
-    Info_7:
-      Name: readme
-      Dependencies: {}
-    Info_8:
       Name: content/spritsmap
       Dependencies: {}

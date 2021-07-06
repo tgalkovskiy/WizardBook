@@ -8,7 +8,7 @@ using UnityEngine.UI;
 
 public class fdqwf : MonoBehaviour
 {
-    private string urlmap = "https://www.google.com/search?q=%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B0+%D0%B3%D1%83%D0%B3%D0%BB&sxsrf=ALeKk00IhZ832ejf-Dg8wZipfY34a2Ya3w:1624777190703&source=lnms&tbm=isch&sa=X&ved=2ahUKEwixzKnanrfxAhURgf0HHb9mAEIQ_AUoAXoECAEQAw&biw=1920&bih=937#imgrc=H2b5aDtjJ9b7uM";
+    private string urlmap = "https://drive.google.com/uc?export=download&confirm=no_antivirus&id=1N-DJ-0Uai1eBp01xXgClGYuhe2_yJ2ob";
     public Image a;
     void Start() {
         /*WebClient webClient = new WebClient();
@@ -19,7 +19,7 @@ public class fdqwf : MonoBehaviour
     }
 
     IEnumerator GetImage() {
-        var img = new WWW(urlmap);
+        /*var img = new WWW(urlmap);
         yield return img;
         if (img.isDone)
         {
@@ -27,8 +27,16 @@ public class fdqwf : MonoBehaviour
             //Debug.Log(img.texture.name);
             //Texture2D tex = img.texture;
             //a.sprite = Sprite.Create((Texture2D)tex, new Rect(0,0, tex.width,tex.height), Vector2.zero);
+        }*/
+        WWW map = WWW.LoadFromCacheOrDownload(urlmap, 1);
+        yield return map;
+        urlmap = Path.Combine(Application.persistentDataPath, "Foto.Png");
+        var tex = new Texture2D(1,1);
+        if (File.Exists(urlmap))
+        {
+            Debug.Log(1);
         }
-        
+        tex.LoadImage(File.ReadAllBytes(urlmap));
         /*var assets = img.assetBundle;
         string File = "spritsmap.png";
         var imgerec = assets.LoadAssetAsync(File, typeof(Sprite));

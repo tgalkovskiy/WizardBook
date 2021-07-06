@@ -7,7 +7,7 @@ public class CreateBundle
     static void CreatAssetFromPC()
     {
         BuildPipeline.BuildAssetBundles("Assets/NewBuild/AssetsDowland/AssetPC", BuildAssetBundleOptions.None,
-            BuildTarget.StandaloneWindows64);
+            BuildTarget.StandaloneWindows);
     }
     [MenuItem("Create Assets/Creat Asset for Android")]
     static void CreatAssetFromAndroid()
