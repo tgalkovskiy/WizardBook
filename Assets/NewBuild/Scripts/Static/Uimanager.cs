@@ -13,11 +13,9 @@ public class Uimanager : MonoBehaviour
         for (int i = 0; i < page.Length; i++)
         {
             page[i].SetActive(false);
-            buttoms[i].transform.DOScale(1.0f, 0.4f);
             if (i == index)
             {
                 page[i].SetActive(true);
-                buttoms[i].transform.DOScale(1.3f, 0.4f);
             }
         }
     }

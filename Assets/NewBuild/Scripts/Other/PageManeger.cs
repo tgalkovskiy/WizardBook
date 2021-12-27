@@ -17,6 +17,8 @@ public class PageManeger : MonoBehaviour, IPage
     
     [SerializeField] private GameObject[] page =default;
     [SerializeField] private GameObject[] buttoms = default;
+    [SerializeField] private Image bgImage = default; 
+    [SerializeField] private Sprite[] bgSprite = default;
     
     [SerializeField] private GameObject NextLVLMainPage = default;
     [SerializeField] private GameObject NextLVlBG = default;
@@ -121,22 +123,25 @@ public class PageManeger : MonoBehaviour, IPage
 
     public void MainPage(int indexpage)
     {
-
         Uimanager.SwitchPage(indexpage, page, buttoms);
+        bgImage.sprite = bgSprite[indexpage];
     }
 
     public void BookPage(int indexpage)
     {
         Uimanager.SwitchPage(indexpage, page, buttoms);
+        bgImage.sprite = bgSprite[indexpage];
     }
 
     public void ShopPage(int indexpage)
     {
         Uimanager.SwitchPage(indexpage, page, buttoms);
+        bgImage.sprite = bgSprite[indexpage];
     }
 
     public void Equipment(int indexpage)
     {
         Uimanager.SwitchPage(indexpage, page, buttoms);
+        bgImage.sprite = bgSprite[indexpage];
     }
 }

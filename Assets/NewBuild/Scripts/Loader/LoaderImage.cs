@@ -42,6 +42,7 @@ public class LoaderImage : MonoBehaviour
 
     IEnumerator DownlandAndCache()
     {
+        
         WWW map = WWW.LoadFromCacheOrDownload(urlGeneralMap, 0);
         yield return map;
         Debug.Log(map.isDone);
@@ -54,8 +55,5 @@ public class LoaderImage : MonoBehaviour
             Debug.Log(sprirec.asset.name);
         }
         image.sprite = sprirec.asset as Sprite;
-
-
     }
-    
 }

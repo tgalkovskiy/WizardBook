@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class WordButtom : MonoBehaviour
 {
+    [SerializeField] private Sprite wrong;
+    [SerializeField] private Sprite correct;
+    [SerializeField] private Sprite original;
     [SerializeField] private HP HP_PERS;
     [SerializeField] private WrongWord _wrongWord = default;
     [SerializeField] WordLoad WordLoad;
@@ -79,7 +82,7 @@ public class WordButtom : MonoBehaviour
             Touch = true;
             if (Buttoms == WordLoad.CorrectWord)
             {
-                WordButtomMas[Buttoms].GetComponent<Image>().color = Color.green;
+                WordButtomMas[Buttoms].GetComponent<Image>().sprite = correct;
                 StartCoroutine(ChangeWordCorrect(Buttoms));
                 StartCoroutine(Shake(1.4f));
                 Point_now_Battel += 1;
@@ -96,8 +99,8 @@ public class WordButtom : MonoBehaviour
             else
             {
                 Point_now_Battel = 0;
-                WordButtomMas[Buttoms].GetComponent<Image>().color = Color.red;
-                WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.green;
+                WordButtomMas[Buttoms].GetComponent<Image>().sprite =wrong;
+                WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().sprite = correct;
                 StartCoroutine(ChangeWordWrong(Buttoms));
                 StartCoroutine(Shake(2.4f));
                 //запись ошибок
@@ -155,7 +158,7 @@ public class WordButtom : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         Time.timeScale = 1;
-        WordButtomMas[Number].GetComponent<Image>().color = Color.white;
+        WordButtomMas[Number].GetComponent<Image>().sprite = original;
         EventMeneger.GerlAttack1.Invoke();
         Timer = Deff_Timer;
         Touch = false;
@@ -165,8 +168,8 @@ public class WordButtom : MonoBehaviour
         
         yield return new WaitForSeconds(2);
         Time.timeScale = 1;
-        WordButtomMas[Number].GetComponent<Image>().color = Color.white;
-        WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().color = Color.white;
+        WordButtomMas[Number].GetComponent<Image>().sprite = original;
+        WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().sprite = original;
         EventMeneger.EnemyAttack1.Invoke();
         Timer = Deff_Timer;
         Touch = false;
