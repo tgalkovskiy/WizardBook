@@ -26,35 +26,35 @@ public class PageManeger : MonoBehaviour, IPage
 
     [SerializeField] private Text Text_book = default;
     
-    [SerializeField] private Sprite[] _imagesMenu = default;
+    /*[SerializeField] private Sprite[] _imagesMenu = default;
     [SerializeField] private Image _imagesBook = default;
     [SerializeField] private Image _imagesUp = default;
-    [SerializeField] private Image _imagesDown = default;
+    [SerializeField] private Image _imagesDown = default;*/
 
     
     public void Vizual()
     {
         if (stat.LVLBooK < 3)
         {
-            _imagesBook.sprite = _imagesMenu[0];
+            /*_imagesBook.sprite = _imagesMenu[0];
             _imagesUp.sprite = _imagesMenu[1];
-            _imagesDown.sprite = _imagesMenu[1];
-            Text_book.text = "Ученик Мага";
+            _imagesDown.sprite = _imagesMenu[1];*/
+            Text_book.text = "Ученик";
         }
 
         if (stat.LVLBooK >= 3 && stat.LVLBooK < 6)
         {
-            _imagesBook.sprite = _imagesMenu[2];
+            /*_imagesBook.sprite = _imagesMenu[2];
             _imagesUp.sprite = _imagesMenu[3];
-            _imagesDown.sprite = _imagesMenu[3];
+            _imagesDown.sprite = _imagesMenu[3];*/
             Text_book.text = "Адепт";
         }
 
         if (stat.LVLBooK >= 6)
         {
-            _imagesBook.sprite = _imagesMenu[4];
+            /*_imagesBook.sprite = _imagesMenu[4];
             _imagesUp.sprite = _imagesMenu[5];
-            _imagesDown.sprite = _imagesMenu[5];
+            _imagesDown.sprite = _imagesMenu[5];*/
             Text_book.text = "Маг";
         }
     }

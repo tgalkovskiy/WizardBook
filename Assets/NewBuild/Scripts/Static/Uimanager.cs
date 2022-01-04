@@ -22,19 +22,10 @@ public class Uimanager : MonoBehaviour
 
     public static void ChangeMainResurses(HP stat, Text money, Text energy, Text rubin)
     {
-        if (money != null)
-        {
-            money.text = stat.Gold.ToString();
-        }
-        if (energy != null)
-        {
-            energy.text = stat.Now_Energy.ToString();
-        }
-
-        if (rubin != null)
-        {
-            rubin.text = stat.Rubin.ToString();
-        }
+        Debug.Log(1);
+        money.text = stat.Gold.ToString();
+        energy.text = stat.Now_Energy.ToString();
+        rubin.text = stat.Rubin.ToString();
     }
 
     public static void OpenWindow(GameObject gameObject)

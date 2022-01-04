@@ -129,7 +129,6 @@ public class Person : MonoBehaviour
         StartCoroutine(Hit_pers(1));
         GerlAnimator[0].SetTrigger("Attack");
         Animator_Animy.SetTrigger("Damage");
-        
         if (WordButtom.Point_now_Battel >= 3 && WordButtom.Point_now_Battel <6)
         {
             HP_E -= DamagePers*1.25f;
@@ -330,10 +329,10 @@ public class Person : MonoBehaviour
         HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
     }
 
-    public void Close_text()
+    /*public void Close_text()
     {
         text_final.transform.DOMove(Last_Pos_text.transform.position, 1f);
-    }
+    }*/
     
     
 }

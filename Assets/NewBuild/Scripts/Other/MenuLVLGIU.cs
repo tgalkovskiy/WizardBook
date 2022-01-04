@@ -8,9 +8,9 @@ public class MenuLVLGIU : MonoBehaviour
 {
     [SerializeField] private HP stat = default;
     [SerializeField] private Text Lvl_Text = default;
-    [SerializeField] private Slider LVL_Figth = default;
+    [SerializeField] private Image LVL_Figth = default;
     [SerializeField] private Text LvlBook = default;
-    [SerializeField] private Slider LVL_BOOK = default;
+    [SerializeField] private Image LVL_BOOK = default;
     [SerializeField] private Text PointBook  = default;
     [SerializeField] private Text Discription_Skill_Text = default;
     [SerializeField] private Button[] Button_Skill = default;
@@ -21,17 +21,19 @@ public class MenuLVLGIU : MonoBehaviour
     [SerializeField] private GameObject Need_Up_Book = default;
     [SerializeField] private Text Chois;
     [SerializeField] private Text Cost_Book;
-    [SerializeField] private Text NextLVL_Book;
+    public GameObject upBookPanel;
+    public Button upBook;
+    //[SerializeField] private Text NextLVL_Book;
     private bool Skill;
     private int NumberSkill;
     private int Cost_Now_Skill;
  
     private void Awake()
     {
-        LVL_Figth.maxValue = stat.NextLVLXP;
-        LVL_Figth.value = stat.NowXP;
-        LVL_BOOK.maxValue = stat.NextLVL_BOOK_XP;
-        LVL_BOOK.value = stat.Now_BOOK_XP;
+        LVL_Figth.fillAmount = (float)stat.NowXP/stat.NextLVLXP;
+        LVL_BOOK.fillAmount = stat.Now_BOOK_XP/stat.NextLVL_BOOK_XP;
+        upBook.onClick.AddListener(LVL_Up_Book);
+        //LVL_BOOK.value = stat.Now_BOOK_XP;
         Lvl_Text.text = stat.LVLPers.ToString();
         LvlBook.text = stat.LVLBooK.ToString();
         PointBook.text = stat.PointBook.ToString();
@@ -46,11 +48,11 @@ public class MenuLVLGIU : MonoBehaviour
         }
         if (stat.Now_BOOK_XP >= stat.NextLVL_BOOK_XP)
         {
-            NextLVL_Book.text = "НОВЫЙ УРОВЕНЬ!";
+            //NextLVL_Book.text = "НОВЫЙ УРОВЕНЬ!";
         }
         else
         {
-            NextLVL_Book.text = "";
+            //NextLVL_Book.text = "";
         }
 }
 
@@ -116,9 +118,10 @@ public class MenuLVLGIU : MonoBehaviour
        
         
     }
-    public void LVL_Up_Book(GameObject gameObject)
+    public void LVL_Up_Book()
     {
-        gameObject.SetActive(true);
+        if(stat.Now_BOOK_XP < stat.NextLVL_BOOK_XP) return;
+        upBookPanel.SetActive(true);
         if (stat.LVLBooK == 1)
         {
             Cost_Book.text = "Цена: "+ 1000 + " монет";
@@ -129,7 +132,7 @@ public class MenuLVLGIU : MonoBehaviour
         }
         
     }
-    public void Chois_Book(GameObject gameObject)
+    public void Chois_Book()
     {
         int money;
         if (stat.LVLBooK == 1)
@@ -151,11 +154,12 @@ public class MenuLVLGIU : MonoBehaviour
                 stat.Gold -= money;
                 LvlBook.text = stat.LVLBooK.ToString();
                 PointBook.text = stat.PointBook.ToString();
-                LVL_BOOK.maxValue = stat.NextLVL_BOOK_XP;
-                LVL_BOOK.value = stat.Now_BOOK_XP;
-                NextLVL_Book.text = "";
+                LVL_BOOK.fillAmount = stat.Now_BOOK_XP/stat.NextLVL_BOOK_XP;
+                //LVL_BOOK.maxValue = stat.NextLVL_BOOK_XP;
+                //LVL_BOOK.value = stat.Now_BOOK_XP;
+                //NextLVL_Book.text = "";
                 Uimanager.ChangeMainResurses(stat, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
-                Uimanager.CloseWindow(gameObject);
+                Uimanager.CloseWindow(upBookPanel);
                 stat.SaveData();
             }
         }

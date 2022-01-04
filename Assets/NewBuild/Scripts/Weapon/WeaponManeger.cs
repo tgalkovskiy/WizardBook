@@ -68,15 +68,15 @@ public class WeaponManeger : MonoBehaviour
         string AllProperty = "";
         if (Now_Item.Property_Item[4] != 0)
         {
-            AllProperty += Property_W; 
+            AllProperty += " "+ Property_W; 
         }
         if (Now_Item.Property_Item[5] != 0)
         {
-            AllProperty += "\n" + Property_A;
+            AllProperty +=" "+ Property_A;
         }
         if (Now_Item.Property_Item[8] != 0)
         {
-            AllProperty += "\n" + Property_O;
+            AllProperty +=" "+ Property_O;
         }
         Properti_Item.text = AllProperty;
         Cost_NextLVL_Item.text = "Цена: " + Now_Item.Property_Item[6].ToString();

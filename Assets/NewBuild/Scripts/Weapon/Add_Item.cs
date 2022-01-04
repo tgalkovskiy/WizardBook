@@ -44,6 +44,7 @@ public class Add_Item : MonoBehaviour
             HP.Ches[Chois_War] = false;
             Chess[Chois_War].SetActive(false);
             Cost.SetActive(false);
+            Uimanager.ChangeMainResurses(HP, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
         }
         else
         {

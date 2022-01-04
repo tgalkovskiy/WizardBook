@@ -5,19 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aab5773f-9112-45eb-af93-24a91fa49dcd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/riderModule.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animators/LoadPanelMenu.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animators/LoadPanelMenu.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battele.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battele.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Fortuna.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Fortuna.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Loader/LoaderImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Loader/LoaderImage.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Menu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Menu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManeger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Terrain/DemoTerrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/DemoTerrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/Add_Item.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Weapon/WeaponManeger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/NewUI/MainMenu/new_book.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/NewUI/MainMenu/new_book.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/HP.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UltraMare/Fantastic UI Starter Pack/Material/Fantastic UI Starter Pack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UltraMare/Fantastic UI Starter Pack/Material/Fantastic UI Starter Pack.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +50,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Editor/CreateBundle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Shop/Gold.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.collab-proxy@1.3.9/Editor/Models/Providers/Collab.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/MagicSchoolView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/SaveTutorial.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Asterman/Crouching_in_the_shadows/Assets/Assets/Scripts/Managers/ManagerVizable.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WrongWord.cs" root0="FORCE_HIGHLIGHTING" />
@@ -214,7 +219,8 @@
       <workItem from="1635068261600" duration="102000" />
       <workItem from="1636198363103" duration="1530000" />
       <workItem from="1638959024093" duration="823000" />
-      <workItem from="1640604150283" duration="1407000" />
+      <workItem from="1640604150283" duration="4708000" />
+      <workItem from="1640861426978" duration="9974000" />
     </task>
     <servers />
   </component>

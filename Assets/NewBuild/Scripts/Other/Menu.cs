@@ -12,10 +12,7 @@ public class Menu : MonoBehaviour
     [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
     [SerializeField] private MenuBut MenuBut = default;
     [SerializeField] private GameObject TutorialButtom = default;
-    private void Start()
-    {
-        
-    }
+    
     public void LoadMenu()
     {
         SceneManager.LoadScene(1);

@@ -217,7 +217,7 @@ public class HP : ScriptableObject
         }
         else
         {
-            //Debug.Log("No Save");
+            Debug.Log("No Save");
             HP_Gerl = 200;
 
             Property_W = new int[3] { 30, 0, 0 };
@@ -233,12 +233,12 @@ public class HP : ScriptableObject
             Other_Icon = -1;
 
             LVLPers = 1;
-            NextLVLXP = 150;
+            NextLVLXP = 300;
             NowXP = 0;
             NumberSworld = 0;
             LVLBooK = 1;
             PointBook = 0;
-            NextLVL_BOOK_XP = 50;
+            NextLVL_BOOK_XP = 300;
             Now_BOOK_XP = 0;
             Skills = new bool[12] { false, false, false, false, false, false, false, false, false, false, false, false };
             LVL_Skill = new int[12] { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 };
