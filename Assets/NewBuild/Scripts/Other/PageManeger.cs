@@ -8,9 +8,9 @@ using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 
-public class PageManeger : MonoBehaviour, IPage
+public class PageManeger : MonoBehaviour
 {
-    public HP stat;
+    public GameConfig stat;
 
     [SerializeField] private SaveTutorial _tutorial = default;
     [SerializeField] private GameObject First_tutorial = default;
@@ -70,7 +70,7 @@ public class PageManeger : MonoBehaviour, IPage
             _tutorial.first_tutorial = true;
             _tutorial.SaveData();
         }
-        MainPage(0);
+        //MainPage(0);
         if (stat.Now_BOOK_XP >= stat.NextLVL_BOOK_XP)
         {
             NextLVLMainPage.SetActive(true);
@@ -121,11 +121,11 @@ public class PageManeger : MonoBehaviour, IPage
         }
     }
 
-    public void MainPage(int indexpage)
+    /*public void MainPage(int indexpage)
     {
         Uimanager.SwitchPage(indexpage, page, buttoms);
         bgImage.sprite = bgSprite[indexpage];
-    }
+    }*/
 
     public void BookPage(int indexpage)
     {

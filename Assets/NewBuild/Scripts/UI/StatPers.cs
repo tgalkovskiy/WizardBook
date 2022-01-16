@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class StatPers : MonoBehaviour
 {
+    public Text lvlPers;
     public Text hppers;
     public Text attackpers;
     public Text armorpers;

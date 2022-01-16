@@ -10,7 +10,7 @@ public class Bion_Shois : MonoBehaviour
     [SerializeField] private GameObject PanelOf = default;
     [SerializeField] private ChoisEnemy ChoisEnemy;
     [SerializeField] private Map map_Setting;
-    [SerializeField] private HP _hp =default;
+    [SerializeField] private GameConfig gameConfig =default;
 
     [SerializeField] private Image _map2 = default;
     [SerializeField] private Image _map3 = default;
@@ -35,20 +35,20 @@ public class Bion_Shois : MonoBehaviour
             _saveTutorial.SaveData();
         }
 
-        if (_hp.LVLBooK >= 3)
+        if (gameConfig.LVLBooK >= 3)
         {
             _map2.sprite = _iconMap[0];
             _text[0].SetActive(false);
         }
 
-        if (_hp.LVLBooK >= 6)
+        if (gameConfig.LVLBooK >= 6)
         {
             _map3.sprite = _iconMap[1];
             _text[1].SetActive(false);
         }
     }
 
-    public void Chois(int NumberTerrain)
+    /*public void Chois(int NumberTerrain)
     {
         if (NumberTerrain < Terrain.Length)
         {
@@ -61,7 +61,7 @@ public class Bion_Shois : MonoBehaviour
                 Instantiate(Terrain[NumberTerrain]);
                 map_Setting.LoadData();
             }
-            if (NumberTerrain==1 && _hp.LVLBooK>=3)
+            if (NumberTerrain==1 && gameConfig.LVLBooK>=3)
             {
                 ChoisEnemy.maxEntmy = map_Setting.Number_Max2;
                 map_Setting.Now_map = 1;
@@ -70,7 +70,7 @@ public class Bion_Shois : MonoBehaviour
                 Instantiate(Terrain[NumberTerrain]);
                 map_Setting.LoadData();
             }
-            if (NumberTerrain==2 && _hp.LVLBooK>=6)
+            if (NumberTerrain==2 && gameConfig.LVLBooK>=6)
             {
                 ChoisEnemy.maxEntmy = map_Setting.Number_Max3;
                 map_Setting.Now_map = 2;
@@ -83,7 +83,5 @@ public class Bion_Shois : MonoBehaviour
         else
         {
             PanelOf.SetActive(true);
-        }
-        
-    }
+        }*/
 }

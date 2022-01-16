@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class MenuLVLGIU : MonoBehaviour
 {
-    [SerializeField] private HP stat = default;
+    [SerializeField] private GameConfig stat = default;
     [SerializeField] private Text Lvl_Text = default;
     [SerializeField] private Image LVL_Figth = default;
     [SerializeField] private Text LvlBook = default;

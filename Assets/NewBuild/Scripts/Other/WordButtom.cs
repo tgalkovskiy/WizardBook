@@ -8,7 +8,7 @@ public class WordButtom : MonoBehaviour
     [SerializeField] private Sprite wrong;
     [SerializeField] private Sprite correct;
     [SerializeField] private Sprite original;
-    [SerializeField] private HP HP_PERS;
+    [SerializeField] private GameConfig gameConfigPers;
     [SerializeField] private WrongWord _wrongWord = default;
     [SerializeField] WordLoad WordLoad;
     [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
@@ -33,7 +33,7 @@ public class WordButtom : MonoBehaviour
         //Debug.Log(ChoiesLanguege.Languge1 + " " + ChoiesLanguege.Languge2);
         Word();
         //Timer = HP_PERS.Time_Game;
-        Deff_Timer += HP_PERS.Time_Game;    
+        Deff_Timer += gameConfigPers.Time_Game;    
     }
     private void OnEnable()
     {

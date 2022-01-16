@@ -16,12 +16,14 @@ public class Item : MonoBehaviour, IPointerDownHandler
         "6 - Start_Cost" + "\n" +
         "7 - maxLVL" + "\n" +
         "8 - HP")] public int[] Property_Item;
-    [SerializeField] public Image Icon_Item;
-    [SerializeField] public Image Crad_Item;
-    [SerializeField] public Sprite[] Sprite_Weapon;
-    [SerializeField] public Sprite[] Sprite_Armor;
-    [SerializeField] public Sprite[] Sprite_Other;
-    [SerializeField] public Sprite[] Grad_Sprite;
+    public Image Icon_Item;
+    public Image Crad_Item;
+    public Sprite defaultSpriteGrade;
+    public Sprite defaultSpriteIcon;
+    public Sprite[] Sprite_Weapon;
+    public Sprite[] Sprite_Armor;
+    public Sprite[] Sprite_Other;
+    public Sprite[] Grad_Sprite;
 
     
     private void Start()
@@ -30,13 +32,11 @@ public class Item : MonoBehaviour, IPointerDownHandler
     }
     public void OnPointerDown(PointerEventData eventData)
     {
-        
-        WeaponManeger.Now_Item = this.gameObject.GetComponent<Item>();
+        WeaponManeger.Now_Item = this;
     }
 
     public void Visulity_Item()
     {
-        
         if (Property_Item[0] != 0)
         {
             if(Property_Item[0] == 1)
@@ -54,11 +54,11 @@ public class Item : MonoBehaviour, IPointerDownHandler
                 Crad_Item.sprite = Grad_Sprite[Property_Item[2]];
                 Icon_Item.sprite = Sprite_Other[Property_Item[1]];
             }
-            this.gameObject.SetActive(true);
         }
         else
         {
-            this.gameObject.SetActive(false);
+            Crad_Item.sprite = defaultSpriteGrade;
+            Icon_Item.sprite = defaultSpriteIcon;
         }
     }
 }

@@ -28,9 +28,9 @@ public class Person : MonoBehaviour
     [SerializeField] private PostProcessVolume _process =default;
     private Vignette _vignette = default;
     
-    [SerializeField] private HP HP_Person = default;
+    [SerializeField] private GameConfig gameConfigPerson = default;
 
-    [SerializeField] private Map Map_Setting = default;
+    [SerializeField] private Map MapSetting = default;
 
     [SerializeField] private SaveTutorial _tutorial = default;
     [SerializeField] private GameObject VinTutorial = default;
@@ -66,7 +66,7 @@ public class Person : MonoBehaviour
     [SerializeField] private GameObject Chees;
     
     private GameObject Enemy;
-    private Animator Animator_Animy;
+    private Animator AnimatorEnemy;
     private void OnEnable()
     {
         EventMeneger.GerlAttack1 += AttackGerl;
@@ -79,31 +79,31 @@ public class Person : MonoBehaviour
     }
     private void Awake()
     {
-        HP_Person.LoadData();
+        gameConfigPerson.LoadData();
         GameState = true;
-        HP_G = HP_Person.HP_Gerl + HP_Person.Property_W[1]+ HP_Person.Property_A[1]+HP_Person.Property_O[0];
-        HP_E = HP_Person.HP_Enemy;
-        DamgeEnemy = HP_Person.Damage;
-        Enemy= Instantiate(EnemyGameObj[HP_Person.NumberEnemy]);
-        Animator_Animy = Enemy.GetComponent<Animator>();
+        HP_G = gameConfigPerson.HP_Gerl + gameConfigPerson.Property_W[1]+ gameConfigPerson.Property_A[1]+gameConfigPerson.Property_O[0];
+        HP_E = gameConfigPerson.HP_Enemy;
+        DamgeEnemy = gameConfigPerson.Damage;
+        Enemy= Instantiate(EnemyGameObj[gameConfigPerson.NumberEnemy]);
+        AnimatorEnemy = Enemy.GetComponent<Animator>();
         //EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
-        DamagePers = HP_Person.Property_W[0] + HP_Person.Property_O[1];   
-        Deffence = HP_Person.Property_A[0] + HP_Person.Property_O[2];
+        DamagePers = gameConfigPerson.Property_W[0] + gameConfigPerson.Property_O[1];   
+        Deffence = gameConfigPerson.Property_A[0] + gameConfigPerson.Property_O[2];
         Deffence_Standart_Lvl = Deffence;
-        if (HP_Person.Skills[0])
+        if (gameConfigPerson.Skills[0])
         {
             ActivElement[0].SetActive(true);
-            DamagePers +=(int)((DamagePers/100.0f)*5.0f+5*HP_Person.LVL_Skill[0]);
+            DamagePers +=(int)((DamagePers/100.0f)*5.0f+5*gameConfigPerson.LVL_Skill[0]);
         }
-        Weapon[(int)HP_Person.NumberSworld].SetActive(true);
+        Weapon[(int)gameConfigPerson.NumberSworld].SetActive(true);
     }
 
     private void Start()
     {
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
+        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (gameConfigPerson.HP_Gerl + gameConfigPerson.Property_W[1] + gameConfigPerson.Property_A[1] + gameConfigPerson.Property_O[0]).ToString();
         HP_Enemy.value = HP_E;
         HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
         _process.profile.TryGetSettings(out _vignette);
@@ -128,7 +128,7 @@ public class Person : MonoBehaviour
     {
         StartCoroutine(Hit_pers(1));
         GerlAnimator[0].SetTrigger("Attack");
-        Animator_Animy.SetTrigger("Damage");
+        AnimatorEnemy.SetTrigger("Damage");
         if (WordButtom.Point_now_Battel >= 3 && WordButtom.Point_now_Battel <6)
         {
             HP_E -= DamagePers*1.25f;
@@ -159,7 +159,7 @@ public class Person : MonoBehaviour
     private void AttackEny()
     {
         StartCoroutine(Hit_pers(0));
-        Animator_Animy.SetTrigger("Attack");
+        AnimatorEnemy.SetTrigger("Attack");
         GerlAnimator[0].SetTrigger("Damage");
         float NowD = DamgeEnemy-Deffence;
         if (NowD > 0)
@@ -189,98 +189,77 @@ public class Person : MonoBehaviour
         {
             GerlAnimator[0].SetTrigger("Die");
             text_final.SetActive(false);
-            int Gold_Lose = HP_Person.Gold_enemy/10;
-            if (HP_Person.Skills[11])
+            int Gold_Lose = gameConfigPerson.Gold_enemy/10;
+            if (gameConfigPerson.Skills[11])
             {
-                Gold_Lose += ((Gold_Lose / 100) * (24 + HP_Person.LVL_Skill[11]));
-                HP_Person.Gold += Gold_Lose;
+                Gold_Lose += ((Gold_Lose / 100) * (24 + gameConfigPerson.LVL_Skill[11]));
+                gameConfigPerson.Gold += Gold_Lose;
             }
             else
             {
-                HP_Person.Gold += Gold_Lose;
+                gameConfigPerson.Gold += Gold_Lose;
             }
             Gold.text = Gold_Lose.ToString();
             int Rubin_Lose = 0;
-            HP_Person.Rubin += Rubin_Lose;
-            HP_Person.Now_BOOK_XP += HP_Person.Exp_enmy_book/3;
+            gameConfigPerson.Rubin += Rubin_Lose;
+            gameConfigPerson.Now_BOOK_XP += gameConfigPerson.Exp_enmy_book/3;
             Rubin.text = Rubin_Lose.ToString();
-            int EXP_lose = HP_Person.Exp_enemy/10;
-            HP_Person.NowXP += EXP_lose;
+            int EXP_lose = gameConfigPerson.Exp_enemy/10;
+            gameConfigPerson.NowXP += EXP_lose;
             Exp.text = EXP_lose.ToString();
             StartCoroutine(Death_Pers());
             EndRaund.text = "В этот раз противник победил..." + "\n" + "Попробуйте улучшить снаряжение и выучить больше волшебных слов!";
-            if(HP_Person.NowXP >= HP_Person.NextLVLXP)
+            if(gameConfigPerson.NowXP >= gameConfigPerson.NextLVLXP)
             {
                 NextLevel.SetActive(true);
-                HP_Person.NextLVL();
+                gameConfigPerson.NextLVL();
             }
-            HP_Person.SaveData();
+            gameConfigPerson.SaveData();
 
         }
         if (HP_E <= 0)
         {
-            Animator_Animy.SetTrigger("Die");
-            if (Map_Setting.Now_map == 0)
+            AnimatorEnemy.SetTrigger("Die");
+            MapSetting.enemyNumber[gameConfigPerson.NumberEnemy+1] = true;
+            MapSetting.SaveData();
+            int Gold_W = gameConfigPerson.Gold_enemy;
+            if (gameConfigPerson.Skills[11])
             {
-                if (Map_Setting.Number_Max1 == Map_Setting.Number_now) 
-                {
-                    Map_Setting.Number_Max1 += 1;
-                }
-            }
-            if (Map_Setting.Now_map == 1)
-            {
-                if (Map_Setting.Number_Max2 == Map_Setting.Number_now) 
-                {
-                    Map_Setting.Number_Max2 += 1;
-                }
-            }
-            if (Map_Setting.Now_map == 2)
-            {
-                if (Map_Setting.Number_Max3 == Map_Setting.Number_now) 
-                {
-                    Map_Setting.Number_Max3 += 1;
-                }
-            }
-            Map_Setting.SaveData();
-            Final_text.text = Map_Setting.Text_now;
-            int Gold_W = HP_Person.Gold_enemy;
-            if (HP_Person.Skills[11])
-            {
-                Gold_W += ((Gold_W / 100) * (24 + HP_Person.LVL_Skill[11]));
-                HP_Person.Gold += Gold_W;
+                Gold_W += ((Gold_W / 100) * (24 + gameConfigPerson.LVL_Skill[11]));
+                gameConfigPerson.Gold += Gold_W;
             }
             else
             {
-                HP_Person.Gold += Gold_W;
+                gameConfigPerson.Gold += Gold_W;
             }
             Gold.text = Gold_W.ToString();
-            int Rubin_W = HP_Person.Rubin_Enemy;
-            HP_Person.Rubin += Rubin_W;
+            int Rubin_W = gameConfigPerson.Rubin_Enemy;
+            gameConfigPerson.Rubin += Rubin_W;
             Rubin.text = Rubin_W.ToString();
-            HP_Person.Now_BOOK_XP += HP_Person.Exp_enmy_book;
-            int EXP_W = HP_Person.Exp_enemy;
-            HP_Person.NowXP += EXP_W;
+            gameConfigPerson.Now_BOOK_XP += gameConfigPerson.Exp_enmy_book;
+            int EXP_W = gameConfigPerson.Exp_enemy;
+            gameConfigPerson.NowXP += EXP_W;
             Exp.text = EXP_W.ToString();
             StartCoroutine(Death_Enimy());
             EndRaund.text = "Победа, так держать!";
-            if (HP_Person.NowXP >= HP_Person.NextLVLXP)
+            if (gameConfigPerson.NowXP >= gameConfigPerson.NextLVLXP)
             {
                 NextLevel.SetActive(true);
-                HP_Person.NextLVL();
+                gameConfigPerson.NextLVL();
             }
-            if (HP_Person.Chess_Drop)
+            if (gameConfigPerson.Chess_Drop)
             {
                 Chees.SetActive(true);
-                for(int i =0; i< HP_Person.Ches.Length; i++)
+                for(int i =0; i< gameConfigPerson.Ches.Length; i++)
                 {
-                    if (!HP_Person.Ches[i])
+                    if (!gameConfigPerson.Ches[i])
                     {
-                        HP_Person.Ches[i] = true;
+                        gameConfigPerson.Ches[i] = true;
                         break;
                     }
                 }
             }
-            HP_Person.SaveData();
+            gameConfigPerson.SaveData();
 
         }
          
@@ -324,7 +303,7 @@ public class Person : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Hit[Number].SetActive(false);
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (HP_Person.HP_Gerl + HP_Person.Property_W[1] + HP_Person.Property_A[1] + HP_Person.Property_O[0]).ToString();
+        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (gameConfigPerson.HP_Gerl + gameConfigPerson.Property_W[1] + gameConfigPerson.Property_A[1] + gameConfigPerson.Property_O[0]).ToString();
         HP_Enemy.value = HP_E;
         HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
     }

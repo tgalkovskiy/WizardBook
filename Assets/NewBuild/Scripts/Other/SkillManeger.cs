@@ -7,7 +7,7 @@ public class SkillManeger : MonoBehaviour
 {
     [SerializeField] private Animator PersAnimator;
     //общие поля
-    [SerializeField] private HP HP_SKills = default;
+    [SerializeField] private GameConfig gameConfigSKills = default;
     [SerializeField] private Person Person;
     [SerializeField] private WordButtom WordButtom = default;
 
@@ -64,46 +64,46 @@ public class SkillManeger : MonoBehaviour
         CoolDown_Time = 0;
         Cooldown_Watter = 0;
         //если активен второй сиклл
-        if (HP_SKills.Skills[1])
+        if (gameConfigSKills.Skills[1])
         {
             //компоненты и кнопка для данного скила
             Buttom_Arson_Image = Skill_buton[0].GetComponent<Image>();
             Buttom_Skil_2.SetActive(true);
-            ArsonDamege = (Person.HP_E / 100.0f) * (2f+1*HP_SKills.LVL_Skill[1]);
+            ArsonDamege = (Person.HP_E / 100.0f) * (2f+1*gameConfigSKills.LVL_Skill[1]);
         }
         //если активне 3 скил
-        if (HP_SKills.Skills[2])
+        if (gameConfigSKills.Skills[2])
         {
             //увелчиение общего урона
-            Person.DamagePers += (Person.DamagePers / 100.0f) * (25.0f+ HP_SKills.LVL_Skill[2]);
+            Person.DamagePers += (Person.DamagePers / 100.0f) * (25.0f+ gameConfigSKills.LVL_Skill[2]);
             //увеличение силы поджога
-            ArsonDamege += (ArsonDamege / 100.0f) * (25.0f+10*HP_SKills.LVL_Skill[2]);
+            ArsonDamege += (ArsonDamege / 100.0f) * (25.0f+10*gameConfigSKills.LVL_Skill[2]);
         }
         //если активне 7 скилл
-        if (HP_SKills.Skills[6])
+        if (gameConfigSKills.Skills[6])
         {
             //прирост к защите 
-            Person.Deffence += (Person.Deffence / 100.0f) * (5.0f+ HP_SKills.LVL_Skill[6]);
+            Person.Deffence += (Person.Deffence / 100.0f) * (5.0f+ gameConfigSKills.LVL_Skill[6]);
         }
         //если активне 8 скилл
-        if (HP_SKills.Skills[7])
+        if (gameConfigSKills.Skills[7])
         {
             //компоненты и кнопка для данного скилла
             Buttom_Deffence = Skill_buton[1].GetComponent<Image>();
             Buttom_Skill_7.SetActive(true);
         }
         //скил на увеличение времени хода 11 скил 
-        if (HP_SKills.Skills[10])
+        if (gameConfigSKills.Skills[10])
         {
-            WordButtom.Deff_Timer += 2+ HP_SKills.LVL_Skill[9];
+            WordButtom.Deff_Timer += 2+ gameConfigSKills.LVL_Skill[9];
         }
         //скилл замедления времени
-        if (HP_SKills.Skills[9])
+        if (gameConfigSKills.Skills[9])
         {
             Buttom_Time_Stop = Skill_buton[2].GetComponent<Image>();
             Buttom_Skill_10.SetActive(true);
         }
-        if (HP_SKills.Skills[3])
+        if (gameConfigSKills.Skills[3])
         {
             Buttom_Watter = Skill_buton[3].GetComponent<Image>();
             Buttom_Skill_3.SetActive(true);
@@ -113,7 +113,7 @@ public class SkillManeger : MonoBehaviour
     private void Update()
     {
         //если активне 2 скилл
-        if (HP_SKills.Skills[1])
+        if (gameConfigSKills.Skills[1])
         {
             if(WordButtom.Moves == EndArson)
             {
@@ -128,7 +128,7 @@ public class SkillManeger : MonoBehaviour
             }
         }
         //если активне 8 скилл
-        if (HP_SKills.Skills[7])
+        if (gameConfigSKills.Skills[7])
         {
             if(WordButtom.Moves == End_Deff)
             {
@@ -142,7 +142,7 @@ public class SkillManeger : MonoBehaviour
             }
         }
         //если 9 скилл
-        if (HP_SKills.Skills[9])
+        if (gameConfigSKills.Skills[9])
         {
             if (WordButtom.Moves == EndTime)
             {
@@ -156,7 +156,7 @@ public class SkillManeger : MonoBehaviour
             }
         }
         //если 4 скилл
-        if (HP_SKills.Skills[3])
+        if (gameConfigSKills.Skills[3])
         {
             if(WordButtom.Moves == End_Watter)
             {
@@ -197,7 +197,7 @@ public class SkillManeger : MonoBehaviour
             //Buttom_Deffence.sprite = Deffence_Sprite[1];
             Person.Deffence = 10000000;
             Buttom_Deffence.fillAmount = 0;
-            Cooldown_Deff = WordButtom.Moves + 6-HP_SKills.LVL_Skill[7];
+            Cooldown_Deff = WordButtom.Moves + 6-gameConfigSKills.LVL_Skill[7];
             End_Deff = WordButtom.Moves + 1;
         }
     }
@@ -209,7 +209,7 @@ public class SkillManeger : MonoBehaviour
             Magic.PlayOneShot(Magic_Clip[2]);
             //Buttom_Time_Stop.sprite = Time_stop[1];
             Time.timeScale = 0.5f;
-            CoolDown_Time = WordButtom.Moves + 6 - HP_SKills.LVL_Skill[10];
+            CoolDown_Time = WordButtom.Moves + 6 - gameConfigSKills.LVL_Skill[10];
             Buttom_Time_Stop.fillAmount = 0;
             EndTime = WordButtom.Moves + 1;
         }
@@ -223,7 +223,7 @@ public class SkillManeger : MonoBehaviour
             _Watter_skill.SetActive(true);
             WordButtom.Delete_Word();
             Buttom_Watter.fillAmount = 0;
-            Cooldown_Watter = WordButtom.Moves + 6 - HP_SKills.LVL_Skill[3];
+            Cooldown_Watter = WordButtom.Moves + 6 - gameConfigSKills.LVL_Skill[3];
             End_Watter = WordButtom.Moves + 1;
         }
     }

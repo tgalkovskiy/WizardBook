@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class DeleteJson : MonoBehaviour
 {
-    [SerializeField] private HP PersStat;
+    [SerializeField] private GameConfig PersStat;
 
     private void Start()
     {

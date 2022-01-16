@@ -20,13 +20,13 @@ public class DayNigth : MonoBehaviour
         {
             int random1D = Random.Range(0, Day.Length);
             RenderSettings.skybox = Day[random1D];
-            _map.Skybox = Day[random1D];
+            //_map.Skybox = Day[random1D];
         }
         if(random>50)
         {
             int random1N = Random.Range(0, Nigth.Length);
             RenderSettings.skybox = Nigth[random1N];
-            _map.Skybox = Nigth[random1N];
+            //_map.Skybox = Nigth[random1N];
         }
     }
 }

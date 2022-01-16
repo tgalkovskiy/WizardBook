@@ -13,7 +13,7 @@ public class Fortuna : MonoBehaviour
    [SerializeField] private GameObject LoadGameObj = default;
    [SerializeField] private Text Discription_text = default;
    [SerializeField] private float Speed = default;
-   [SerializeField] private HP StatPers = default;
+   [SerializeField] private GameConfig StatPers = default;
    private int NumberScene = 1;
     private void Awake()
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class PointCount : MonoBehaviour
 {
     [SerializeField] private GameObject[] LinePoint = default;
-    [SerializeField] private HP Point_Count = default;
+    [SerializeField] private GameConfig Point_Count = default;
 
     private void Update()
     {

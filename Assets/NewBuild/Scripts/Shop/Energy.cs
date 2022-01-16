@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class Energy : MonoBehaviour
 {
-    [SerializeField] private HP _Stats = default;
+    [SerializeField] private GameConfig _Stats = default;
     [SerializeField] private GameObject NoRubin = default;
     [SerializeField] private Text Error = default;
     public static Energy Instanse;

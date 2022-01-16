@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    [SerializeField] private HP HP =default;
+    [SerializeField] private GameConfig gameConfig =default;
     [SerializeField] private GameObject Window1 =default;
     [SerializeField] private GameObject Window2 = default;
     [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
@@ -20,15 +20,15 @@ public class Menu : MonoBehaviour
     }
     public void StartGame()
     {
-        if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && HP.Now_Energy>=3)
+        if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && gameConfig.Now_Energy>=3)
         {
-            HP.Now_Energy -= 3;
-            HP.SaveData();
+            gameConfig.Now_Energy -= 3;
+            gameConfig.SaveData();
             //SceneManager.LoadScene(2);
             MenuBut.ActivPanel();
             //StartCoroutine(StartGameCor(2));
         }
-        if(HP.Now_Energy < 3)
+        if(gameConfig.Now_Energy < 3)
         {
             Window2.SetActive(true);
         }
@@ -54,7 +54,7 @@ public class Menu : MonoBehaviour
     }
     public void Exit()
     {
-        HP.SaveData();
+        gameConfig.SaveData();
         Application.Quit();
     }
 

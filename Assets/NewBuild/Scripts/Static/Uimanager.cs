@@ -20,9 +20,8 @@ public class Uimanager : MonoBehaviour
         }
     }
 
-    public static void ChangeMainResurses(HP stat, Text money, Text energy, Text rubin)
+    public static void ChangeMainResurses(GameConfig stat, Text money, Text energy, Text rubin)
     {
-        Debug.Log(1);
         money.text = stat.Gold.ToString();
         energy.text = stat.Now_Energy.ToString();
         rubin.text = stat.Rubin.ToString();

@@ -14,7 +14,7 @@ using Random = System.Random;
 public class WordLoad : MonoBehaviour
 {
     //глобальный массив для всех слов
-    [SerializeField] private HP Person_HP = default;
+    [SerializeField] private GameConfig personGameConfig = default;
     private string Path = Application.streamingAssetsPath + "/TestJsnon.Jsnon";
     private string AllJson;
     [HideInInspector]public string[][] WordAll = new string[3][];
@@ -29,17 +29,17 @@ public class WordLoad : MonoBehaviour
         WordAll[0] = WordRus;
         WordAll[1] = WordEng;
         WordAll[2] = WordBel;
-        LVLBOOK = Person_HP.LVLBooK;
+        LVLBOOK = personGameConfig.lvlEnemy;
         WWW reader = new WWW(Path);
         AllJson = reader.text;
         if(reader.text.Length > 0)
         {
            AllJson = reader.text;
-           Person_HP.Word = reader.text;
+           personGameConfig.Word = reader.text;
         }
         else
         {
-            AllJson = Person_HP.Word;
+            AllJson = personGameConfig.Word;
         }
         LoadText();
 

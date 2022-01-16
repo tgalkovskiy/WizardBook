@@ -8,7 +8,7 @@ public class Add_Item : MonoBehaviour
     [SerializeField] private GameObject Cost = default;
     [SerializeField] private GameObject NoRubin = default;
     [SerializeField] private WeaponManeger WeaponManeger = default;
-    [SerializeField] private HP HP;
+    [SerializeField] private GameConfig gameConfig;
     private int[] Property = new int[9];
     private int Chois_War;
     public int Property_War;
@@ -16,7 +16,7 @@ public class Add_Item : MonoBehaviour
     {
        for(int i=0; i < Chess.Length; i++)
        {
-            if (HP.Ches[i])
+            if (gameConfig.Ches[i])
             {
                 Chess[i].SetActive(true);
             } 
@@ -30,9 +30,9 @@ public class Add_Item : MonoBehaviour
     }
     public void Add()
     {
-        if(HP.Rubin >= 5)
+        if(gameConfig.Rubin >= 5)
         {
-            HP.Rubin -= 5;
+            gameConfig.Rubin -= 5;
             Property[0] = Type_item();
             Property[1] = Random.Range(0, 5);
             Property[2] = Grade();
@@ -41,10 +41,10 @@ public class Add_Item : MonoBehaviour
             Property[6] = Cost_item(Property[3], Property[2]);
             Property[7] = Max_Lvl_Item(Property[3], Property[2]);
             WeaponManeger.Add_Item(Property);
-            HP.Ches[Chois_War] = false;
+            gameConfig.Ches[Chois_War] = false;
             Chess[Chois_War].SetActive(false);
             Cost.SetActive(false);
-            Uimanager.ChangeMainResurses(HP, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
+            Uimanager.ChangeMainResurses(gameConfig, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
         }
         else
         {
@@ -135,7 +135,7 @@ public class Add_Item : MonoBehaviour
     }
     private int LVL_Item()
     {
-        int Lvl = HP.LVLPers;
+        int Lvl = gameConfig.LVLPers;
         int chance = Random.Range(0, 100);
         if (chance >= 90)
         {

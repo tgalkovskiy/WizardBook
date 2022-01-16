@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Gold : MonoBehaviour
 {
-    [SerializeField] private HP _Stats = default;
+    [SerializeField] private GameConfig _Stats = default;
     [SerializeField] private GameObject NoRubin = default;
     public void LitleGold()
     {

@@ -10,6 +10,6 @@ public class Effect : MonoBehaviour
 
    private void Awake()
    {
-      RenderSettings.skybox = _map.Skybox;
+      //RenderSettings.skybox = _map.Skybox;
    }
 }
