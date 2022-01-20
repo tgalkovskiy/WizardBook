@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc907b59ad00ca243baabe7a15d8716c, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: 
-  HP_Gerl: 200
+  hpPerson: 200
+  damagePerson: 0
+  defencePerson: 0
   lvlEnemy: 1
   NumberEnemy: 0
   HP_Enemy: 200
@@ -22,23 +24,14 @@ MonoBehaviour:
   Exp_enmy_book: 100
   Rubin_Enemy: 1
   Chess_Drop: 1
-  Property_W: 340000000400000000000000
-  Weapon_Grad: 1
-  Weapon_Icon: 1
-  Property_A: 000000000600000000000000
-  Armor_Grad: 1
-  Armor_Icon: 0
-  Property_O: 060000000000000000000000
-  Other_Grad: 3
-  Other_Icon: 3
   LVLPers: 1
   NextLVLXP: 300
-  NowXP: 200
+  NowXP: 0
   LVLBooK: 1
   NextLVL_BOOK_XP: 300
-  Now_BOOK_XP: 200
+  Now_BOOK_XP: 0
   PointBook: 0
-  NumberSworld: 1
+  NumberSworld: 0
   Word: "\uFEFF{\r\n  \"Word\": {\r\n    \"Rus\": {\r\n      \r\n      \"3\": [\r\n       
     \"\u0411\u0435\u0437\u0443\u043C\u043D\u044B\u0439\",\r\n        \"\u0413\u0440\u0443\u0441\u0442\u043D\u044B\u0439\",\r\n       
     \"\u0421\u0435\u0440\u0434\u0438\u0442\u044B\u0439\",\r\n        \"\u0421\u043F\u043E\u043A\u043E\u0439\u043D\u044B\u0439\",\r\n       
@@ -1777,8 +1770,8 @@ MonoBehaviour:
   Skills: 000000000000000000000000
   LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 3000
-  Rubin: 970
+  Gold: 2227
+  Rubin: 895
   Max_Energy: 15
-  Now_Energy: 44
+  Now_Energy: 50
   Ches: 00000000

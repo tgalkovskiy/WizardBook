@@ -9,15 +9,6 @@ public class GameConfig : ScriptableObject
     public class Data
     {
        public int HP;
-       public int[] Property_W;
-       public int Weapon_Grad;
-       public int Weapon_Icon;
-       public int[] Property_A;
-       public int Armor_Grad;
-       public int Armor_Icon;
-       public int[] Property_O;
-       public int Other_Grad;
-       public int Other_Icon;
        public int LVL;
        public int NextLVL;
        public int XpNow;
@@ -39,7 +30,9 @@ public class GameConfig : ScriptableObject
 
     }
     //хп георя
-    public int HP_Gerl;
+    public int hpPerson;
+    public int damagePerson;
+    public int defencePerson;
     //хп врага
     public int lvlEnemy;
     public int NumberEnemy = 0;
@@ -50,17 +43,6 @@ public class GameConfig : ScriptableObject
     public int Exp_enmy_book;
     public int Rubin_Enemy;
     public bool Chess_Drop;
-    //параметры игрока
-    public int[] Property_W = new int[3] { 0, 0, 0 };
-    public int Weapon_Grad;
-    public int Weapon_Icon;
-    public int[] Property_A = new int[3] { 0, 0, 0 };
-    public int Armor_Grad;
-    public int Armor_Icon;
-    public int[] Property_O = new int[3] { 0, 0, 0 };
-    public int Other_Grad;
-    public int Other_Icon;
-
     //лвл боевой
     public int LVLPers = 0;
     public int NextLVLXP = 150;
@@ -113,36 +95,16 @@ public class GameConfig : ScriptableObject
             NextLVLXP *= 4;
             LVLPers += 1;
             NowXP = 0;
-            HP_Gerl += (HP_Gerl / 100) * 25;
+            hpPerson += (hpPerson / 100) * 25;
             Max_Energy += 5;
         }
-        //if (Now_BOOK_XP >= NextLVL_BOOK_XP)
-        //{
-        //    NextLVL_BOOK_XP += 2;
-        //    LVLBooK += 1;
-        //    Now_BOOK_XP = 0;
-        //    PointBook += 1;
-        //}
     }
 
     public void SaveData()
     {
         string Path = System.IO.Path.Combine(Application.persistentDataPath, "SaveBOOK.Json");
         Data data = new Data();
-        data.HP = HP_Gerl;
-
-        data.Property_W = Property_W;
-        data.Weapon_Grad = Weapon_Grad;
-        data.Weapon_Icon = Weapon_Icon;
-
-        data.Property_A = Property_A;
-        data.Armor_Grad = Armor_Grad;
-        data.Armor_Icon = Armor_Icon;
-
-        data.Property_O = Property_O;
-        data.Other_Grad = Other_Grad;
-        data.Other_Icon = Other_Icon;
-
+        data.HP = hpPerson;
         data.LVL = LVLPers;
         data.NextLVL = NextLVLXP;
         data.XpNow = NowXP;
@@ -181,20 +143,7 @@ public class GameConfig : ScriptableObject
         {
             Data data = new Data();
             data = JsonUtility.FromJson<Data>(File.ReadAllText(Path));
-            HP_Gerl = data.HP;
-
-            Property_W = data.Property_W;
-            Weapon_Grad = data.Weapon_Grad;
-            Weapon_Icon = data.Weapon_Icon;
-
-            Property_A = data.Property_A;
-            Armor_Grad = data.Armor_Grad;
-            Armor_Icon = data.Armor_Icon;
-
-            Property_O = data.Property_O;
-            Other_Grad = data.Other_Grad;
-            Other_Icon = data.Other_Icon;
-
+            hpPerson = data.HP;
             LVLPers = data.LVL;
             NextLVLXP = data.NextLVL;
             NowXP = data.XpNow;
@@ -217,20 +166,7 @@ public class GameConfig : ScriptableObject
         else
         {
             Debug.Log("No Save");
-            HP_Gerl = 200;
-
-            Property_W = new int[3] { 30, 0, 0 };
-            Weapon_Grad = 0;
-            Weapon_Icon = 0;
-
-            Property_A = new int[3] { 0, 0, 0 };
-            Armor_Grad = -1;
-            Armor_Icon = -1;
-
-            Property_O = new int[3] { 0, 0, 0 };
-            Other_Grad = -1;
-            Other_Icon = -1;
-
+            hpPerson = 200;
             LVLPers = 1;
             NextLVLXP = 300;
             NowXP = 0;
@@ -248,9 +184,7 @@ public class GameConfig : ScriptableObject
             Now_Energy = 50;
             DateTime = DateTime.Now;
             Ches = new bool[4]{ false, false, false, false };
-        } 
-        
-
+        }
     }
     public void Time_Time()
     {

@@ -81,16 +81,15 @@ public class Person : MonoBehaviour
     {
         gameConfigPerson.LoadData();
         GameState = true;
-        HP_G = gameConfigPerson.HP_Gerl + gameConfigPerson.Property_W[1]+ gameConfigPerson.Property_A[1]+gameConfigPerson.Property_O[0];
+        HP_G = gameConfigPerson.hpPerson;
         HP_E = gameConfigPerson.HP_Enemy;
         DamgeEnemy = gameConfigPerson.Damage;
         Enemy= Instantiate(EnemyGameObj[gameConfigPerson.NumberEnemy]);
         AnimatorEnemy = Enemy.GetComponent<Animator>();
-        //EnemyGameObj[HP_Person.NumberEnemy].SetActive(true);
         HP_Gerl.maxValue = HP_G;
         HP_Enemy.maxValue = HP_E;
-        DamagePers = gameConfigPerson.Property_W[0] + gameConfigPerson.Property_O[1];   
-        Deffence = gameConfigPerson.Property_A[0] + gameConfigPerson.Property_O[2];
+        DamagePers = gameConfigPerson.damagePerson;   
+        Deffence = gameConfigPerson.defencePerson;
         Deffence_Standart_Lvl = Deffence;
         if (gameConfigPerson.Skills[0])
         {
@@ -103,9 +102,9 @@ public class Person : MonoBehaviour
     private void Start()
     {
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (gameConfigPerson.HP_Gerl + gameConfigPerson.Property_W[1] + gameConfigPerson.Property_A[1] + gameConfigPerson.Property_O[0]).ToString();
+        HP_Gerl_Text.text = $"{HP_G}/{gameConfigPerson.hpPerson}";
         HP_Enemy.value = HP_E;
-        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
+        HP_Enemy_Text.text = ((int)HP_E)+"/" + (HP_Enemy.maxValue);
         _process.profile.TryGetSettings(out _vignette);
     }
 
@@ -303,15 +302,9 @@ public class Person : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         Hit[Number].SetActive(false);
         HP_Gerl.value = HP_G;
-        HP_Gerl_Text.text = ((int)HP_G).ToString() + "/" + (gameConfigPerson.HP_Gerl + gameConfigPerson.Property_W[1] + gameConfigPerson.Property_A[1] + gameConfigPerson.Property_O[0]).ToString();
+        HP_Gerl_Text.text = $"{HP_G}/{gameConfigPerson.hpPerson}";
         HP_Enemy.value = HP_E;
-        HP_Enemy_Text.text = ((int)HP_E).ToString() + "/" + (HP_Enemy.maxValue).ToString();
+        HP_Enemy_Text.text = $"{HP_E}/{HP_Enemy.maxValue}";
     }
 
-    /*public void Close_text()
-    {
-        text_final.transform.DOMove(Last_Pos_text.transform.position, 1f);
-    }*/
-    
-    
 }

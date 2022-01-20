@@ -95,7 +95,7 @@ Material:
     - _OutlineSize: 20
     - _Parallax: 0.02
     - _QueueOffset: 0
-    - _RampLevels: 17.4
+    - _RampLevels: 17
     - _ReceiveShadows: 1
     - _RimAlpha: 0.03
     - _RimDropOff: 0
