@@ -16,6 +16,9 @@ public class ItemData
     public int damage;
     public int defence;
     public int hp;
+    public int resistFire;
+    public int resistCold;
+    public int resistPotion;
     public int costUp;
     public int costTrade;
 }

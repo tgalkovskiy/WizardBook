@@ -2,12 +2,8 @@
 using System.IO;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "GameConfig", menuName = "GameConfig")]
-public class GameConfig : ScriptableObject
+public class Data
 {
-    public static GameConfig Instance;
-    public class Data
-    {
        public int HP;
        public int LVL;
        public int NextLVL;
@@ -26,23 +22,19 @@ public class GameConfig : ScriptableObject
        public int Energy_Max;
        public int Energy_Now;
        public string DateTime;
-       public bool[] Ches;
+       public int Ches;
 
-    }
-    //хп георя
+}
+[CreateAssetMenu(fileName = "GameConfig", menuName = "GameConfig")]
+public class GameConfig : ScriptableObject
+{
+    
     public int hpPerson;
     public int damagePerson;
     public int defencePerson;
-    //хп врага
-    public int lvlEnemy;
-    public int NumberEnemy = 0;
-    public int HP_Enemy;
-    public int Damage;
-    public int Gold_enemy;
-    public int Exp_enemy;
-    public int Exp_enmy_book;
-    public int Rubin_Enemy;
-    public bool Chess_Drop;
+    public int resitPotion;
+    public int resitCold;
+    public int resitFire;
     //лвл боевой
     public int LVLPers = 0;
     public int NextLVLXP = 150;
@@ -54,22 +46,7 @@ public class GameConfig : ScriptableObject
     public int PointBook = 0;
     //шмот игрока
     public int NumberSworld;
-    //словарь
-    public string Word;
     //описание скилов
-    public string[] Description_Skill = new string[12] {"Клинок веры (пассивный)dvsdv:" +"\n" +" +5% к атаке (+5% за каждый уровень навыка)",
-        "Гнев Народа (активный): Навык поджигания на три хода врага, наносит 3% урона от здоровья врага (+1% к урону за каждый уровень навыка)",
-        "Лезвие Гааги (пассивный): +25% к любому виду урона (+10% к урону за каждый уровень навыка)", 
-        "Сила знаний (активный): Навык минус два(убрать) варианта перевода(перезарядка -1 за каждый уровень навыка)",
-        "Здоровое питание (пассивный): +15% к энергии (+5% за каждый уровень навыка)",
-        "Медитация (пассивный): +25% к скорости восстановления энергии (+5% за каждый уровень навыка)",
-        "Партизанские корни (пассивный): +5% к защите (+3% за каждый уровень навыка)",
-        "Сила Воли (активный): Навык блокировки 100% урона от текущего слова (перезарядка -1 за каждый уровень навыка)",
-        "Солидарность (пассивный): Блок 25% всего входящего урона (+5% за каждый уровень навыка)",
-        "Концентрация (активный): Навык замедления времени вдвое (перезарядка -1 за каждый уровень навыка)",
-        "Ясный ум (пассивный): +2 секунды к времени ответа пассивно (+1 секунда за каждый уровень навыка)",
-        "Предпринимательский дух (пассивный): +25% к получаемому золоту (+3% за каждый уровень навыка)"
-    };
     //скилы
     public bool[] Skills = new bool[12] {false, false , false ,false ,false, false, false, false, false, false, false, false};
     //левел скилов
@@ -86,7 +63,7 @@ public class GameConfig : ScriptableObject
     
     //time
     public DateTime DateTime;
-    public bool[] Ches = new bool[4] {false,false,false,false};
+    public int ches = 0;
     
     public void NextLVL()
     {
@@ -121,7 +98,7 @@ public class GameConfig : ScriptableObject
         data.Energy_Max = Max_Energy; 
         data.Energy_Now = Now_Energy;
         data.DateTime = DateTime.Now.ToString();
-        data.Ches = Ches;
+        data.Ches = ches;
         try
         {
             File.WriteAllText(Path, JsonUtility.ToJson(data));
@@ -160,7 +137,7 @@ public class GameConfig : ScriptableObject
             Max_Energy = data.Energy_Max;
             Now_Energy = data.Energy_Now;
             DateTime = DateTime.Parse(data.DateTime);
-            Ches = data.Ches;
+            ches = data.Ches;
             Time_Time();
         }
         else
@@ -183,7 +160,7 @@ public class GameConfig : ScriptableObject
             Max_Energy = 15;
             Now_Energy = 50;
             DateTime = DateTime.Now;
-            Ches = new bool[4]{ false, false, false, false };
+            ches = 0;
         }
     }
     public void Time_Time()

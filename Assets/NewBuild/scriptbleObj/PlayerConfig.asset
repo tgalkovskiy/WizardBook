@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc907b59ad00ca243baabe7a15d8716c, type: 3}
+  m_Name: PlayerConfig
+  m_EditorClassIdentifier: 
+  hpPerson: 200
+  damagePerson: 30
+  defencePerson: 0
+  resitPotion: 0
+  resitCold: 0
+  resitFire: 0
+  LVLPers: 1
+  NextLVLXP: 300
+  NowXP: 0
+  LVLBooK: 1
+  NextLVL_BOOK_XP: 300
+  Now_BOOK_XP: 0
+  PointBook: 0
+  NumberSworld: 0
+  Skills: 010101010101010101010101
+  LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  Time_Game: 15
+  Gold: 2000
+  Rubin: 20
+  Max_Energy: 15
+  Now_Energy: 29
+  ches: 0

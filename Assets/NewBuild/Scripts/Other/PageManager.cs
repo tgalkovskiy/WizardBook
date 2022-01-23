@@ -15,11 +15,6 @@ public class PageManager : MonoBehaviour
     [SerializeField] private GameObject[] buttoms = default;
     [SerializeField] private Image bgImage = default; 
     [SerializeField] private Sprite[] bgSprite = default;
-    
-    [SerializeField] private GameObject NextLVLMainPage = default;
-    [SerializeField] private GameObject NextLVlBG = default;
-    [SerializeField] private GameObject Chess = default;
-
     [SerializeField] private Text Text_book = default;
     
     
@@ -34,33 +29,8 @@ public class PageManager : MonoBehaviour
             _tutorial.first_tutorial = true;
             _tutorial.SaveData();
         }
-        if (stat.Now_BOOK_XP >= stat.NextLVL_BOOK_XP)
-        {
-            NextLVLMainPage.SetActive(true);
-            NextLVlBG.SetActive(true);
-        }
-        else
-        {
-            NextLVLMainPage.SetActive(false);
-            NextLVlBG.SetActive(false);
-        }
     }
     
-    private void FixedUpdate()
-    {
-        for(int i = 0; i < stat.Ches.Length; i++)
-        {
-            if (stat.Ches[i]==true)
-            {
-                Chess.SetActive(true);
-                break;
-            }
-            else
-            {
-                Chess.SetActive(false);
-            }
-        }
-    }
     public void Enrgy_Plus()
     {
         stat.Now_Energy += 5;

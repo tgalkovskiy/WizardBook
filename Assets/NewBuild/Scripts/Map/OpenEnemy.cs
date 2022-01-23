@@ -6,7 +6,7 @@ using UnityEngine;
 public class OpenEnemy : MonoBehaviour
 {
    public Map map;
-   public StatEnemy[] statEnemy;
+   public StatsEnemy[] statEnemy;
 
    private void Awake()
    {

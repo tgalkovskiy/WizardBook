@@ -282,8 +282,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1954406227}
   m_HandleRect: {fileID: 1954406226}
   m_Direction: 2
-  m_Value: 0
-  m_Size: 0.00000012000253
+  m_Value: 0.00000012507974
+  m_Size: 0.28044388
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -683,15 +683,15 @@ MonoBehaviour:
   isOpen: 0
   Name: "\u041A\u043B\u043E\u043A\u043E\u0442\u0443\u043D"
   Last_text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u0448\u044C!"
-  NumberEnemy: 2
-  HP: 200
-  Damage: 25
-  Gold: 200
-  Exp: 140
-  ExpBook: 100
+  numberEnemy: 2
+  hP: 500
+  damage: 50
+  rewardGold: 500
+  rewardBattleExp: 300
+  rewardBookExp: 300
   lvlBook: 1
-  Rubin: 1
-  Chess: 1
+  rewardRubin: 5
+  rewardChes: 1
 --- !u!114 &149068583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -737,12 +737,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 884587327}
-        m_TargetAssemblyTypeName: ChoisEnemy, Assembly-CSharp
-        m_MethodName: OnclicEnemy
+        m_TargetAssemblyTypeName: ChoiceEnemy, Assembly-CSharp
+        m_MethodName: SelectEnemy
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 149068582}
-          m_ObjectArgumentAssemblyTypeName: StatEnemy, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StatsEnemy, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1549,7 +1549,6 @@ GameObject:
   - component: {fileID: 430751527}
   - component: {fileID: 430751531}
   - component: {fileID: 430751530}
-  - component: {fileID: 430751529}
   - component: {fileID: 430751528}
   m_Layer: 5
   m_Name: Text
@@ -1592,21 +1591,6 @@ MonoBehaviour:
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
   m_EffectDistance: {x: 5, y: -5}
   m_UseGraphicAlpha: 1
---- !u!114 &430751529
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 430751526}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: -5}
-  m_UseGraphicAlpha: 1
 --- !u!114 &430751530
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1620,7 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9584687, g: 0.9716981, b: 0.050418302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1628,12 +1612,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2f2a3049551ec3542953e31b85ec5e21, type: 3}
-    m_FontSize: 40
-    m_FontStyle: 0
+    m_Font: {fileID: 12800000, guid: 0142e662968526f40bdcfad072fb6e58, type: 3}
+    m_FontSize: 50
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 4
-    m_MaxSize: 40
+    m_MaxSize: 50
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -1840,15 +1824,15 @@ MonoBehaviour:
   isOpen: 0
   Name: "\u041B\u0435\u0448\u0438\u0439"
   Last_text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u0448\u044C!"
-  NumberEnemy: 3
-  HP: 600
-  Damage: 50
-  Gold: 400
-  Exp: 250
-  ExpBook: 250
+  numberEnemy: 3
+  hP: 1000
+  damage: 100
+  rewardGold: 1000
+  rewardBattleExp: 1000
+  rewardBookExp: 1000
   lvlBook: 2
-  Rubin: 3
-  Chess: 1
+  rewardRubin: 5
+  rewardChes: 1
 --- !u!114 &442013310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1894,12 +1878,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 884587327}
-        m_TargetAssemblyTypeName: ChoisEnemy, Assembly-CSharp
-        m_MethodName: OnclicEnemy
+        m_TargetAssemblyTypeName: ChoiceEnemy, Assembly-CSharp
+        m_MethodName: SelectEnemy
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 442013309}
-          m_ObjectArgumentAssemblyTypeName: StatEnemy, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StatsEnemy, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2317,7 +2301,6 @@ GameObject:
   - component: {fileID: 517578068}
   - component: {fileID: 517578070}
   - component: {fileID: 517578069}
-  - component: {fileID: 517578072}
   - component: {fileID: 517578071}
   m_Layer: 5
   m_Name: Text
@@ -2358,7 +2341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.9584687, g: 0.9716981, b: 0.050418302, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2366,9 +2349,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2f2a3049551ec3542953e31b85ec5e21, type: 3}
+    m_Font: {fileID: 12800000, guid: 0142e662968526f40bdcfad072fb6e58, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 50
@@ -2397,21 +2380,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 5, y: -5}
-  m_UseGraphicAlpha: 1
---- !u!114 &517578072
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517578067}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
@@ -3099,15 +3067,15 @@ MonoBehaviour:
   isOpen: 0
   Name: "\u041B\u0435\u0448\u0438\u0439"
   Last_text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u0448\u044C!"
-  NumberEnemy: 5
-  HP: 600
-  Damage: 50
-  Gold: 400
-  Exp: 2000
-  ExpBook: 2000
+  numberEnemy: 5
+  hP: 2000
+  damage: 200
+  rewardGold: 1000
+  rewardBattleExp: 1000
+  rewardBookExp: 1000
   lvlBook: 3
-  Rubin: 3
-  Chess: 1
+  rewardRubin: 5
+  rewardChes: 1
 --- !u!114 &634202293
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3153,12 +3121,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 884587327}
-        m_TargetAssemblyTypeName: ChoisEnemy, Assembly-CSharp
-        m_MethodName: OnclicEnemy
+        m_TargetAssemblyTypeName: ChoiceEnemy, Assembly-CSharp
+        m_MethodName: SelectEnemy
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 634202292}
-          m_ObjectArgumentAssemblyTypeName: StatEnemy, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StatsEnemy, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3305,7 +3273,7 @@ MonoBehaviour:
   - {fileID: 9108601416768060750, guid: 3820503d0cf52c44799b4efec9bb3448, type: 3}
   - {fileID: 5185712335641922723, guid: 0a52c15cfb5da0947a3cb3fa3002ca83, type: 3}
   PanelOf: {fileID: 687828682}
-  ChoisEnemy: {fileID: 884587327}
+  choiceEnemy: {fileID: 0}
   map_Setting: {fileID: 11400000, guid: 438b7735545ab434c8bd1f5c7473a22d, type: 2}
   gameConfig: {fileID: 0}
   _map2: {fileID: 849791446}
@@ -3515,7 +3483,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.29000002}
-  m_AnchoredPosition: {x: -4.9000244, y: 0.91308594}
+  m_AnchoredPosition: {x: -4.8999023, y: 0.91308594}
   m_SizeDelta: {x: -62.279175, y: -3.973999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &676988218
@@ -3798,7 +3766,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 5855.6396}
+  m_AnchoredPosition: {x: 0, y: 5855.6387}
   m_SizeDelta: {x: 0, y: 8137.8496}
   m_Pivot: {x: 0, y: 1}
 --- !u!1 &772626932
@@ -4419,15 +4387,15 @@ MonoBehaviour:
   isOpen: 0
   Name: "\u0422\u043E\u043B\u0441\u0442\u043E\u0431\u0440\u044E\u0445"
   Last_text: "\u0418\u043A-\u043F\u044B\u043A!"
-  NumberEnemy: 4
-  HP: 300
-  Damage: 40
-  Gold: 300
-  Exp: 500
-  ExpBook: 500
+  numberEnemy: 4
+  hP: 1000
+  damage: 150
+  rewardGold: 1500
+  rewardBattleExp: 1000
+  rewardBookExp: 1000
   lvlBook: 3
-  Rubin: 2
-  Chess: 1
+  rewardRubin: 5
+  rewardChes: 1
 --- !u!114 &882904277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4473,12 +4441,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 884587327}
-        m_TargetAssemblyTypeName: ChoisEnemy, Assembly-CSharp
-        m_MethodName: OnclicEnemy
+        m_TargetAssemblyTypeName: ChoiceEnemy, Assembly-CSharp
+        m_MethodName: SelectEnemy
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 882904276}
-          m_ObjectArgumentAssemblyTypeName: StatEnemy, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StatsEnemy, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4720,6 +4688,7 @@ MonoBehaviour:
   Discription: {fileID: 257365168}
   Text_Name: {fileID: 2022383958}
   gameConfig: {fileID: 11400000, guid: 78a55203b31e72a4cabf5d39ec96ca3f, type: 2}
+  enemyConfig: {fileID: 11400000, guid: 8ffe604c81941a446b05000254ff16ab, type: 2}
 --- !u!114 &884587328
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5391,15 +5360,15 @@ MonoBehaviour:
   isOpen: 1
   Name: "\u041A\u043B\u043E\u043A\u043E\u0442\u0443\u043D"
   Last_text: "\u0422\u044B \u043D\u0435 \u043F\u0440\u043E\u0439\u0434\u0435\u0448\u044C!"
-  NumberEnemy: 0
-  HP: 200
-  Damage: 25
-  Gold: 250
-  Exp: 100
-  ExpBook: 100
+  numberEnemy: 0
+  hP: 200
+  damage: 20
+  rewardGold: 100
+  rewardBattleExp: 100
+  rewardBookExp: 100
   lvlBook: 1
-  Rubin: 1
-  Chess: 1
+  rewardRubin: 5
+  rewardChes: 1
 --- !u!114 &1054831603
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5445,12 +5414,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 884587327}
-        m_TargetAssemblyTypeName: ChoisEnemy, Assembly-CSharp
-        m_MethodName: OnclicEnemy
+        m_TargetAssemblyTypeName: ChoiceEnemy, Assembly-CSharp
+        m_MethodName: SelectEnemy
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1054831602}
-          m_ObjectArgumentAssemblyTypeName: StatEnemy, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StatsEnemy, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -6317,7 +6286,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c8b1b879616fb1c4ca964b5980c4bdb1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b68ad85e7013e644792dbadb4e6d0a36, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6464,15 +6433,15 @@ MonoBehaviour:
   isOpen: 0
   Name: "\u0422\u043E\u043B\u0441\u0442\u043E\u0431\u0440\u044E\u0445"
   Last_text: "\u0418\u043A-\u043F\u044B\u043A!"
-  NumberEnemy: 1
-  HP: 300
-  Damage: 40
-  Gold: 500
-  Exp: 120
-  ExpBook: 120
+  numberEnemy: 1
+  hP: 200
+  damage: 30
+  rewardGold: 200
+  rewardBattleExp: 200
+  rewardBookExp: 200
   lvlBook: 1
-  Rubin: 2
-  Chess: 1
+  rewardRubin: 5
+  rewardChes: 1
 --- !u!114 &1239990968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6518,12 +6487,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 884587327}
-        m_TargetAssemblyTypeName: ChoisEnemy, Assembly-CSharp
-        m_MethodName: OnclicEnemy
+        m_TargetAssemblyTypeName: ChoiceEnemy, Assembly-CSharp
+        m_MethodName: SelectEnemy
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 1239990967}
-          m_ObjectArgumentAssemblyTypeName: StatEnemy, Assembly-CSharp
+          m_ObjectArgumentAssemblyTypeName: StatsEnemy, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -7125,7 +7094,7 @@ GameObject:
   - component: {fileID: 1396182487}
   - component: {fileID: 1396182486}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Play
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7146,10 +7115,10 @@ RectTransform:
   m_Father: {fileID: 257365169}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.119370386, y: 0.015854463}
-  m_AnchorMax: {x: 0.4925926, y: 0.0842817}
-  m_AnchoredPosition: {x: 0.50097656, y: 1.1599121}
-  m_SizeDelta: {x: -3, y: -10}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 205.5, y: 72.99998}
+  m_SizeDelta: {x: 411, y: 146}
   m_Pivot: {x: 0.5, y: 0.49999982}
 --- !u!114 &1396182486
 MonoBehaviour:
@@ -7227,7 +7196,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f22c622b6fb05e7448d390a453004c0a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb6e63566bb4fd54887ce087e3fab573, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7588,8 +7557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.0029296875, y: 16.317383}
-  m_SizeDelta: {x: -0.0056152344, y: -32.635742}
+  m_AnchoredPosition: {x: 0.0028686523, y: 16.317383}
+  m_SizeDelta: {x: -0.0057373, y: -32.6357}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1570383334
 MonoBehaviour:
@@ -7719,7 +7688,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.3236927, y: 0.039220672}
   m_AnchorMax: {x: 0.96123093, y: 0.4244155}
-  m_AnchoredPosition: {x: 26.5, y: 3.4997559}
+  m_AnchoredPosition: {x: 26.5, y: 3.4995117}
   m_SizeDelta: {x: 100.997925, y: 9.718689}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1592626557
@@ -8649,7 +8618,7 @@ GameObject:
   - component: {fileID: 1815425343}
   - component: {fileID: 1815425342}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8670,10 +8639,10 @@ RectTransform:
   m_Father: {fileID: 257365169}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.018436614}
-  m_AnchorMax: {x: 0.87500006, y: 0.0842817}
-  m_AnchoredPosition: {x: 2.5010376, y: -1.3400879}
-  m_SizeDelta: {x: -5, y: -3}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -205, y: 73.49998}
+  m_SizeDelta: {x: 410, y: 147}
   m_Pivot: {x: 0.5, y: 0.49999982}
 --- !u!114 &1815425342
 MonoBehaviour:
@@ -8751,7 +8720,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 938b50d6071f4bb4f96d28ecc4f84a83, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eb6e63566bb4fd54887ce087e3fab573, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8976,7 +8945,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.8301887, g: 0.8301887, b: 0.8301887, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -9062,7 +9031,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.23200001}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -6.895874, y: 0.29492188}
+  m_AnchoredPosition: {x: -6.895996, y: 0.29492188}
   m_SizeDelta: {x: -100.26, y: -218}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1830296464
@@ -9575,7 +9544,6 @@ GameObject:
   - component: {fileID: 2022383959}
   - component: {fileID: 2022383958}
   - component: {fileID: 2022383957}
-  - component: {fileID: 2022383956}
   m_Layer: 5
   m_Name: Name
   m_TagString: Untagged
@@ -9599,24 +9567,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9.829468, y: 85.67438}
-  m_SizeDelta: {x: -343.3571, y: -271.3376}
+  m_AnchoredPosition: {x: -0.000061035156, y: 110.67}
+  m_SizeDelta: {x: 0, y: -221.34}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2022383956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022383954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_EffectColor: {r: 0, g: 0, b: 0, a: 0.5}
-  m_EffectDistance: {x: 3, y: -3}
-  m_UseGraphicAlpha: 1
 --- !u!114 &2022383957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9653,9 +9606,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 2f2a3049551ec3542953e31b85ec5e21, type: 3}
+    m_Font: {fileID: 12800000, guid: 0142e662968526f40bdcfad072fb6e58, type: 3}
     m_FontSize: 50
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 60

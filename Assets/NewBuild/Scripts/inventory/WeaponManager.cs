@@ -36,6 +36,7 @@ public class WeaponManager : MonoBehaviour
     {
         if(!selectItem.data.isItem) return;
         Discription.SetActive(true);
+        propertyItem.text = string.Empty;
         typeItemText.text = selectItem.data.itemType switch
         {
             ItemType.Weapon => "ПОСОХ ИМОРТА",
@@ -52,14 +53,37 @@ public class WeaponManager : MonoBehaviour
             _ => typeItemText.text
         };
         lvlItemText.text = $"УРОВЕНЬ ПРЕДМЕТА: {selectItem.data.lvlItem}\nМАКСИМАЛЬНЫЙ УРОВЕНЬ:" + $"{selectItem.data.maxLvlItem}";
-        propertyItem.text = $"АТАКА: {selectItem.data.damage}\nБРОНЯ: {selectItem.data.defence}\nНР: {selectItem.data.hp}";
-        costFromNextLvlItem.text = $"ЦЕНА: {selectItem.data.costUp} КРИСТАЛЛОВ\nЦЕНА ПРОДАЖИ: {selectItem.data.costTrade} МОНЕТ";
+        switch (selectItem.data.itemType)
+        {
+            case ItemType.Weapon:
+                propertyItem.text = $"АТАКА: {selectItem.data.damage}";
+                break;
+            case ItemType.Armor:
+            {
+                propertyItem.text = $"БРОНЯ: {selectItem.data.defence}";
+                if(selectItem.data.hp!=0)propertyItem.text+= $"\nНР: {selectItem.data.hp}";
+                if(selectItem.data.resistPotion!=0) propertyItem.text+= $"\n СОПРОТИВЛЕНИЕ ЯДУ: {selectItem.data.resistPotion}";
+                if(selectItem.data.resistCold!=0) propertyItem.text+= $"\n СОПРОТИВЛЕНИЕ ХОЛОДУ: {selectItem.data.resistCold}";
+                if(selectItem.data.resistFire!=0) propertyItem.text+= $"\n СОПРАТИВЛЕНИЕ ОГНЮ: {selectItem.data.resistFire}";
+                break;
+            }
+            case ItemType.Other:
+            {
+                if(selectItem.data.defence!=0)propertyItem.text+= $"\nБРОНЯ: {selectItem.data.defence}";
+                if(selectItem.data.hp!=0)propertyItem.text+= $"\nНР: {selectItem.data.hp}";
+                if(selectItem.data.resistPotion!=0) propertyItem.text+= $"\n СОПРОТИВЛЕНИЕ ЯДУ: {selectItem.data.resistPotion}";
+                if(selectItem.data.resistCold!=0) propertyItem.text+= $"\n СОПРОТИВЛЕНИЕ ХОЛОДУ: {selectItem.data.resistCold}";
+                if(selectItem.data.resistFire!=0) propertyItem.text+= $"\n СОПРОТИВЛЕНИЕ ОГНЮ: {selectItem.data.resistFire}";
+                break;
+            }
+        }
+
+        costFromNextLvlItem.text = $"ЦЕНА УЛУЧШЕНИЯ: {selectItem.data.costUp} МОНЕТ\nЦЕНА ПРОДАЖИ: {selectItem.data.costTrade} МОНЕТ";
 
     }
     public void EquipItem()
     {
         selectItem.data = dressedItem.EquipItem(selectItem);
-        //RefreshStat();
         RefreshItem();
         SaveDataItem();
         gameConfig.SaveData();
@@ -197,6 +221,7 @@ public class WeaponManager : MonoBehaviour
             gameConfig.NumberSworld = 0;
         }
         RefreshItem();
+        dressedItem.UpdateStatus();
         SaveDataItem();
         gameConfig.SaveData();
     }
@@ -234,7 +259,6 @@ public class WeaponManager : MonoBehaviour
         SaveDataItem();
         Discription.SetActive(false);
     }
-
     public void AddItem(ItemData data)
     {
         foreach (var t in itemInventory)

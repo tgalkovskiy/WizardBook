@@ -37,7 +37,7 @@ public class Fortuna : MonoBehaviour
 
     private void CorrectAngle(float angle)
     {
-        Vector3 FinalAngle = Vector3.zero;
+        /*Vector3 FinalAngle = Vector3.zero;
         string Discription_Window = "";
         int Gold =0, Rubin =0, Energy =0;
         //angle <= 22.5f && angle <= 0 || angle <= 360 && angle > 337.5f
@@ -103,8 +103,8 @@ public class Fortuna : MonoBehaviour
             NumberScene = 3;
             Discription_Window = "Вас ожидает битва с Омоникулом!";
             Debug.Log("Spawn");
-        }
-        else
+        }*/
+        /*else
         {
             FinalAngle = new Vector3(0, 0, 0);
             NumberScene = 1;
@@ -118,7 +118,7 @@ public class Fortuna : MonoBehaviour
         StatPers.Rubin += Rubin;
         StatPers.Now_Energy += Energy;
         StatPers.SaveData();
-        StartCoroutine(Window(Discription_Window));
+        StartCoroutine(Window(Discription_Window));*/
     }
     IEnumerator Window(string Discription)
     {

@@ -15,6 +15,6 @@ EditorBuildSettings:
     path: Assets/NewBuild/Scene/Fortuna.unity
     guid: 2112d08b3cf447a45bc7817c1ab0fb55
   - enabled: 1
-    path: Assets/NewBuild/Scene/Battele.unity
+    path: Assets/NewBuild/Scene/Battle.unity
     guid: dc225023e62ae224e987479c41dbf49d
   m_configObjects: {}

@@ -8,7 +8,7 @@ public class Bion_Shois : MonoBehaviour
 {
     [SerializeField] private GameObject[] Terrain = default;
     [SerializeField] private GameObject PanelOf = default;
-    [SerializeField] private ChoisEnemy ChoisEnemy;
+    [SerializeField] private ChoiceEnemy choiceEnemy;
     [SerializeField] private Map map_Setting;
     [SerializeField] private GameConfig gameConfig =default;
 
@@ -26,7 +26,7 @@ public class Bion_Shois : MonoBehaviour
     private void Start()
     {
         map_Setting.LoadData();
-        ChoisEnemy.enabled = false;
+        choiceEnemy.enabled = false;
         _saveTutorial.LoadData();
         if(!_saveTutorial.first_map)
         {

@@ -58,8 +58,7 @@ public class MenuLVLGIU : MonoBehaviour
 
     public void SliilButtom(int NumberButtom)
     {
-        Discription_Skill_Text.text = stat.Description_Skill[NumberButtom] + "\n"  +"Уровень " + stat.LVL_Skill[NumberButtom]+"\n"+"Цена "+Cost_Now_Skill;
-        //Debug.Log(HP_PERS.Description_Skill[NumberButtom]);
+        Discription_Skill_Text.text = $"ПОТРАТИТЬ {Cost_Now_Skill} ЭФИРА НА НАВЫК?";
         NumberSkill = NumberButtom;
         Skill = true;
         Window_Discription.SetActive(true);
@@ -155,9 +154,6 @@ public class MenuLVLGIU : MonoBehaviour
                 LvlBook.text = stat.LVLBooK.ToString();
                 PointBook.text = stat.PointBook.ToString();
                 LVL_BOOK.fillAmount = stat.Now_BOOK_XP/stat.NextLVL_BOOK_XP;
-                //LVL_BOOK.maxValue = stat.NextLVL_BOOK_XP;
-                //LVL_BOOK.value = stat.Now_BOOK_XP;
-                //NextLVL_Book.text = "";
                 Uimanager.ChangeMainResurses(stat, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
                 Uimanager.CloseWindow(upBookPanel);
                 stat.SaveData();
