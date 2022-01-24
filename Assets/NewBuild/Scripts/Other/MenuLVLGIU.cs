@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 public class MenuLVLGIU : MonoBehaviour
@@ -23,7 +21,6 @@ public class MenuLVLGIU : MonoBehaviour
     [SerializeField] private Text Cost_Book;
     public GameObject upBookPanel;
     public Button upBook;
-    //[SerializeField] private Text NextLVL_Book;
     private bool Skill;
     private int NumberSkill;
     private int Cost_Now_Skill;
@@ -33,7 +30,6 @@ public class MenuLVLGIU : MonoBehaviour
         LVL_Figth.fillAmount = (float)stat.NowXP/stat.NextLVLXP;
         LVL_BOOK.fillAmount = stat.Now_BOOK_XP/stat.NextLVL_BOOK_XP;
         upBook.onClick.AddListener(LVL_Up_Book);
-        //LVL_BOOK.value = stat.Now_BOOK_XP;
         Lvl_Text.text = stat.LVLPers.ToString();
         LvlBook.text = stat.LVLBooK.ToString();
         PointBook.text = stat.PointBook.ToString();
@@ -64,11 +60,11 @@ public class MenuLVLGIU : MonoBehaviour
         Window_Discription.SetActive(true);
         if (stat.Skills[NumberSkill])
         {
-            Chois.text = "Улучшить?";
+            Chois.text = "УЛУЧШИТЬ?";
         }
         else
         {
-            Chois.text = "Открыть?";
+            Chois.text = "ОТКРЫТЬ??";
         }
        
     }
@@ -123,11 +119,11 @@ public class MenuLVLGIU : MonoBehaviour
         upBookPanel.SetActive(true);
         if (stat.LVLBooK == 1)
         {
-            Cost_Book.text = "Цена: "+ 1000 + " монет";
+            Cost_Book.text = "ЦЕНА: "+ 1000 + " МОНЕТ";
         }
         else
         {
-            Cost_Book.text = "Цена: " + ((stat.LVLBooK * 1000) + 1000).ToString() +" монет";
+            Cost_Book.text = "ЦЕНА: " + ((stat.LVLBooK * 1000) + 1000).ToString() +" МОНЕТ";
         }
         
     }
@@ -154,14 +150,14 @@ public class MenuLVLGIU : MonoBehaviour
                 LvlBook.text = stat.LVLBooK.ToString();
                 PointBook.text = stat.PointBook.ToString();
                 LVL_BOOK.fillAmount = stat.Now_BOOK_XP/stat.NextLVL_BOOK_XP;
-                Uimanager.ChangeMainResurses(stat, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
-                Uimanager.CloseWindow(upBookPanel);
+                ResourcesManager.Instance.Money = stat.Gold;
+                ResourcesManager.CloseWindow(upBookPanel);
                 stat.SaveData();
             }
         }
         else
         {
-            Uimanager.OpenWindow(No_money);
+            ResourcesManager.OpenWindow(No_money);
         }
         
     }

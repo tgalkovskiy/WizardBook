@@ -28,7 +28,7 @@ public class Data
 [CreateAssetMenu(fileName = "GameConfig", menuName = "GameConfig")]
 public class GameConfig : ScriptableObject
 {
-    
+    public int baseHpPerson;
     public int hpPerson;
     public int damagePerson;
     public int defencePerson;
@@ -72,7 +72,7 @@ public class GameConfig : ScriptableObject
             NextLVLXP *= 4;
             LVLPers += 1;
             NowXP = 0;
-            hpPerson += (hpPerson / 100) * 25;
+            baseHpPerson += (baseHpPerson / 100) * 15;
             Max_Energy += 5;
         }
     }

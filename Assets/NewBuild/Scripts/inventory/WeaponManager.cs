@@ -158,7 +158,7 @@ public class WeaponManager : MonoBehaviour
                         selectItem.Property_Item[8] += 10;
                     }
                 }
-                Uimanager.ChangeMainResurses(gameConfig, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
+                //ResourcesManager.ChangeMainResurses(gameConfig, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
                 gameConfig.SaveData();
                 SaveDataItem();
                 Discription.SetActive(false);
@@ -254,6 +254,7 @@ public class WeaponManager : MonoBehaviour
     public void ClearItem()
     {
         gameConfig.Gold += selectItem.data.costUp;
+        ResourcesManager.Instance.Money = gameConfig.Gold;
         selectItem.data.isItem = false;
         RefreshItem();
         SaveDataItem();

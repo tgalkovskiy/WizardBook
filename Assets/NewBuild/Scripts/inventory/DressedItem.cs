@@ -26,6 +26,9 @@ public class DressedItem : MonoBehaviour
             grade = item.data.grade,
             iconItem = item.data.iconItem,
             lvlItem = item.data.lvlItem,
+            resistCold = item.data.resistCold,
+            resistFire = item.data.resistFire,
+            resistPotion = item.data.resistPotion,
             maxLvlItem = item.data.maxLvlItem,
             damage = item.data.damage,
             defence = item.data.defence,
@@ -51,12 +54,14 @@ public class DressedItem : MonoBehaviour
     private void ReturnData(Item item, ItemData data)
     {
         if(!item.data.isItem)return;
-        Debug.Log(1);
         data.isItem = true;
         data.itemType = item.data.itemType;
         data.grade = item.data.grade;
         data.iconItem = item.data.iconItem;
         data.lvlItem = item.data.lvlItem;
+        data.resistCold = item.data.resistCold;
+        data.resistFire = item.data.resistFire;
+        data.resistPotion = item.data.resistPotion;
         data.maxLvlItem = item.data.maxLvlItem;
         data.damage = item.data.damage;
         data.defence = item.data.defence;
@@ -70,24 +75,19 @@ public class DressedItem : MonoBehaviour
         config.damagePerson = weaponItem.data.damage;
         attackPerson.text =$"АТАКА: {config.damagePerson}";
         
-        config.defencePerson = armorItem.data.defence;
-        config.defencePerson += otherItem.data.defence;
+        config.defencePerson = armorItem.data.defence + otherItem.data.defence;
         defencePerson.text =$"БРОНЯ: {config.defencePerson}";
-        
-        config.hpPerson += armorItem.data.hp;
-        config.hpPerson += otherItem.data.hp;
+
+        config.hpPerson = config.baseHpPerson + armorItem.data.hp + otherItem.data.hp;
         hpPerson.text =$"HP: {config.hpPerson}";
 
-        config.resitCold = armorItem.data.resistCold;
-        config.resitCold = +otherItem.data.resistCold;
+        config.resitCold = armorItem.data.resistCold+otherItem.data.resistCold;
         resistCold.text = $"СОПРОТИВЛЕНИЕ ХОЛОДУ: {config.resitCold}";
         
-        config.resitPotion = armorItem.data.resistPotion;
-        config.resitPotion = +otherItem.data.resistPotion;
+        config.resitPotion = armorItem.data.resistPotion + otherItem.data.resistPotion;
         resistPotion.text = $"СОПРОТИВЛЕНИЕ ЯДУ: {config.resitPotion}";
         
-        config.resitFire = armorItem.data.resistFire;
-        config.resitFire = +otherItem.data.resistFire;
+        config.resitFire = armorItem.data.resistFire + otherItem.data.resistFire;
         resistFire.text = $"СОПРОТИВЛЕНИЕ ОГНЮ: {config.resitFire}";
         
         lvlPerson.text = $"Lvl: {config.LVLPers}";

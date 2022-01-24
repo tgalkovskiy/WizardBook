@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc907b59ad00ca243baabe7a15d8716c, type: 3}
   m_Name: PlayerConfig
   m_EditorClassIdentifier: 
+  baseHpPerson: 200
   hpPerson: 200
   damagePerson: 30
   defencePerson: 0
@@ -24,13 +25,13 @@ MonoBehaviour:
   LVLBooK: 1
   NextLVL_BOOK_XP: 300
   Now_BOOK_XP: 0
-  PointBook: 0
+  PointBook: 999
   NumberSworld: 0
   Skills: 010101010101010101010101
-  LVL_Skill: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  LVL_Skill: 020000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
   Time_Game: 15
-  Gold: 2000
-  Rubin: 20
+  Gold: 2006
+  Rubin: 99700
   Max_Energy: 15
-  Now_Energy: 29
-  ches: 0
+  Now_Energy: 35
+  ches: 9937

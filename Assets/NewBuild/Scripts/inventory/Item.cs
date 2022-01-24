@@ -43,7 +43,6 @@ public class Item : MonoBehaviour, IPointerDownHandler
     public Sprite[] armorSprite;
     public Sprite[] otherSprite;
     public Sprite[] gradeSprite;
-
     
     private void Start()
     {
@@ -60,9 +59,9 @@ public class Item : MonoBehaviour, IPointerDownHandler
         {
             iconItem.sprite = data.itemType switch
             {
-                ItemType.Weapon => weaponSprite[0],
-                ItemType.Armor => armorSprite[0],
-                ItemType.Other => otherSprite[0],
+                ItemType.Weapon => weaponSprite[data.iconItem],
+                ItemType.Armor => armorSprite[data.iconItem],
+                ItemType.Other => otherSprite[data.iconItem],
                 _ => iconItem.sprite
             };
             gradeItemIcon.sprite = gradeSprite[(int)data.grade];

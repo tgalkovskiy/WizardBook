@@ -27,11 +27,10 @@ public class Add_Item : MonoBehaviour
         {
             gameConfig.Rubin -= 5;
             gameConfig.ches -= 1;
+            ResourcesManager.Instance.Rubin = gameConfig.Rubin;
             countChes.text = gameConfig.ches.ToString();
             weaponManager.AddItem(CreateItem());
             Cost.SetActive(false);
-            
-            Uimanager.ChangeMainResurses(gameConfig, MainResurses.Instance.gold, MainResurses.Instance.energy, MainResurses.Instance.rubin);
         }
         else
         {
@@ -49,9 +48,10 @@ public class Add_Item : MonoBehaviour
         data.lvlItem = Random.Range(gameConfig.LVLPers, gameConfig.LVLPers + 2);
         data.maxLvlItem = data.lvlItem + 4;
         //typeItem
-        if(typeItem>0 && typeItem < 50) data.itemType = ItemType.Weapon;
-        if(typeItem>50 && typeItem < 85) data.itemType = ItemType.Armor;
-        if(typeItem>85) data.itemType = ItemType.Other;
+        if (typeItem > 0 && typeItem < 50) data.itemType = ItemType.Weapon;
+        if (typeItem > 50 && typeItem < 85) data.itemType = ItemType.Armor;
+        if (typeItem > 85) data.itemType = ItemType.Other;
+        data.iconItem = Random.Range(0, 2);
         //grade
         if (gradeItem > 0 && gradeItem < 40) data.grade = Grade.Usual;
         if (gradeItem > 40 && gradeItem < 70) data.grade = Grade.Rare;

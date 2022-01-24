@@ -6,379 +6,33 @@
   <component name="ChangeListManager">
     <list default="true" id="aab5773f-9112-45eb-af93-24a91fa49dcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DownlandAsset/Epic Toon FX/Materials/Misc/Magic/aura_soft01_ADD.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DownlandAsset/Epic Toon FX/Materials/Misc/Magic/aura_soft01_ADD.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DownlandAsset/Epic Toon FX/Prefabs/Combat/Magic/Charge/MagicChargeYellow.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DownlandAsset/Epic Toon FX/Prefabs/Combat/Magic/Charge/MagicChargeYellow.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DownlandAsset/Epic Toon FX/Prefabs/Combat/Magic/Enchant/MagicEnchantBlue.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DownlandAsset/Epic Toon FX/Prefabs/Combat/Magic/Enchant/MagicEnchantBlue.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DownlandAsset/FantasyPack1/Frogman_Beast/Frogman_b_ani.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DownlandAsset/FantasyPack1/Frogman_Beast/Frogman_b_ani.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Charecter.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAnimation/Charecter.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 1H Magic Attack 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 1H Magic Attack 01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 1H Magic Attack 02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 1H Magic Attack 02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Cast Spell 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Cast Spell 01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Magic Area Attack 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Magic Area Attack 01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Magic Area Attack 02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Magic Area Attack 02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Magic Attack 01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAnimation/Standing 2H Magic Attack 01.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Head Hit.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Head Hit.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 02.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 02.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing React Death Backward.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing React Death Backward.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/standing 1H cast spell 01.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/standing 1H cast spell 01.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/standing idle.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/standing idle.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battele.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battele.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Fortuna.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Fortuna.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DownlandAsset/Fantasy Skybox FREE/Scenes/TerrainGrass.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DownlandAsset/Fantasy Skybox FREE/Scenes/TerrainGrass.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battle.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoiceEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoisEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoiceEnemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/OpenEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/OpenEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatsEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatEnemy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatsEnemy.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/EventMeneger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/EventMeneger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/EventManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Fortuna.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Fortuna.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/MenuLVLGIU.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/SwapController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/SwapController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/ResourcesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/ResourcesManager.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/Add_Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/Add_Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/DressedItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/DressedItem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/Item.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/Item.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/WeaponManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/inventory/WeaponManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/1080x2340_SkyBG.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/1080x2340_SkyBG.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Line-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Line-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewCamp.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewCamp.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewCamp4b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewCamp4b.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewForest.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewForest.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewTown.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewTown.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewTown4b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/PreviewTown4b.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Woodline_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Woodline_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Woodline_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Woodline_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Woodline_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BG/Woodline_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Adept.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Adept.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/BEL.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/BEL.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/ENG.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/ENG.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineBlue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineBlue.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineGreen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineGreen.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineRed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineRed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineWhite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/LineWhite.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Mage.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Mage.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Neofit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Neofit.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Book_icon_open.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Book_icon_open.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Book_rings_gold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Book_rings_gold.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Exp_book_progressbar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Exp_book_progressbar.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Exp_book_progressbar_line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Progress/Exp_book_progressbar_line.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/RUS.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/RUS.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/RingGold.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/RingGold.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_1_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_1_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_2_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_2_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_3_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/Air_skill_3_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/skill_icon_air.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Air/skill_icon_air.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_1_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_1_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_2_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_2_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_3_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Earth_skill_3_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_Earth_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_Earth_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_Earth_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_Earth_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_Earth_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_Earth_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_earth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Earth/Skill_icon_earth.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_1_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_1_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_2_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_2_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_3_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Fire_skill_3_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_Fire_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_Fire_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_Fire_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_Fire_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_Fire_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_Fire_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_fire.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Fire/Skill_icon_fire.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Skill_icon_Water_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Skill_icon_Water_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Skill_icon_water.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Skill_icon_water.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_1_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_1_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_2_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_2_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_3_off.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/Water/Water_skill_3_off.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/Nature-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/Nature-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/Nature-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/Nature-2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/Nature-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/Nature-3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/air-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/air-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/air-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/air-2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/air-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/air-3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/fire-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/fire-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/fire-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/fire-2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/fire-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/fire-3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/water-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/water-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/water-2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/water-2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/water-3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/Skills/new/water-3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/spercop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Book/spercop.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BookLight.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/BookLight.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/Button_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/Button_green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/Button_orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/Button_orange.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/Button_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/Button_red.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/TransBut-Invis.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/TransBut-Invis.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/TransBut.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/TransBut.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/button_glass_frame.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/button_glass_frame.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/button_green_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Buttons/button_green_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Chests.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Chests/Chest_closed.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Chests/Chest_closed.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Chests/Slot_4_chest.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Chests/Slot_4_chest.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Eng-gold-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Eng-gold-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Exit-final.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Exit-final.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Exit-gold-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Exit-gold-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Inventory-gold-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Inventory-gold-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/LVL Char/exp_icon_yellow_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/LVL Char/exp_icon_yellow_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/LVL Char/progressbar_back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/LVL Char/progressbar_back.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/LVL Char/progressbar_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/LVL Char/progressbar_yellow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Settings-Final.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Settings-Final.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Settings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Settings.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Tutorial-Final.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Tutorial-Final.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Tutorial-gold-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Tutorial-gold-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/БЕЛ.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/БЕЛ.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Бел-gold-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Бел-gold-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Рус-gold-1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Fight/Рус-gold-1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_common2_slot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_common2_slot.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_common_slot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_common_slot.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_legend_slot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_legend_slot.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_rare_slot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Inventory/Inventory_rare_slot.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Main Menu/Book.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Main Menu/Book.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Main Menu/Inventory-main2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Main Menu/Inventory-main2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Main Menu/Main_menu_button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Main Menu/Main_menu_button.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bars.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bars/progressbar_back.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bars/progressbar_back.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bars/progressbar_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bars/progressbar_yellow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bot_panel_alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Bot_panel_alpha.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/Energy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/Energy.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/Gems.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/Gems.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/Plus_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/Plus_green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/energy_icon_ring_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/energy_icon_ring_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/gem_icon_ring_.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Icons/gem_icon_ring_.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Main_menu_button.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Panel/Main_menu_button.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Scroll 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Scroll 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Scroll.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Scroll.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/11%.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/11%.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/21%.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/21%.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy/energy1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy/energy1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy/energy2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy/energy2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy/energy3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_energy/energy3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_bag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_bag.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_few.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_few.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_mount.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_mount.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_truck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_truck.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_wallet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gems/button_shop_gem_wallet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_2.psd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_2.psd.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_bag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_bag.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_truck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_truck.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_wallet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/Shop/Buttons_gold/Shop_gold_wallet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/photo_2021-05-09_15-59-06.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/UI/photo_2021-05-09_15-59-06.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/GameConfig.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/GameConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/PlayerConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/PlayerConfig.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/GameConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/GameConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/WordBase.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/WordBase.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WordBase.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/WordBase.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Mapppp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Mapppp.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_green.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_green.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_orange.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_orange.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_panel_grey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_panel_grey.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_red.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_red.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_wood.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/Button_wood.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_blue_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_blue_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_green_light.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_green_light.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_pink.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_pink.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_violet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_violet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_yellow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Buttons/button_yellow.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Panel_Shop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Panel_Shop.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency/Coin_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency/Coin_icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency/Energy_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency/Energy_icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency/gem_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Currency/gem_icon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain/DemoTerrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/DemoTerrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain/_TerrainAutoUpgrade/layer_Grass_flowerse32965c36f070e45.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/_TerrainAutoUpgrade/layer_Grass_flowerse32965c36f070e45.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain/_TerrainAutoUpgrade/layer_MRLFGenericRockGrass_AlbedoBMRLFGenericRockGrass_NormalB3d3aba195e4d26ee.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/_TerrainAutoUpgrade/layer_MRLFGenericRockGrass_AlbedoBMRLFGenericRockGrass_NormalB3d3aba195e4d26ee.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Terrain/_TerrainAutoUpgrade/layer_Road_grasscc0f254a2c535401.terrainlayer" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Terrain/_TerrainAutoUpgrade/layer_Road_grasscc0f254a2c535401.terrainlayer" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -398,7 +52,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/Uimanager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/ResourcesManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Interface/IPage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ef667cdc82bf4a4e911d1ddea9ff581d13a800/8c/7cbb55e8/MonoBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/MainResurses.cs" root0="FORCE_HIGHLIGHTING" />
@@ -591,7 +245,8 @@
       <workItem from="1642510416679" duration="1198000" />
       <workItem from="1642538094252" duration="2573000" />
       <workItem from="1642670372002" duration="40632000" />
-      <workItem from="1642840187489" duration="12904000" />
+      <workItem from="1642840187489" duration="14800000" />
+      <workItem from="1643042783404" duration="3474000" />
     </task>
     <servers />
   </component>
