@@ -5279,6 +5279,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 445084521}
   m_CullTransparentMesh: 0
+--- !u!114 &458204099 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3049728142196240588, guid: 43ddcf2d58baf1c4489b1ec32daa63d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 943608092}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &461689958
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,6 +7085,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 656272997}
   m_CullTransparentMesh: 0
+--- !u!114 &682629327 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3049728142196240588, guid: 43ddcf2d58baf1c4489b1ec32daa63d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 2042448463}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &699965255
 GameObject:
   m_ObjectHideFlags: 0
@@ -9733,6 +9757,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892025761}
   m_CullTransparentMesh: 1
+--- !u!114 &893658335 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3049728142196240588, guid: 43ddcf2d58baf1c4489b1ec32daa63d1,
+    type: 3}
+  m_PrefabInstance: {fileID: 743283152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6cd1d0d996e67c4b9a5a40b2020f026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &913096786
 GameObject:
   m_ObjectHideFlags: 0
@@ -18934,9 +18970,9 @@ MonoBehaviour:
   resistPotion: {fileID: 1228665712}
   resistCold: {fileID: 730129184}
   resistFire: {fileID: 205982863}
-  weaponItem: {fileID: 0}
-  armorItem: {fileID: 0}
-  otherItem: {fileID: 0}
+  weaponItem: {fileID: 893658335}
+  armorItem: {fileID: 682629327}
+  otherItem: {fileID: 458204099}
 --- !u!1 &1878103481
 GameObject:
   m_ObjectHideFlags: 0

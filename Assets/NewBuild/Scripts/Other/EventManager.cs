@@ -6,38 +6,33 @@ public class EventManager : MonoBehaviour
     public static Action playerAction;
     public static Action enemyAction;
     public static Action cooldown;
-    public Person person;
-    public WordButtom wordButtom;
-    public SkillManeger skillManeger;
-    public WordLoad wordLoad;
+    public BattleController battleController;
+    public WordController wordController;
+    public SkillController skillController;
 
     private void OnEnable()
     {
-        playerAction += person.AttackPlayer;
-        enemyAction += person.AttackEnemy;
-        playerAction += wordLoad.LoadText;
-        enemyAction += wordLoad.LoadText;
-        playerAction += wordButtom.Word;
-        enemyAction += wordButtom.Word;
-        playerAction += wordButtom.BattleTimer;
-        enemyAction += wordButtom.BattleTimer;
-        playerAction += wordButtom.MovesCount;
-        enemyAction += wordButtom.MovesCount;
-        cooldown += skillManeger.UpdateCooldown;
+        playerAction += battleController.AttackPlayer;
+        enemyAction += battleController.AttackEnemy;
+        playerAction += wordController.Word;
+        enemyAction += wordController.Word;
+        playerAction += wordController.BattleTimer;
+        enemyAction += wordController.BattleTimer;
+        playerAction += wordController.MovesCount;
+        enemyAction += wordController.MovesCount;
+        cooldown += skillController.UpdateCooldown;
     }
 
     private void OnDisable()
     {
-        playerAction -= person.AttackPlayer;
-        enemyAction -= person.AttackEnemy;
-        playerAction -= wordLoad.LoadText;
-        enemyAction -= wordLoad.LoadText;
-        playerAction -= wordButtom.Word;
-        enemyAction -= wordButtom.Word;
-        playerAction -= wordButtom.BattleTimer;
-        enemyAction -= wordButtom.BattleTimer;
-        playerAction -= wordButtom.MovesCount;
-        enemyAction -= wordButtom.MovesCount;
-        cooldown -= skillManeger.UpdateCooldown;
+        playerAction -= battleController.AttackPlayer;
+        enemyAction -= battleController.AttackEnemy;
+        playerAction -= wordController.Word;
+        enemyAction -= wordController.Word;
+        playerAction -= wordController.BattleTimer;
+        enemyAction -= wordController.BattleTimer;
+        playerAction -= wordController.MovesCount;
+        enemyAction -= wordController.MovesCount;
+        cooldown -= skillController.UpdateCooldown;
     }
 }

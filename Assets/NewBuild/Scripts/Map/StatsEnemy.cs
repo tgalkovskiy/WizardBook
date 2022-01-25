@@ -1,5 +1,4 @@
 ﻿
-using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,6 +16,7 @@ public class StatsEnemy : MonoBehaviour
    public int lvlBook;
    public int rewardRubin;
    public bool rewardChes;
+   public EnemyAbilityEnum enemyAbilityEnum;
 
    public void Init(bool isOpen)
    {

@@ -14,6 +14,7 @@ public class EnemyConfig : ScriptableObject
     public int rewardExpBookEnemy;
     public int rewardRubin;
     public bool rewardChes;
+    public EnemyAbilityEnum enemyAbilityEnum;
 
     public void SelectEnemy(StatsEnemy statsEnemy)
     {
@@ -26,5 +27,6 @@ public class EnemyConfig : ScriptableObject
         rewardExpBookEnemy = statsEnemy.rewardBookExp;
         rewardRubin = statsEnemy.rewardRubin;
         rewardChes = statsEnemy.rewardChes;
+        enemyAbilityEnum = statsEnemy.enemyAbilityEnum;
     }
 }

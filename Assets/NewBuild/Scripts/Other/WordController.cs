@@ -1,46 +1,43 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-public class WordButtom : MonoBehaviour
+public class WordController : MonoBehaviour
 {
-    [SerializeField] private SkillManeger skillManeger;
-    [SerializeField] private Sprite wrong;
-    [SerializeField] private Sprite correct;
-    [SerializeField] private Sprite original;
-    [SerializeField] private GameConfig gameConfigPers;
-    [SerializeField] WordLoad WordLoad;
+    public UiContainer uiContainer;
+    [SerializeField] private GameConfig gameConfigPlayer;
     [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
     [SerializeField] private Button[] WordButtomMas = default;
-    [SerializeField] private Text NowWord = default;
-    [SerializeField] private Text TimerText = default;
     public static bool Touch = false;
     private bool Shake_bool = false;
     private bool Wrong_Word_bool = false;
     private int Wrong_word_int = 0;
     public int Moves = 1;
-    //[HideInInspector] static public string CorrectWord;
     private float Timer = 15f;
+    WordGenerator wordGenerator;
     
     [HideInInspector]public float timerInRaund;
-    [HideInInspector] public int Point_now_Battel = 0;
-    
+    private void Awake()
+    {
+        wordGenerator = new WordGenerator(gameConfigPlayer.LVLBooK);
+    }
     private void Start()
     {
         ChoiesLanguege.LoadData();
         Word();
-        timerInRaund += gameConfigPers.Time_Game;    
+        timerInRaund += gameConfigPlayer.Time_Game;    
     }
     private void Update()
     {
-        if (Person.GameState)
+        if (BattleController.GameState)
         {
             Timer -= Time.deltaTime;
-            TimerText.text = ((int)Timer).ToString();
+            uiContainer.timer.text = ((int)Timer).ToString();
             if (Timer <= 0)
             {
-                //Timer = timerInRaund;
                 EventManager.enemyAction.Invoke();
             }
         }
@@ -53,50 +50,38 @@ public class WordButtom : MonoBehaviour
     }
     public void ButtomWord(int Buttoms)
     {
-        if (!Touch && Person.GameState)
+        if(!Touch && BattleController.GameState)
         {
             Touch = true;
-            if (Buttoms == WordLoad.CorrectWord)
+            if (Buttoms == wordGenerator.CorrectWord)
             {
-                WordButtomMas[Buttoms].GetComponent<Image>().sprite = correct;
+                WordButtomMas[Buttoms].GetComponent<Image>().sprite = uiContainer.correct;
                 StartCoroutine(ChangeWordCorrect(Buttoms));
                 StartCoroutine(Shake(1.4f));
-                Point_now_Battel += 1;
             }
             else
             {
-                Point_now_Battel = 0;
-                WordButtomMas[Buttoms].GetComponent<Image>().sprite =wrong;
-                WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().sprite = correct;
+                WordButtomMas[Buttoms].GetComponent<Image>().sprite =uiContainer.wrong;
+                WordButtomMas[wordGenerator.CorrectWord].GetComponent<Image>().sprite = uiContainer.correct;
                 StartCoroutine(ChangeWordWrong(Buttoms));
                 StartCoroutine(Shake(2.4f));
             }
         }
     }
-    /// <summary>
-    /// Обновление слов
-    /// </summary>
     public void Word()
     {
-        NowWord.text = WordLoad.WordAll[ChoiesLanguege.Languge1][WordLoad.CorrectWord];
+        wordGenerator.LoadText();
+        uiContainer.mainWord.text = wordGenerator.WordAll[ChoiesLanguege.Languge1][wordGenerator.CorrectWord];
         for(int i=0; i<WordButtomMas.Length; i++)
         {
-            WordButtomMas[i].GetComponentInChildren<Text>().text = WordLoad.WordAll[ChoiesLanguege.Languge2][i];
-            if (WordLoad.WordAll[ChoiesLanguege.Languge2][i].Length > 8)
-            {
-                //WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 34;
-            }
-            else
-            {
-                //WordButtomMas[i].GetComponentInChildren<Text>().fontSize = 40;
-            }
+            WordButtomMas[i].GetComponentInChildren<Text>().text = wordGenerator.WordAll[ChoiesLanguege.Languge2][i];
         }
         
     }
     public void Delete_Word()
     {
         List<Button> vs = new List<Button>() {WordButtomMas[0], WordButtomMas[1], WordButtomMas[2], WordButtomMas[3], WordButtomMas[4], WordButtomMas[5]};
-        vs.RemoveAt(WordLoad.CorrectWord);
+        vs.RemoveAt(wordGenerator.CorrectWord);
         int k = 0;
         int l = 0;
         while (k==l)
@@ -111,14 +96,14 @@ public class WordButtom : MonoBehaviour
     public IEnumerator ChangeWordCorrect(int Number)
     {
         yield return new WaitForSeconds(1);
-        WordButtomMas[Number].GetComponent<Image>().sprite = original;
+        WordButtomMas[Number].GetComponent<Image>().sprite = uiContainer.original;
         EventManager.playerAction.Invoke();
     }
     public IEnumerator ChangeWordWrong(int Number)
     {
         yield return new WaitForSeconds(2);
-        WordButtomMas[Number].GetComponent<Image>().sprite = original;
-        WordButtomMas[WordLoad.CorrectWord].GetComponent<Image>().sprite = original;
+        WordButtomMas[Number].GetComponent<Image>().sprite = uiContainer.original;
+        WordButtomMas[wordGenerator.CorrectWord].GetComponent<Image>().sprite = uiContainer.original;
         EventManager.enemyAction.Invoke();
     }
     
@@ -134,22 +119,7 @@ public class WordButtom : MonoBehaviour
     public void MovesCount()
     {
         Moves += 1;
-        if(SkillManeger.Buttom_Arson_Image != null)
-        {
-           SkillManeger.Buttom_Arson_Image.fillAmount += 0.166f; 
-        }
-        if(SkillManeger.Buttom_Deffence != null)
-        {
-            SkillManeger.Buttom_Deffence.fillAmount +=1/(0.01f+SkillManeger.Cooldown_Deff);
-        }
-        if(SkillManeger.Buttom_Time_Stop != null)
-        {
-            SkillManeger.Buttom_Time_Stop.fillAmount +=1/(0.01f+SkillManeger.CoolDown_Time);
-        }
-        if (SkillManeger.Buttom_Watter != null)
-        {
-            SkillManeger.Buttom_Watter.fillAmount +=1/(0.01f+SkillManeger.Cooldown_Watter);
-        }
+        uiContainer.UpdateButtonSkills();
     }
 
     public void BattleTimer()

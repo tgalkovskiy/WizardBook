@@ -2,75 +2,71 @@
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
-using SimpleJSON;
-using System.Linq;
 
 [Serializable]
-public class WordLoad : MonoBehaviour
+public class WordGenerator 
 {
-    [SerializeField] private GameConfig personGameConfig = default;
-    [HideInInspector]public string[][] WordAll = new string[3][];
+    public string[][] WordAll = new string[3][];
     private string[] WordRus = new string[6];
     private string[] WordEng = new string[6];
     private string[] WordBel = new string[6];
-    [HideInInspector] public int CorrectWord;
+    public int CorrectWord;
     private WordDataBase dataBase;
     private List<string> engBase;
     private List<string> rusBase;
     private List<string> belBase;
-    private void Awake()
+
+    public WordGenerator(int lvlBook)
     {
         WordAll[0] = WordRus;
         WordAll[1] = WordEng;
         WordAll[2] = WordBel;
         string path = Path.Combine(Application.persistentDataPath, "WordBase.json");
         dataBase = JsonUtility.FromJson<WordDataBase>(File.ReadAllText(path));
-        if(personGameConfig.LVLBooK == 1)
+        if(lvlBook == 1)
         {
             engBase = dataBase.eng1;
             rusBase = dataBase.rus1;
             belBase = dataBase.bel1;
         }
-        if(personGameConfig.LVLBooK == 2)
+        if(lvlBook == 2)
         {
             engBase = dataBase.eng2;
             rusBase = dataBase.rus2;
             belBase = dataBase.bel2;
         }
-        if(personGameConfig.LVLBooK == 3)
+        if(lvlBook == 3)
         {
             engBase = dataBase.eng3;
             rusBase = dataBase.rus3;
             belBase = dataBase.bel3;
         }
-        if(personGameConfig.LVLBooK == 4)
+        if(lvlBook == 4)
         {
             engBase = dataBase.eng4;
             rusBase = dataBase.rus4;
             belBase = dataBase.bel4;
         }
-        if(personGameConfig.LVLBooK == 5)
+        if(lvlBook == 5)
         {
             engBase = dataBase.eng5;
             rusBase = dataBase.rus5;
             belBase = dataBase.bel5;
         }
-        if(personGameConfig.LVLBooK == 6)
+        if(lvlBook == 6)
         {
             engBase = dataBase.eng6;
             rusBase = dataBase.rus6;
             belBase = dataBase.bel6;
         }
-        if(personGameConfig.LVLBooK == 7)
+        if(lvlBook == 7)
         {
             engBase = dataBase.eng7;
             rusBase = dataBase.rus7;
             belBase = dataBase.bel7;
         }
         LoadText();
-
     }
-
     public void LoadText()
     {
         int count = 0;
