@@ -6,29 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aab5773f-9112-45eb-af93-24a91fa49dcd" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Prefab/Fortuna.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Prefab/Fortuna.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Battle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Fortuna.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Fortuna.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scene/Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scene/Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/DataLoader/CVSLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/DataLoader/CVSLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoiceEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/ChoiceEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatsEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/StatsEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/DeleteJson.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/DeleteJson.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/EventManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/EventManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/NullText.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/NullText.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/BattleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Person.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/BattleController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillManeger.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/SkillController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordButtom.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/wordController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordGenerator.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordLoad.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/WordGenerator.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/EnemyConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/EnemyConfig.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,7 +224,7 @@
       <workItem from="1642840187489" duration="14800000" />
       <workItem from="1643042783404" duration="3819000" />
       <workItem from="1643059140187" duration="1985000" />
-      <workItem from="1643061233646" duration="19835000" />
+      <workItem from="1643061233646" duration="21221000" />
     </task>
     <servers />
   </component>
