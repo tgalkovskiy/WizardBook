@@ -11,7 +11,8 @@ public class WordController : MonoBehaviour
     [SerializeField] private GameConfig gameConfigPlayer;
     [SerializeField] private ChoiesLanguege ChoiesLanguege = default;
     [SerializeField] private Button[] WordButtomMas = default;
-    public static bool Touch = false;
+    private bool endRound = false;
+    public bool changeWord = false;
     private bool Shake_bool = false;
     private bool Wrong_Word_bool = false;
     private int Wrong_word_int = 0;
@@ -32,12 +33,13 @@ public class WordController : MonoBehaviour
     }
     private void Update()
     {
-        if (BattleController.GameState)
+        if (BattleController.GameState && !endRound)
         {
             Timer -= Time.deltaTime;
             uiContainer.timer.text = ((int)Timer).ToString();
             if (Timer <= 0)
             {
+                endRound = true;
                 EventManager.enemyAction.Invoke();
             }
         }
@@ -50,9 +52,9 @@ public class WordController : MonoBehaviour
     }
     public void ButtomWord(int Buttoms)
     {
-        if(!Touch && BattleController.GameState)
+        if(!endRound && BattleController.GameState)
         {
-            Touch = true;
+            endRound = true;
             if (Buttoms == wordGenerator.CorrectWord)
             {
                 WordButtomMas[Buttoms].GetComponent<Image>().sprite = uiContainer.correct;
@@ -74,9 +76,22 @@ public class WordController : MonoBehaviour
         uiContainer.mainWord.text = wordGenerator.WordAll[ChoiesLanguege.Languge1][wordGenerator.CorrectWord];
         for(int i=0; i<WordButtomMas.Length; i++)
         {
+            if (changeWord)
+            {
+                var charCollection = wordGenerator.WordAll[ChoiesLanguege.Languge2][i].ToCharArray();
+                if (charCollection.Length > 1)
+                {
+                    for (int j = 1; j < charCollection.Length;)
+                    {
+                        if(j>charCollection.Length) break;
+                        charCollection[j] = '*';
+                        j += 2;
+                    }
+                    wordGenerator.WordAll[ChoiesLanguege.Languge2][i] = new string(charCollection);
+                }
+            }
             WordButtomMas[i].GetComponentInChildren<Text>().text = wordGenerator.WordAll[ChoiesLanguege.Languge2][i];
         }
-        
     }
     public void Delete_Word()
     {
@@ -129,6 +144,6 @@ public class WordController : MonoBehaviour
         if (chanceTimer < 40) Timer = timerInRaund;
         if (chanceTimer > 40 && chanceTimer < 70) Timer = timerInRaund - 5;
         if (chanceTimer > 70) Timer = timerInRaund - 10;
-        Touch = false;
+        endRound = false;
     }
 }

@@ -4,27 +4,13 @@ public class AnimationController
 {
     private Animator _player;
     private Animator _enemy;
-    private Animator _wordCounter;
 
-    public AnimationController(Animator playerAnimator, Animator enemyAnimator, Animator wordCounter)
+    public AnimationController(Animator playerAnimator, Animator enemyAnimator)
     {
         _player = playerAnimator;
         _enemy = enemyAnimator;
-        _wordCounter = wordCounter;
     }
-
-    public void ExecuteCounterAnimation(CharacterEnum characterEnum)
-    {
-        switch(characterEnum)
-        {
-            case CharacterEnum.Player:
-                _wordCounter.SetTrigger("Eny");
-                break;
-            case CharacterEnum.Enemy:
-                _wordCounter.SetTrigger("Pers");
-                break;
-        }
-    }
+    
     public void ExecuteAnimationSetDamage(CharacterEnum characterEnum)
     {
         switch(characterEnum)

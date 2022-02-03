@@ -9,7 +9,6 @@ public class Reward : MonoBehaviour
     public Text rewardGoldText;
     public Text rewardRubinText;
     public Text rewardBattleExpText;
-    public Text rewardBookExpText;
     public Text endGameText;
     public GameObject nextLvlPanel;
     public GameObject getChesPanel;
@@ -17,33 +16,31 @@ public class Reward : MonoBehaviour
 
     public void GetReward(bool isWin, EnemyConfig config, GameConfig gameConfig)
     {
-        if(!isWin)
-        {
-            endGameText.text = $"В ЭТОТ РАЗ ТЫ ПРОИГРАЛ...\nУЛУЧШАЙ СНАРЯЖЕНИЕ И ПРОКАЧИВАЙ НАВЫКИ";
-            rewardGoldText.text = $"{config.rewardGoldEnemy} МОНЕТ";
-            rewardRubinText.text = $"{config.rewardRubin} КРИСТАЛЛОВ";
-            rewardBattleExpText.text = $"{config.rewardBattleExpEnemy}";
-            //rewardBookExpText.text = $"{config.rewardExpBookEnemy}";
-            getChesPanel.SetActive(config.rewardChes);
-            gameConfig.Gold += config.rewardGoldEnemy;
-            gameConfig.Rubin += config.rewardRubin;
-            gameConfig.NowXP += config.rewardBattleExpEnemy;
-            gameConfig.Now_BOOK_XP += config.rewardExpBookEnemy;
-            if(config.rewardChes) gameConfig.ches += 1;
-        }
-        else
+        if(isWin)
         {
             endGameText.text = $"ПОБЕДА! ТАК ДЕРЖАТЬ!";
-            rewardGoldText.text = $"{config.rewardGoldEnemy/5} МОНЕТ";
-            rewardRubinText.text = $"{0} КРИСТАЛЛОВ";
-            rewardBattleExpText.text = $"{config.rewardBattleExpEnemy/10}";
-            //rewardBookExpText.text = $"{config.rewardExpBookEnemy/10}";
+            rewardGoldText.text = $"{config.rewardGoldEnemy} МОНЕТ";
+            rewardRubinText.text = $"{config.rewardRubin} КРИСТАЛЛОВ";
+            getChesPanel.SetActive(config.rewardChes);
+            rewardBattleExpText.text = $"{config.rewardBattleExpEnemy}";
             gameConfig.Gold += config.rewardGoldEnemy;
             gameConfig.Rubin += config.rewardRubin;
             gameConfig.NowXP += config.rewardBattleExpEnemy;
             gameConfig.Now_BOOK_XP += config.rewardExpBookEnemy;
             map.enemyNumber[config.numberEnemy+1] = true;
+            if(config.rewardChes) gameConfig.ches += 1;
             map.SaveData();
+            
+        }
+        else
+        {
+            endGameText.text = $"В ЭТОТ РАЗ ТЫ ПРОИГРАЛ...\nУЛУЧШАЙ СНАРЯЖЕНИЕ И ПРОКАЧИВАЙ НАВЫКИ";
+            rewardGoldText.text = $"{config.rewardGoldEnemy/5} МОНЕТ";
+            rewardRubinText.text = $"{0} КРИСТАЛЛОВ";
+            rewardBattleExpText.text = $"{config.rewardBattleExpEnemy}";
+            gameConfig.Gold += config.rewardGoldEnemy/5;
+            gameConfig.NowXP += config.rewardBattleExpEnemy/5;
+            gameConfig.Now_BOOK_XP += config.rewardExpBookEnemy/5;
         }
         if(gameConfig.NowXP>=gameConfig.NextLVLXP) gameConfig.NextLVL();
         gameConfig.SaveData();

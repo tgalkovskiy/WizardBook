@@ -8,7 +8,7 @@ public class Tutorial : MonoBehaviour
 {
     public List<GameObject> Page_tutorial;
     private int Number = 0;
-
+    public Ping ping;
     private void OnEnable()
     {
         Time.timeScale = 0;

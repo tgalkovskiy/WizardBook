@@ -39,7 +39,7 @@ public class DressedItem : MonoBehaviour
         var oldData = new ItemData();
         switch(newData.itemType)
         {
-            case ItemType.Weapon: ReturnData(weaponItem, oldData); weaponItem.data = newData; break;
+            case ItemType.Weapon: ReturnData(weaponItem, oldData); weaponItem.data = newData; config.NumberSworld = newData.iconItem; break;
             case ItemType.Armor: ReturnData(armorItem, oldData); armorItem.data = newData; break;
             case ItemType.Other: ReturnData(otherItem, oldData); otherItem.data = newData; break;
             default: throw new ArgumentOutOfRangeException();

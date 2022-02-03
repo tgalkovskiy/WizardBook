@@ -13,20 +13,13 @@ public class Menu : MonoBehaviour
     [SerializeField] private MenuBut MenuBut = default;
     [SerializeField] private GameObject TutorialButtom = default;
     
-    public void LoadMenu()
-    {
-        SceneManager.LoadScene(1);
-        //StartCoroutine(StartGameCor(1));
-    }
     public void StartGame()
     {
         if(ChoiesLanguege.Languge1 != ChoiesLanguege.Languge2 && gameConfig.Now_Energy>=3)
         {
             gameConfig.Now_Energy -= 3;
             gameConfig.SaveData();
-            //SceneManager.LoadScene(2);
             MenuBut.ActivPanel();
-            //StartCoroutine(StartGameCor(2));
         }
         if(gameConfig.Now_Energy < 3)
         {

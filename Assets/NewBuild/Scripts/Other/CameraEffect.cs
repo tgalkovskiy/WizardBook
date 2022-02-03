@@ -1,8 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using DG.Tweening;
-using UnityEngine.Rendering.PostProcessing;
+
 
 public class CameraEffect : MonoBehaviour
 {
@@ -14,13 +13,18 @@ public class CameraEffect : MonoBehaviour
     [SerializeField] private GameObject First_figth = default;
     private Camera Camera;
     private bool trate = false;
-    bool comleted; 
-    private void Start()
+    bool comleted;
+
+    private void Awake()
     {
         Camera = Camera.main;
+    }
+    private void Start()
+    {
+        
         Sequence sequence = DOTween.Sequence();
-        sequence.Append(this.transform.DOMove(StarTransform, 3f));
-        sequence.Join(this.transform.DORotate(StartAngle, 3f));
+        sequence.Append(Camera.transform.DOMove(StarTransform, 3f));
+        sequence.Join(Camera.transform.DORotate(StartAngle, 3f));
         sequence.OnComplete(() =>
         {
             Canvas.SetActive(true);
@@ -62,10 +66,10 @@ public class CameraEffect : MonoBehaviour
 
     }
 
-    public void Final()
+    /*public void Final()
     {
         transform.DOMove(FinalTransform, 1f);
-    }
+    }*/
 
 
 }

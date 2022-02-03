@@ -8,11 +8,25 @@ public class BattleController : MonoBehaviour
     public GameConfig gameConfigPerson;
     public EnemyConfig enemyConfig;
     public CameraEffect cameraEffectController;
+    public int _hpPlayerInBattle;
+    public int _hpEnemyInBattle;
+    public int HpPlayerInBattle
+    {
+        set
+        {
+            _hpPlayerInBattle -=value;
+            _uiContainer.UpdateHpPlayer(_hpPlayerInBattle, gameConfigPerson.hpPerson);
+        }
+    }
+    public int HpEnemyInBattle
+    {
+        set
+        {
+            _hpEnemyInBattle -=value;
+            _uiContainer.UpdateHpEnemy(_hpEnemyInBattle, enemyConfig.hpEnemy);
+        }
+    }
     
-    
-    
-    public int hpPlayerInBattle;
-    public int hpEnemyInBattle;
     public int damagePlayerInBattle;
     public int damageEnemyInBattle;
     public static bool GameState = true;
@@ -25,7 +39,7 @@ public class BattleController : MonoBehaviour
     private SkillController _skillController;
     private GameСontainer _gameСontainer;
     private WordController _wordController;
-    
+    private EnemySkillController _enemySkillController;
     private void Awake()
     {
         _reward = GetComponent<Reward>();
@@ -38,7 +52,6 @@ public class BattleController : MonoBehaviour
         UpdateStatsHp();
         UpdateStatsDamage();
         UpdateStatsArmor();
-        UpdateTextField();
         if (gameConfigPerson.Skills[0])
         {
             damagePlayerInBattle +=(int)((damagePlayerInBattle/100.0f)*5.0f+5*gameConfigPerson.LVL_Skill[0]);
@@ -49,13 +62,14 @@ public class BattleController : MonoBehaviour
     {
         var (player, enemy) = _gameСontainer.InitGameObjectToScene(gameConfigPerson, enemyConfig);
         
-        _animationController = new AnimationController(player.GetComponent<Animator>(), enemy.GetComponent<Animator>(), _gameСontainer.counterAnimator);
+        _animationController = new AnimationController(player.GetComponent<Animator>(), enemy.GetComponent<Animator>());
         
         _skillController.Init(player.GetComponent<PlayerContainer>(), _animationController, _wordController, 
                     gameConfigPerson, this, _gameСontainer);
         
         _uiContainer.InitSkillsButton(_skillController,gameConfigPerson);
-        
+
+        _enemySkillController = new EnemySkillController(this, _wordController, _uiContainer, gameConfigPerson, enemyConfig, _gameСontainer);
     }
 
     public void AttackPlayer()
@@ -68,11 +82,11 @@ public class BattleController : MonoBehaviour
     }
     private void EndRound()
     {
-        if(hpPlayerInBattle <= 0)
+        if(_hpPlayerInBattle <= 0)
         {
             StartCoroutine(DeathCharacter(CharacterEnum.Player));
         }
-        if(hpEnemyInBattle <= 0)
+        if(_hpEnemyInBattle <= 0)
         {
             StartCoroutine(DeathCharacter(CharacterEnum.Enemy));
         }
@@ -86,53 +100,39 @@ public class BattleController : MonoBehaviour
             case CharacterEnum.Enemy: _reward.GetReward(true, enemyConfig, gameConfigPerson); break;
             default: throw new ArgumentOutOfRangeException(nameof(characterEnum), characterEnum, null);
         }
-        cameraEffectController.Final();
         yield return new WaitForSeconds(2.5f);
     }
     private IEnumerator SetDamage(CharacterEnum characterEnum)
     {
         _animationController.ExecuteAnimationSetDamage(characterEnum);
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         _animationController.ExecuteAnimationGetDamage(characterEnum);
         switch (characterEnum)
         {
             case CharacterEnum.Player:
-                hpEnemyInBattle -= damagePlayerInBattle;
-                _gameСontainer.flyCounterEnemy.text = $"{damagePlayerInBattle}";
-                _animationController.ExecuteCounterAnimation(characterEnum);
+                HpEnemyInBattle =damagePlayerInBattle;
+                CounterDamage.TextRises(CharacterEnum.Player, _gameСontainer.canvas, _gameСontainer.textPrefab, (-damagePlayerInBattle).ToString(), Color.red);
                 break;
             case CharacterEnum.Enemy:
-                var damage = damageEnemyInBattle - playerDefence;
-                if (damage > 0)
-                {
-                    hpPlayerInBattle-=damage;
-                    _gameСontainer.flyCounterPlayer.text = (damageEnemyInBattle - playerDefence).ToString();
-                    _animationController.ExecuteCounterAnimation(characterEnum);
-                }
+                HpPlayerInBattle = damageEnemyInBattle;
+                CounterDamage.TextRises(CharacterEnum.Enemy, _gameСontainer.canvas,_gameСontainer.textPrefab, (-damageEnemyInBattle).ToString(), Color.red);
                 break;
             default: throw new ArgumentOutOfRangeException(nameof(characterEnum), characterEnum, null);
         }
-       UpdateTextField();
-       EventManager.cooldown?.Invoke();
-       if(hpPlayerInBattle <= 0 || hpEnemyInBattle <= 0)
+        _enemySkillController.ExecuteEnemyAbility();
+        EventManager.cooldown?.Invoke();
+       if(_hpPlayerInBattle <= 0 || _hpEnemyInBattle <= 0)
        {
            GameState = false;
            EndRound();
        }
     }
-    private void UpdateTextField()
-    {
-        _uiContainer.sliderHpPlayer.maxValue = gameConfigPerson.hpPerson;
-        _uiContainer.sliderHpPlayer.value = hpPlayerInBattle;
-        _uiContainer.hpPlayerText.text = $"{hpPlayerInBattle}/{gameConfigPerson.hpPerson}";
-        _uiContainer.hpSliderEnemy.maxValue = enemyConfig.hpEnemy;
-        _uiContainer.hpSliderEnemy.value = hpEnemyInBattle;
-        _uiContainer.hpTextEnemy.text = $"{hpEnemyInBattle}/{enemyConfig.hpEnemy}";
-    }
     private void UpdateStatsHp()
     {
-        hpPlayerInBattle = gameConfigPerson.hpPerson;
-        hpEnemyInBattle = enemyConfig.hpEnemy;
+        _hpPlayerInBattle = gameConfigPerson.hpPerson;
+        _hpEnemyInBattle = enemyConfig.hpEnemy;
+        _uiContainer.UpdateHpPlayer(_hpPlayerInBattle, gameConfigPerson.hpPerson);
+        _uiContainer.UpdateHpEnemy(_hpEnemyInBattle, enemyConfig.hpEnemy);
     }
     private void UpdateStatsDamage()
     {

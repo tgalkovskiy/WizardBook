@@ -271,7 +271,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 6c56cf943db4cbb4685a8745ab9b5169, type: 3}
+      m_Icon: {fileID: 2800000, guid: 5de80220172c18d4d8d05240e61640d3, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
@@ -791,9 +791,11 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Analytics: 1
     Build: 0
-    Collab: 1
+    Collab: 0
     ErrorHub: 0
+    Game Performance: 0
     Hub: 0
     UNet: 1
     Unity Ads: 1

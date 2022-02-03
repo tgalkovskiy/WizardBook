@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e239ad022eb8c0d438a162aaa9ff6e46, type: 3}
   m_Name: EnemyConfig
   m_EditorClassIdentifier: 
-  lvlEnemy: 0
+  lvlBookEnemy: 0
+  enemyEnum: 0
   numberEnemy: 0
   hpEnemy: 0
   damageEnemy: 0
@@ -21,3 +22,17 @@ MonoBehaviour:
   rewardExpBookEnemy: 0
   rewardRubin: 0
   rewardChes: 0
+  enemyAbilityEnum: 0
+  frogman: {fileID: 2287270555923229240, guid: 3a6dcf53c7e8ba04984a5edb14b5f263, type: 3}
+  ogrBase: {fileID: 446402704196587712, guid: df3f7ab7a393e0049aea7d011189e6e6, type: 3}
+  ogrWarrior: {fileID: 2239741831597298256, guid: 0599c067429306e4291cedf412412c3c,
+    type: 3}
+  ogrShaman: {fileID: 2635400161987988085, guid: f654bd53f5678a948905ff1d653eddb6,
+    type: 3}
+  ent: {fileID: 6100943887773563835, guid: 2548ac24813eb0b4c8d4eb04e03e0439, type: 3}
+  iceGolem: {fileID: 2674703726488311412, guid: 824e40c140a40f943845c37a3d15b4d2,
+    type: 3}
+  stoneGolem: {fileID: 4971819496567827801, guid: ec0db777e73a4bf498860bd239bac4de,
+    type: 3}
+  fireGolem: {fileID: 622839004347407707, guid: 84d9b985848e3174ea2acac9bb94a1ab,
+    type: 3}

@@ -51,7 +51,14 @@ public class Add_Item : MonoBehaviour
         if (typeItem > 0 && typeItem < 50) data.itemType = ItemType.Weapon;
         if (typeItem > 50 && typeItem < 85) data.itemType = ItemType.Armor;
         if (typeItem > 85) data.itemType = ItemType.Other;
-        data.iconItem = Random.Range(0, 2);
+        int icon = Random.Range(0, 100);
+        data.iconItem = icon switch
+        {
+            < 33 => 0,
+            > 33 and < 66 => 1,
+            > 66 => 2,
+            _ => data.iconItem
+        };
         //grade
         if (gradeItem > 0 && gradeItem < 40) data.grade = Grade.Usual;
         if (gradeItem > 40 && gradeItem < 70) data.grade = Grade.Rare;

@@ -44,7 +44,7 @@ public class SkillController : MonoBehaviour
         }
         if(_gameConfigSKills.Skills[1])
         {
-            ArsonDamege = (_battleController.hpEnemyInBattle / 100) * (2+1*_gameConfigSKills.LVL_Skill[1]);
+            ArsonDamege = (_battleController.enemyConfig.hpEnemy/100) * (2+1*_gameConfigSKills.LVL_Skill[1]);
         }
         if(_gameConfigSKills.Skills[2])
         {
@@ -147,7 +147,7 @@ public class SkillController : MonoBehaviour
     }
     public void Arson()
     {
-        _battleController.hpEnemyInBattle -= ArsonDamege;
+        _battleController.HpEnemyInBattle=ArsonDamege;
     }
     private IEnumerator ExecuteShield()
     {

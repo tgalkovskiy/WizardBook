@@ -7,6 +7,7 @@ public class StatsEnemy : MonoBehaviour
    public bool isOpen;
    public string Name;
    public string Last_text;
+   public EnemyEnum enemyEnum;
    public int numberEnemy;
    public int hP;
    public int damage;

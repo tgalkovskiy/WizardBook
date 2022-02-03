@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dedb8c17dbc87f244ab11da190d0d498, type: 3}
   m_Name: MapSetting1
   m_EditorClassIdentifier: 
-  enemyNumber: 010101010100
+  enemyNumber: 01010000000000

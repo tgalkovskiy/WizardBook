@@ -3,12 +3,13 @@ public enum EnemyAbilityEnum
 {
     None,
     Poisoning,
+    Weakness,
+    FastDamage,
     Arson,
     Freezing,
-    Сonfusion,
-    Bleeding,
-    Stupidity,
-    MagicBlock
+    Entanglement,
+    AntiMagic
+    
 }
 
 public enum EnumAbilityPlayer
