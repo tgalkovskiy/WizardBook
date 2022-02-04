@@ -6,6 +6,7 @@ public class ResourcesManager : MonoBehaviour
     [SerializeField]private Text money;
     [SerializeField]private Text energy;
     [SerializeField]private Text rubin;
+    public GameConfig config;
     public static ResourcesManager Instance;  
     public int Money
     {
@@ -24,6 +25,10 @@ public class ResourcesManager : MonoBehaviour
     private void Awake()
     {
         Instance = this;
+        config.LoadData();
+        Money = config.Gold;
+        Rubin = config.Rubin;
+        Energy = config.Now_Energy;
     }
     
     public static void OpenWindow(GameObject gameObject)

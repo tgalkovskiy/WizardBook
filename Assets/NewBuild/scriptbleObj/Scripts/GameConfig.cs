@@ -99,18 +99,7 @@ public class GameConfig : ScriptableObject
         data.Energy_Now = Now_Energy;
         data.DateTime = DateTime.Now.ToString();
         data.Ches = ches;
-        try
-        {
-            File.WriteAllText(Path, JsonUtility.ToJson(data));
-        }
-        catch
-        {
-            //Debug.Log("not Save");
-        }
-        finally
-        {
-            //Debug.Log("Save Done");
-        }
+        File.WriteAllText(Path, JsonUtility.ToJson(data));
     }
 
     public void LoadData()
