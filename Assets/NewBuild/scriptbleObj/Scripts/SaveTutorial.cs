@@ -1,12 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 using System.IO;
 
 [CreateAssetMenu(fileName = "Tutorial", menuName = "Tutorial")]
 public class SaveTutorial : ScriptableObject
 {
-    public class  Data
+    private class  Data
     {
         public bool first_tutorial;
         public bool first_map;
@@ -16,64 +15,53 @@ public class SaveTutorial : ScriptableObject
         public bool Inventory;
         public bool Book;
     }
-
-    public bool first_tutorial;
-    public bool first_map;
-    public bool first_fitgth;
-    public bool first_victory;
-    public bool first_lose;
-    public bool Inventory;
-    public bool Book;
-
+    [MultilineAttribute(5)][HeaderAttribute("tutorial home page")]public string[] homeText;
+    public bool firstLaunchHome;
+    [Space]
+    [MultilineAttribute(5)][HeaderAttribute("tutorial map")]public string[] mapText;
+    public bool firstLaunchMap;
+    [Space] 
+    [MultilineAttribute(5)] [HeaderAttribute("tutorial battle")] public string[] battleText;
+    public bool firstLaunchBattle;
+    [Space]
+    [MultilineAttribute(5)][HeaderAttribute("tutorial first win")]public string[] winText;
+    public bool firstWin;
+    [Space]
+    [MultilineAttribute(5)][HeaderAttribute("tutorial first lose")]public string[] loseText;
+    public bool firstLose;
+    
     public void SaveData()
     {
-        string Path = System.IO.Path.Combine(Application.persistentDataPath, "Save_tutorial.Json");
+        string Path = System.IO.Path.Combine(Application.persistentDataPath, "Savetutorial.Json");
         Data data = new Data();
-        data.first_tutorial = first_tutorial;
-        data.first_map = first_map;
-        data.first_fitgth = first_fitgth;
-        data.first_victory = first_victory;
-        data.first_lose = first_lose;
-        data.Inventory = Inventory;
-        data.Book = Book;
-        try
-        {
-            File.WriteAllText(Path, JsonUtility.ToJson(data));
-        }
-        catch
-        {
-            //Debug.Log("not Save");
-        }
-        finally
-        {
-            //Debug.Log("Save Done");
-        }
+        data.first_tutorial = firstLaunchHome;
+        data.first_map = firstLaunchMap;
+        data.first_fitgth = firstLaunchBattle;
+        data.first_victory = firstWin;
+        data.first_lose = firstLose;
+        File.WriteAllText(Path, JsonUtility.ToJson(data));
     }
 
     public void LoadData()
     {
-        string Path = System.IO.Path.Combine(Application.persistentDataPath, "Save_tutorial.Json");
+        string Path = System.IO.Path.Combine(Application.persistentDataPath, "Savetutorial.Json");
         if (File.Exists(Path))
         {
             Data data = new Data();
             data = JsonUtility.FromJson<Data>(File.ReadAllText(Path));
-            first_tutorial = data.first_tutorial;
-            first_map = data.first_map;
-            first_fitgth = data.first_fitgth;
-            first_victory = data.first_victory;
-            first_lose = data.first_lose;
-            Inventory = data.Inventory;
-            Book = data.Book;
+            firstLaunchHome = data.first_tutorial;
+            firstLaunchMap = data.first_map;
+            firstLaunchBattle = data.first_fitgth;
+            firstWin = data.first_victory;
+            firstLose = data.first_lose;
         }
         else
         {
-            first_tutorial = false;
-            first_map = false;
-            first_fitgth = false;
-            first_victory = false;
-            first_lose = false;
-            Inventory = false;
-            Book = false;
+            firstLaunchHome = false;
+            firstLaunchMap = false;
+            firstLaunchBattle = false;
+            firstWin = false;
+            firstLose = false;
         }
     }
 }

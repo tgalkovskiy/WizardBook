@@ -5,13 +5,95 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="aab5773f-9112-45eb-af93-24a91fa49dcd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/TutorialController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WizardBook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/17668.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/17668.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/18392.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/18392.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/19485.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/19485.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/19639.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/19639.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Cuneiforme.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Cuneiforme.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FtyVarogeSaroNoestNcv.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FtyVarogeSaroNoestNcv.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Galaktika.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Galaktika.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Lumberjack Inline Rough.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Lumberjack Inline Rough.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Lumberjack Rough Shadow.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Lumberjack Rough Shadow.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Lumberjack Rough.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Lumberjack Rough.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Nk124.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Nk124.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/SuperEng.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/SuperEng.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/SuperRU.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/SuperRU.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Vetka.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Vetka.otf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/diabloexocetcyr_heavy.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/diabloexocetcyr_heavy.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/zarubkaType-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/zarubkaType-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/Home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/Home.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/oak.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/oak.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/stone.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Map/stone.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Girl.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Girl.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/body2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/body2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/clother_8.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/clother_8.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/clother_9.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/clother_9.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Arson.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Arson.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Charecter.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Charecter.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/DeleteWrongWord.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/DeleteWrongWord.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Head Hit.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Head Hit.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Materials/Knight_diffuse.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Materials/Knight_diffuse.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Shild.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Shild.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 1H Magic Attack 01.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing 1H Magic Attack 01.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing React Death Backward.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/Standing React Death Backward.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/StopTime.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/StopTime.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm/Knight_diffuse.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm/Knight_diffuse.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm/Knight_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm/Knight_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm/Knight_specular.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewAnimation/knight_d_pelegrini@Standing 1H Magic Attack 01.fbm/Knight_specular.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Prefab/Battle.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Prefab/Battle.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Prefab/CanvasMap.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Prefab/CanvasMap.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Prefab/CanvasMenu.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Prefab/CanvasMenu.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/PageManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Tutorial.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Tutorial.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/TutorialController.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/ResourcesManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Static/ResourcesManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Map/Bion_Shois.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/CameraEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/TutorialController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/TutorialController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/SaveTutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Scripts/SaveTutorial.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Tutorial.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/NewBuild/scriptbleObj/Tutorial.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,6 +143,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Other/Effect.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/UI/SceneController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Battle/AnimationController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/NewBuild/Scripts/Enum/TutorialEnum.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/fd824cfb55004855b9e6d51b008c90e4568778/bf/3ad20ed6/List`1.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -242,7 +325,8 @@
       <workItem from="1643549690812" duration="6511000" />
       <workItem from="1643627348167" duration="9195000" />
       <workItem from="1643802311174" duration="11785000" />
-      <workItem from="1643994653828" duration="1791000" />
+      <workItem from="1643994653828" duration="2642000" />
+      <workItem from="1644139554676" duration="3982000" />
     </task>
     <servers />
   </component>

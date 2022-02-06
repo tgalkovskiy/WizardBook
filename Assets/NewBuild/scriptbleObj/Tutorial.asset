@@ -12,10 +12,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d96b2cdde69204438e72f6b56483467, type: 3}
   m_Name: Tutorial
   m_EditorClassIdentifier: 
-  first_tutorial: 1
-  first_map: 0
-  first_fitgth: 0
-  first_victory: 0
-  first_lose: 0
-  Inventory: 0
-  Book: 0
+  homeText:
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 1"
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 2"
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 3"
+  firstLaunchHome: 1
+  mapText:
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 4"
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 5"
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 6"
+  firstLaunchMap: 0
+  battleText:
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 7"
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 8"
+  - "\u042D\u0442\u043E \u0438\u0433\u0440\u0430 9"
+  firstLaunchBattle: 0
+  winText:
+  - 
+  firstWin: 0
+  loseText:
+  - 
+  firstLose: 0

@@ -29,10 +29,10 @@ public class CameraEffect : MonoBehaviour
         {
             Canvas.SetActive(true);
             _tutorial.LoadData();
-            if (!_tutorial.first_fitgth)
+            if (!_tutorial.firstLaunchBattle)
             {
                 First_figth.SetActive(true);
-                _tutorial.first_fitgth = true;
+                _tutorial.firstLaunchBattle = true;
                 _tutorial.SaveData();
                 Time.timeScale = 0;
             }

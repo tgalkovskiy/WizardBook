@@ -28,10 +28,10 @@ public class Bion_Shois : MonoBehaviour
         map_Setting.LoadData();
         choiceEnemy.enabled = false;
         _saveTutorial.LoadData();
-        if(!_saveTutorial.first_map)
+        if(!_saveTutorial.firstLaunchMap)
         {
             Map_tutorial.SetActive(true);
-            _saveTutorial.first_map = true;
+            _saveTutorial.firstLaunchMap = true;
             _saveTutorial.SaveData();
         }
 
