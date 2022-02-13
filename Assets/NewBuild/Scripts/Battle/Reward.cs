@@ -28,7 +28,7 @@ public class Reward : MonoBehaviour
             gameConfig.NowXP += config.rewardBattleExpEnemy;
             gameConfig.Now_BOOK_XP += config.rewardExpBookEnemy;
             map.enemyNumber[config.numberEnemy+1] = true;
-            if(config.rewardChes) gameConfig.ches += 1;
+            if(config.rewardChes)gameConfig.ches += 1;
             map.SaveData();
             
         }
